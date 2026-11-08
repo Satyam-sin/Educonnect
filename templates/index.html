@@ -1,1 +1,215 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>My Private AI Brain | न्यूरल नेटवर्क पावर्ड</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧠</text></svg>">
+</head>
+<body>
+    <div class="main-wrapper">
+        <!-- 1. पासवर्ड ऑथेंटिकेशन स्क्रीन -->
+        <div id="login-screen" class="card login-card">
+            <div class="icon-header">🔒</div>
+            <h2>प्राइवेट AI ब्रेन</h2>
+            <p class="subtitle">यह सिस्टम पासवर्ड द्वारा सुरक्षित है। आगे बढ़ने के लिए अपना सीक्रेट पासवर्ड दर्ज करें:</p>
+            <div class="input-group">
+                <input type="password" id="pass-input" placeholder="पासवर्ड यहाँ लिखें..." onkeypress="handleLoginKey(event)" autofocus>
+                <button onclick="unlockApp()" class="btn-primary">अनलॉक करें</button>
+            </div>
+            <p id="error-msg" class="error-text"></p>
+            <small class="hint-text">डिफ़ॉल्ट पासवर्ड: <code>mysecret123</code></small>
+        </div>
 
+        <!-- 2. मुख्य चैट स्क्रीन -->
+        <div id="chat-screen" class="card chat-card hidden">
+            <!-- हेडर -->
+            <div class="chat-header">
+                <div class="header-left">
+                    <span class="status-dot"></span>
+                    <div>
+                        <h2>🧠 पर्सनल नॉलेज AI</h2>
+                        <span id="knowledge-stats" class="stats-text">मेमोरी लोड हो रही है...</span>
+                    </div>
+                </div>
+                <div class="header-right">
+                    <button onclick="openUploadModal()" class="btn-upload" title="फाइल अपलोड करके AI को सिखाएं">📁 फाइल अपलोड</button>
+                    <button onclick="openVisualizerModal()" class="btn-nn" title="न्यूरल नेटवर्क आर्किटेक्चर देखें">⚡ न्यूरल जाल</button>
+                    <button onclick="openLibraryModal()" class="btn-library" title="नॉलेज लाइब्रेरी">📚 मेमोरी</button>
+                    <button onclick="openTeachModal()" class="btn-teach" title="नया ज्ञान सिखाएं">+ ज्ञान जोड़ें</button>
+                    <button onclick="lockApp()" class="btn-secondary" title="लॉगआउट करें">लॉगआउट</button>
+                </div>
+            </div>
+
+            <!-- लाइव न्यूरल एक्टिविटी इंडिकेटर स्ट्रिप -->
+            <div id="neural-strip" class="neural-strip">
+                <div class="strip-label">⚡ न्यूरल एक्टिविटी:</div>
+                <div class="neuron-nodes">
+                    <span class="n-node active">In:128</span>
+                    <span class="n-arrow">➔</span>
+                    <span class="n-node" id="h1-node">H1:64</span>
+                    <span class="n-arrow">➔</span>
+                    <span class="n-node" id="h2-node">H2:32</span>
+                    <span class="n-arrow">➔</span>
+                    <span class="n-node" id="out-node">Out:Softmax</span>
+                </div>
+            </div>
+
+            <!-- चैट बॉक्स -->
+            <div id="chat-box" class="chat-box">
+                <div class="msg ai-msg">
+                    <div class="msg-avatar">🤖</div>
+                    <div class="msg-body">
+                        <div class="msg-content">
+                            नमस्ते! मैं आपकी फाइलों से सीखकर जवाब देने के लिए तैयार हूँ। आप <strong>'📁 फाइल अपलोड'</strong> बटन से कोई भी फाइल अपलोड करके मुझे तुरंत नई बातें सिखा सकते हैं!
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- क्विक सजेशन पिल्स -->
+            <div class="quick-pills">
+                <button onclick="sendQuickQuery('मेरा नाम क्या है?')">मेरा नाम क्या है?</button>
+                <button onclick="sendQuickQuery('Render क्या है?')">Render क्या है?</button>
+                <button onclick="sendQuickQuery('पायथन किसने बनाई?')">पायथन किसने बनाई?</button>
+                <button onclick="sendQuickQuery('यह AI कैसे काम करता है?')">AI कैसे काम करता है?</button>
+                <button onclick="sendQuickQuery('न्यूरल नेटवर्क क्या होता है?')">न्यूरल नेटवर्क क्या है?</button>
+            </div>
+
+            <!-- इनपुट एरिया (माइक + टेक्स्ट + सेंड) -->
+            <div class="input-container">
+                <button onclick="toggleVoiceInput()" class="btn-mic" id="mic-btn" title="बोलकर सवाल पूछें">
+                    🎙️
+                </button>
+                <input type="text" id="user-input" placeholder="अपनी फाइलों से पूछें या माइक से बोलें..." onkeypress="handleChatKey(event)" autocomplete="off">
+                <button onclick="sendMessage()" class="btn-send" id="send-btn">
+                    <span>भेजें</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 3. फाइल अपलोड मोडल (Upload File Modal) -->
+    <div id="upload-modal" class="modal-overlay hidden">
+        <div class="modal-card">
+            <div class="modal-header">
+                <h3>📁 फाइल अपलोड करें (AI को सिखाएं)</h3>
+                <button onclick="closeUploadModal()" class="close-btn">&times;</button>
+            </div>
+            <p class="modal-subtitle">कोई भी टेक्स्ट, नोट्स या डेटा फाइल चुनें, AI उसे तुरंत पढ़कर सीख लेगा:</p>
+            
+            <div class="upload-dropzone" onclick="document.getElementById('file-picker').click()">
+                <div class="upload-icon">📄</div>
+                <div id="dropzone-text" class="dropzone-text">फ़ाइल चुनने के लिए यहाँ टैप करें</div>
+                <small class="supported-formats">सपोर्टेड: .txt, .md, .csv, .json</small>
+            </div>
+            <input type="file" id="file-picker" style="display: none;" accept=".txt,.md,.csv,.json,.py" onchange="handleFileChosen(event)">
+
+            <div class="modal-actions">
+                <button onclick="closeUploadModal()" class="btn-cancel">रद्द करें</button>
+                <button onclick="uploadSelectedFile()" class="btn-primary" id="upload-confirm-btn">अपलोड व ट्रेन करें</button>
+            </div>
+            <p id="upload-status" class="teach-status-text"></p>
+        </div>
+    </div>
+
+    <!-- 4. न्यूरल नेटवर्क विजुअलाइज़र मोडल (Visualizer Modal) -->
+    <div id="visualizer-modal" class="modal-overlay hidden">
+        <div class="modal-card modal-large">
+            <div class="modal-header">
+                <h3>⚡ न्यूरल नेटवर्क आर्किटेक्चर (Deep MLP)</h3>
+                <button onclick="closeVisualizerModal()" class="close-btn">&times;</button>
+            </div>
+            <p class="modal-subtitle">यह AI किसी बाहरी API के बिना इस 3-लेयर न्यूरल नेटवर्क से निर्णय लेता है:</p>
+            
+            <div class="nn-diagram">
+                <div class="nn-col">
+                    <div class="col-title">Input Layer</div>
+                    <div class="neuron-stack">
+                        <div class="nn-neuron in-neuron" title="TF-IDF Embedding">N₁</div>
+                        <div class="nn-neuron in-neuron">N₂</div>
+                        <div class="nn-neuron in-neuron">N₃</div>
+                        <div class="nn-dots">...</div>
+                        <div class="nn-neuron in-neuron">N₁₂₈</div>
+                    </div>
+                    <span class="col-meta">128 न्यूरॉन्स</span>
+                </div>
+                <div class="nn-col">
+                    <div class="col-title">Hidden L1 (ReLU)</div>
+                    <div class="neuron-stack">
+                        <div class="nn-neuron h-neuron">H₁</div>
+                        <div class="nn-neuron h-neuron">H₂</div>
+                        <div class="nn-dots">...</div>
+                        <div class="nn-neuron h-neuron">H₆₄</div>
+                    </div>
+                    <span class="col-meta">64 न्यूरॉन्स</span>
+                </div>
+                <div class="nn-col">
+                    <div class="col-title">Hidden L2 (ReLU)</div>
+                    <div class="neuron-stack">
+                        <div class="nn-neuron h2-neuron">H₁</div>
+                        <div class="nn-neuron h2-neuron">H₂</div>
+                        <div class="nn-dots">...</div>
+                        <div class="nn-neuron h2-neuron">H₃₂</div>
+                    </div>
+                    <span class="col-meta">32 न्यूरॉन्स</span>
+                </div>
+                <div class="nn-col">
+                    <div class="col-title">Output (Softmax)</div>
+                    <div class="neuron-stack">
+                        <div class="nn-neuron out-neuron">P₁</div>
+                        <div class="nn-neuron out-neuron">P₂</div>
+                        <div class="nn-dots">...</div>
+                        <div class="nn-neuron out-neuron">P₁₀</div>
+                    </div>
+                    <span class="col-meta">कॉन्फिडेंस स्कोर</span>
+                </div>
+            </div>
+
+            <div class="nn-stats-box" id="nn-params-box">
+                कुल पैरामीटर्स (Weights + Biases): <strong>10,634</strong> | कोई थर्ड पार्टी API नहीं
+            </div>
+            <div class="modal-actions">
+                <button onclick="closeVisualizerModal()" class="btn-primary">बंद करें</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 5. नॉलेज लाइब्रेरी मोडल (Library Modal) -->
+    <div id="library-modal" class="modal-overlay hidden">
+        <div class="modal-card modal-large">
+            <div class="modal-header">
+                <h3>📚 मेमोरी और फाइल्स</h3>
+                <button onclick="closeLibraryModal()" class="close-btn">&times;</button>
+            </div>
+            <p class="modal-subtitle">AI की वर्तमान मेमोरी में मौजूद सभी तथ्य:</p>
+            <div id="knowledge-items-list" class="knowledge-items-list">
+                लोड हो रहा है...
+            </div>
+            <div class="modal-actions">
+                <button onclick="closeLibraryModal()" class="btn-primary">बंद करें</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 6. नया ज्ञान जोड़ने का पॉप-अप मोडल (Teach Modal) -->
+    <div id="teach-modal" class="modal-overlay hidden">
+        <div class="modal-card">
+            <div class="modal-header">
+                <h3>💡 नया ज्ञान जोड़ें</h3>
+                <button onclick="closeTeachModal()" class="close-btn">&times;</button>
+            </div>
+            <p class="modal-subtitle">कोई भी नई बात लिखें, AI इसे अपनी मेमोरी में तुरंत सेव कर लेगा:</p>
+            <textarea id="teach-input" placeholder="उदाहरण: मेरा पसंदीदा खेल क्रिकेट है, और मैं उत्तर प्रदेश में रहता हूँ।"></textarea>
+            <div class="modal-actions">
+                <button onclick="closeTeachModal()" class="btn-cancel">रद्द करें</button>
+                <button onclick="submitNewKnowledge()" class="btn-primary" id="save-knowledge-btn">मेमोरी में सेव करें</button>
+            </div>
+            <p id="teach-status" class="teach-status-text"></p>
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
