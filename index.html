@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" data-accent="indigo" data-font="sans" data-density="comfortable" data-home-layout="grid" data-show-soon="true" data-contrast="normal" data-animations="on" data-auto-hide="on">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CHS Explorer — Books &amp; Quizzes</title>
+  <meta
+    name="description"
+    content="CHS Explorer — Your complete Class 8 NCERT & CHS Entrance Exam hub featuring Books and Interactive Chapter Quizzes."
+  />
+
+  <!-- Shared Modular Stylesheets (Connected across ALL pages) -->
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/home.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+</head>
+<body>
+  <!-- Minimal Auto-Hide Header (Hides on scroll down, ONLY unhides at the very top) -->
+  <header class="topbar" id="mainTopbar">
+    <div class="topbar-inner">
+      <div class="brand" onclick="window.scrollTo({top:0,behavior:'smooth'})" role="button" tabindex="0">
+        <div class="brand-icon" aria-hidden="true">🧭</div>
+        <div>
+          <div class="brand-title">CHS Explorer</div>
+          <div class="brand-subtitle">CHS Entrance Preparation Hub</div>
+        </div>
+      </div>
+
+      <!-- Top-Right Corner Settings Icon Button (Synced with Quiz Pages) -->
+      <button type="button" class="settings-gear-btn" id="settingsGearBtn" aria-label="Open Settings" title="Settings">
+        ⚙️
+      </button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="explorer-hero fade-in">
+      <span class="hero-badge">CHS Class 9 Entrance • NCERT Portal</span>
+      <h1 class="explorer-title">CHS Explorer</h1>
+      <p class="explorer-sub">
+        Explore textbooks and practice chapter-wise MCQs across all CHS exam subjects.
+      </p>
+    </section>
+
+    <!-- Main Vertical Stack of Big Square Hub Cards -->
+    <div class="hub-stack fade-in">
+      <!-- =============================================================== -->
+      <!-- SQUARE 1 (TOP): BOOKS                                           -->
+      <!-- =============================================================== -->
+      <section class="hub-square" aria-labelledby="booksHeading">
+        <div class="hub-square-trigger">
+          <div>
+            <h2 class="hub-big-label" id="booksHeading">BOOKS</h2>
+            <p class="hub-square-caption">All CHS Entrance Subjects — Study Material &amp; Notes</p>
+          </div>
+          <span class="hub-expand-pill">6 Subjects</span>
+        </div>
+
+        <div class="breadcrumb-bar hidden" id="booksBreadcrumbWrap" style="margin-top:1rem;">
+          <div class="breadcrumb-trail" id="booksBreadcrumb"></div>
+        </div>
+        <div id="booksContent"></div>
+      </section>
+
+      <!-- =============================================================== -->
+      <!-- SQUARE 2 (BELOW): QUIZ                                          -->
+      <!-- =============================================================== -->
+      <section class="hub-square hub-square--quiz" aria-labelledby="quizHeading">
+        <button type="button" class="hub-square-trigger--quiz" id="quizSquareTrigger" aria-expanded="false">
+          <span class="hub-big-label hub-big-label--quiz" id="quizHeading">QUIZ</span>
+          <span class="hub-square-caption" id="quizTriggerHint">Tap to explore subjects →</span>
+        </button>
+
+        <!-- Dynamic Drill-Down: Subjects -> SST -> Part 1 & Part 2 -> Part 1 Chapters -->
+        <div class="quiz-explorer-panel hidden fade-in" id="quizExplorerPanel">
+          <div class="breadcrumb-bar">
+            <div class="breadcrumb-trail" id="quizBreadcrumb"></div>
+          </div>
+          <div id="quizExplorerContent"></div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- ===================================================================== -->
+  <!-- HOME PAGE SETTINGS SHEET (Shared Appearance + Home-Specific Controls) -->
+  <!-- Quiz-only controls (TTS, Answer Check, Quiz Sound) are hidden here!   -->
+  <!-- ===================================================================== -->
+  <div id="settingsModalBackdrop" class="drawer-backdrop hidden" role="dialog" aria-modal="true" aria-labelledby="settingsModalTitle">
+    <div class="settings-modal">
+      <div class="drawer-header">
+        <div style="display:flex;align-items:center;gap:0.55rem;">
+          <span style="font-size:1.15rem;">⚙️</span>
+          <h3 id="settingsModalTitle" style="font-size:1.06rem;font-weight:800;">CHS Explorer Settings</h3>
+        </div>
+        <button type="button" class="drawer-close-btn" id="closeSettingsBtn" aria-label="Close Settings">
+          ✕
+        </button>
+      </div>
+
+      <div class="settings-body">
+        <!-- GROUP 1: SHARED APPEARANCE (Synced across Home + All Quiz Pages) -->
+        <div>
+          <div class="settings-group-label">Appearance (Synced Everywhere)</div>
+          <div class="settings-group">
+            <div class="settings-row">
+              <div class="settings-row-info">
+                <div class="settings-row-icon">🌓</div>
+                <div>
+                  <div class="settings-row-title">Mode</div>
+                  <div class="settings-row-sub">Dark default or Light</div>
+                </div>
+              </div>
+              <div class="seg-control">
+                <button type="button" class="seg-btn active" data-theme-choice="dark">🌙 Dark</button>
+                <button type="button" class="seg-btn" data-theme-choice="light">☀️ Light</button>
+              </div>
+            </div>
+
+            <div class="settings-row settings-row--stack">
+              <div class="settings-row-head">
+                <div class="settings-row-info">
+                  <div class="settings-row-icon">🎨</div>
+                  <div>
+                    <div class="settings-row-title">Color Theme</div>
+                    <div class="settings-row-sub">Applies to Home &amp; all Quiz pages</div>
+                  </div>
+                </div>
+              </div>
+              <div class="swatch-row" role="radiogroup" aria-label="Color Theme">
+                <button type="button" class="swatch-btn active" data-accent-choice="indigo" style="background:#6366f1;" title="Indigo Night" aria-label="Indigo Theme"></button>
+                <button type="button" class="swatch-btn" data-accent-choice="emerald" style="background:#10b981;" title="Emerald Forest" aria-label="Emerald Theme"></button>
+                <button type="button" class="swatch-btn" data-accent-choice="amber" style="background:#f59e0b;" title="Royal Amber" aria-label="Amber Theme"></button>
+                <button type="button" class="swatch-btn" data-accent-choice="rose" style="background:#f43f5e;" title="Crimson Rose" aria-label="Rose Theme"></button>
+                <button type="button" class="swatch-btn" data-accent-choice="cyan" style="background:#06b6d4;" title="Ocean Cyan" aria-label="Cyan Theme"></button>
+                <button type="button" class="swatch-btn" data-accent-choice="violet" style="background:#8b5cf6;" title="Violet Pulse" aria-label="Violet Theme"></button>
+              </div>
+            </div>
+
+            <div class="settings-row settings-row--stack">
+              <div class="settings-row-head">
+                <div class="settings-row-info">
+                  <div class="settings-row-icon">🔤</div>
+                  <div>
+                    <div class="settings-row-title">Font Size</div>
+                    <div class="settings-row-sub">Stays synced when you open any quiz</div>
+                  </div>
+                </div>
+                <span class="slider-value-pill" id="fontSizeValue">16px</span>
+              </div>
+              <div class="volume-slider-wrap">
+                <span class="slider-end-label" style="font-size:0.75rem;">A</span>
+                <input
+                  type="range"
+                  id="fontSizeSlider"
+                  class="volume-range"
+                  min="11"
+                  max="26"
+                  step="1"
+                  value="16"
+                  aria-label="Font Size Slider"
+                />
+                <span class="slider-end-label" style="font-size:1.3rem;">A</span>
+              </div>
+              <div class="font-preview-box">
+                Preview: Welcome to CHS Explorer — prepare smartly for every subject.
+              </div>
+            </div>
+
+            <div class="settings-row">
+              <div class="settings-row-info">
+                <div class="settings-row-icon">✍️</div>
+                <div>
+                  <div class="settings-row-title">Font Style</div>
+                  <div class="settings-row-sub">Text typeface</div>
+                </div>
+              </div>
+              <div class="seg-control">
+                <button type="button" class="seg-btn active" data-font-family="sans">Sans</button>
+                <button type="button" class="seg-btn" data-font-family="serif">Serif</button>
+                <button type="button" class="seg-btn" data-font-family="rounded">Soft</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- GROUP 2: HOME PAGE EXTRA CONTROLS -->
+        <div>
+          <div class="settings-group-label">Explorer Layout &amp; Controls</div>
+          <div class="settings-group">
+            <div class="settings-row">
+              <div class="settings-row-info">
+                <div class="settings-row-icon">▦</div>
+                <div>
+                  <div class="settings-row-title">Subject Tiles</div>
+                  <div class="settings-row-sub">Square grid or full-width list</div>
+                </div>
+              </div>
+              <div class="seg-control">
+                <button type="button" class="seg-btn active" data-home-layout-choice="grid">Grid</button>
+                <button type="button" class="seg-btn" data-home-layout-choice="list">List</button>
+              </div>
+            </div>
+
+            <div class="settings-row">
+              <div class="settings-row-info">
+                <div class="settings-row-icon">🏷️</div>
+                <div>
+                  <div class="settings-row-title">Show "Soon" Badges</div>
+                  <div class="settings-row-sub">Display upcoming subject tags</div>
+                </div>
+              </div>
+              <label class="switch">
+                <input type="checkbox" id="settingsSoonToggle" checked />
+                <span class="slider"></span>
+              </label>
+            </div>
+
+            <div class="settings-row">
+              <div class="settings-row-info">
+                <div class="settings-row-icon">⬆️</div>
+                <div>
+                  <div class="settings-row-title">Auto-Hide Header</div>
+                  <div class="settings-row-sub">Hide top bar while scrolling down</div>
+                </div>
+              </div>
+              <label class="switch">
+                <input type="checkbox" id="settingsAutoHideToggle" checked />
+                <span class="slider"></span>
+              </label>
+            </div>
+
+            <div class="settings-row">
+              <div class="settings-row-info">
+                <div class="settings-row-icon">🔲</div>
+                <div>
+                  <div class="settings-row-title">High Contrast Borders</div>
+                  <div class="settings-row-sub">Stronger outlines around cards</div>
+                </div>
+              </div>
+              <label class="switch">
+                <input type="checkbox" id="settingsContrastToggle" />
+                <span class="slider"></span>
+              </label>
+            </div>
+
+            <div class="settings-row">
+              <div class="settings-row-info">
+                <div class="settings-row-icon">✨</div>
+                <div>
+                  <div class="settings-row-title">Smooth Animations</div>
+                  <div class="settings-row-sub">Hover lift &amp; slide transitions</div>
+                </div>
+              </div>
+              <label class="switch">
+                <input type="checkbox" id="settingsAnimToggle" checked />
+                <span class="slider"></span>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="settings-footer">
+        <button type="button" class="btn btn-secondary" id="resetSettingsDefaultsBtn" style="padding:0.55rem 0.9rem;font-size:0.82rem;">
+          ↺ Reset Defaults
+        </button>
+        <button type="button" class="btn btn-primary" id="doneSettingsBtn" style="padding:0.55rem 1.2rem;font-size:0.84rem;">
+          Done
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="toast hidden" role="status" aria-live="polite"></div>
+
+  <footer class="footer">
+    CHS Explorer • Class 8 NCERT &amp; CHS Entrance Preparation Portal
+  </footer>
+
+  <!-- Shared & Home JS Modules -->
+  <script src="js/theme.js"></script>
+  <script src="js/scroll-behavior.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>

@@ -1,72 +1,13 @@
-# 🧠 My Private AI Brain (न्यूरल नेटवर्क पावर्ड पर्सनल AI)
+# CHS Explorer — Mega Web Project
 
-यह आपका अपना व्यक्तिगत नॉलेज AI असिस्टेंट है जिसे **HTML, CSS, JavaScript और Python (Flask)** से बनाया गया है। यह बिना किसी थर्ड-पार्टी API (जैसे OpenAI या Gemini API) के सीधे आपकी टेक्स्ट फाइलों से सीखकर सेकंडों में सटीक जवाब देता है।
+A scalable, multi-page HTML/CSS/JS/JSON web portal for **CHS Entrance Exam** preparation featuring a **CHS Explorer Home Page (`index.html`)** and the full **160-MCQ Interactive Quiz** for **Class 8 New NCERT SST Part 1, Chapter 5 (`universal-adult-franchise-indias-electoral-system.html`)**.
 
----
+## Navigation Flow
 
-## 🌟 मुख्य विशेषताएं (Key Features)
-
-1. **⚡ 3-लेयर डीप न्यूरल नेटवर्क (MLP):** 
-   * `neural_engine.py` में 128 इनपुट न्यूरॉन्स, 64 व 32 हिडन न्यूरॉन्स (ReLU) और Softmax आउटपुट लेयर वाला असली न्यूरल नेटवर्क इंजन शामिल है।
-   * **विजुअलाइज़र:** वेबसाइट पर बने `⚡ न्यूरल जाल` बटन पर क्लिक करके आप न्यूरल नेटवर्क की पूरी लेयर्स और लाइव सिग्नल देख सकते हैं।
-
-2. **🎙️ वॉइस इनपुट और 🔊 टेक्स्ट-टू-स्पीच:** 
-   * माइक बटन दबाकर बोलकर सवाल पूछें (हिंदी/अंग्रेजी)।
-   * हर जवाब के साथ बने '🔊 सुनें' बटन पर क्लिक करके AI को आवाज़ में जवाब पढ़ते हुए सुनें।
-
-3. **100% प्राइवेट और पासवर्ड सुरक्षित:** 
-   * कोई भी अनधिकृत व्यक्ति बिना पासवर्ड के आपकी वेबसाइट को नहीं खोल सकता (डिफ़ॉल्ट पासवर्ड: `mysecret123`)।
-
-4. **सीधे वेबसाइट से सिखाने की सुविधा (`+ ज्ञान जोड़ें`):** 
-   * वेबसाइट पर बैठे-बैठे नया तथ्य टाइप करें, AI उसे तुरंत मेमोरी में सेव कर लेगा।
-
-5. **📚 नॉलेज लाइब्रेरी ब्राउज़र:** 
-   * '📚 मेमोरी' बटन पर क्लिक करके देखें कि AI की याददाश्त में कौन-कौन से तथ्य किस फाइल से जुड़े हैं।
-
-6. **ज़ीरो-कन्फ़िगरेशन डिप्लॉय (`render.yaml` & `Procfile`):** 
-   * Render पर सीधे 1-क्लिक में लाइव हो जाता है।
-
----
-
-## 📁 फोल्डर संरचना (Project Structure)
-
-```text
-my-ai-brain/
-├── app.py                # मुख्य पायथन सर्वर व सिमेंटिक सर्च इंजन
-├── neural_engine.py      # 3-लेयर न्यूरल नेटवर्क क्लास (Dense Layers + Activation)
-├── requirements.txt      # Render के लिए जरूरी पैकेजेस
-├── Procfile              # ऑटो-स्टार्ट कमांड (web: gunicorn app:app)
-├── render.yaml           # 1-क्लिक रेंडर ब्लूप्रिंट
-├── README.md             # प्रोजेक्ट गाइड
-├── knowledge/            # ज्ञान का भंडार (.txt फाइल्स)
-│   ├── about_me.txt      # आपके बारे में जानकारी
-│   ├── tech_notes.txt    # तकनीकी नोट्स
-│   └── general_knowledge.txt # सामान्य ज्ञान
-├── templates/
-│   └── index.html        # आधुनिक डार्क UI (HTML)
-└── static/
-    ├── style.css         # ग्लासमोर्फिज्म स्टाइलिंग (CSS)
-    └── script.js         # वॉइस, न्यूरल विजुअलाइज़र और चैट लॉजिक (JS)
-```
-
----
-
-## 🚀 Render पर फ्री में लाइव कैसे करें? (Step-by-Step)
-
-### चरण 1: गिटहब (GitHub) पर अपलोड करें
-1. [GitHub](https://github.com/) पर जाएं और **New Repository** बनाएं (नाम: `my-ai-brain`)।
-2. इस फोल्डर की सभी फाइलों को गिटहब में अपलोड करके **Commit changes** कर दें।
-
-### चरण 2: Render पर कनेक्ट करें
-1. [Render.com](https://render.com/) पर जाएं और अपने GitHub अकाउंट से साइन इन करें।
-2. ऊपर **New +** बटन दबाएं और **Web Service** चुनें।
-3. अपनी `my-ai-brain` रिपॉजिटरी को सेलेक्ट करें।
-4. सेटिंग्स की जाँच करें:
-   * **Name:** `my-ai-brain`
-   * **Language:** `Python 3`
-   * **Build Command:** `pip install -r requirements.txt`
-   * **Start Command:** `gunicorn app:app`
-   * **Plan:** `Free`
-5. नीचे **Deploy Web Service** पर क्लिक कर दें।
-
-2 मिनट में Render आपको एक फ्री लाइव लिंक (उदा: `https://my-ai-brain.onrender.com`) प्रदान कर देगा!
+1. Open **`index.html`** (**CHS Explorer** Home Page):
+   - **BOOKS** square: Lists all 6 CHS subjects (`SST`, `Science`, `Maths`, `English`, `Hindi`, `GK`) ready for future notes/books.
+   - **QUIZ** square: Click **QUIZ** → click **SST** → click **Part 1** → view all 7 official NCERT Class 8 Part 1 chapters → click **Chapter 5: Universal Franchise and India's Electoral System** to launch the 160-MCQ Quiz!
+2. **Synced Settings Across Every Page:**
+   - Every page shares the same CSS and `localStorage` settings via `js/theme.js` — changing **Font Size (`11px`–`26px` slider)**, **Dark/Light Mode**, **6 Color Themes**, or **Font Style** on the Home Page automatically carries over to the Quiz Page (and vice versa).
+   - **Home Page Settings** hides Quiz-only options and adds Home-specific controls (**Grid/List Subject Tiles**, **Show "Soon" Badges**, **Auto-Hide Header**, **High Contrast Borders**, **Smooth Animations**).
+   - **Quiz Page Settings** adds **Text-to-Speech (`🔊 Listen` + Voice Speed Slider)**, **Sound Effects**, and **Answer Check Mode (Instant ✓/✗ vs Submit at End)**.
