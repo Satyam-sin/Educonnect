@@ -1,0 +1,166 @@
+/* ==========================================================================
+   Theme Variables — Dark Mode Default + Light Mode + 6 Curated Color Themes
+   ========================================================================== */
+
+:root,
+[data-theme="dark"] {
+  --bg-body: #070b14;
+  --bg-surface: #0f172a;
+  --bg-surface-2: #162033;
+  --bg-surface-hover: #1e2c45;
+  --bg-glass: rgba(11, 17, 32, 0.86);
+
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --text-muted: #64748b;
+
+  --border-subtle: rgba(148, 163, 184, 0.14);
+  --border-strong: rgba(148, 163, 184, 0.28);
+
+  --success: #10b981;
+  --success-soft: rgba(16, 185, 129, 0.16);
+
+  --danger: #f43f5e;
+  --danger-soft: rgba(244, 63, 94, 0.16);
+
+  --accent-gold: #f59e0b;
+  --accent-gold-soft: rgba(245, 158, 11, 0.16);
+
+  --shadow-sm: 0 2px 10px rgba(0, 0, 0, 0.35);
+  --shadow-md: 0 18px 44px rgba(0, 0, 0, 0.55);
+}
+
+[data-theme="light"] {
+  --bg-body: #f5f7fc;
+  --bg-surface: #ffffff;
+  --bg-surface-2: #f1f5f9;
+  --bg-surface-hover: #e2e8f0;
+  --bg-glass: rgba(255, 255, 255, 0.9);
+
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --text-muted: #64748b;
+
+  --border-subtle: rgba(15, 23, 42, 0.09);
+  --border-strong: rgba(15, 23, 42, 0.18);
+
+  --success: #059669;
+  --success-soft: rgba(5, 150, 105, 0.12);
+
+  --danger: #e11d48;
+  --danger-soft: rgba(225, 29, 72, 0.12);
+
+  --accent-gold: #d97706;
+  --accent-gold-soft: rgba(217, 119, 6, 0.12);
+
+  --shadow-sm: 0 2px 10px rgba(15, 23, 42, 0.06);
+  --shadow-md: 0 18px 40px rgba(15, 23, 42, 0.1);
+}
+
+/* ==========================================================================
+   6 Accent Color Palettes (data-accent on <html>)
+   ========================================================================== */
+
+:root,
+[data-accent="indigo"] {
+  --accent-primary: #6366f1;
+  --accent-primary-hover: #818cf8;
+  --accent-primary-soft: rgba(99, 102, 241, 0.16);
+  --accent-secondary: #38bdf8;
+  --accent-secondary-soft: rgba(56, 189, 248, 0.15);
+  --shadow-glow: 0 0 0 1px rgba(99, 102, 241, 0.4), 0 10px 28px rgba(99, 102, 241, 0.22);
+  --hero-gradient: radial-gradient(ellipse 65% 45% at 15% 0%, rgba(99, 102, 241, 0.22), transparent 60%),
+                   radial-gradient(ellipse 55% 40% at 88% 8%, rgba(56, 189, 248, 0.14), transparent 55%);
+}
+
+[data-accent="emerald"] {
+  --accent-primary: #10b981;
+  --accent-primary-hover: #34d399;
+  --accent-primary-soft: rgba(16, 185, 129, 0.16);
+  --accent-secondary: #2dd4bf;
+  --accent-secondary-soft: rgba(45, 212, 191, 0.15);
+  --shadow-glow: 0 0 0 1px rgba(16, 185, 129, 0.4), 0 10px 28px rgba(16, 185, 129, 0.22);
+  --hero-gradient: radial-gradient(ellipse 65% 45% at 15% 0%, rgba(16, 185, 129, 0.2), transparent 60%),
+                   radial-gradient(ellipse 55% 40% at 88% 8%, rgba(45, 212, 191, 0.14), transparent 55%);
+}
+
+[data-accent="amber"] {
+  --accent-primary: #f59e0b;
+  --accent-primary-hover: #fbbf24;
+  --accent-primary-soft: rgba(245, 158, 11, 0.16);
+  --accent-secondary: #fb923c;
+  --accent-secondary-soft: rgba(251, 146, 60, 0.15);
+  --shadow-glow: 0 0 0 1px rgba(245, 158, 11, 0.42), 0 10px 28px rgba(245, 158, 11, 0.22);
+  --hero-gradient: radial-gradient(ellipse 65% 45% at 15% 0%, rgba(245, 158, 11, 0.2), transparent 60%),
+                   radial-gradient(ellipse 55% 40% at 88% 8%, rgba(251, 146, 60, 0.14), transparent 55%);
+}
+
+[data-accent="rose"] {
+  --accent-primary: #f43f5e;
+  --accent-primary-hover: #fb7185;
+  --accent-primary-soft: rgba(244, 63, 94, 0.16);
+  --accent-secondary: #f472b6;
+  --accent-secondary-soft: rgba(244, 114, 182, 0.15);
+  --shadow-glow: 0 0 0 1px rgba(244, 63, 94, 0.4), 0 10px 28px rgba(244, 63, 94, 0.22);
+  --hero-gradient: radial-gradient(ellipse 65% 45% at 15% 0%, rgba(244, 63, 94, 0.2), transparent 60%),
+                   radial-gradient(ellipse 55% 40% at 88% 8%, rgba(244, 114, 182, 0.14), transparent 55%);
+}
+
+[data-accent="cyan"] {
+  --accent-primary: #06b6d4;
+  --accent-primary-hover: #22d3ee;
+  --accent-primary-soft: rgba(6, 182, 212, 0.16);
+  --accent-secondary: #38bdf8;
+  --accent-secondary-soft: rgba(56, 189, 248, 0.15);
+  --shadow-glow: 0 0 0 1px rgba(6, 182, 212, 0.4), 0 10px 28px rgba(6, 182, 212, 0.22);
+  --hero-gradient: radial-gradient(ellipse 65% 45% at 15% 0%, rgba(6, 182, 212, 0.22), transparent 60%),
+                   radial-gradient(ellipse 55% 40% at 88% 8%, rgba(56, 189, 248, 0.14), transparent 55%);
+}
+
+[data-accent="violet"] {
+  --accent-primary: #8b5cf6;
+  --accent-primary-hover: #a78bfa;
+  --accent-primary-soft: rgba(139, 92, 246, 0.16);
+  --accent-secondary: #c084fc;
+  --accent-secondary-soft: rgba(192, 132, 252, 0.15);
+  --shadow-glow: 0 0 0 1px rgba(139, 92, 246, 0.4), 0 10px 28px rgba(139, 92, 246, 0.22);
+  --hero-gradient: radial-gradient(ellipse 65% 45% at 15% 0%, rgba(139, 92, 246, 0.22), transparent 60%),
+                   radial-gradient(ellipse 55% 40% at 88% 8%, rgba(192, 132, 252, 0.14), transparent 55%);
+}
+
+/* Font Family Modes */
+:root,
+[data-font="sans"] {
+  --font-sans: "Inter", "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+[data-font="serif"] {
+  --font-sans: "Georgia", "Cambria", "Times New Roman", serif;
+}
+
+[data-font="rounded"] {
+  --font-sans: "Nunito", "Quicksand", "Trebuchet MS", "Segoe UI", sans-serif;
+}
+
+/* Compact Density Mode */
+[data-density="compact"] .question-card {
+  padding: 1.15rem 1.25rem;
+}
+
+[data-density="compact"] .option-btn {
+  padding: 0.68rem 0.9rem;
+}
+
+[data-density="compact"] .questions-feed {
+  gap: 0.85rem;
+}
+
+:root {
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 22px;
+  --radius-pill: 999px;
+  --font-mono: "JetBrains Mono", "Fira Code", ui-monospace, monospace;
+  --transition-fast: 170ms cubic-bezier(0.22, 1, 0.36, 1);
+  --transition-med: 280ms cubic-bezier(0.22, 1, 0.36, 1);
+}
