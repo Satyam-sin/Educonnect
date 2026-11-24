@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" data-accent="indigo" data-font="sans" data-density="comfortable" data-contrast="normal" data-animations="on" data-auto-hide="on">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Rise of the Marathas — CHS Study Notes, Vertical Timeline &amp; Kings/Gurus</title>
+  <meta
+    name="description"
+    content="Complete CHS Entrance Exam study notes, 32-event vertical timeline, and 26-profile Kings, Queens, Generals & Bhakti Gurus directory for NCERT Class 8 Social Science Part 1, Chapter 3: The Rise of the Marathas."
+  />
+
+  <!-- Shared CHS Explorer Stylesheets (100% Synced Settings & Themes) -->
+  <link rel="stylesheet" href="../../../css/variables.css" />
+  <link rel="stylesheet" href="../../../css/base.css" />
+  <link rel="stylesheet" href="../../../css/components.css" />
+  <link rel="stylesheet" href="../../../css/home.css" />
+  <link rel="stylesheet" href="../../../css/animations.css" />
+  <!-- Chapter Notes, Vertical Timeline & Kings/Gurus Stylesheet -->
+  <link rel="stylesheet" href="notes.css" />
+</head>
+<body>
+  <!-- Thin Reading Progress Rail at Top Edge -->
+  <div class="top-progress-rail" aria-hidden="true">
+    <div class="top-progress-fill" id="notesProgressFill"></div>
+  </div>
+
+  <!-- Minimal Auto-Hide Topbar -->
+  <header class="topbar" id="mainTopbar">
+    <div class="topbar-inner">
+      <div style="display:flex;align-items:center;gap:0.65rem;min-width:0;">
+        <a href="../../../index.html" class="pill" style="padding:0.46rem 0.8rem;font-size:0.78rem;text-decoration:none;color:var(--text-primary);flex-shrink:0;">
+          ← CHS Explorer
+        </a>
+        <div style="min-width:0;">
+          <div class="brand-title" style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">The Rise of the Marathas</div>
+          <div class="brand-subtitle">Class 8 SST Part 1 • Chapter 3 Notes</div>
+        </div>
+      </div>
+
+      <!-- Top-Right Icon-Only Buttons: Vertical Timeline Shape + Kings/Gurus Crown + Settings Gear -->
+      <div style="display:flex;align-items:center;gap:0.5rem;flex-shrink:0;">
+        <button
+          type="button"
+          class="chapter-icon-btn"
+          id="timelineIconBtn"
+          aria-label="Open Vertical Timeline"
+          title="Vertical Timeline (32 Events)"
+        >
+          <!-- Pure Geometric Vertical Timeline Icon (Zero Text) -->
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="7" y1="3" x2="7" y2="21"></line>
+            <circle cx="7" cy="6" r="2.2" fill="currentColor"></circle>
+            <circle cx="7" cy="12" r="2.2" fill="currentColor"></circle>
+            <circle cx="7" cy="18" r="2.2" fill="currentColor"></circle>
+            <line x1="12" y1="6" x2="20" y2="6"></line>
+            <line x1="12" y1="12" x2="18" y2="12"></line>
+            <line x1="12" y1="18" x2="20" y2="18"></line>
+          </svg>
+        </button>
+
+        <button
+          type="button"
+          class="chapter-icon-btn chapter-icon-btn--gold"
+          id="leadersIconBtn"
+          aria-label="Open Kings, Queens, Generals and Bhakti Gurus Directory"
+          title="Kings, Queens, Generals & Bhakti Gurus (26 Profiles)"
+        >
+          <!-- Pure Geometric Crown Icon (Zero Text) -->
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M3 18h18"></path>
+            <path d="M4 15l2-9 6 5 6-5 2 9H4z"></path>
+          </svg>
+        </button>
+
+        <button
+          type="button"
+          class="settings-gear-btn"
+          id="settingsGearBtn"
+          aria-label="Open Settings"
+          title="Settings"
+        >
+          ⚙️
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Chapter Hero -->
+    <section class="chapter-hero fade-in">
+      <span class="hero-badge">NCERT Class 8 SST Part 1 • Chapter 3 • CHS Exam Master Notes</span>
+      <h1 class="hero-title">The Rise of the Marathas</h1>
+      <p class="setup-subtitle">
+        Complete CHS study notes with a 32-event vertical timeline, 26-profile Kings &amp; Bhakti Gurus directory,
+        key forts &amp; battles table, and interactive rapid-fire flashcards.
+      </p>
+      <blockquote class="chapter-quote">
+        "Among the merchants, the hat-wearers like the Portuguese, the English, the Dutch, the French and the Danes also conduct trade… Navy and gunpowder are their chief weapons. Their traffic should be controlled, and they shouldn't be allowed to build strong buildings."
+        <cite>— Ramachandrapant Amatya, Ādnyāpatra (1715)</cite>
+      </blockquote>
+    </section>
+
+    <!-- Search & Quick Section Jump -->
+    <div class="notes-toolbar fade-in">
+      <input
+        type="search"
+        id="notesSearchInput"
+        class="notes-search"
+        placeholder="Search notes (e.g., Ashtapradhan, Chauth, Kanhoji Angre, Ahilyabai, Serfoji, Panipat)..."
+      />
+      <nav class="toc-pills" aria-label="Chapter Sections">
+        <a class="toc-pill" href="#sec-origins">1. Origins &amp; Bhakti</a>
+        <a class="toc-pill" href="#sec-shivaji">2. Chhatrapati Shivaji</a>
+        <a class="toc-pill" href="#sec-after">3. Pan-Indian Expansion</a>
+        <a class="toc-pill" href="#sec-admin">4. Administration &amp; Taxes</a>
+        <a class="toc-pill" href="#sec-military">5. Military, Forts &amp; Navy</a>
+        <a class="toc-pill" href="#sec-culture">6. Culture, Women &amp; Thanjavur</a>
+        <a class="toc-pill" href="#sec-forts">7. Key Forts &amp; Battles</a>
+        <a class="toc-pill" href="#sec-glossary">8. Key Terms</a>
+        <a class="toc-pill" href="#sec-flashcards">9. CHS Flashcards</a>
+      </nav>
+    </div>
+
+    <!-- All Study Notes Cards -->
+    <div class="notes-stack fade-in">
+      <!-- SECTION 1 -->
+      <article class="study-card" id="sec-origins">
+        <div class="study-card-head">
+          <h2 class="study-card-title">1. Who Were the Marathas? Origins &amp; Bhakti Foundation</h2>
+          <button type="button" class="tts-btn" data-read-section>🔊 Listen</button>
+        </div>
+        <ul class="study-list">
+          <li><strong>Native Homeland:</strong> Native to the <strong>Deccan plateau</strong> (present-day <strong>Maharashtra</strong>), identified by the <strong>Marathi</strong> language (continuous literary history since the <strong>12th century</strong>).</li>
+          <li><strong>Early Political Background:</strong> In the <strong>13th century</strong>, Maharashtra was ruled by the <strong>Yadava dynasty</strong> from <strong>Devagiri</strong> (Daulatabad). In the early <strong>14th century</strong>, the <strong>Khilji Sultanate</strong> from Delhi overcame the Yadavas.</li>
+          <li><strong>Bhakti Movement (7th–17th centuries):</strong> Saints rejected empty ritualism and composed devotional songs in local languages to unite society.</li>
+          <li><strong>Key Maharashtra Bhakti Saints &amp; Gurus:</strong> <strong>Sant Dnyaneshwar, Sant Namdev, Sant Tukaram, and Sant Ramdas</strong> translated the <em>Upaniṣhads</em> and <em>Bhagavad Gītā</em> into Marathi and fostered social organisation &amp; political awareness (like the Sikh Gurus).</li>
+        </ul>
+      </article>
+
+      <!-- SECTION 2 -->
+      <article class="study-card" id="sec-shivaji">
+        <div class="study-card-head">
+          <h2 class="study-card-title">2. Foundation of Maratha Power &amp; Chhatrapati Shivaji Maharaj</h2>
+          <button type="button" class="tts-btn" data-read-section>🔊 Listen</button>
+        </div>
+        <ul class="study-list">
+          <li><strong>Birth &amp; Early Life:</strong> Born in <strong>1630</strong> in the <strong>Bhonsle clan</strong> to <strong>Shahji</strong> and <strong>Jijabai</strong>; raised in his <strong>Pune jāgīr</strong> under Jijabai's guidance.</li>
+          <li><strong>Vision of Swarājya (1646):</strong> At age <strong>16</strong>, Shivaji launched military campaigns around Pune, capturing and strengthening neglected forts with the dream of sovereign self-rule (<em>Swarājya</em>).</li>
+          <li><strong>Maratha Navy (1657):</strong> Founded a full-time navy to protect the west coast—unmatched by Bijapur (Adil Shahi) or the Mughals. Built naval forts like <strong>Sindhudurg</strong> and <strong>Vijaydurg</strong>.</li>
+          <li><strong>Afzal Khan &amp; Guerrilla Warfare (1659):</strong> Killed Bijapur general <strong>Afzal Khan</strong> at the foot of <strong>Pratapgad Fort</strong> using the <strong>wāgh nakh</strong> (tiger's claw), then routed his army via guerrilla warfare.</li>
+          <li><strong>Night Raid on Shaista Khan:</strong> Raided Mughal general Shaista Khan's camp at night (like a modern <strong>surgical strike</strong>); Shaista Khan lost fingers and fled Maharashtra.</li>
+          <li><strong>Sacking of Surat (1664 &amp; 1670):</strong> Obtained ~<strong>₹1 crore</strong> from the wealthy Mughal port while sparing religious places and charitable merchant <strong>Mohandas Parekh</strong>'s house. Reported in the <strong>London Gazette</strong>.</li>
+          <li><strong>Treaty of Purandar (1665):</strong> Against Rajput general <strong>Jai Singh</strong>, Shivaji conceded defeat at <strong>Purandar Fort</strong>, ceded forts, and Sambhaji entered Mughal service.</li>
+          <li><strong>Agra Escape (1666):</strong> Placed under house arrest by Aurangzeb after protesting an insult at court, Shivaji and Sambhaji escaped hidden inside <strong>fruit-and-sweet gift baskets</strong>.</li>
+          <li><strong>Coronation at Raigad (1674):</strong> Crowned with full Vedic rites as <em>'Shri Raja Shiva Chhatrapati'</em>; launched his own era, the <strong>Rājyābhiṣheka shaka</strong>.</li>
+          <li><strong>Dakṣhiṇa-Digvijaya (1677):</strong> Conquered northern Tamil Nadu and parts of Karnataka; <strong>forbade the Dutch from slave trading</strong>.</li>
+          <li><strong>Passing &amp; Inspiration (1680):</strong> Passed away at age <strong>50</strong> due to fever. Inspired Bundela prince <strong>Chhatrasal</strong> (independent Bundelkhand) and Hindi poet <strong>Bhushan</strong>.</li>
+        </ul>
+      </article>
+
+      <!-- SECTION 3 -->
+      <article class="study-card" id="sec-after">
+        <div class="study-card-head">
+          <h2 class="study-card-title">3. The Marathas After Shivaji &amp; Pan-Indian Expansion</h2>
+          <button type="button" class="tts-btn" data-read-section>🔊 Listen</button>
+        </div>
+        <ul class="study-list">
+          <li><strong>Chhatrapati Sambhaji:</strong> Resisted Aurangzeb after Bijapur and Golconda fell; captured, brutally tortured, and executed, followed by the fall of Raigad.</li>
+          <li><strong>Chhatrapati Rajaram &amp; Maharani Tarabai (1682–1707):</strong> Rajaram shifted resistance to <strong>Gingee</strong> (Tamil Nadu); <strong>Tarabai</strong> launched northward offensives. Aurangzeb died in the Deccan (1707) unable to subdue them.</li>
+          <li><strong>Peshwas &amp; Pan-Indian Reach:</strong> Decentralised confederacy led by <strong>Peshwa</strong> ('Prime Minister') — <strong>Bajirao I</strong> &amp; <strong>Nanasaheb Peshwa</strong> (under Chhatrapati Shahu Maharaj) brought <strong>Delhi (1754)</strong> and briefly <strong>Lahore, Attock, and Peshawar</strong> under Maratha control.</li>
+          <li><strong>Panipat (1761) &amp; Delhi Recapture (1771):</strong> Recovered rapidly under <strong>Peshwa Madhavrao I</strong>; <strong>Mahadji Shinde (Scindia)</strong> recaptured Delhi in 1771 and held it for three decades.</li>
+          <li><strong>Three Anglo-Maratha Wars (1775–1818):</strong> Marathas won the First War (1775–1782); <strong>Nana Phadnavis</strong> formed the first pan-Indian anti-British alliance with <strong>Hyder Ali</strong> and the <strong>Nizam of Hyderabad</strong>. Internal disunity led to defeat in the Third War (1818).</li>
+        </ul>
+        <div class="chs-callout">
+          <span class="chs-callout-label">CHS Exam Must-Know</span>
+          In effect, <strong>the British took India from the Marathas</strong> more than from the Mughals or any other Indian power!
+        </div>
+      </article>
+
+      <!-- SECTION 4 -->
+      <article class="study-card" id="sec-admin">
+        <div class="study-card-head">
+          <h2 class="study-card-title">4. Civilian Administration, Aṣhṭa Pradhāna &amp; Revenue System</h2>
+          <button type="button" class="tts-btn" data-read-section>🔊 Listen</button>
+        </div>
+        <ul class="study-list">
+          <li><strong>Centralised Governance:</strong> Abolished <strong>hereditary posts</strong> &amp; land assignments; paid cash salaries from the treasury and periodically transferred officials.</li>
+          <li><strong>Welfare &amp; Ecology:</strong> Pensions to fallen soldiers' widows &amp; military posts to their sons; forbade cutting fruit trees like <strong>mango and jackfruit</strong>.</li>
+          <li><strong>Coinage &amp; Taxes:</strong> Devanagari gold/copper coins; bilingual <strong>Gaṇapatī-Pantapradhān rupee</strong> (Devanagari + Persian) by Patwardhans; <strong>Chauth (25%)</strong> and <strong>Sardeshmukhi (+10%)</strong> levied for protection.</li>
+        </ul>
+
+        <div class="notes-table-wrap">
+          <table class="notes-table">
+            <thead>
+              <tr>
+                <th>Aṣhṭa Pradhāna Minister</th>
+                <th>Portfolio / Responsibility</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td><strong>Pradhān (Peshwa)</strong></td><td>Prime Minister — general administration</td></tr>
+              <tr><td><strong>Amātya</strong></td><td>Finance Minister — accounts &amp; treasury</td></tr>
+              <tr><td><strong>Sachiv</strong></td><td>Land Revenue Minister — land &amp; royal correspondence</td></tr>
+              <tr><td><strong>Mantrī</strong></td><td>Intelligence Minister — internal affairs &amp; intelligence</td></tr>
+              <tr><td><strong>Senāpatī</strong></td><td>Commander-in-Chief — armed forces</td></tr>
+              <tr><td><strong>Sumant</strong></td><td>Minister for Foreign Affairs</td></tr>
+              <tr><td><strong>Nyāyādhīsh</strong></td><td>Chief Justice — judicial system</td></tr>
+              <tr><td><strong>Panḍitrāo</strong></td><td>Head of Religious Affairs &amp; charities</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+
+      <!-- SECTION 5 -->
+      <article class="study-card" id="sec-military">
+        <div class="study-card-head">
+          <h2 class="study-card-title">5. Military, Forts, Maritime Supremacy, Judiciary &amp; Trade</h2>
+          <button type="button" class="tts-btn" data-read-section>🔊 Listen</button>
+        </div>
+        <ul class="study-list">
+          <li><strong>Three Wings:</strong> <strong>Infantry, Cavalry, and Navy</strong>. Cavalry had <strong>Bārgīrs</strong> (state-funded) and <strong>Shiledārs</strong> (self-funded).</li>
+          <li><strong>Weapons &amp; Modernisation:</strong> Swords, lances, guns, rockets from Shivaji's era, <strong>metal tube rockets by 1770</strong>; <strong>Mahadji Shinde</strong> built a large European-style disciplined army.</li>
+          <li><strong>Forts &amp; Navy:</strong> <em>Ādnyāpatra</em> calls forts "the core of the state". Admiral <strong>Kanhoji Angre</strong> challenged European <strong>cartaz</strong> naval passes. In <strong>1665</strong>, Muscat's ruler retreated upon learning Shivaji had <strong>100+ ships</strong>.</li>
+          <li><strong>Judiciary &amp; Trade:</strong> Moderate in capital punishment; local <strong>panchāyats</strong> delivered justice; <strong>kotwāls</strong> policed cities (Pune, Indore). Ships traded with <strong>Mocha (Yemen), Muscat (Oman), and Malacca (Malaysia)</strong>; river ferries operated in <strong>Odisha</strong>.</li>
+        </ul>
+      </article>
+
+      <!-- SECTION 6 -->
+      <article class="study-card" id="sec-culture">
+        <div class="study-card-head">
+          <h2 class="study-card-title">6. Cultural Revival, Mighty Maratha Women &amp; Thanjavur</h2>
+          <button type="button" class="tts-btn" data-read-section>🔊 Listen</button>
+        </div>
+        <ul class="study-list">
+          <li><strong>Sanskrit Seal &amp; Language:</strong> Shivaji's <strong>Sanskrit seal</strong> departed from Persian norms; <strong>Rājya-Vyavahāra-Koṣha</strong> replaced Persian diplomatic words with Sanskrit/Marathi terms. Used saffron flag &amp; <strong>Moḍī script</strong>. Bhonsles of Nagpur revived <strong>Lord Jagannath</strong> worship at Puri.</li>
+          <li><strong>Tarabai &amp; Ahilyabai Holkar:</strong> Tarabai led northward expansion; Ahilyabai ruled Indore for <strong>30 years</strong>, rebuilt <strong>Kashi Vishwanath</strong> &amp; <strong>Somnath</strong>, and revitalised <strong>Maheshwar handloom</strong>.</li>
+          <li><strong>Thanjavur Marathas (Ekoji &amp; Serfoji II):</strong> Ekoji conquered Thanjavur (Tamil Nadu). <strong>Serfoji II</strong> wrote <strong>Devendra Kuravanji</strong>, patronised <strong>Carnatic music</strong> &amp; <strong>Bharatanatyam</strong>, founded <strong>Dhanwantari Mahal</strong> (free medical centre), set up the <strong>first native printing press</strong>, and inscribed Bhonsle history on the <strong>Brihadishwara temple</strong> wall.</li>
+        </ul>
+      </article>
+
+      <!-- SECTION 7: KEY FORTS & BATTLES TABLE -->
+      <article class="study-card" id="sec-forts">
+        <div class="study-card-head">
+          <h2 class="study-card-title">7. Key Forts, Places &amp; Battles (CHS Quick Reference)</h2>
+          <button type="button" class="tts-btn" data-read-section>🔊 Listen</button>
+        </div>
+        <div class="notes-table-wrap">
+          <table class="notes-table">
+            <thead>
+              <tr>
+                <th>Fort / Place / Battle</th>
+                <th>Significance for CHS Exam</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td><strong>Raigad Fort (Maharashtra)</strong></td><td>Maratha capital where Shivaji was coronated in 1674.</td></tr>
+              <tr><td><strong>Pratapgad Fort</strong></td><td>Site where Shivaji killed Afzal Khan (1659) with wāgh nakh.</td></tr>
+              <tr><td><strong>Purandar Fort (near Pune)</strong></td><td>Treaty of Purandar (1665) signed with Rajput general Jai Singh.</td></tr>
+              <tr><td><strong>Sindhudurg &amp; Vijaydurg</strong></td><td>Major coastal naval forts built by the Marathas on the west coast.</td></tr>
+              <tr><td><strong>Gingee (Tamil Nadu)</strong></td><td>Southern fortress from which Chhatrapati Rajaram resisted Aurangzeb.</td></tr>
+              <tr><td><strong>Surat (Gujarat)</strong></td><td>Wealthy Mughal port sacked twice by Shivaji (~₹1 crore; Mohandas Parekh spared).</td></tr>
+              <tr><td><strong>Third Battle of Panipat (1761)</strong></td><td>Major Maratha defeat against Afghans; swiftly recovered under Madhavrao I.</td></tr>
+              <tr><td><strong>Anglo-Maratha Wars (1775–1818)</strong></td><td>Three wars; Maratha victory in 1st (1775–82), British victory in 3rd (1818).</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+
+      <!-- SECTION 8: GLOSSARY -->
+      <article class="study-card" id="sec-glossary">
+        <div class="study-card-head">
+          <h2 class="study-card-title">8. Key Terms Glossary</h2>
+          <button type="button" class="tts-btn" data-read-section>🔊 Listen</button>
+        </div>
+        <div class="glossary-grid">
+          <div class="glossary-item"><strong>Swarājya</strong>Sovereign self-rule envisioned by Chhatrapati Shivaji Maharaj (political, economic &amp; cultural).</div>
+          <div class="glossary-item"><strong>Jāgīr</strong>Land grant given by a ruler to a noble/soldier in reward for service, with tax collection rights.</div>
+          <div class="glossary-item"><strong>Wāgh Nakh</strong>'Tiger's claw' concealed hand weapon used by Shivaji against Afzal Khan at Pratapgad.</div>
+          <div class="glossary-item"><strong>Rājyābhiṣheka Shaka</strong>New calendar era launched by Shivaji upon his 1674 coronation at Raigad.</div>
+          <div class="glossary-item"><strong>Chauth &amp; Sardeshmukhi</strong>Maratha taxes: 25% (Chauth) + additional 10% (Sardeshmukhi) levied for protection.</div>
+          <div class="glossary-item"><strong>Bārgīrs vs. Shiledārs</strong>Bārgīrs = state-funded cavalry; Shiledārs = self-funded cavalry soldiers.</div>
+          <div class="glossary-item"><strong>Cartaz</strong>Naval trade pass forced by the Portuguese on Indian ships, challenged by Kanhoji Angre.</div>
+          <div class="glossary-item"><strong>Moḍī Script</strong>Cursive form of Devanagari used as the main script for Maratha official correspondence.</div>
+        </div>
+      </article>
+
+      <!-- SECTION 9: INTERACTIVE CHS RAPID-FIRE FLASHCARDS -->
+      <article class="study-card" id="sec-flashcards">
+        <div class="study-card-head">
+          <h2 class="study-card-title">9. Interactive CHS Rapid-Fire Self-Check (12 Flashcards)</h2>
+          <button type="button" class="chip" id="toggleAllFlashcardsBtn">Reveal All Answers</button>
+        </div>
+        <div class="flashcard-grid" id="flashcardGrid"></div>
+      </article>
+    </div>
+  </main>
+
+  <!-- ===================================================================== -->
+  <!-- EXPANDED VERTICAL TIMELINE MODAL (32 Events + Era Filter Bar)         -->
+  <!-- ===================================================================== -->
+  <div id="timelineModalBackdrop" class="drawer-backdrop hidden" role="dialog" aria-modal="true" aria-labelledby="timelineModalTitle">
+    <div class="timeline-modal">
+      <div class="drawer-header">
+        <div>
+          <h3 id="timelineModalTitle" style="font-size:1.06rem;font-weight:800;">Vertical Timeline — The Rise of the Marathas</h3>
+          <div style="font-size:0.75rem;color:var(--text-secondary);">7th Century to 1818 • Complete Chronology</div>
+        </div>
+        <div style="display:flex;align-items:center;gap:0.5rem;">
+          <span class="pill" id="timelineCountBadge">32 Events</span>
+          <button type="button" class="drawer-close-btn" id="closeTimelineBtn" aria-label="Close Timeline">✕</button>
+        </div>
+      </div>
+
+      <div class="modal-filter-bar">
+        <div class="chip-group">
+          <button type="button" class="chip active" data-era-filter="ALL">All Eras</button>
+          <button type="button" class="chip" data-era-filter="Pre-Maratha & Bhakti">Bhakti</button>
+          <button type="button" class="chip" data-era-filter="Shivaji Era">Shivaji</button>
+          <button type="button" class="chip" data-era-filter="Mughal-Maratha Wars">Mughal Wars</button>
+          <button type="button" class="chip" data-era-filter="Peshwa & Pan-Indian Peak">Peshwas</button>
+          <button type="button" class="chip" data-era-filter="Anglo-Maratha Wars">Anglo-Maratha</button>
+        </div>
+      </div>
+
+      <div class="timeline-scroll-body">
+        <div class="v-timeline" id="verticalTimelineList"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================================== -->
+  <!-- KINGS, QUEENS, PESHWAS & BHAKTI GURUS DIRECTORY MODAL (26 Profiles)   -->
+  <!-- ===================================================================== -->
+  <div id="leadersModalBackdrop" class="drawer-backdrop hidden" role="dialog" aria-modal="true" aria-labelledby="leadersModalTitle">
+    <div class="leaders-modal">
+      <div class="drawer-header">
+        <div>
+          <h3 id="leadersModalTitle" style="font-size:1.06rem;font-weight:800;">👑 Kings, Queens, Generals &amp; Bhakti Gurus</h3>
+          <div style="font-size:0.75rem;color:var(--text-secondary);">Every Key Personality from Chapter 3 for CHS Exam</div>
+        </div>
+        <div style="display:flex;align-items:center;gap:0.5rem;">
+          <span class="pill" id="leadersCountBadge">26 Profiles</span>
+          <button type="button" class="drawer-close-btn" id="closeLeadersBtn" aria-label="Close Leaders Directory">✕</button>
+        </div>
+      </div>
+
+      <div class="modal-filter-bar">
+        <input
+          type="search"
+          id="leadersSearchInput"
+          class="notes-search"
+          style="padding:0.55rem 0.85rem;font-size:0.85rem;"
+          placeholder="Search ruler, general, or guru (e.g., Shivaji, Tarabai, Ramdas, Angre)..."
+        />
+        <div class="chip-group">
+          <button type="button" class="chip active" data-leader-cat="ALL">All (26)</button>
+          <button type="button" class="chip" data-leader-cat="Chhatrapatis & Queens">Kings &amp; Queens</button>
+          <button type="button" class="chip" data-leader-cat="Peshwas & Generals">Peshwas &amp; Generals</button>
+          <button type="button" class="chip" data-leader-cat="Bhakti Saints & Gurus">Bhakti Gurus</button>
+          <button type="button" class="chip" data-leader-cat="Thanjavur & Cultural Icons">Thanjavur</button>
+          <button type="button" class="chip" data-leader-cat="Key Rivals (For CHS MCQs)">Rivals</button>
+        </div>
+      </div>
+
+      <div class="leaders-scroll-body">
+        <div class="leaders-list" id="leadersListContainer"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================================== -->
+  <!-- SYNCED SETTINGS SHEET (Shared across CHS Explorer Home, Books & Quiz) -->
+  <!-- ===================================================================== -->
+  <div id="settingsModalBackdrop" class="drawer-backdrop hidden" role="dialog" aria-modal="true" aria-labelledby="settingsModalTitle">
+    <div class="settings-modal">
+      <div class="drawer-header">
+        <div style="display:flex;align-items:center;gap:0.55rem;">
+          <span style="font-size:1.15rem;">⚙️</span>
+          <h3 id="settingsModalTitle" style="font-size:1.06rem;font-weight:800;">Reading Settings</h3>
+        </div>
+        <button type="button" class="drawer-close-btn" id="closeSettingsBtn" aria-label="Close Settings">✕</button>
+      </div>
+
+      <div class="settings-body">
+        <div>
+          <div class="settings-group-label">Appearance (Synced Everywhere)</div>
+          <div class="settings-group">
+            <div class="settings-row">
+              <div class="settings-row-info">
+                <div class="settings-row-icon">🌓</div>
+                <div>
+                  <div class="settings-row-title">Mode</div>
+                  <div class="settings-row-sub">Dark default or Light</div>
+                </div>
+              </div>
+              <div class="seg-control">
+                <button type="button" class="seg-btn active" data-theme-choice="dark">🌙 Dark</button>
+                <button type="button" class="seg-btn" data-theme-choice="light">☀️ Light</button>
+              </div>
+            </div>
+
+            <div class="settings-row settings-row--stack">
+              <div class="settings-row-head">
+                <div class="settings-row-info">
+                  <div class="settings-row-icon">🎨</div>
+                  <div>
+                    <div class="settings-row-title">Color Theme</div>
+                    <div class="settings-row-sub">Synced with Home &amp; Quiz</div>
+                  </div>
+                </div>
+              </div>
+              <div class="swatch-row">
+                <button type="button" class="swatch-btn active" data-accent-choice="indigo" style="background:#6366f1;" title="Indigo"></button>
+                <button type="button" class="swatch-btn" data-accent-choice="emerald" style="background:#10b981;" title="Emerald"></button>
+                <button type="button" class="swatch-btn" data-accent-choice="amber" style="background:#f59e0b;" title="Amber"></button>
+                <button type="button" class="swatch-btn" data-accent-choice="rose" style="background:#f43f5e;" title="Rose"></button>
+                <button type="button" class="swatch-btn" data-accent-choice="cyan" style="background:#06b6d4;" title="Cyan"></button>
+                <button type="button" class="swatch-btn" data-accent-choice="violet" style="background:#8b5cf6;" title="Violet"></button>
+              </div>
+            </div>
+
+            <div class="settings-row settings-row--stack">
+              <div class="settings-row-head">
+                <div class="settings-row-info">
+                  <div class="settings-row-icon">🔤</div>
+                  <div>
+                    <div class="settings-row-title">Font Size</div>
+                    <div class="settings-row-sub">Slide from very small to extra large</div>
+                  </div>
+                </div>
+                <span class="slider-value-pill" id="fontSizeValue">16px</span>
+              </div>
+              <div class="volume-slider-wrap">
+                <span class="slider-end-label" style="font-size:0.75rem;">A</span>
+                <input type="range" id="fontSizeSlider" class="volume-range" min="11" max="26" step="1" value="16" aria-label="Font Size Slider" />
+                <span class="slider-end-label" style="font-size:1.3rem;">A</span>
+              </div>
+            </div>
+
+            <div class="settings-row">
+              <div class="settings-row-info">
+                <div class="settings-row-icon">✍️</div>
+                <div>
+                  <div class="settings-row-title">Font Style</div>
+                  <div class="settings-row-sub">Reading typeface</div>
+                </div>
+              </div>
+              <div class="seg-control">
+                <button type="button" class="seg-btn active" data-font-family="sans">Sans</button>
+                <button type="button" class="seg-btn" data-font-family="serif">Serif</button>
+                <button type="button" class="seg-btn" data-font-family="rounded">Soft</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="settings-group-label">Voice Reading</div>
+          <div class="settings-group">
+            <div class="settings-row">
+              <div class="settings-row-info">
+                <div class="settings-row-icon">🔊</div>
+                <div>
+                  <div class="settings-row-title">Text-to-Speech</div>
+                  <div class="settings-row-sub">Listen to notes aloud</div>
+                </div>
+              </div>
+              <label class="switch">
+                <input type="checkbox" id="settingsTtsToggle" checked />
+                <span class="slider"></span>
+              </label>
+            </div>
+
+            <div class="settings-row settings-row--stack">
+              <div class="settings-row-head">
+                <div class="settings-row-info">
+                  <div class="settings-row-icon">⏩</div>
+                  <div>
+                    <div class="settings-row-title">Voice Speed</div>
+                    <div class="settings-row-sub">Adjust reading pace</div>
+                  </div>
+                </div>
+                <div style="display:flex;align-items:center;gap:0.45rem;">
+                  <span class="slider-value-pill" id="ttsRateValue">1.0×</span>
+                  <button type="button" class="chip" id="settingsTtsTestBtn" style="padding:0.2rem 0.6rem;font-size:0.74rem;">▶ Test</button>
+                </div>
+              </div>
+              <div class="volume-slider-wrap">
+                <span class="slider-end-label" style="font-size:0.76rem;">🐢</span>
+                <input type="range" id="ttsRateSlider" class="volume-range" min="0.6" max="1.6" step="0.05" value="1.0" aria-label="Voice Speed Slider" />
+                <span class="slider-end-label" style="font-size:0.95rem;">🐇</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="settings-footer">
+        <button type="button" class="btn btn-secondary" id="resetSettingsDefaultsBtn" style="padding:0.55rem 0.9rem;font-size:0.82rem;">↺ Reset Defaults</button>
+        <button type="button" class="btn btn-primary" id="doneSettingsBtn" style="padding:0.55rem 1.2rem;font-size:0.84rem;">Done</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="toast" class="toast hidden" role="status" aria-live="polite"></div>
+
+  <footer class="footer">
+    CHS Explorer • Class 8 New NCERT Part 1, Chapter 3: The Rise of the Marathas
+  </footer>
+
+  <!-- Offline Fallbacks + Shared Scripts + Notes Script -->
+  <script src="timeline-data.js"></script>
+  <script src="leaders-data.js"></script>
+  <script src="../../../js/theme.js"></script>
+  <script src="../../../js/tts.js"></script>
+  <script src="../../../js/scroll-behavior.js"></script>
+  <script src="notes.js"></script>
+</body>
+</html>
