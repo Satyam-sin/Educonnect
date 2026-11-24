@@ -1,1 +1,2407 @@
-
+{
+  "chapter": "Chapter 5: Universal Franchise and India's Electoral System",
+  "source": "NCERT Class 8 Social Science (Exploring Society: India and Beyond — Part 1)",
+  "totalQuestions": 160,
+  "questions": [
+    {
+      "id": 1,
+      "topic": "Universal Adult Franchise & Constitutional Basis",
+      "difficulty": "Easy",
+      "question": "What does the term 'franchise' or 'suffrage' mean in a democracy?",
+      "options": [
+        "The right to appoint judges",
+        "The right to vote granted by the Constitution or government",
+        "The right to collect taxes from citizens",
+        "The right to form a business company"
+      ],
+      "correctIndex": 1,
+      "explanation": "Franchise (also called suffrage) refers to the right to vote granted to citizens by the Constitution or government.",
+      "ncertRef": "NCERT Ch. 5 • Page 118"
+    },
+    {
+      "id": 2,
+      "topic": "Universal Adult Franchise & Constitutional Basis",
+      "difficulty": "Easy",
+      "question": "Which Article of the Indian Constitution provides for elections based on Universal Adult Franchise?",
+      "options": [
+        "Article 352",
+        "Article 368",
+        "Article 324",
+        "Article 326"
+      ],
+      "correctIndex": 3,
+      "explanation": "Article 326 of the Indian Constitution guarantees that elections to the Lok Sabha and State Legislative Assemblies are based on universal adult suffrage.",
+      "ncertRef": "NCERT Ch. 5 • Page 118"
+    },
+    {
+      "id": 3,
+      "topic": "Universal Adult Franchise & Constitutional Basis",
+      "difficulty": "Easy",
+      "question": "What is the minimum age required for an Indian citizen to vote in elections?",
+      "options": [
+        "18 years",
+        "16 years",
+        "25 years",
+        "21 years"
+      ],
+      "correctIndex": 0,
+      "explanation": "Every Indian citizen aged 18 years and above has the right to vote under Universal Adult Franchise.",
+      "ncertRef": "NCERT Ch. 5 • Page 118"
+    },
+    {
+      "id": 4,
+      "topic": "Universal Adult Franchise & Constitutional Basis",
+      "difficulty": "Medium",
+      "question": "In which year did India lower the minimum voting age from 21 years to 18 years?",
+      "options": [
+        "1988",
+        "1991",
+        "1950",
+        "1976"
+      ],
+      "correctIndex": 0,
+      "explanation": "India reduced the minimum voting age from 21 to 18 in 1988 (via the 61st Constitutional Amendment Act), empowering millions of young citizens.",
+      "ncertRef": "NCERT Ch. 5 • Page 118"
+    },
+    {
+      "id": 5,
+      "topic": "Universal Adult Franchise & Constitutional Basis",
+      "difficulty": "CHS Exam",
+      "question": "Who remarked in the Constituent Assembly in November 1949 that India adopted adult franchise with 'abundant faith in the common man'?",
+      "options": [
+        "Alladi Krishnaswami Ayyar",
+        "Dr. B.R. Ambedkar",
+        "Jawaharlal Nehru",
+        "Sardar Vallabhbhai Patel"
+      ],
+      "correctIndex": 0,
+      "explanation": "Alladi Krishnaswami Ayyar made this famous statement in November 1949 during the Constituent Assembly Debates.",
+      "ncertRef": "NCERT Ch. 5 • Page 117"
+    },
+    {
+      "id": 6,
+      "topic": "Universal Adult Franchise & Constitutional Basis",
+      "difficulty": "Medium",
+      "question": "Approximately what percentage of Indians were allowed to vote before Independence?",
+      "options": [
+        "Around 50 per cent",
+        "Around 13 per cent",
+        "Around 34 per cent",
+        "Around 75 per cent"
+      ],
+      "correctIndex": 1,
+      "explanation": "Before Independence, franchise was not universal and only around 13 per cent of Indians had the right to vote.",
+      "ncertRef": "NCERT Ch. 5 • Page 119"
+    },
+    {
+      "id": 7,
+      "topic": "Universal Adult Franchise & Constitutional Basis",
+      "difficulty": "CHS Exam",
+      "question": "In 1947, what was India's approximate overall literacy rate and women's literacy rate respectively?",
+      "options": [
+        "About 25% overall and 15% among women",
+        "About 14% overall and 8% among women",
+        "About 50% overall and 30% among women",
+        "About 35% overall and 20% among women"
+      ],
+      "correctIndex": 1,
+      "explanation": "In 1947, India's literacy rate was about 14 per cent overall and only about 8 per cent among women, yet the Constitution makers boldly granted universal franchise.",
+      "ncertRef": "NCERT Ch. 5 • Page 120"
+    },
+    {
+      "id": 8,
+      "topic": "Universal Adult Franchise & Constitutional Basis",
+      "difficulty": "CHS Exam",
+      "question": "In contrast to India granting women voting rights from the beginning, in which year did women in Switzerland get the right to vote?",
+      "options": [
+        "1971",
+        "1951",
+        "1947",
+        "1920"
+      ],
+      "correctIndex": 0,
+      "explanation": "India was among the early nations to grant women voting rights from the very start, whereas women in Switzerland were given the right to vote only in 1971.",
+      "ncertRef": "NCERT Ch. 5 • Page 119"
+    },
+    {
+      "id": 9,
+      "topic": "Universal Adult Franchise & Constitutional Basis",
+      "difficulty": "Medium",
+      "question": "Under what legal condition can an adult Indian citizen be barred from voting?",
+      "options": [
+        "If they do not own property or land",
+        "If they are found guilty of committing certain serious crimes",
+        "If they have not completed high school",
+        "If they live in a rural area"
+      ],
+      "correctIndex": 1,
+      "explanation": "While voting is universal regardless of wealth or education, a citizen can be legally barred from voting if convicted of certain serious crimes.",
+      "ncertRef": "NCERT Ch. 5 • Page 118"
+    },
+    {
+      "id": 10,
+      "topic": "Universal Adult Franchise & Constitutional Basis",
+      "difficulty": "Easy",
+      "question": "What does the principle of 'one person, one vote, one value' mean under Universal Adult Franchise?",
+      "options": [
+        "Only taxpayers get one vote",
+        "Educated voters get two votes",
+        "Citizens can vote on behalf of their family members",
+        "Every adult citizen gets one vote and every vote carries equal value"
+      ],
+      "correctIndex": 3,
+      "explanation": "Universal adult franchise guarantees that every adult citizen has one vote, all votes have equal value, and no one can vote on another's behalf.",
+      "ncertRef": "NCERT Ch. 5 • Page 118"
+    },
+    {
+      "id": 11,
+      "topic": "Universal Adult Franchise & Constitutional Basis",
+      "difficulty": "CHS Exam",
+      "question": "Approximately how many elected representatives serve in India's more than 250,000 local government bodies, and how many of them are women?",
+      "options": [
+        "5.0 million representatives, including 2.0 million women",
+        "1.5 million representatives, including 0.5 million women",
+        "0.8 million representatives, including 0.2 million women",
+        "3.1 million representatives, including 1.3 million women"
+      ],
+      "correctIndex": 3,
+      "explanation": "India has 3.1 million elected representatives—1.3 million of them women—across more than 250,000 local government bodies.",
+      "ncertRef": "NCERT Ch. 5 • Page 119"
+    },
+    {
+      "id": 12,
+      "topic": "Universal Adult Franchise & Constitutional Basis",
+      "difficulty": "Easy",
+      "question": "Which of the following does NOT determine a citizen's right to vote in India?",
+      "options": [
+        "Wealth or educational qualification",
+        "Citizenship of India",
+        "Minimum age of 18 years",
+        "Registration on the voter list of a constituency"
+      ],
+      "correctIndex": 0,
+      "explanation": "Wealth, education, caste, religion, creed, race, or gender do not affect a citizen's right to vote in India.",
+      "ncertRef": "NCERT Ch. 5 • Page 118"
+    },
+    {
+      "id": 13,
+      "topic": "Universal Adult Franchise & Constitutional Basis",
+      "difficulty": "Easy",
+      "question": "What is a 'constituency' in an electoral system?",
+      "options": [
+        "A list of laws passed by Parliament",
+        "A meeting of political party leaders",
+        "A machine used to count ballot papers",
+        "An area whose voters elect a representative to a legislative body"
+      ],
+      "correctIndex": 3,
+      "explanation": "A constituency is a defined geographical area whose registered voters elect a representative to a legislative body such as the Lok Sabha or State Assembly.",
+      "ncertRef": "NCERT Ch. 5 • Page 119"
+    },
+    {
+      "id": 14,
+      "topic": "Universal Adult Franchise & Constitutional Basis",
+      "difficulty": "Medium",
+      "question": "In the context of governance, how does the NCERT textbook define a 'system'?",
+      "options": [
+        "A temporary committee formed after elections",
+        "A group of interconnected or interdependent elements working together for a common purpose",
+        "An informal group of voters in a village",
+        "A single law passed by the President"
+      ],
+      "correctIndex": 1,
+      "explanation": "A system is defined as a group of interconnected or interdependent elements that work together to achieve a common purpose or function.",
+      "ncertRef": "NCERT Ch. 5 • Page 119"
+    },
+    {
+      "id": 15,
+      "topic": "Universal Adult Franchise & Constitutional Basis",
+      "difficulty": "Medium",
+      "question": "Why does Universal Adult Franchise make elected representatives accountable?",
+      "options": [
+        "Because only ministers can question them",
+        "Because citizens can vote them out in the next election if they fail to perform",
+        "Because representatives are appointed for life",
+        "Because courts choose all candidates"
+      ],
+      "correctIndex": 1,
+      "explanation": "Because every adult citizen holds the power to vote, elected representatives remain answerable to the electorate and can be voted out if they do not serve the people.",
+      "ncertRef": "NCERT Ch. 5 • Page 120"
+    },
+    {
+      "id": 16,
+      "topic": "Accessibility, Participation & Historical Roots",
+      "difficulty": "Medium",
+      "question": "Approximately how many voters were eligible to vote in India's 2024 Lok Sabha General Elections?",
+      "options": [
+        "Over 543 million",
+        "Over 968 million",
+        "Over 720 million",
+        "Over 1.4 billion"
+      ],
+      "correctIndex": 1,
+      "explanation": "In the summer of 2024, over 968 million Indian citizens were eligible to exercise their franchise across 543 Lok Sabha constituencies.",
+      "ncertRef": "NCERT Ch. 5 • Page 119 & 128"
+    },
+    {
+      "id": 17,
+      "topic": "Accessibility, Participation & Historical Roots",
+      "difficulty": "CHS Exam",
+      "question": "According to the NCERT chapter, India's eligible voter population is about how many times the population of the United Kingdom?",
+      "options": [
+        "Fifteen times",
+        "Five times",
+        "Ten times",
+        "Twenty-five times"
+      ],
+      "correctIndex": 0,
+      "explanation": "To highlight the massive scale of Indian elections, the textbook notes that India's eligible voter population is fifteen times the population of the United Kingdom.",
+      "ncertRef": "NCERT Ch. 5 • Page 121"
+    },
+    {
+      "id": 18,
+      "topic": "Accessibility, Participation & Historical Roots",
+      "difficulty": "CHS Exam",
+      "question": "In terms of geographical area, India is approximately how many times larger than France?",
+      "options": [
+        "Twelve times",
+        "Six times",
+        "Three times",
+        "Ten times"
+      ],
+      "correctIndex": 1,
+      "explanation": "India's geographical area is six times larger than France, adding significant logistical diversity to conducting elections.",
+      "ncertRef": "NCERT Ch. 5 • Page 121"
+    },
+    {
+      "id": 19,
+      "topic": "Accessibility, Participation & Historical Roots",
+      "difficulty": "Medium",
+      "question": "What landmark accessibility measure was introduced for the first time in India's 2024 General Elections?",
+      "options": [
+        "Online voting through social media",
+        "Lowering voting age to 16 years",
+        "Mandatory voting with fines",
+        "Home voting facility for the elderly and persons with disabilities"
+      ],
+      "correctIndex": 3,
+      "explanation": "In 2024, for the first time, senior citizens (elderly) and persons with disabilities could cast their votes from home.",
+      "ncertRef": "NCERT Ch. 5 • Page 121"
+    },
+    {
+      "id": 20,
+      "topic": "Accessibility, Participation & Historical Roots",
+      "difficulty": "Easy",
+      "question": "Which assistive measures has the ECI introduced to help visually impaired and mobility-challenged voters?",
+      "options": [
+        "Only paper ballots without ink",
+        "Braille-enabled voter cards, ramps, wheelchairs, and app-based assistance requests",
+        "Separate election dates for cities only",
+        "Proxy voting by neighbours"
+      ],
+      "correctIndex": 1,
+      "explanation": "The ECI provides Braille-enabled voter cards, ramps, wheelchairs, and app-based assistance to remove barriers for voters with disabilities.",
+      "ncertRef": "NCERT Ch. 5 • Page 121"
+    },
+    {
+      "id": 21,
+      "topic": "Accessibility, Participation & Historical Roots",
+      "difficulty": "Medium",
+      "question": "Approximately what percentage of eligible voters did NOT exercise their right to vote in the 2024 General Elections?",
+      "options": [
+        "About 55 per cent",
+        "About 34 per cent",
+        "About 20 per cent",
+        "About 10 per cent"
+      ],
+      "correctIndex": 1,
+      "explanation": "About 34 per cent of eligible voters did not cast their votes in the 2024 elections, highlighting the need for greater voter awareness and participation.",
+      "ncertRef": "NCERT Ch. 5 • Page 123"
+    },
+    {
+      "id": 22,
+      "topic": "Accessibility, Participation & Historical Roots",
+      "difficulty": "CHS Exam",
+      "question": "The Uttaramerur inscriptions, which describe a transparent ancient Indian method of selecting representatives, date back to which century?",
+      "options": [
+        "15th century",
+        "5th century",
+        "8th century",
+        "10th century"
+      ],
+      "correctIndex": 3,
+      "explanation": "The 10th-century Uttaramerur inscriptions (in Tamil Nadu) document a transparent democratic selection process for local representatives.",
+      "ncertRef": "NCERT Ch. 5 • Page 123"
+    },
+    {
+      "id": 23,
+      "topic": "Accessibility, Participation & Historical Roots",
+      "difficulty": "CHS Exam",
+      "question": "In the selection process described in the Uttaramerur inscriptions, what material were eligible candidates' names written on?",
+      "options": [
+        "Clay tablets",
+        "Silk cloth scrolls",
+        "Fragments of palm leaves",
+        "Copper plates"
+      ],
+      "correctIndex": 2,
+      "explanation": "Candidates' names were written on fragments of palm leaves, placed inside a sealed pot, and drawn randomly in public by a young boy.",
+      "ncertRef": "NCERT Ch. 5 • Page 123"
+    },
+    {
+      "id": 24,
+      "topic": "Accessibility, Participation & Historical Roots",
+      "difficulty": "CHS Exam",
+      "question": "Why did the respected individual in the Uttaramerur selection process show his empty hands to the public before reading out names?",
+      "options": [
+        "To ensure complete transparency and prove there was no cheating or hidden palm leaf",
+        "To signal the end of the harvest season",
+        "To ask for donations from villagers",
+        "To bless the newly elected king"
+      ],
+      "correctIndex": 0,
+      "explanation": "Showing empty hands to the public guaranteed fairness and transparency so no one could accuse the reader of concealing or swapping a palm leaf.",
+      "ncertRef": "NCERT Ch. 5 • Page 123"
+    },
+    {
+      "id": 25,
+      "topic": "Accessibility, Participation & Historical Roots",
+      "difficulty": "CHS Exam",
+      "question": "Who was the first voter in independent India's general elections of 1951?",
+      "options": [
+        "Alladi Krishnaswami Ayyar",
+        "T.N. Seshan",
+        "Sukumar Sen",
+        "Shyam Saran Negi"
+      ],
+      "correctIndex": 3,
+      "explanation": "Shyam Saran Negi, a school teacher from Himachal Pradesh, was the first voter in India's 1951 general elections and even voted at age 100 in 2017.",
+      "ncertRef": "NCERT Ch. 5 • Page 129"
+    },
+    {
+      "id": 26,
+      "topic": "Accessibility, Participation & Historical Roots",
+      "difficulty": "Medium",
+      "question": "Shyam Saran Negi, India's first voter in 1951, belonged to which Indian state and profession?",
+      "options": [
+        "Gujarat; doctor",
+        "Kerala; lawyer",
+        "Himachal Pradesh; school teacher",
+        "Uttarakhand; farmer"
+      ],
+      "correctIndex": 2,
+      "explanation": "Shyam Saran Negi was a school teacher in Himachal Pradesh who cast the first vote in independent India's general elections in 1951.",
+      "ncertRef": "NCERT Ch. 5 • Page 129"
+    },
+    {
+      "id": 27,
+      "topic": "Accessibility, Participation & Historical Roots",
+      "difficulty": "Easy",
+      "question": "Roughly how many polling stations were set up across India during the 2024 Lok Sabha elections?",
+      "options": [
+        "Around 50,000",
+        "Over 1 million",
+        "Over 10 million",
+        "Around 250,000"
+      ],
+      "correctIndex": 1,
+      "explanation": "Over 1 million polling stations were established across India to serve more than 968 million voters in the 2024 Lok Sabha elections.",
+      "ncertRef": "NCERT Ch. 5 • Page 128"
+    },
+    {
+      "id": 28,
+      "topic": "Accessibility, Participation & Historical Roots",
+      "difficulty": "Medium",
+      "question": "To ensure 'no voter is left behind', what remarkable step has India's electoral system even undertaken in remote areas?",
+      "options": [
+        "Required remote voters to travel to Delhi",
+        "Allowed village heads to vote for everyone",
+        "Set up a dedicated polling station even for a single eligible voter",
+        "Cancelled elections in remote forests"
+      ],
+      "correctIndex": 2,
+      "explanation": "Electoral officials travel to remote locations and have even organised a polling station for a single woman voter to uphold universal franchise.",
+      "ncertRef": "NCERT Ch. 5 • Page 122"
+    },
+    {
+      "id": 29,
+      "topic": "Accessibility, Participation & Historical Roots",
+      "difficulty": "Medium",
+      "question": "What voting facility is available for specific categories of voters (such as service personnel on election duty or essential services) who cannot visit their polling station?",
+      "options": [
+        "Public hand-raising",
+        "Telephone voting",
+        "Postal voting",
+        "Verbal voting"
+      ],
+      "correctIndex": 2,
+      "explanation": "Postal voting (postal ballots) allows specific eligible categories of voters who cannot be physically present at their booth to cast their votes.",
+      "ncertRef": "NCERT Ch. 5 • Page 121–122"
+    },
+    {
+      "id": 30,
+      "topic": "Accessibility, Participation & Historical Roots",
+      "difficulty": "CHS Exam",
+      "question": "Figure 5.3 in the NCERT chapter depicts a historic Women's Suffrage Parade held in which country and year?",
+      "options": [
+        "USA, 1913",
+        "United Kingdom, 1928",
+        "France, 1944",
+        "Switzerland, 1971"
+      ],
+      "correctIndex": 0,
+      "explanation": "Figure 5.3 shows the 1913 Women's Suffrage Parade in the USA, illustrating how women in many countries had to fight long struggles for voting rights.",
+      "ncertRef": "NCERT Ch. 5 • Page 119"
+    },
+    {
+      "id": 31,
+      "topic": "Suryodaya School Election Caselet & NOTA",
+      "difficulty": "Easy",
+      "question": "In the Suryodaya School Grade 8 Class Representative election caselet, who were the three contesting candidates?",
+      "options": [
+        "Neha, Usha, and Sheeba",
+        "Rohan, Priya, and Dev",
+        "Ahmed, Gurmat, and Ravi",
+        "Aarav, Meera, and Kabir"
+      ],
+      "correctIndex": 2,
+      "explanation": "Ahmed, Gurmat, and Ravi contested the Grade 8 Class Representative election at Suryodaya School.",
+      "ncertRef": "NCERT Ch. 5 • Page 123"
+    },
+    {
+      "id": 32,
+      "topic": "Suryodaya School Election Caselet & NOTA",
+      "difficulty": "Easy",
+      "question": "Who served as the Election Officer for the Grade 8 Class Representative election at Suryodaya School?",
+      "options": [
+        "Neha",
+        "Ms. Usha",
+        "Ms. Sheeba",
+        "The School Principal"
+      ],
+      "correctIndex": 1,
+      "explanation": "Ms. Usha, the class teacher, was appointed as the Election Officer to organise and conduct the election fairly and transparently.",
+      "ncertRef": "NCERT Ch. 5 • Page 123–124"
+    },
+    {
+      "id": 33,
+      "topic": "Suryodaya School Election Caselet & NOTA",
+      "difficulty": "Medium",
+      "question": "In the Suryodaya School election, what did Gurmat promise to introduce if elected?",
+      "options": [
+        "More timetable space for music, theatre, and visual arts",
+        "Longer lunch breaks every Friday",
+        "A system of peer coaching and mutual support to help classmates learn better",
+        "Cleaner classrooms and playground"
+      ],
+      "correctIndex": 2,
+      "explanation": "Gurmat proposed creating a system of peer coaching and mutual support so all classmates could learn better.",
+      "ncertRef": "NCERT Ch. 5 • Page 124"
+    },
+    {
+      "id": 34,
+      "topic": "Suryodaya School Election Caselet & NOTA",
+      "difficulty": "Medium",
+      "question": "How did Ravi campaign for his proposal to expand the arts curriculum in the Suryodaya School election?",
+      "options": [
+        "By distributing sweets to classmates",
+        "By using the noticeboard only",
+        "By holding a lunchtime music performance",
+        "By putting up posters on classroom walls"
+      ],
+      "correctIndex": 2,
+      "explanation": "Ahmed put up posters, Gurmat used the noticeboard and spoke to classmates, while Ravi held a lunchtime music performance.",
+      "ncertRef": "NCERT Ch. 5 • Page 124"
+    },
+    {
+      "id": 35,
+      "topic": "Suryodaya School Election Caselet & NOTA",
+      "difficulty": "Medium",
+      "question": "Why did Ms. Usha prepare a special ballot paper in Braille during the class election?",
+      "options": [
+        "Because regular paper ran out",
+        "To ensure Neha, a visually impaired student, could vote independently and secretly",
+        "To make the election look more decorative",
+        "To test students' reading speed"
+      ],
+      "correctIndex": 1,
+      "explanation": "Providing a Braille ballot paper for Neha ensured inclusive and secret voting, mirroring the ECI's accessibility measures.",
+      "ncertRef": "NCERT Ch. 5 • Page 124"
+    },
+    {
+      "id": 36,
+      "topic": "Suryodaya School Election Caselet & NOTA",
+      "difficulty": "Easy",
+      "question": "What is the primary purpose of a 'secret ballot'?",
+      "options": [
+        "To keep every voter's choice private so they can vote freely without fear or pressure",
+        "To speed up the printing of ballots",
+        "To allow teachers to see who voted for whom",
+        "To prevent candidates from campaigning"
+      ],
+      "correctIndex": 0,
+      "explanation": "A secret ballot ensures that no one knows whom a voter chose, protecting voters from intimidation, pressure, or bias.",
+      "ncertRef": "NCERT Ch. 5 • Page 124"
+    },
+    {
+      "id": 37,
+      "topic": "Suryodaya School Election Caselet & NOTA",
+      "difficulty": "Medium",
+      "question": "Why did Ms. Usha call Ms. Sheeba from the next class during the vote counting?",
+      "options": [
+        "To announce new school rules",
+        "To act as an independent witness to ensure fair and transparent counting",
+        "To collect the campaign posters",
+        "To cast an extra tie-breaking vote"
+      ],
+      "correctIndex": 1,
+      "explanation": "Having Ms. Sheeba witness the counting ensured transparency and fairness, just like observers and agents in real elections.",
+      "ncertRef": "NCERT Ch. 5 • Page 125"
+    },
+    {
+      "id": 38,
+      "topic": "Suryodaya School Election Caselet & NOTA",
+      "difficulty": "Medium",
+      "question": "In the Suryodaya School election, why was one of the ballot papers declared invalid?",
+      "options": [
+        "It was left unmarked",
+        "It was submitted late",
+        "It was folded twice",
+        "It was written in pencil"
+      ],
+      "correctIndex": 0,
+      "explanation": "One ballot paper was not marked with an 'X' next to any candidate's name, so it was declared invalid.",
+      "ncertRef": "NCERT Ch. 5 • Page 125"
+    },
+    {
+      "id": 39,
+      "topic": "Suryodaya School Election Caselet & NOTA",
+      "difficulty": "CHS Exam",
+      "question": "In the Suryodaya School election, Gurmat won with 12 votes out of 33 cast (Ahmed 8, Ravi 10). Which electoral principle does this illustrate?",
+      "options": [
+        "Proportional Representation",
+        "Indirect Election",
+        "Single Transferable Vote",
+        "First-Past-The-Post, where the highest vote-getter wins even without 50% of votes"
+      ],
+      "correctIndex": 3,
+      "explanation": "Gurmat won with 12 out of 33 votes (less than 50%), illustrating India's First-Past-The-Post system where simply getting the most votes wins.",
+      "ncertRef": "NCERT Ch. 5 • Page 125 & 133"
+    },
+    {
+      "id": 40,
+      "topic": "Suryodaya School Election Caselet & NOTA",
+      "difficulty": "Easy",
+      "question": "What does the acronym NOTA stand for in Indian elections?",
+      "options": [
+        "National Option to Apply",
+        "None Of The Above",
+        "No Official Turnout Allowed",
+        "New Order to Act"
+      ],
+      "correctIndex": 1,
+      "explanation": "NOTA stands for 'None Of The Above', giving voters the right to reject all contesting candidates.",
+      "ncertRef": "NCERT Ch. 5 • Page 125 & 129"
+    },
+    {
+      "id": 41,
+      "topic": "Suryodaya School Election Caselet & NOTA",
+      "difficulty": "Medium",
+      "question": "What happens to the election result if voters choose the NOTA option?",
+      "options": [
+        "The entire election is immediately cancelled",
+        "It does not change the result, but sends a message that voters want better choices",
+        "The Election Commission appoints a candidate directly",
+        "All candidates are jailed"
+      ],
+      "correctIndex": 1,
+      "explanation": "As explained in the NCERT chapter, NOTA does not change the outcome of the election, but serves as a quiet yet powerful message demanding better candidates.",
+      "ncertRef": "NCERT Ch. 5 • Page 125"
+    },
+    {
+      "id": 42,
+      "topic": "Suryodaya School Election Caselet & NOTA",
+      "difficulty": "Easy",
+      "question": "After Gurmat won the class election, how did Ahmed and Ravi respond?",
+      "options": [
+        "They boycotted the classroom",
+        "They tore down the noticeboard",
+        "They congratulated her and offered to support her",
+        "They demanded a recount every week"
+      ],
+      "correctIndex": 2,
+      "explanation": "Ahmed and Ravi congratulated Gurmat and offered their support, demonstrating healthy democratic sportsmanship.",
+      "ncertRef": "NCERT Ch. 5 • Page 125"
+    },
+    {
+      "id": 43,
+      "topic": "Suryodaya School Election Caselet & NOTA",
+      "difficulty": "Medium",
+      "question": "In the Suryodaya School election, what was Ahmed's main campaign promise?",
+      "options": [
+        "Organising a school trip",
+        "Improving the cleanliness of the classrooms and the playground",
+        "Adding more sports periods",
+        "Starting a coding club"
+      ],
+      "correctIndex": 1,
+      "explanation": "Ahmed promised to improve the cleanliness of both the classrooms and the playground, and campaigned by putting up posters.",
+      "ncertRef": "NCERT Ch. 5 • Page 124"
+    },
+    {
+      "id": 44,
+      "topic": "Suryodaya School Election Caselet & NOTA",
+      "difficulty": "Easy",
+      "question": "How did Ms. Usha keep the ballot box secure between voting and counting?",
+      "options": [
+        "She collected the ballots in a box and sealed it until the counting session",
+        "She left it open on her desk",
+        "She counted each vote loudly as students voted",
+        "She handed it to one of the candidates"
+      ],
+      "correctIndex": 0,
+      "explanation": "Sealing the ballot box until counting prevents tampering and mirrors official ECI protocols.",
+      "ncertRef": "NCERT Ch. 5 • Page 124"
+    },
+    {
+      "id": 45,
+      "topic": "Suryodaya School Election Caselet & NOTA",
+      "difficulty": "CHS Exam",
+      "question": "If Suryodaya School formed a special school-level council elected only by the Class Representatives, what type of election would that be?",
+      "options": [
+        "By-election",
+        "Direct election",
+        "Referendum",
+        "Indirect election"
+      ],
+      "correctIndex": 3,
+      "explanation": "When elected representatives (Class Reps) vote to choose members of a higher council, it is an indirect election—just like Rajya Sabha elections.",
+      "ncertRef": "NCERT Ch. 5 • Page 134"
+    },
+    {
+      "id": 46,
+      "topic": "Election Commission of India (ECI) & Structure",
+      "difficulty": "Easy",
+      "question": "What kind of body is the Election Commission of India (ECI)?",
+      "options": [
+        "A private non-profit organisation",
+        "A committee of the Lok Sabha Speaker",
+        "A department under the Prime Minister's Office",
+        "An independent constitutional body"
+      ],
+      "correctIndex": 3,
+      "explanation": "The ECI is an independent constitutional body responsible for conducting free and fair elections in India.",
+      "ncertRef": "NCERT Ch. 5 • Page 126"
+    },
+    {
+      "id": 47,
+      "topic": "Election Commission of India (ECI) & Structure",
+      "difficulty": "Easy",
+      "question": "In which year was the Election Commission of India (ECI) established?",
+      "options": [
+        "1947",
+        "1960",
+        "1950",
+        "1952"
+      ],
+      "correctIndex": 2,
+      "explanation": "The Election Commission of India was established in 1950 (on 25 January 1950).",
+      "ncertRef": "NCERT Ch. 5 • Page 126"
+    },
+    {
+      "id": 48,
+      "topic": "Election Commission of India (ECI) & Structure",
+      "difficulty": "Easy",
+      "question": "When were the first general elections held in independent India?",
+      "options": [
+        "1947–1948",
+        "1949–1950",
+        "1955–1956",
+        "1951–1952"
+      ],
+      "correctIndex": 3,
+      "explanation": "Independent India's first general elections were held in 1951–1952 under the supervision of the ECI.",
+      "ncertRef": "NCERT Ch. 5 • Page 126"
+    },
+    {
+      "id": 49,
+      "topic": "Election Commission of India (ECI) & Structure",
+      "difficulty": "Medium",
+      "question": "Which of the following elections is NOT conducted by the Election Commission of India (ECI)?",
+      "options": [
+        "President and Vice President elections",
+        "Lok Sabha elections",
+        "Gram Panchayat and Urban Local Body elections",
+        "Rajya Sabha elections"
+      ],
+      "correctIndex": 2,
+      "explanation": "Elections to Gram Panchayats and Urban Local Bodies are managed by the respective State Election Commissions, not directly by the ECI.",
+      "ncertRef": "NCERT Ch. 5 • Page 126 & 133"
+    },
+    {
+      "id": 50,
+      "topic": "Election Commission of India (ECI) & Structure",
+      "difficulty": "Easy",
+      "question": "Which body manages direct elections to Gram Panchayats and Urban Local Bodies at the grassroots level?",
+      "options": [
+        "State Election Commissions",
+        "Union Cabinet",
+        "Supreme Court of India",
+        "NITI Aayog"
+      ],
+      "correctIndex": 0,
+      "explanation": "State Election Commissions conduct elections to local bodies (gram panchayats and municipalities) at the grassroots level.",
+      "ncertRef": "NCERT Ch. 5 • Page 126 & 133–134"
+    },
+    {
+      "id": 51,
+      "topic": "Election Commission of India (ECI) & Structure",
+      "difficulty": "Easy",
+      "question": "At the national level, the Election Commission of India consists of:",
+      "options": [
+        "One Chief Election Commissioner only",
+        "One Chief Election Commissioner and two Election Commissioners",
+        "One Chief Election Commissioner and five Election Commissioners",
+        "The President and two Governors"
+      ],
+      "correctIndex": 1,
+      "explanation": "At the national level, the ECI comprises the Chief Election Commissioner (CEC) and two Election Commissioners.",
+      "ncertRef": "NCERT Ch. 5 • Page 127 (Fig. 5.11)"
+    },
+    {
+      "id": 52,
+      "topic": "Election Commission of India (ECI) & Structure",
+      "difficulty": "Medium",
+      "question": "Who heads the election machinery at the State or Union Territory level?",
+      "options": [
+        "Chief Minister",
+        "District Election Officer",
+        "Chief Electoral Officer (CEO)",
+        "Returning Officer"
+      ],
+      "correctIndex": 2,
+      "explanation": "At the State/UT level, the Chief Electoral Officer (CEO) oversees electoral operations under the ECI.",
+      "ncertRef": "NCERT Ch. 5 • Page 127 (Fig. 5.11)"
+    },
+    {
+      "id": 53,
+      "topic": "Election Commission of India (ECI) & Structure",
+      "difficulty": "Medium",
+      "question": "At the district level, who is the senior official overseeing the election apparatus?",
+      "options": [
+        "District Election Officer (DEO)",
+        "Speaker of the Assembly",
+        "Chief Election Commissioner",
+        "Polling Agent"
+      ],
+      "correctIndex": 0,
+      "explanation": "The District Election Officer (DEO) manages election administration at the district level, assisted by ROs and EROs.",
+      "ncertRef": "NCERT Ch. 5 • Page 127 (Fig. 5.11)"
+    },
+    {
+      "id": 54,
+      "topic": "Election Commission of India (ECI) & Structure",
+      "difficulty": "CHS Exam",
+      "question": "What is the specific responsibility of a Returning Officer (RO)?",
+      "options": [
+        "Printing currency notes during elections",
+        "Registering national political parties",
+        "Conducting elections in a constituency",
+        "Appointing the Chief Election Commissioner"
+      ],
+      "correctIndex": 2,
+      "explanation": "As shown in Fig. 5.11, the Returning Officer (RO) is responsible for conducting elections in a constituency.",
+      "ncertRef": "NCERT Ch. 5 • Page 127 (Fig. 5.11)"
+    },
+    {
+      "id": 55,
+      "topic": "Election Commission of India (ECI) & Structure",
+      "difficulty": "CHS Exam",
+      "question": "Which official is specifically responsible for managing and updating the voter list (electoral roll)?",
+      "options": [
+        "Electoral Registration Officer (ERO)",
+        "Returning Officer (RO)",
+        "Presiding Judge",
+        "Cabinet Secretary"
+      ],
+      "correctIndex": 0,
+      "explanation": "The Electoral Registration Officer (ERO) manages the voter list (electoral roll) at the district/constituency level.",
+      "ncertRef": "NCERT Ch. 5 • Page 127 (Fig. 5.11)"
+    },
+    {
+      "id": 56,
+      "topic": "Election Commission of India (ECI) & Structure",
+      "difficulty": "Easy",
+      "question": "Where is the main office (headquarters) of the Election Commission of India located?",
+      "options": [
+        "Mumbai",
+        "Delhi",
+        "Kolkata",
+        "Bengaluru"
+      ],
+      "correctIndex": 1,
+      "explanation": "The headquarters of the Election Commission of India (Nirvachan Sadan) is located in Delhi.",
+      "ncertRef": "NCERT Ch. 5 • Page 127 (Fig. 5.10)"
+    },
+    {
+      "id": 57,
+      "topic": "Election Commission of India (ECI) & Structure",
+      "difficulty": "Easy",
+      "question": "Which of the following is a core task performed by the Election Commission of India?",
+      "options": [
+        "Passing the Union Budget",
+        "Running government schools",
+        "Selecting the Prime Minister",
+        "Setting election dates, registering political parties, and enforcing the Model Code of Conduct"
+      ],
+      "correctIndex": 3,
+      "explanation": "The ECI sets election dates, enforces the Model Code of Conduct, registers political parties, and oversees the entire electoral process.",
+      "ncertRef": "NCERT Ch. 5 • Page 127 (Fig. 5.9)"
+    },
+    {
+      "id": 58,
+      "topic": "Election Commission of India (ECI) & Structure",
+      "difficulty": "Medium",
+      "question": "Which of the following complete sets of elections is conducted by the Election Commission of India?",
+      "options": [
+        "Municipalities, Zila Parishads, and State Assemblies",
+        "Lok Sabha, State Assemblies, and Gram Panchayats",
+        "Only Lok Sabha and Rajya Sabha",
+        "Lok Sabha, Rajya Sabha, State Legislative Assemblies, President, and Vice President"
+      ],
+      "correctIndex": 3,
+      "explanation": "The ECI conducts elections to the Lok Sabha, Rajya Sabha, State Legislative Assemblies, and the offices of the President and Vice President.",
+      "ncertRef": "NCERT Ch. 5 • Page 126"
+    },
+    {
+      "id": 59,
+      "topic": "Election Commission of India (ECI) & Structure",
+      "difficulty": "Easy",
+      "question": "Besides permanent ECI staff, who are commonly deployed across India to assist in conducting elections at polling stations?",
+      "options": [
+        "Foreign diplomats",
+        "Political party candidates",
+        "Government employees including school teachers",
+        "Private company CEOs"
+      ],
+      "correctIndex": 2,
+      "explanation": "Because managing over 1 million polling stations is a mammoth task, large numbers of personnel—including school teachers—are deployed for election duty.",
+      "ncertRef": "NCERT Ch. 5 • Page 128"
+    },
+    {
+      "id": 60,
+      "topic": "Election Commission of India (ECI) & Structure",
+      "difficulty": "CHS Exam",
+      "question": "Arrange the ECI administrative hierarchy from the highest (national) level down to the district/constituency level:",
+      "options": [
+        "DEO → CEO → CEC → RO",
+        "CEC → CEO → DEO → RO / ERO",
+        "RO → DEO → CEC → CEO",
+        "CEO → CEC → ERO → DEO"
+      ],
+      "correctIndex": 1,
+      "explanation": "The hierarchy runs from National level (Chief Election Commissioner & 2 ECs) → State/UT level (Chief Electoral Officer) → District level (District Election Officer) → Returning Officer & Electoral Registration Officer.",
+      "ncertRef": "NCERT Ch. 5 • Page 127 (Fig. 5.11)"
+    },
+    {
+      "id": 61,
+      "topic": "Voting Process, EVMs & VVPAT",
+      "difficulty": "Easy",
+      "question": "What is the full form of EVM?",
+      "options": [
+        "Electronic Voting Machine",
+        "Electronic Voter Management",
+        "Electoral Verification Method",
+        "Election Vote Monitor"
+      ],
+      "correctIndex": 0,
+      "explanation": "EVM stands for Electronic Voting Machine, used across India for Lok Sabha and State Assembly elections.",
+      "ncertRef": "NCERT Ch. 5 • Page 129–130"
+    },
+    {
+      "id": 62,
+      "topic": "Voting Process, EVMs & VVPAT",
+      "difficulty": "Easy",
+      "question": "What is the full form of VVPAT?",
+      "options": [
+        "Verified Voter Polling Action Terminal",
+        "Voter Verifiable Paper Audit Trail",
+        "Voting Value Process Audit Test",
+        "Voter Verification Paper Access Tool"
+      ],
+      "correctIndex": 1,
+      "explanation": "VVPAT stands for Voter Verifiable Paper Audit Trail, which prints a physical paper slip allowing voters to verify their vote.",
+      "ncertRef": "NCERT Ch. 5 • Page 130"
+    },
+    {
+      "id": 63,
+      "topic": "Voting Process, EVMs & VVPAT",
+      "difficulty": "Medium",
+      "question": "Inside a polling station, what is the duty of the 1st Polling Officer?",
+      "options": [
+        "Pressing the button on the EVM",
+        "Checking the voter's name on the voter list and verifying ID proof",
+        "Collecting the voter chit and checking the inked finger",
+        "Inking the voter's finger and taking their signature"
+      ],
+      "correctIndex": 1,
+      "explanation": "The 1st Polling Officer verifies the voter's name on the electoral roll (voter list) and checks their ID proof.",
+      "ncertRef": "NCERT Ch. 5 • Page 129 (Fig. 5.13)"
+    },
+    {
+      "id": 64,
+      "topic": "Voting Process, EVMs & VVPAT",
+      "difficulty": "Medium",
+      "question": "What task is performed by the 2nd Polling Officer at a polling booth?",
+      "options": [
+        "Checking the voter's name on the electoral roll",
+        "Counting the VVPAT slips",
+        "Taking the chit and activating the EVM",
+        "Inking the voter's finger, giving a chit, and taking the voter's signature"
+      ],
+      "correctIndex": 3,
+      "explanation": "The 2nd Polling Officer applies indelible ink on the voter's finger, issues a voter chit, and records the voter's signature.",
+      "ncertRef": "NCERT Ch. 5 • Page 129 (Fig. 5.13)"
+    },
+    {
+      "id": 65,
+      "topic": "Voting Process, EVMs & VVPAT",
+      "difficulty": "Medium",
+      "question": "What does the 3rd Polling Officer do just before the voter proceeds to the EVM compartment?",
+      "options": [
+        "Verifies the voter's Aadhaar address",
+        "Takes the chit and checks the voter's inked finger",
+        "Hands over the VVPAT slip to take home",
+        "Applies ink on the voter's finger"
+      ],
+      "correctIndex": 1,
+      "explanation": "The 3rd Polling Officer collects the chit issued by the 2nd officer, inspects the inked finger, and enables the ballot unit for voting.",
+      "ncertRef": "NCERT Ch. 5 • Page 129 (Fig. 5.13)"
+    },
+    {
+      "id": 66,
+      "topic": "Voting Process, EVMs & VVPAT",
+      "difficulty": "Easy",
+      "question": "How does a voter confirm that their vote has been recorded after pressing the candidate's button on the EVM?",
+      "options": [
+        "They hear a beep sound and verify the printed slip visible in the VVPAT machine",
+        "The polling officer announces the candidate's name",
+        "A paper receipt is handed to them to take home",
+        "They receive an SMS on their phone"
+      ],
+      "correctIndex": 0,
+      "explanation": "Upon pressing the button on the EVM, a beep sounds and the VVPAT displays a printed slip showing the chosen candidate's details before dropping into a sealed box.",
+      "ncertRef": "NCERT Ch. 5 • Page 129–130"
+    },
+    {
+      "id": 67,
+      "topic": "Voting Process, EVMs & VVPAT",
+      "difficulty": "Medium",
+      "question": "Why is indelible ink applied to a voter's finger at the polling station?",
+      "options": [
+        "To decorate the voter's hand",
+        "To mark which party the voter supported",
+        "To prevent a person from voting more than once in the same election",
+        "To confirm the voter's age"
+      ],
+      "correctIndex": 2,
+      "explanation": "Indelible ink marks that the citizen has already cast their vote, preventing duplicate or fraudulent voting.",
+      "ncertRef": "NCERT Ch. 5 • Page 129"
+    },
+    {
+      "id": 68,
+      "topic": "Voting Process, EVMs & VVPAT",
+      "difficulty": "Medium",
+      "question": "What is the main advantage of the VVPAT system alongside EVMs?",
+      "options": [
+        "It creates a physical paper record for voter verification and backup recounting in case of disputes",
+        "It allows voters to change their vote the next day",
+        "It replaces the need for polling officers",
+        "It connects EVMs to the internet"
+      ],
+      "correctIndex": 0,
+      "explanation": "VVPAT produces a physical paper audit trail so voters can verify their vote and officials have a backup for verification or recounting if disputes arise.",
+      "ncertRef": "NCERT Ch. 5 • Page 130"
+    },
+    {
+      "id": 69,
+      "topic": "Voting Process, EVMs & VVPAT",
+      "difficulty": "CHS Exam",
+      "question": "Which two countries are specifically mentioned in the NCERT chapter as having used India's EVM and VVPAT systems with support from the ECI?",
+      "options": [
+        "Nepal and Bangladesh",
+        "Sri Lanka and Maldives",
+        "Namibia and Bhutan",
+        "Kenya and Japan"
+      ],
+      "correctIndex": 2,
+      "explanation": "India's EVMs and VVPAT systems have been used in Namibia and Bhutan with support from the Election Commission of India.",
+      "ncertRef": "NCERT Ch. 5 • Page 130"
+    },
+    {
+      "id": 70,
+      "topic": "Voting Process, EVMs & VVPAT",
+      "difficulty": "Easy",
+      "question": "Which of the following is an advantage of EVMs over traditional paper ballots?",
+      "options": [
+        "They are faster to count, more accurate, and eco-friendly",
+        "They require cutting down more trees",
+        "They reveal the voter's identity publicly",
+        "They eliminate the need for constituencies"
+      ],
+      "correctIndex": 0,
+      "explanation": "EVMs reduce paper waste (eco-friendly), eliminate invalid/smudged ballot marks, and make vote counting much faster and more accurate.",
+      "ncertRef": "NCERT Ch. 5 • Page 130 & 138"
+    },
+    {
+      "id": 71,
+      "topic": "Voting Process, EVMs & VVPAT",
+      "difficulty": "Medium",
+      "question": "Which document is commonly issued by the ECI as proof of voter registration?",
+      "options": [
+        "Birth Certificate only",
+        "School Report Card",
+        "Voter ID Card (EPIC)",
+        "Library Card"
+      ],
+      "correctIndex": 2,
+      "explanation": "The Electors Photo Identity Card (EPIC), commonly called the Voter ID card, serves as official proof of voter registration.",
+      "ncertRef": "NCERT Ch. 5 • Page 129 & 132"
+    },
+    {
+      "id": 72,
+      "topic": "Voting Process, EVMs & VVPAT",
+      "difficulty": "Easy",
+      "question": "Can a citizen vote on election day if their name is NOT registered in the electoral roll?",
+      "options": [
+        "Yes, if a candidate signs for them",
+        "Yes, only in Lok Sabha elections",
+        "Yes, by showing any school ID",
+        "No, voter registration in the constituency's electoral roll is mandatory"
+      ],
+      "correctIndex": 3,
+      "explanation": "To exercise the right to vote, an eligible citizen must be registered on the electoral roll (voter list) of their constituency.",
+      "ncertRef": "NCERT Ch. 5 • Page 118 & 129"
+    },
+    {
+      "id": 73,
+      "topic": "Voting Process, EVMs & VVPAT",
+      "difficulty": "Medium",
+      "question": "Where is the NOTA button located during Lok Sabha and State Assembly elections?",
+      "options": [
+        "Outside the polling station gate",
+        "On the VVPAT paper box",
+        "At the 1st Polling Officer's desk",
+        "On the EVM ballot unit alongside the candidates' buttons"
+      ],
+      "correctIndex": 3,
+      "explanation": "NOTA (None Of The Above) is provided as an option directly on the EVM ballot unit.",
+      "ncertRef": "NCERT Ch. 5 • Page 129"
+    },
+    {
+      "id": 74,
+      "topic": "Voting Process, EVMs & VVPAT",
+      "difficulty": "CHS Exam",
+      "question": "What is the correct sequence of steps for a voter inside an Indian polling booth?",
+      "options": [
+        "Give chit → Check voter list → Press EVM → Ink finger",
+        "Check voter list & ID → Ink finger, get chit & sign → Give chit & finger check → Press EVM & check VVPAT",
+        "Press EVM → Ink finger → Check voter list → Sign register",
+        "Ink finger → Check voter list → Press EVM → Submit chit"
+      ],
+      "correctIndex": 1,
+      "explanation": "Step 1: 1st officer checks voter list & ID; Step 2: 2nd officer inks finger, gives chit & takes signature; Step 3: 3rd officer takes chit & checks finger; Step 4: Press EVM button & check VVPAT slip.",
+      "ncertRef": "NCERT Ch. 5 • Page 129 (Fig. 5.13)"
+    },
+    {
+      "id": 75,
+      "topic": "Voting Process, EVMs & VVPAT",
+      "difficulty": "Easy",
+      "question": "Can a voter take the VVPAT printed slip home as proof of whom they voted for?",
+      "options": [
+        "Yes, to show their family",
+        "Yes, if the 3rd polling officer permits",
+        "Only senior citizens can take it home",
+        "No, it stays inside a sealed compartment of the VVPAT machine to preserve secret ballot"
+      ],
+      "correctIndex": 3,
+      "explanation": "The VVPAT slip is visible through a glass window for a few seconds and then drops into a sealed drop box, preserving the secrecy of the vote.",
+      "ncertRef": "NCERT Ch. 5 • Page 129–130"
+    },
+    {
+      "id": 76,
+      "topic": "Model Code of Conduct (MCC) & T.N. Seshan",
+      "difficulty": "Easy",
+      "question": "What is the main purpose of the Model Code of Conduct (MCC)?",
+      "options": [
+        "To decide salaries of elected MPs",
+        "To conduct school board examinations",
+        "To list dos and don'ts for political parties, leaders, and candidates to ensure free and fair elections",
+        "To count votes in Parliament"
+      ],
+      "correctIndex": 2,
+      "explanation": "The Model Code of Conduct sets rules of conduct for leaders, political parties, and candidates to ensure peaceful, free, and fair elections.",
+      "ncertRef": "NCERT Ch. 5 • Page 130"
+    },
+    {
+      "id": 77,
+      "topic": "Model Code of Conduct (MCC) & T.N. Seshan",
+      "difficulty": "CHS Exam",
+      "question": "In which Indian state and year was the Model Code of Conduct first voluntarily adopted by major political parties?",
+      "options": [
+        "Tamil Nadu, 1967",
+        "Kerala, 1960",
+        "Maharashtra, 1952",
+        "Gujarat, 1975"
+      ],
+      "correctIndex": 1,
+      "explanation": "The Model Code of Conduct was first adopted in Kerala in 1960, voluntarily approved by representatives of major political parties.",
+      "ncertRef": "NCERT Ch. 5 • Page 131"
+    },
+    {
+      "id": 78,
+      "topic": "Model Code of Conduct (MCC) & T.N. Seshan",
+      "difficulty": "CHS Exam",
+      "question": "During which general elections did the ECI first circulate the Model Code of Conduct to political parties?",
+      "options": [
+        "1951–52 general elections",
+        "1957 general elections",
+        "1971 general elections",
+        "1962 general elections"
+      ],
+      "correctIndex": 3,
+      "explanation": "Following Kerala's 1960 initiative, the ECI circulated the Model Code of Conduct to political parties during the 1962 general elections.",
+      "ncertRef": "NCERT Ch. 5 • Page 131"
+    },
+    {
+      "id": 79,
+      "topic": "Model Code of Conduct (MCC) & T.N. Seshan",
+      "difficulty": "CHS Exam",
+      "question": "From which year did the Election Commission of India become proactive in strictly ensuring the observance of the Model Code of Conduct?",
+      "options": [
+        "1977",
+        "1988",
+        "1991",
+        "1962"
+      ],
+      "correctIndex": 2,
+      "explanation": "From 1991 onwards, the ECI became proactive in strictly enforcing the observance of the Model Code of Conduct.",
+      "ncertRef": "NCERT Ch. 5 • Page 131"
+    },
+    {
+      "id": 80,
+      "topic": "Model Code of Conduct (MCC) & T.N. Seshan",
+      "difficulty": "Medium",
+      "question": "Under the Model Code of Conduct, why is the party in government barred from announcing new schemes or projects once elections are announced?",
+      "options": [
+        "To save money for foreign travel",
+        "To prevent the ruling party from using government resources to unfairly influence voters",
+        "Because government offices close completely",
+        "Because Parliament is permanently abolished"
+      ],
+      "correctIndex": 1,
+      "explanation": "The MCC ensures a level playing field by prohibiting the ruling party from using official government resources or announcing new schemes to sway voters.",
+      "ncertRef": "NCERT Ch. 5 • Page 130"
+    },
+    {
+      "id": 81,
+      "topic": "Model Code of Conduct (MCC) & T.N. Seshan",
+      "difficulty": "Easy",
+      "question": "A candidate distributes sarees and household appliances to voters before polling day. This is a violation of:",
+      "options": [
+        "Model Code of Conduct (bribery / influencing voters with gifts)",
+        "Parliamentary Privilege",
+        "Right to Education Act",
+        "Traffic Safety Rules"
+      ],
+      "correctIndex": 0,
+      "explanation": "Influencing voters through gifts such as sarees, appliances, or cash in return for votes is strictly prohibited and punishable under the MCC.",
+      "ncertRef": "NCERT Ch. 5 • Page 130–131 (Fig. 5.17)"
+    },
+    {
+      "id": 82,
+      "topic": "Model Code of Conduct (MCC) & T.N. Seshan",
+      "difficulty": "Easy",
+      "question": "During election inspections, bundles of ₹500 notes are discovered in a candidate's car. What issue does this represent?",
+      "options": [
+        "Illegal use of money power to bribe voters, violating the MCC",
+        "Legal voter registration fee",
+        "Routine banking transport",
+        "Official ECI funding for campaigning"
+      ],
+      "correctIndex": 0,
+      "explanation": "Carrying unaccounted cash bundles to distribute to voters violates the MCC and reflects the challenge of money power in elections.",
+      "ncertRef": "NCERT Ch. 5 • Page 131 (Fig. 5.20)"
+    },
+    {
+      "id": 83,
+      "topic": "Model Code of Conduct (MCC) & T.N. Seshan",
+      "difficulty": "Easy",
+      "question": "Why is it a violation of the Model Code of Conduct for government officials to campaign for the ruling party?",
+      "options": [
+        "Government machinery must remain neutral and cannot be misused to favour any political party",
+        "Government officials are not allowed to vote",
+        "Only teachers are allowed to campaign",
+        "Campaigning is banned for all citizens"
+      ],
+      "correctIndex": 0,
+      "explanation": "Government officials must stay impartial during elections; using official machinery to campaign for the ruling party violates the MCC.",
+      "ncertRef": "NCERT Ch. 5 • Page 131 (Fig. 5.19)"
+    },
+    {
+      "id": 84,
+      "topic": "Model Code of Conduct (MCC) & T.N. Seshan",
+      "difficulty": "Easy",
+      "question": "Using abusive language against an opposing candidate during election rallies violates which requirement of the MCC?",
+      "options": [
+        "Discretion and restraint to ensure peaceful and respectful elections",
+        "Postal ballot rule",
+        "Constituency delimitation rule",
+        "Secret ballot rule"
+      ],
+      "correctIndex": 0,
+      "explanation": "All candidates are expected to exercise discretion and restraint so that elections remain peaceful and dignified.",
+      "ncertRef": "NCERT Ch. 5 • Page 130–131 (Fig. 5.18)"
+    },
+    {
+      "id": 85,
+      "topic": "Model Code of Conduct (MCC) & T.N. Seshan",
+      "difficulty": "CHS Exam",
+      "question": "In which year did T.N. Seshan become the Chief Election Commissioner of India?",
+      "options": [
+        "1988",
+        "1985",
+        "1996",
+        "1990"
+      ],
+      "correctIndex": 3,
+      "explanation": "T.N. Seshan became the Chief Election Commissioner in 1990 and transformed the ECI into a fearless, strict guardian of free and fair elections.",
+      "ncertRef": "NCERT Ch. 5 • Page 132"
+    },
+    {
+      "id": 86,
+      "topic": "Model Code of Conduct (MCC) & T.N. Seshan",
+      "difficulty": "Medium",
+      "question": "Which major reform did T.N. Seshan introduce to eliminate proxy voting (fake voting on someone else's behalf)?",
+      "options": [
+        "Replacing Lok Sabha with Rajya Sabha",
+        "Allowing voting by phone",
+        "Introducing Voter ID cards",
+        "Abolishing political parties"
+      ],
+      "correctIndex": 2,
+      "explanation": "T.N. Seshan championed the introduction of Voter ID cards specifically to eliminate proxy voting and bogus votes.",
+      "ncertRef": "NCERT Ch. 5 • Page 132"
+    },
+    {
+      "id": 87,
+      "topic": "Model Code of Conduct (MCC) & T.N. Seshan",
+      "difficulty": "Medium",
+      "question": "Which of the following sets of electoral reforms is associated with former Chief Election Commissioner T.N. Seshan?",
+      "options": [
+        "Creating State Election Commissions and Panchayati Raj",
+        "Introducing home voting in 2024",
+        "Precise campaigning rules, Voter IDs to stop proxy voting, and strict vigilance on candidate spending",
+        "Lowering voting age to 18 and introducing NOTA"
+      ],
+      "correctIndex": 2,
+      "explanation": "T.N. Seshan enforced strict campaigning rules, introduced Voter IDs to curb proxy voting, and maintained strict vigilance over candidate expenditure.",
+      "ncertRef": "NCERT Ch. 5 • Page 132"
+    },
+    {
+      "id": 88,
+      "topic": "Model Code of Conduct (MCC) & T.N. Seshan",
+      "difficulty": "Easy",
+      "question": "Who is responsible for enforcing the Model Code of Conduct during Lok Sabha and State Assembly elections?",
+      "options": [
+        "The Ruling Party",
+        "The Prime Minister",
+        "The Municipal Corporation",
+        "The Election Commission of India"
+      ],
+      "correctIndex": 3,
+      "explanation": "Enforcing the Model Code of Conduct and handling complaints of violations is one of the core functions of the ECI.",
+      "ncertRef": "NCERT Ch. 5 • Page 127 & 131"
+    },
+    {
+      "id": 89,
+      "topic": "Model Code of Conduct (MCC) & T.N. Seshan",
+      "difficulty": "Medium",
+      "question": "Which of the following actions IS permitted during election campaigning under the Model Code of Conduct?",
+      "options": [
+        "Peacefully presenting a party's manifesto and policies to voters",
+        "Using abusive language against rivals",
+        "Using government vehicles for party rallies",
+        "Distributing cash to voters"
+      ],
+      "correctIndex": 0,
+      "explanation": "Candidates and parties are free to peacefully explain their manifestos, promises, and policies without bribing, abusing, or misusing government resources.",
+      "ncertRef": "NCERT Ch. 5 • Page 130–131"
+    },
+    {
+      "id": 90,
+      "topic": "Model Code of Conduct (MCC) & T.N. Seshan",
+      "difficulty": "CHS Exam",
+      "question": "Why is T.N. Seshan widely remembered in Indian electoral history?",
+      "options": [
+        "He was India's first voter in 1951",
+        "He invented the Electronic Voting Machine",
+        "He drafted Article 326 in the Constituent Assembly",
+        "He made Indian elections fairer, more transparent, and fearless through strict enforcement of rules"
+      ],
+      "correctIndex": 3,
+      "explanation": "T.N. Seshan worked relentlessly to protect voters' rights and is remembered as the officer who made Indian elections fairer, transparent, and fearless.",
+      "ncertRef": "NCERT Ch. 5 • Page 132"
+    },
+    {
+      "id": 91,
+      "topic": "Lok Sabha, State Assemblies & Rajya Sabha",
+      "difficulty": "Easy",
+      "question": "What joyful phrase is often used to describe elections in India?",
+      "options": [
+        "March of Parliament",
+        "Season of Laws",
+        "Festival of Democracy",
+        "Assembly of Rulers"
+      ],
+      "correctIndex": 2,
+      "explanation": "Elections in India are often celebrated as the 'Festival of Democracy', when citizens freely and responsibly choose their representatives.",
+      "ncertRef": "NCERT Ch. 5 • Page 132"
+    },
+    {
+      "id": 92,
+      "topic": "Lok Sabha, State Assemblies & Rajya Sabha",
+      "difficulty": "Easy",
+      "question": "Into how many parliamentary constituencies is India divided for Lok Sabha elections?",
+      "options": [
+        "245",
+        "412",
+        "552",
+        "543"
+      ],
+      "correctIndex": 3,
+      "explanation": "India is divided into 543 parliamentary constituencies for elections to the Lok Sabha.",
+      "ncertRef": "NCERT Ch. 5 • Page 119, 128 & 132"
+    },
+    {
+      "id": 93,
+      "topic": "Lok Sabha, State Assemblies & Rajya Sabha",
+      "difficulty": "CHS Exam",
+      "question": "Out of the 543 Lok Sabha constituencies, how many seats are reserved for Scheduled Castes (SC) and Scheduled Tribes (ST) respectively?",
+      "options": [
+        "47 for SC and 84 for ST",
+        "100 for SC and 50 for ST",
+        "84 for SC and 47 for ST",
+        "79 for SC and 41 for ST"
+      ],
+      "correctIndex": 2,
+      "explanation": "Of the 543 Lok Sabha seats, 84 are reserved for Scheduled Castes (SC), 47 for Scheduled Tribes (ST), and 412 are General seats.",
+      "ncertRef": "NCERT Ch. 5 • Page 129"
+    },
+    {
+      "id": 94,
+      "topic": "Lok Sabha, State Assemblies & Rajya Sabha",
+      "difficulty": "Medium",
+      "question": "How many General (unreserved) constituencies are there in the 543-member Lok Sabha?",
+      "options": [
+        "496",
+        "459",
+        "412",
+        "390"
+      ],
+      "correctIndex": 2,
+      "explanation": "543 total constituencies minus 84 SC and 47 ST reserved seats equals 412 General constituencies.",
+      "ncertRef": "NCERT Ch. 5 • Page 129 (Fig. 5.13)"
+    },
+    {
+      "id": 95,
+      "topic": "Lok Sabha, State Assemblies & Rajya Sabha",
+      "difficulty": "Easy",
+      "question": "Which electoral system is used for Lok Sabha and State Legislative Assembly elections in India?",
+      "options": [
+        "Single Transferable Vote",
+        "Proportional Party List",
+        "First-Past-The-Post (FPTP)",
+        "Lottery System"
+      ],
+      "correctIndex": 2,
+      "explanation": "India uses the First-Past-The-Post system for Lok Sabha and State Assembly elections, where the candidate securing the most votes in a constituency wins.",
+      "ncertRef": "NCERT Ch. 5 • Page 132–133"
+    },
+    {
+      "id": 96,
+      "topic": "Lok Sabha, State Assemblies & Rajya Sabha",
+      "difficulty": "Easy",
+      "question": "What is the key difference between an MP and an MLA?",
+      "options": [
+        "MPs represent citizens in the national Parliament, while MLAs represent citizens in the State Legislative Assembly",
+        "MLAs focus on foreign policy while MPs run village panchayats",
+        "Only MPs are chosen by universal adult franchise",
+        "MPs are appointed while MLAs are elected"
+      ],
+      "correctIndex": 0,
+      "explanation": "Members of Parliament (MPs) represent people in the national Parliament on national issues, whereas Members of Legislative Assembly (MLAs) represent them in State Assemblies on regional issues.",
+      "ncertRef": "NCERT Ch. 5 • Page 126 & 133"
+    },
+    {
+      "id": 97,
+      "topic": "Lok Sabha, State Assemblies & Rajya Sabha",
+      "difficulty": "Medium",
+      "question": "By what regional names is the State Legislative Assembly known in different parts of India?",
+      "options": [
+        "Gram Sabha and Nyaya Panchayat",
+        "Lok Sabha and Rajya Sabha",
+        "Sansad and Parishad",
+        "Vidhan Sabha and Niyama Sabha"
+      ],
+      "correctIndex": 3,
+      "explanation": "The State Legislative Assembly is known by regional names such as Vidhan Sabha (e.g., in Hindi-speaking states) and Niyama Sabha (e.g., in Kerala).",
+      "ncertRef": "NCERT Ch. 5 • Page 133"
+    },
+    {
+      "id": 98,
+      "topic": "Lok Sabha, State Assemblies & Rajya Sabha",
+      "difficulty": "Easy",
+      "question": "What is a 'coalition' in the context of government formation?",
+      "options": [
+        "A single party winning all seats",
+        "A group of two or more political parties working together to form a majority",
+        "A merger of Lok Sabha and Rajya Sabha",
+        "A committee of Election Commissioners"
+      ],
+      "correctIndex": 1,
+      "explanation": "A coalition is an alliance of two or more political parties working together, often to achieve a majority of seats and form the government.",
+      "ncertRef": "NCERT Ch. 5 • Page 133"
+    },
+    {
+      "id": 99,
+      "topic": "Lok Sabha, State Assemblies & Rajya Sabha",
+      "difficulty": "Easy",
+      "question": "Who typically becomes the Prime Minister of India and the Chief Minister of a state respectively?",
+      "options": [
+        "The leaders of the majority party or coalition in the Lok Sabha and in the State Assembly",
+        "The seniormost judges of the Supreme Court and High Court",
+        "The winners of the Rajya Sabha and Panchayat elections",
+        "The appointees of the Election Commission"
+      ],
+      "correctIndex": 0,
+      "explanation": "The leader of the majority party or coalition in the Lok Sabha typically becomes the Prime Minister, while the majority leader in a State Assembly becomes the Chief Minister.",
+      "ncertRef": "NCERT Ch. 5 • Page 133"
+    },
+    {
+      "id": 100,
+      "topic": "Lok Sabha, State Assemblies & Rajya Sabha",
+      "difficulty": "Medium",
+      "question": "How are the 245 members of the Rajya Sabha chosen?",
+      "options": [
+        "200 are elected by MPs and 45 by Governors",
+        "All 245 are nominated by the Prime Minister",
+        "233 are indirectly elected by MLAs of State Legislative Assemblies, and 12 are nominated by the President",
+        "All 245 are directly elected by voters"
+      ],
+      "correctIndex": 2,
+      "explanation": "Of the 245 Rajya Sabha members, 233 are indirectly elected by elected MLAs of states/UTs and 12 distinguished individuals are nominated by the President of India.",
+      "ncertRef": "NCERT Ch. 5 • Page 134–135"
+    },
+    {
+      "id": 101,
+      "topic": "Lok Sabha, State Assemblies & Rajya Sabha",
+      "difficulty": "Easy",
+      "question": "Why is the Rajya Sabha called the 'Permanent House'?",
+      "options": [
+        "Because it is never dissolved; one-third of its members retire every two years",
+        "Because its members serve for life",
+        "Because its building is older than the Lok Sabha",
+        "Because it meets every single day of the year"
+      ],
+      "correctIndex": 0,
+      "explanation": "The Rajya Sabha is never dissolved; instead, one-third of its members retire every two years and new members are elected, ensuring continuity.",
+      "ncertRef": "NCERT Ch. 5 • Page 134–135"
+    },
+    {
+      "id": 102,
+      "topic": "Lok Sabha, State Assemblies & Rajya Sabha",
+      "difficulty": "Easy",
+      "question": "What is the normal term of a member of the Rajya Sabha?",
+      "options": [
+        "4 years",
+        "5 years",
+        "10 years",
+        "6 years"
+      ],
+      "correctIndex": 3,
+      "explanation": "Each member of the Rajya Sabha serves a six-year term, with one-third retiring every two years.",
+      "ncertRef": "NCERT Ch. 5 • Page 134"
+    },
+    {
+      "id": 103,
+      "topic": "Lok Sabha, State Assemblies & Rajya Sabha",
+      "difficulty": "Medium",
+      "question": "On what basis are Rajya Sabha seats allotted to different Indian states?",
+      "options": [
+        "Number of districts in the state",
+        "Equal seats for every state regardless of size",
+        "Population of the state (more populous states like Uttar Pradesh have more seats than Arunachal Pradesh)",
+        "Geographical area of the state"
+      ],
+      "correctIndex": 2,
+      "explanation": "Rajya Sabha seat allocation is based on state population—for example, Uttar Pradesh has far more seats than less populous states like Arunachal Pradesh.",
+      "ncertRef": "NCERT Ch. 5 • Page 134–135"
+    },
+    {
+      "id": 104,
+      "topic": "Lok Sabha, State Assemblies & Rajya Sabha",
+      "difficulty": "CHS Exam",
+      "question": "Which voting system is used in Rajya Sabha elections to ensure fair representation for smaller states and proportional voices?",
+      "options": [
+        "First-Past-The-Post",
+        "Single Transferable Vote (STV) system",
+        "Direct popular referendum",
+        "Open voice vote"
+      ],
+      "correctIndex": 1,
+      "explanation": "MLAs vote in Rajya Sabha elections using the Single Transferable Vote (STV) system, ranking candidates by preference.",
+      "ncertRef": "NCERT Ch. 5 • Page 134–135"
+    },
+    {
+      "id": 105,
+      "topic": "Lok Sabha, State Assemblies & Rajya Sabha",
+      "difficulty": "Medium",
+      "question": "What does the term 'dissolution' mean in relation to a legislative house?",
+      "options": [
+        "Moving Parliament to another city",
+        "Expiry or termination of a house due to the end of its term or other Constitutional reason",
+        "Merging two political parties",
+        "Suspending a single member for one day"
+      ],
+      "correctIndex": 1,
+      "explanation": "Dissolution means the expiry or termination of a legislative body (such as the Lok Sabha) due to the end of its term or another Constitutional reason.",
+      "ncertRef": "NCERT Ch. 5 • Page 134"
+    },
+    {
+      "id": 106,
+      "topic": "President, Vice President & Electoral Challenges",
+      "difficulty": "Easy",
+      "question": "How is the President of India elected?",
+      "options": [
+        "Appointed by the Prime Minister",
+        "Indirectly by an Electoral College",
+        "Selected by the Supreme Court",
+        "Directly by all adult citizens"
+      ],
+      "correctIndex": 1,
+      "explanation": "The President of India is elected indirectly by an Electoral College representing both the Union Parliament and State/UT legislatures.",
+      "ncertRef": "NCERT Ch. 5 • Page 136"
+    },
+    {
+      "id": 107,
+      "topic": "President, Vice President & Electoral Challenges",
+      "difficulty": "CHS Exam",
+      "question": "Who constitutes the Electoral College that elects the President of India?",
+      "options": [
+        "Elected MPs of Lok Sabha and Rajya Sabha + Elected MLAs of all States and UTs of Delhi and Puducherry",
+        "Only Lok Sabha MPs and Governors",
+        "Only Chief Ministers of all States",
+        "All elected and nominated MPs and MLAs"
+      ],
+      "correctIndex": 0,
+      "explanation": "The President's Electoral College consists of elected MPs of both Houses of Parliament and elected MLAs of all States plus the UTs of Delhi and Puducherry.",
+      "ncertRef": "NCERT Ch. 5 • Page 136"
+    },
+    {
+      "id": 108,
+      "topic": "President, Vice President & Electoral Challenges",
+      "difficulty": "CHS Exam",
+      "question": "Which of the following groups IS NOT allowed to vote in the election of the President of India?",
+      "options": [
+        "Elected MLAs of Delhi and Puducherry",
+        "Elected MPs of the Rajya Sabha",
+        "Members of State Legislative Councils (MLCs) and nominated MPs/MLAs",
+        "Elected MPs of the Lok Sabha"
+      ],
+      "correctIndex": 2,
+      "explanation": "Nominated Rajya Sabha MPs (12), nominated MLAs, nominated UT members, and all Members of Legislative Councils (both elected and nominated) do not participate in the Presidential election.",
+      "ncertRef": "NCERT Ch. 5 • Page 136"
+    },
+    {
+      "id": 109,
+      "topic": "President, Vice President & Electoral Challenges",
+      "difficulty": "Medium",
+      "question": "Why are nominated members excluded from voting in the election of the President of India?",
+      "options": [
+        "Because they do not attend Parliament",
+        "Because they already vote in Vice President elections",
+        "Because they are not Indian citizens",
+        "To ensure that only elected representatives vote, maintaining democratic legitimacy"
+      ],
+      "correctIndex": 3,
+      "explanation": "Excluding nominated members ensures that the President is elected solely by elected representatives, preserving indirect democratic legitimacy.",
+      "ncertRef": "NCERT Ch. 5 • Page 136"
+    },
+    {
+      "id": 110,
+      "topic": "President, Vice President & Electoral Challenges",
+      "difficulty": "Medium",
+      "question": "What is a 'bicameral legislature'?",
+      "options": [
+        "A legislature with only two political parties",
+        "A legislature elected every two years",
+        "A legislature divided into two separate chambers or houses",
+        "A legislature that meets twice a year"
+      ],
+      "correctIndex": 2,
+      "explanation": "A bicameral legislature has two separate chambers or houses (e.g., Lok Sabha and Rajya Sabha at the Union level, or Legislative Assembly and Legislative Council in certain states).",
+      "ncertRef": "NCERT Ch. 5 • Page 136"
+    },
+    {
+      "id": 111,
+      "topic": "President, Vice President & Electoral Challenges",
+      "difficulty": "Medium",
+      "question": "Which voting system is used for electing both the President and the Vice President of India?",
+      "options": [
+        "Direct popular ballot",
+        "Single Transferable Vote (STV) system",
+        "Show of hands",
+        "First-Past-The-Post"
+      ],
+      "correctIndex": 1,
+      "explanation": "Both the President and Vice President of India are elected indirectly using the Single Transferable Vote (STV) system.",
+      "ncertRef": "NCERT Ch. 5 • Page 136–137"
+    },
+    {
+      "id": 112,
+      "topic": "President, Vice President & Electoral Challenges",
+      "difficulty": "CHS Exam",
+      "question": "How does the Electoral College for the Vice President of India differ from that of the President?",
+      "options": [
+        "Only Lok Sabha MPs vote for the Vice President",
+        "All adult citizens vote directly for the Vice President",
+        "Both elected and nominated members of both Houses of Parliament vote, and State MLAs do NOT participate",
+        "Only State MLAs vote for the Vice President"
+      ],
+      "correctIndex": 2,
+      "explanation": "The Vice President is elected by both elected and nominated members of Lok Sabha and Rajya Sabha; State MLAs do not vote in the Vice Presidential election.",
+      "ncertRef": "NCERT Ch. 5 • Page 137"
+    },
+    {
+      "id": 113,
+      "topic": "President, Vice President & Electoral Challenges",
+      "difficulty": "Easy",
+      "question": "Who serves as the Chairperson of the Rajya Sabha?",
+      "options": [
+        "The Chief Election Commissioner",
+        "The Speaker of the Lok Sabha",
+        "The Vice President of India",
+        "The Prime Minister of India"
+      ],
+      "correctIndex": 2,
+      "explanation": "The Vice President of India is the ex-officio Chairperson of the Rajya Sabha.",
+      "ncertRef": "NCERT Ch. 5 • Page 137"
+    },
+    {
+      "id": 114,
+      "topic": "President, Vice President & Electoral Challenges",
+      "difficulty": "Easy",
+      "question": "Who steps in to discharge the functions of the President of India if the President is unable to perform their duties?",
+      "options": [
+        "The Prime Minister",
+        "The Chief Election Commissioner",
+        "The Lok Sabha Speaker",
+        "The Vice President of India"
+      ],
+      "correctIndex": 3,
+      "explanation": "When the President is unable to discharge their functions, the Vice President steps in to perform the role.",
+      "ncertRef": "NCERT Ch. 5 • Page 137"
+    },
+    {
+      "id": 115,
+      "topic": "President, Vice President & Electoral Challenges",
+      "difficulty": "CHS Exam",
+      "question": "Which two Union Territories' elected MLAs participate in the Electoral College for the President of India (as listed in the NCERT chapter)?",
+      "options": [
+        "Chandigarh and Lakshadweep",
+        "Ladakh and Andaman & Nicobar Islands",
+        "Dadra & Nagar Haveli and Daman & Diu",
+        "Delhi and Puducherry"
+      ],
+      "correctIndex": 3,
+      "explanation": "The NCERT chapter specifically notes that elected MLAs of all Indian states and the Union Territories of Delhi and Puducherry are part of the President's Electoral College.",
+      "ncertRef": "NCERT Ch. 5 • Page 136"
+    },
+    {
+      "id": 116,
+      "topic": "President, Vice President & Electoral Challenges",
+      "difficulty": "Medium",
+      "question": "Which three major challenges to India's electoral system are highlighted in the 'Challenges and The Road Ahead' section of the chapter?",
+      "options": [
+        "Growing influence of money, candidates with criminal records, and voter apathy (especially in urban areas)",
+        "Low population, lack of languages, and too many holidays",
+        "Lack of paper, short election terms, and too few parties",
+        "Shortage of polling booths, absence of EVMs, and ban on campaigning"
+      ],
+      "correctIndex": 0,
+      "explanation": "The textbook identifies money power in elections, candidates with criminal records, and voter apathy (particularly in urban areas) as key challenges.",
+      "ncertRef": "NCERT Ch. 5 • Page 137"
+    },
+    {
+      "id": 117,
+      "topic": "President, Vice President & Electoral Challenges",
+      "difficulty": "Easy",
+      "question": "Where is 'voter apathy' (low willingness to come out and vote) noted as being particularly concerning in India?",
+      "options": [
+        "Particularly in urban areas",
+        "Only during Rajya Sabha elections",
+        "Only in mountain villages",
+        "Only among first-time candidates"
+      ],
+      "correctIndex": 0,
+      "explanation": "The NCERT chapter specifically highlights declining voter turnout and voter apathy particularly in urban areas.",
+      "ncertRef": "NCERT Ch. 5 • Page 137–138"
+    },
+    {
+      "id": 118,
+      "topic": "President, Vice President & Electoral Challenges",
+      "difficulty": "Easy",
+      "question": "According to the NCERT chapter, what is 'the strongest safeguard of a democratic system'?",
+      "options": [
+        "Removing secret ballots",
+        "An aware and vigilant voter",
+        "Limiting voting rights to cities",
+        "Expensive election campaigns"
+      ],
+      "correctIndex": 1,
+      "explanation": "The chapter concludes that 'an aware and vigilant voter is the strongest safeguard of a democratic system'—starting with asking the right questions and ending with casting a responsible vote.",
+      "ncertRef": "NCERT Ch. 5 • Page 137"
+    },
+    {
+      "id": 119,
+      "topic": "President, Vice President & Electoral Challenges",
+      "difficulty": "Medium",
+      "question": "Which combination of forces must work together to empower voters—especially youth—to make thoughtful electoral choices?",
+      "options": [
+        "Only private corporations",
+        "Foreign governments and banks",
+        "Media, education, and awareness campaigns",
+        "Only strict curfew laws"
+      ],
+      "correctIndex": 2,
+      "explanation": "Media, education, and awareness campaigns must work together to inform citizens, particularly youth, about voting wisely and responsibly.",
+      "ncertRef": "NCERT Ch. 5 • Page 137"
+    },
+    {
+      "id": 120,
+      "topic": "President, Vice President & Electoral Challenges",
+      "difficulty": "CHS Exam",
+      "question": "Which of the following pairs correctly matches a DIRECT election and an INDIRECT election in India?",
+      "options": [
+        "Direct: Vice President | Indirect: Gram Panchayat",
+        "Direct: Lok Sabha & State Assembly | Indirect: Rajya Sabha, President & Vice President",
+        "Direct: President of India | Indirect: State Legislative Assembly",
+        "Direct: Rajya Sabha | Indirect: Lok Sabha"
+      ],
+      "correctIndex": 1,
+      "explanation": "Lok Sabha, State Assemblies, and local bodies are chosen through direct elections by citizens, whereas Rajya Sabha, President, and Vice President are chosen through indirect elections.",
+      "ncertRef": "NCERT Ch. 5 • Page 126, 132–137"
+    },
+    {
+      "id": 121,
+      "topic": "Universal Adult Franchise & Constitutional Basis",
+      "difficulty": "CHS Exam",
+      "question": "Assertion (A): India adopted Universal Adult Franchise immediately after Independence despite a 14% literacy rate. Reason (R): The Constitution makers believed every adult citizen is equal and capable of participating in democracy.",
+      "options": [
+        "Both A and R are true, and R is the correct explanation of A",
+        "A is false, but R is true",
+        "A is true, but R is false",
+        "Both A and R are true, but R is NOT the correct explanation of A"
+      ],
+      "correctIndex": 0,
+      "explanation": "Despite only ~14% literacy in 1947, the Constitution makers had 'abundant faith in the common man' and granted equal voting rights to all adult citizens.",
+      "ncertRef": "NCERT Ch. 5 • Page 117 & 120"
+    },
+    {
+      "id": 122,
+      "topic": "Universal Adult Franchise & Constitutional Basis",
+      "difficulty": "Medium",
+      "question": "Which word is a direct synonym of 'franchise' as mentioned in the NCERT Class 8 Civics chapter?",
+      "options": [
+        "Dissolution",
+        "Coalition",
+        "Suffrage",
+        "Bicameral"
+      ],
+      "correctIndex": 2,
+      "explanation": "The textbook explicitly defines 'suffrage' as a synonym of 'franchise', both meaning the right to vote.",
+      "ncertRef": "NCERT Ch. 5 • Page 118"
+    },
+    {
+      "id": 123,
+      "topic": "Universal Adult Franchise & Constitutional Basis",
+      "difficulty": "Medium",
+      "question": "Can an elderly parent legally authorize their adult son or daughter to go to the polling booth and cast a vote on their behalf?",
+      "options": [
+        "Yes, with a written letter",
+        "Yes, if both share the same address",
+        "Yes, only in State Assembly elections",
+        "No, under Universal Adult Franchise no one can vote on another person's behalf"
+      ],
+      "correctIndex": 3,
+      "explanation": "No one can vote on another's behalf; instead, the ECI offers home voting and accessibility assistance so elderly citizens can vote themselves.",
+      "ncertRef": "NCERT Ch. 5 • Page 118 & 121"
+    },
+    {
+      "id": 124,
+      "topic": "Universal Adult Franchise & Constitutional Basis",
+      "difficulty": "CHS Exam",
+      "question": "Which of the following is NOT listed in the NCERT mindmap (Fig. 5.4) as a reason why Universal Adult Franchise is vital for democracy?",
+      "options": [
+        "Power to determine one's future",
+        "Guarantees that only one political party remains in power",
+        "Elected representatives remain answerable to the electorate",
+        "Fosters civic engagement"
+      ],
+      "correctIndex": 1,
+      "explanation": "Universal Adult Franchise promotes equality, civic engagement, and accountability—never one-party rule.",
+      "ncertRef": "NCERT Ch. 5 • Page 120 (Fig. 5.4)"
+    },
+    {
+      "id": 125,
+      "topic": "Universal Adult Franchise & Constitutional Basis",
+      "difficulty": "CHS Exam",
+      "question": "Before 1988, what was the minimum age required to cast a vote in Indian elections?",
+      "options": [
+        "21 years",
+        "20 years",
+        "18 years",
+        "25 years"
+      ],
+      "correctIndex": 0,
+      "explanation": "Originally, the minimum voting age in India was 21 years; it was lowered to 18 years in 1988.",
+      "ncertRef": "NCERT Ch. 5 • Page 118"
+    },
+    {
+      "id": 126,
+      "topic": "Accessibility, Participation & Historical Roots",
+      "difficulty": "CHS Exam",
+      "question": "In the 10th-century Uttaramerur selection process, who physically drew the palm leaves from the sealed pot?",
+      "options": [
+        "The oldest landlord",
+        "A young boy",
+        "A travelling merchant",
+        "The village king"
+      ],
+      "correctIndex": 1,
+      "explanation": "On selection day, the sealed pot was opened publicly and a young boy drew the palm leaves randomly one by one to ensure impartiality.",
+      "ncertRef": "NCERT Ch. 5 • Page 123"
+    },
+    {
+      "id": 127,
+      "topic": "Accessibility, Participation & Historical Roots",
+      "difficulty": "Medium",
+      "question": "If about 34% of eligible voters did NOT vote in the 2024 Lok Sabha elections, approximately what percentage of eligible voters DID cast their vote?",
+      "options": [
+        "About 50%",
+        "About 66%",
+        "About 85%",
+        "About 34%"
+      ],
+      "correctIndex": 1,
+      "explanation": "Since roughly 34% of eligible voters did not exercise their franchise in 2024, approximately 66% participated in voting.",
+      "ncertRef": "NCERT Ch. 5 • Page 123"
+    },
+    {
+      "id": 128,
+      "topic": "Accessibility, Participation & Historical Roots",
+      "difficulty": "CHS Exam",
+      "question": "At what age was India's first voter, Shyam Saran Negi, photographed casting his vote in 2017 in the NCERT textbook?",
+      "options": [
+        "92 years",
+        "85 years",
+        "105 years",
+        "100 years"
+      ],
+      "correctIndex": 3,
+      "explanation": "Fig. 5.15 shows Shyam Saran Negi (first voter in 1951) casting his vote in 2017 at the age of 100.",
+      "ncertRef": "NCERT Ch. 5 • Page 129 (Fig. 5.15)"
+    },
+    {
+      "id": 129,
+      "topic": "Accessibility, Participation & Historical Roots",
+      "difficulty": "Medium",
+      "question": "How can persons with disabilities request wheelchairs or assistance at polling booths according to the NCERT chapter?",
+      "options": [
+        "By hiring private security guards",
+        "Only through political party offices",
+        "Only by writing to the Supreme Court",
+        "Through app-based requests for assistance provided by the ECI"
+      ],
+      "correctIndex": 3,
+      "explanation": "The ECI enables app-based requests for assistance, including wheelchairs and ramps, alongside Braille-enabled voter cards.",
+      "ncertRef": "NCERT Ch. 5 • Page 121"
+    },
+    {
+      "id": 130,
+      "topic": "Accessibility, Participation & Historical Roots",
+      "difficulty": "Easy",
+      "question": "Why does the NCERT chapter compare India's voter population with the UK and India's area with France?",
+      "options": [
+        "To illustrate the massive scale and geographical complexity of organising Indian elections",
+        "To show that India copies their election laws",
+        "To prove France has more voters than India",
+        "To explain why India does not need polling stations"
+      ],
+      "correctIndex": 0,
+      "explanation": "India has 15× the UK's population in eligible voters and 6× France's area, demonstrating why an elaborate electoral system is essential.",
+      "ncertRef": "NCERT Ch. 5 • Page 121"
+    },
+    {
+      "id": 131,
+      "topic": "Suryodaya School Election Caselet & NOTA",
+      "difficulty": "Medium",
+      "question": "In the Suryodaya School election, how many valid votes were counted out of the 33 ballots cast?",
+      "options": [
+        "31 valid votes",
+        "33 valid votes",
+        "32 valid votes",
+        "30 valid votes"
+      ],
+      "correctIndex": 3,
+      "explanation": "Ahmed got 8, Gurmat got 12, and Ravi got 10 (total 30 counted votes in the caselet), with unmarked ballots declared invalid.",
+      "ncertRef": "NCERT Ch. 5 • Page 125"
+    },
+    {
+      "id": 132,
+      "topic": "Suryodaya School Election Caselet & NOTA",
+      "difficulty": "Easy",
+      "question": "Which symbol were Grade 8 students at Suryodaya School asked to mark next to their chosen candidate's name on the ballot paper?",
+      "options": [
+        "A cross ('X')",
+        "Their own signature",
+        "A star (★)",
+        "A thumbprint"
+      ],
+      "correctIndex": 0,
+      "explanation": "Students marked an 'X' next to the candidate's name on the paper ballot without writing their own name, preserving secrecy.",
+      "ncertRef": "NCERT Ch. 5 • Page 124"
+    },
+    {
+      "id": 133,
+      "topic": "Suryodaya School Election Caselet & NOTA",
+      "difficulty": "CHS Exam",
+      "question": "If NOTA receives more votes than any candidate in a constituency, what happens to the election result as per India's current system?",
+      "options": [
+        "All voters are fined",
+        "The constituency remains empty for 5 years",
+        "The President becomes the MP",
+        "The candidate with the highest number of votes among contestants still wins; NOTA does not change the result"
+      ],
+      "correctIndex": 3,
+      "explanation": "The NCERT chapter clarifies that NOTA does not change the election result, but acts as a quiet, powerful message that voters want better choices.",
+      "ncertRef": "NCERT Ch. 5 • Page 125"
+    },
+    {
+      "id": 134,
+      "topic": "Election Commission of India (ECI) & Structure",
+      "difficulty": "CHS Exam",
+      "question": "Why is the independence of the Election Commission of India essential for democracy?",
+      "options": [
+        "So it can favour the ruling party during campaigns",
+        "So it can appoint state Chief Ministers",
+        "So it can make laws instead of Parliament",
+        "So elections are conducted freely and fairly without interference from the government or any political party"
+      ],
+      "correctIndex": 3,
+      "explanation": "Being an independent constitutional body ensures the ECI can enforce rules impartially even against the party currently in government.",
+      "ncertRef": "NCERT Ch. 5 • Page 126 & 130"
+    },
+    {
+      "id": 135,
+      "topic": "Election Commission of India (ECI) & Structure",
+      "difficulty": "CHS Exam",
+      "question": "Match the ECI official with their correct level: (1) Chief Election Commissioner, (2) Chief Electoral Officer, (3) District Election Officer.",
+      "options": [
+        "1-State/UT, 2-District, 3-National",
+        "1-National, 2-State/UT, 3-District",
+        "1-National, 2-District, 3-State/UT",
+        "1-District, 2-National, 3-State"
+      ],
+      "correctIndex": 1,
+      "explanation": "CEC (with 2 ECs) operates at the National level, CEO at the State/UT level, and DEO at the District level.",
+      "ncertRef": "NCERT Ch. 5 • Page 127 (Fig. 5.11)"
+    },
+    {
+      "id": 136,
+      "topic": "Election Commission of India (ECI) & Structure",
+      "difficulty": "Medium",
+      "question": "In conducting local body elections at the grassroots level, how do State Election Commissions work with the ECI?",
+      "options": [
+        "They manage local body elections in consultation with the ECI, following all Constitutional provisions for direct elections",
+        "They abolish universal adult franchise",
+        "They only conduct Presidential elections",
+        "They report only to political parties"
+      ],
+      "correctIndex": 0,
+      "explanation": "State Election Commissions conduct grassroots local body elections in consultation with the ECI, upholding universal adult franchise.",
+      "ncertRef": "NCERT Ch. 5 • Page 133–134"
+    },
+    {
+      "id": 137,
+      "topic": "Voting Process, EVMs & VVPAT",
+      "difficulty": "CHS Exam",
+      "question": "Which polling officer at a booth is responsible for taking the voter's signature after applying ink on their finger?",
+      "options": [
+        "1st Polling Officer",
+        "3rd Polling Officer",
+        "Returning Officer",
+        "2nd Polling Officer"
+      ],
+      "correctIndex": 3,
+      "explanation": "The 2nd Polling Officer inks the voter's finger, hands over the voter chit, and takes the voter's signature.",
+      "ncertRef": "NCERT Ch. 5 • Page 129 (Fig. 5.13)"
+    },
+    {
+      "id": 138,
+      "topic": "Voting Process, EVMs & VVPAT",
+      "difficulty": "Medium",
+      "question": "What auditory cue confirms that your button press on an Electronic Voting Machine (EVM) has been registered?",
+      "options": [
+        "A voice recording of the candidate",
+        "A beep sound",
+        "A loud siren",
+        "A bell rung by the 1st polling officer"
+      ],
+      "correctIndex": 1,
+      "explanation": "Pressing the button on the EVM produces a beep sound, accompanied by the printed slip appearing in the VVPAT window.",
+      "ncertRef": "NCERT Ch. 5 • Page 129 (Fig. 5.13)"
+    },
+    {
+      "id": 139,
+      "topic": "Voting Process, EVMs & VVPAT",
+      "difficulty": "CHS Exam",
+      "question": "Why does the VVPAT paper trail remain crucial even when electronic voting machines are fast and accurate?",
+      "options": [
+        "It provides a physical backup for verification and recounting in case of disputes or electronic failures",
+        "It replaces the electoral roll",
+        "It lets candidates see who voted for them",
+        "It prints voter ID cards at the booth"
+      ],
+      "correctIndex": 0,
+      "explanation": "VVPAT builds public trust by allowing instant voter verification and serving as a physical audit backup for recounting.",
+      "ncertRef": "NCERT Ch. 5 • Page 130"
+    },
+    {
+      "id": 140,
+      "topic": "Voting Process, EVMs & VVPAT",
+      "difficulty": "Easy",
+      "question": "Which international role has the Election Commission of India played regarding EVM and VVPAT technology?",
+      "options": [
+        "Banning electronic voting worldwide",
+        "Keeping the technology completely secret from all nations",
+        "Supporting countries like Namibia and Bhutan and training other nations interested in adopting it",
+        "Exporting paper ballot boxes only"
+      ],
+      "correctIndex": 2,
+      "explanation": "India's EVMs and VVPATs have been used in Namibia and Bhutan with ECI support, and several other countries have received training from India.",
+      "ncertRef": "NCERT Ch. 5 • Page 130"
+    },
+    {
+      "id": 141,
+      "topic": "Model Code of Conduct (MCC) & T.N. Seshan",
+      "difficulty": "CHS Exam",
+      "question": "Arrange these milestones in the history of India's Model Code of Conduct in chronological order: (I) Proactive ECI enforcement, (II) Voluntary adoption in Kerala, (III) Circulated by ECI in general elections.",
+      "options": [
+        "II → I → III",
+        "III → II → I",
+        "II → III → I",
+        "I → II → III"
+      ],
+      "correctIndex": 2,
+      "explanation": "Kerala voluntarily adopted MCC in 1960 (II), the ECI circulated it during the 1962 general elections (III), and became proactive in enforcing it from 1991 (I).",
+      "ncertRef": "NCERT Ch. 5 • Page 131"
+    },
+    {
+      "id": 142,
+      "topic": "Model Code of Conduct (MCC) & T.N. Seshan",
+      "difficulty": "Medium",
+      "question": "A State Chief Minister announces a brand-new free laptop scheme two days after election dates are declared. Under the MCC, this action is:",
+      "options": [
+        "A violation of the Model Code of Conduct, as no new schemes may be announced to influence voters",
+        "Allowed because they are still Chief Minister",
+        "Encouraged by the ECI",
+        "Valid only in urban areas"
+      ],
+      "correctIndex": 0,
+      "explanation": "Once the MCC takes effect, the party in government cannot announce new schemes or projects that may influence voters.",
+      "ncertRef": "NCERT Ch. 5 • Page 130"
+    },
+    {
+      "id": 143,
+      "topic": "Model Code of Conduct (MCC) & T.N. Seshan",
+      "difficulty": "Medium",
+      "question": "What does 'proxy voting' mean, which T.N. Seshan fought to eliminate using Voter ID cards?",
+      "options": [
+        "Voting using an EVM",
+        "Choosing NOTA on the ballot",
+        "Someone else illegally casting a vote in another registered voter's name",
+        "Voting from home with ECI approval"
+      ],
+      "correctIndex": 2,
+      "explanation": "Proxy/impersonation voting occurs when one person votes fraudulently in another's name; photo Voter IDs were introduced to stop it.",
+      "ncertRef": "NCERT Ch. 5 • Page 118 & 132"
+    },
+    {
+      "id": 144,
+      "topic": "Model Code of Conduct (MCC) & T.N. Seshan",
+      "difficulty": "Easy",
+      "question": "Which of the following is a complaint the ECI handles as a Model Code of Conduct violation?",
+      "options": [
+        "Cash bundles found in a candidate's car or gifts distributed to voters",
+        "A voter pressing the NOTA button",
+        "A school teacher performing election duty",
+        "A voter checking their name on the voter list"
+      ],
+      "correctIndex": 0,
+      "explanation": "Figs. 5.17–5.20 highlight distributing gifts, abusive speech, officials campaigning, and unaccounted cash bundles as MCC violations.",
+      "ncertRef": "NCERT Ch. 5 • Page 131"
+    },
+    {
+      "id": 145,
+      "topic": "Lok Sabha, State Assemblies & Rajya Sabha",
+      "difficulty": "CHS Exam",
+      "question": "Why are 84 seats reserved for Scheduled Castes (SC) and 47 seats for Scheduled Tribes (ST) in the Lok Sabha?",
+      "options": [
+        "To reduce the total number of constituencies",
+        "To increase the term of the Lok Sabha",
+        "To ensure historically marginalised and disadvantaged communities have fair representation in Parliament",
+        "Because SCs and STs cannot vote in General constituencies"
+      ],
+      "correctIndex": 2,
+      "explanation": "Reserved constituencies ensure adequate political representation for historically marginalised SC and ST communities in Parliament.",
+      "ncertRef": "NCERT Ch. 5 • Page 129 & 138"
+    },
+    {
+      "id": 146,
+      "topic": "Lok Sabha, State Assemblies & Rajya Sabha",
+      "difficulty": "CHS Exam",
+      "question": "What is the relationship between a Lok Sabha constituency and State Assembly constituencies?",
+      "options": [
+        "They are always identical in size across India",
+        "A single Lok Sabha constituency may contain two or more State Assembly constituencies",
+        "Lok Sabha constituencies exist only in Delhi",
+        "Every State Assembly constituency contains 5 Lok Sabha constituencies"
+      ],
+      "correctIndex": 1,
+      "explanation": "As noted in the chapter's 'Let's Explore' box, one parliamentary (Lok Sabha) constituency typically encompasses two or more smaller assembly constituencies.",
+      "ncertRef": "NCERT Ch. 5 • Page 134"
+    },
+    {
+      "id": 147,
+      "topic": "Lok Sabha, State Assemblies & Rajya Sabha",
+      "difficulty": "Medium",
+      "question": "Which house of Parliament focuses on national issues and is directly elected by citizens as the 'Lower House'?",
+      "options": [
+        "Gram Sabha",
+        "Vidhan Parishad",
+        "Rajya Sabha",
+        "Lok Sabha"
+      ],
+      "correctIndex": 3,
+      "explanation": "The Lok Sabha is the Lower House of Parliament, directly elected by voters across 543 constituencies to address national issues.",
+      "ncertRef": "NCERT Ch. 5 • Page 126 & 136"
+    },
+    {
+      "id": 148,
+      "topic": "Lok Sabha, State Assemblies & Rajya Sabha",
+      "difficulty": "CHS Exam",
+      "question": "Every two years, what fraction of Rajya Sabha members retire so that new members can be elected?",
+      "options": [
+        "One-half (1/2)",
+        "All members at once",
+        "One-fourth (1/4)",
+        "One-third (1/3)"
+      ],
+      "correctIndex": 3,
+      "explanation": "One-third of Rajya Sabha members retire every two years, keeping it a continuous Permanent House that is never dissolved.",
+      "ncertRef": "NCERT Ch. 5 • Page 134–135"
+    },
+    {
+      "id": 149,
+      "topic": "Lok Sabha, State Assemblies & Rajya Sabha",
+      "difficulty": "Medium",
+      "question": "How many members of the Rajya Sabha are nominated by the President of India?",
+      "options": [
+        "47 members",
+        "12 members",
+        "20 members",
+        "2 members"
+      ],
+      "correctIndex": 1,
+      "explanation": "The President of India nominates 12 distinguished individuals to the 245-member Rajya Sabha, while 233 are elected by MLAs.",
+      "ncertRef": "NCERT Ch. 5 • Page 134–135"
+    },
+    {
+      "id": 150,
+      "topic": "Lok Sabha, State Assemblies & Rajya Sabha",
+      "difficulty": "Easy",
+      "question": "What is the other constitutional name of the Rajya Sabha shown in Fig. 5.23?",
+      "options": [
+        "The Assembly of Ministers",
+        "The National Panchayat",
+        "House of the People",
+        "The Council of States"
+      ],
+      "correctIndex": 3,
+      "explanation": "Rajya Sabha is also called the Council of States (Upper House), representing India's states and union territories.",
+      "ncertRef": "NCERT Ch. 5 • Page 135 (Fig. 5.23)"
+    },
+    {
+      "id": 151,
+      "topic": "President, Vice President & Electoral Challenges",
+      "difficulty": "CHS Exam",
+      "question": "Why does the President's Electoral College include both Union MPs and State/UT MLAs?",
+      "options": [
+        "To make the election faster than FPTP",
+        "Because MLAs cannot vote in Rajya Sabha elections",
+        "Because there are too few MPs in Delhi",
+        "Because the President represents the whole country, ensuring support of both central and state governments"
+      ],
+      "correctIndex": 3,
+      "explanation": "Including elected MPs and elected MLAs ensures the President enjoys the democratic support of both the Union and the States.",
+      "ncertRef": "NCERT Ch. 5 • Page 136"
+    },
+    {
+      "id": 152,
+      "topic": "President, Vice President & Electoral Challenges",
+      "difficulty": "CHS Exam",
+      "question": "In states with a bicameral legislature (Legislative Assembly + Legislative Council), who can vote in the election of the President of India?",
+      "options": [
+        "Only nominated MLCs",
+        "Both MLAs and MLCs",
+        "Only elected MLAs (Members of Legislative Councils — both elected and nominated — are excluded)",
+        "Neither MLAs nor MLCs"
+      ],
+      "correctIndex": 2,
+      "explanation": "Members of Legislative Councils (both elected and nominated) are explicitly excluded from the President's Electoral College.",
+      "ncertRef": "NCERT Ch. 5 • Page 136"
+    },
+    {
+      "id": 153,
+      "topic": "President, Vice President & Electoral Challenges",
+      "difficulty": "CHS Exam",
+      "question": "Can the 12 nominated members of the Rajya Sabha vote in the election of the Vice President of India?",
+      "options": [
+        "Yes, the Vice President's Electoral College includes both elected and nominated members of both Houses of Parliament",
+        "No, nominated members never vote in any election",
+        "Only during a tie",
+        "Only if the Prime Minister permits them"
+      ],
+      "correctIndex": 0,
+      "explanation": "Unlike the Presidential election, the Vice President's Electoral College includes BOTH elected and nominated members of Lok Sabha and Rajya Sabha.",
+      "ncertRef": "NCERT Ch. 5 • Page 137"
+    },
+    {
+      "id": 154,
+      "topic": "President, Vice President & Electoral Challenges",
+      "difficulty": "CHS Exam",
+      "question": "Do Members of State Legislative Assemblies (MLAs) participate in electing the Vice President of India?",
+      "options": [
+        "No, only members of both Houses of Parliament vote for the Vice President",
+        "Yes, all elected MLAs vote",
+        "Only MLAs of Delhi and Puducherry vote",
+        "Only Chief Ministers vote"
+      ],
+      "correctIndex": 0,
+      "explanation": "State MLAs participate in electing the President, but NOT the Vice President—who is elected solely by MPs of both Houses of Parliament.",
+      "ncertRef": "NCERT Ch. 5 • Page 137"
+    },
+    {
+      "id": 155,
+      "topic": "President, Vice President & Electoral Challenges",
+      "difficulty": "Medium",
+      "question": "In the Presidential election, why do more populous states have a greater say in the Electoral College?",
+      "options": [
+        "Because smaller states are excluded",
+        "Because populous states get to nominate 12 MPs each",
+        "Because their MLAs cast open voice votes",
+        "Because the elaborate voting and counting rules weight representation according to state population"
+      ],
+      "correctIndex": 3,
+      "explanation": "The textbook notes that Presidential voting and counting rules are elaborate so that more populous states have a proportionally greater say.",
+      "ncertRef": "NCERT Ch. 5 • Page 136"
+    },
+    {
+      "id": 156,
+      "topic": "President, Vice President & Electoral Challenges",
+      "difficulty": "Medium",
+      "question": "Which of the following is a potential challenge of social media during elections discussed in the chapter's activities?",
+      "options": [
+        "It completely stops young people from hearing speeches",
+        "It eliminates polling stations",
+        "It replaces the Election Commission",
+        "While it spreads awareness, catchy reels and misinformation can also confuse voters"
+      ],
+      "correctIndex": 3,
+      "explanation": "Social media boosts youth engagement and access to information, but can also spread misleading content or confusion if voters are not vigilant.",
+      "ncertRef": "NCERT Ch. 5 • Page 138"
+    },
+    {
+      "id": 157,
+      "topic": "President, Vice President & Electoral Challenges",
+      "difficulty": "Easy",
+      "question": "According to the NCERT chapter, why is the right to vote also called a 'responsibility'?",
+      "options": [
+        "Because every citizen must stay informed, ask the right questions, and vote thoughtfully for democracy to succeed",
+        "Because voters must campaign for a party",
+        "Because voters must pay a fee to vote",
+        "Because only responsible officers can vote"
+      ],
+      "correctIndex": 0,
+      "explanation": "The chapter stresses that voting is both a right and a responsibility requiring voter awareness, vigilance, and thoughtful choice.",
+      "ncertRef": "NCERT Ch. 5 • Page 137"
+    },
+    {
+      "id": 158,
+      "topic": "President, Vice President & Electoral Challenges",
+      "difficulty": "Medium",
+      "question": "Which website is suggested at the end of the NCERT chapter for exploring past parliamentary and assembly constituency election results?",
+      "options": [
+        "https://www.supremecourt.in",
+        "https://www.ncert-quiz.org",
+        "https://www.indiavotes.com",
+        "https://www.parliament-tv.in"
+      ],
+      "correctIndex": 2,
+      "explanation": "Question 9 of the chapter's 'Questions and activities' invites students to explore constituency results on https://www.indiavotes.com.",
+      "ncertRef": "NCERT Ch. 5 • Page 138"
+    },
+    {
+      "id": 159,
+      "topic": "President, Vice President & Electoral Challenges",
+      "difficulty": "CHS Exam",
+      "question": "Compare the three indirect elections covered in Chapter 5: Rajya Sabha, President, and Vice President. What voting system do ALL THREE share?",
+      "options": [
+        "Direct secret ballot by all 18+ citizens",
+        "Open show of hands",
+        "Single Transferable Vote (STV)",
+        "First-Past-The-Post (FPTP)"
+      ],
+      "correctIndex": 2,
+      "explanation": "All three indirect elections—Rajya Sabha MPs, the President, and the Vice President—use the Single Transferable Vote (STV) system.",
+      "ncertRef": "NCERT Ch. 5 • Page 134–137"
+    },
+    {
+      "id": 160,
+      "topic": "President, Vice President & Electoral Challenges",
+      "difficulty": "Easy",
+      "question": "Complete the NCERT chapter's concluding democratic principle: 'It starts with asking the right questions — and ends with...'",
+      "options": [
+        "boycotting urban elections",
+        "forming a single party",
+        "casting a responsible vote",
+        "replacing the Constitution"
+      ],
+      "correctIndex": 2,
+      "explanation": "The chapter closes with the memorable line: 'It starts with asking the right questions — and ends with casting a responsible vote.'",
+      "ncertRef": "NCERT Ch. 5 • Page 137"
+    }
+  ]
+}
