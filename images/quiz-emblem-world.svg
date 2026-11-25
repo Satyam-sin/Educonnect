@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+  <defs>
+    <radialGradient id="qew-oc" cx="38%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#38BDF8"/><stop offset="55%" stop-color="#2563EB"/><stop offset="100%" stop-color="#1E3A8A"/>
+    </radialGradient>
+    <linearGradient id="qew-ld" x1="24" y1="24" x2="94" y2="94" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#4ADE80"/><stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+    <linearGradient id="qew-rg" x1="12" y1="88" x2="108" y2="32" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FDE047"/><stop offset="100%" stop-color="#F97316"/>
+    </linearGradient>
+  </defs>
+  <circle cx="60" cy="60" r="44" fill="url(#qew-oc)" stroke="#BAE6FD" stroke-width="3"/>
+  <path d="M29 44C36 33 49 30 56 36C61 40 58 51 50 56C43 60 44 68 38 74C30 68 24 56 29 44Z" fill="url(#qew-ld)"/>
+  <path d="M68 34C77 34 89 44 92 56C85 60 80 72 74 78C66 74 64 62 68 54C71 48 63 40 68 34Z" fill="url(#qew-ld)"/>
+  <ellipse cx="60" cy="60" rx="54" ry="18" transform="rotate(-22 60 60)" stroke="url(#qew-rg)" stroke-width="3.8"/>
+  <path d="M88 22L92 31L101 35L92 39L88 48L84 39L75 35L84 31L88 22Z" fill="#FEF08A"/>
+  <path d="M36 28C44 21 56 18 68 20" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" opacity="0.45"/>
+</svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="tr-gd" x1="16" y1="8" x2="48" y2="54" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FEF08A"/><stop offset="45%" stop-color="#F59E0B"/><stop offset="100%" stop-color="#B45309"/>
+    </linearGradient>
+    <linearGradient id="tr-bs" x1="18" y1="48" x2="46" y2="58" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#6366F1"/><stop offset="100%" stop-color="#312E81"/>
+    </linearGradient>
+  </defs>
+  <path d="M18 14H10C10 24 14 31 21 32" stroke="#F59E0B" stroke-width="4" stroke-linecap="round"/>
+  <path d="M46 14H54C54 24 50 31 43 32" stroke="#F59E0B" stroke-width="4" stroke-linecap="round"/>
+  <path d="M18 10H46V24C46 33 40 39 32 39C24 39 18 33 18 24V10Z" fill="url(#tr-gd)" stroke="#FEF9C3" stroke-width="2.2" stroke-linejoin="round"/>
+  <rect x="28" y="39" width="8" height="10" fill="#D97706"/>
+  <rect x="19" y="48" width="26" height="8" rx="3.5" fill="url(#tr-bs)" stroke="#A5B4FC" stroke-width="2"/>
+  <path d="M32 16L34.2 21.5L40 22L35.5 25.8L37 31.5L32 28.4L27 31.5L28.5 25.8L24 22L29.8 21.5L32 16Z" fill="#FFFFFF" opacity="0.92"/>
+</svg>

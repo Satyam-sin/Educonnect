@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="tg-red" x1="8" y1="8" x2="56" y2="56" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FB7185"/><stop offset="100%" stop-color="#E11D48"/>
+    </linearGradient>
+    <linearGradient id="tg-arr" x1="34" y1="30" x2="56" y2="8" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FBBF24"/><stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+  </defs>
+  <circle cx="30" cy="34" r="23" fill="url(#tg-red)"/>
+  <circle cx="30" cy="34" r="16.5" fill="#F8FAFC"/>
+  <circle cx="30" cy="34" r="10.5" fill="url(#tg-red)"/>
+  <circle cx="30" cy="34" r="4.5" fill="#FDE047"/>
+  <path d="M30 34L52 12" stroke="url(#tg-arr)" stroke-width="3.8" stroke-linecap="round"/>
+  <path d="M46 12L52 12L52 18L57 13L57 7L51 7L46 12Z" fill="#38BDF8" stroke="#0284C7" stroke-width="1.4" stroke-linejoin="round"/>
+  <circle cx="30" cy="34" r="2" fill="#B45309"/>
+</svg>

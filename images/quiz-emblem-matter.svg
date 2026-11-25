@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+  <defs>
+    <linearGradient id="qem-1" x1="20" y1="20" x2="100" y2="100" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#38BDF8"/><stop offset="100%" stop-color="#818CF8"/>
+    </linearGradient>
+    <radialGradient id="qem-c" cx="45%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#FEF08A"/><stop offset="100%" stop-color="#F97316"/>
+    </radialGradient>
+  </defs>
+  <ellipse cx="60" cy="60" rx="48" ry="20" transform="rotate(30 60 60)" stroke="url(#qem-1)" stroke-width="4"/>
+  <ellipse cx="60" cy="60" rx="48" ry="20" transform="rotate(-30 60 60)" stroke="#34D399" stroke-width="4"/>
+  <ellipse cx="60" cy="60" rx="48" ry="20" transform="rotate(90 60 60)" stroke="#F472B6" stroke-width="4"/>
+  <circle cx="60" cy="60" r="15" fill="url(#qem-c)" stroke="#FEF9C3" stroke-width="3"/>
+  <circle cx="96" cy="39" r="7" fill="#38BDF8" stroke="#FFFFFF" stroke-width="2"/>
+  <circle cx="24" cy="81" r="7" fill="#34D399" stroke="#FFFFFF" stroke-width="2"/>
+  <circle cx="60" cy="12" r="7" fill="#F472B6" stroke="#FFFFFF" stroke-width="2"/>
+</svg>

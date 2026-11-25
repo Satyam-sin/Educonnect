@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="ct-ring" x1="8" y1="8" x2="56" y2="56" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#818CF8"/><stop offset="50%" stop-color="#38BDF8"/><stop offset="100%" stop-color="#C084FC"/>
+    </linearGradient>
+    <linearGradient id="ct-dark" x1="32" y1="10" x2="54" y2="54" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#1E1B4B"/><stop offset="100%" stop-color="#4338CA"/>
+    </linearGradient>
+    <linearGradient id="ct-light" x1="10" y1="10" x2="32" y2="54" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FEF08A"/><stop offset="100%" stop-color="#F8FAFC"/>
+    </linearGradient>
+  </defs>
+  <circle cx="32" cy="32" r="26" fill="url(#ct-ring)" opacity="0.22"/>
+  <circle cx="32" cy="32" r="22" fill="url(#ct-light)" stroke="url(#ct-ring)" stroke-width="3.5"/>
+  <path d="M32 10A22 22 0 0 1 32 54V10Z" fill="url(#ct-dark)"/>
+  <path d="M32 18A14 14 0 0 0 32 46V18Z" fill="#312E81" opacity="0.18"/>
+  <path d="M32 18A14 14 0 0 1 32 46V18Z" fill="#E0E7FF" opacity="0.9"/>
+  <circle cx="24" cy="24" r="3" fill="#F59E0B"/>
+  <circle cx="40" cy="40" r="3" fill="#38BDF8"/>
+  <path d="M18 14C22 11 27 10 32 10" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+</svg>

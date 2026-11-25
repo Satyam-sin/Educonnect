@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="bk-cv" x1="8" y1="12" x2="56" y2="54" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#6366F1"/><stop offset="100%" stop-color="#0EA5E9"/>
+    </linearGradient>
+    <linearGradient id="bk-pg" x1="12" y1="14" x2="52" y2="48" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFFFFF"/><stop offset="100%" stop-color="#E0F2FE"/>
+    </linearGradient>
+  </defs>
+  <path d="M6 16C6 13.8 7.8 12 10 12H26C30 12 32 14.2 32 17V52C32 49.5 29.5 48 26 48H10C7.8 48 6 46.2 6 44V16Z" fill="url(#bk-cv)" stroke="#BAE6FD" stroke-width="2"/>
+  <path d="M58 16C58 13.8 56.2 12 54 12H38C34 12 32 14.2 32 17V52C32 49.5 34.5 48 38 48H54C56.2 48 58 46.2 58 44V16Z" fill="url(#bk-cv)" stroke="#BAE6FD" stroke-width="2"/>
+  <path d="M11 16H26C28.5 16 30 17.5 30 19.5V45.5C28.5 44.5 27 44 25 44H11V16Z" fill="url(#bk-pg)"/>
+  <path d="M53 16H38C35.5 16 34 17.5 34 19.5V45.5C35.5 44.5 37 44 39 44H53V16Z" fill="url(#bk-pg)"/>
+  <path d="M15 23H25M15 29H25M15 35H22M39 23H49M39 29H49M39 35H46" stroke="#6366F1" stroke-width="2.2" stroke-linecap="round"/>
+  <path d="M43 12V24L46 21.5L49 24V12" fill="#F59E0B"/>
+</svg>

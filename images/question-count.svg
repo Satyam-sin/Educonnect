@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="qc-bg" x1="10" y1="10" x2="54" y2="54" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#6366F1"/><stop offset="100%" stop-color="#06B6D4"/>
+    </linearGradient>
+  </defs>
+  <rect x="14" y="12" width="40" height="44" rx="10" fill="#312E81" stroke="#818CF8" stroke-width="2"/>
+  <rect x="8" y="8" width="40" height="44" rx="10" fill="url(#qc-bg)" stroke="#BAE6FD" stroke-width="2.2"/>
+  <path d="M22 23C22 19.5 24.8 17 28.5 17C32.2 17 35 19.3 35 22.5C35 25.5 32.2 26.8 30 28.5C29 29.3 28.5 30.3 28.5 32" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="28.5" cy="39" r="2.8" fill="#FEF08A"/>
+</svg>

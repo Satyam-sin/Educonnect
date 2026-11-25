@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="calc" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#6366f1"/><stop offset="100%" stop-color="#1e1b4b"/></linearGradient>
+    <linearGradient id="scr" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#38bdf8"/><stop offset="100%" stop-color="#0ea5e9"/></linearGradient>
+  </defs>
+  <rect x="11" y="5" width="42" height="54" rx="9" fill="url(#calc)" stroke="#818cf8" stroke-width="1.5"/>
+  <rect x="17" y="11" width="30" height="12" rx="3" fill="url(#scr)"/>
+  <line x1="35" y1="17" x2="43" y2="17" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round"/>
+  <rect x="17" y="28" width="12" height="11" rx="3" fill="#34d399"/>
+  <path d="M23 30.5v6M20 33.5h6" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round"/>
+  <rect x="35" y="28" width="12" height="11" rx="3" fill="#fbbf24"/>
+  <path d="M38 33.5h6" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round"/>
+  <rect x="17" y="43" width="12" height="11" rx="3" fill="#f43f5e"/>
+  <path d="M20.5 46l5 5M25.5 46l-5 5" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round"/>
+  <rect x="35" y="43" width="12" height="11" rx="3" fill="#38bdf8"/>
+  <path d="M38 47h6M38 50.5h6" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round"/>
+</svg>

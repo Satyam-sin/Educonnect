@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+  <defs>
+    <linearGradient id="qec-s" x1="16" y1="20" x2="104" y2="44" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FB923C"/><stop offset="100%" stop-color="#EA580C"/>
+    </linearGradient>
+    <linearGradient id="qec-g" x1="16" y1="76" x2="104" y2="100" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#34D399"/><stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+  </defs>
+  <circle cx="60" cy="60" r="48" fill="#1E293B" stroke="#818CF8" stroke-width="3"/>
+  <path d="M22 46C28 28 43 18 60 18C77 18 92 28 98 46H22Z" fill="url(#qec-s)"/>
+  <rect x="16" y="46" width="88" height="28" rx="6" fill="#F8FAFC"/>
+  <path d="M22 74H98C92 92 77 102 60 102C43 102 28 92 22 74Z" fill="url(#qec-g)"/>
+  <circle cx="60" cy="60" r="12" stroke="#1D4ED8" stroke-width="3"/>
+  <circle cx="60" cy="60" r="3" fill="#1D4ED8"/>
+  <path d="M60 48V72M48 60H72M51.5 51.5L68.5 68.5M68.5 51.5L51.5 68.5" stroke="#1D4ED8" stroke-width="1.8"/>
+</svg>

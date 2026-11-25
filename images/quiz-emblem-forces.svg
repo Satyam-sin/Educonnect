@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+  <defs>
+    <radialGradient id="qef-bg" cx="50%" cy="45%" r="52%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.35"/><stop offset="100%" stop-color="#6366F1" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="qef-mag" x1="22" y1="26" x2="96" y2="96" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FB7185"/><stop offset="55%" stop-color="#E11D48"/><stop offset="100%" stop-color="#9F1239"/>
+    </linearGradient>
+    <linearGradient id="qef-bolt" x1="46" y1="16" x2="76" y2="72" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FEF08A"/><stop offset="50%" stop-color="#F59E0B"/><stop offset="100%" stop-color="#EA580C"/>
+    </linearGradient>
+  </defs>
+  <circle cx="60" cy="60" r="56" fill="url(#qef-bg)"/>
+  <circle cx="60" cy="60" r="46" stroke="#38BDF8" stroke-width="2.5" stroke-dasharray="7 6" opacity="0.55"/>
+  <path d="M30 42V66C30 82.6 43.4 96 60 96C76.6 96 90 82.6 90 66V42H74V66C74 73.7 67.7 80 60 80C52.3 80 46 73.7 46 66V42H30Z" fill="url(#qef-mag)" stroke="#FECDD3" stroke-width="2.5" stroke-linejoin="round"/>
+  <rect x="30" y="34" width="16" height="12" rx="3" fill="#E2E8F0" stroke="#94A3B8" stroke-width="2"/>
+  <rect x="74" y="34" width="16" height="12" rx="3" fill="#38BDF8" stroke="#BAE6FD" stroke-width="2"/>
+  <path d="M64 14L46 45H60L55 72L77 39H62L64 14Z" fill="url(#qef-bolt)" stroke="#FEF9C3" stroke-width="2.2" stroke-linejoin="round"/>
+  <circle cx="24" cy="28" r="4" fill="#34D399"/>
+  <circle cx="96" cy="28" r="4" fill="#FDE047"/>
+</svg>

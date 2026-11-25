@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <radialGradient id="gl-oc" cx="38%" cy="32%" r="65%">
+      <stop offset="0%" stop-color="#38BDF8"/><stop offset="55%" stop-color="#2563EB"/><stop offset="100%" stop-color="#1E3A8A"/>
+    </radialGradient>
+    <linearGradient id="gl-ld" x1="12" y1="14" x2="52" y2="52" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#4ADE80"/><stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+  </defs>
+  <circle cx="32" cy="32" r="26" fill="url(#gl-oc)" stroke="#BAE6FD" stroke-width="2.6"/>
+  <path d="M14 25C18 17 26 15 31 19C35 22 32 29 27 32C23 35 24 41 19 44C14 40 10 33 14 25Z" fill="url(#gl-ld)"/>
+  <path d="M37 16C43 16 51 22 53 31C49 34 45 42 41 46C36 43 35 35 37 30C39 26 34 20 37 16Z" fill="url(#gl-ld)"/>
+  <ellipse cx="32" cy="32" rx="26" ry="10" stroke="#E0F2FE" stroke-width="1.4" opacity="0.4"/>
+  <ellipse cx="32" cy="32" rx="11" ry="26" stroke="#E0F2FE" stroke-width="1.4" opacity="0.4"/>
+  <path d="M18 14C24 10 31 8 38 10" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" opacity="0.55"/>
+</svg>

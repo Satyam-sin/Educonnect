@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="rk-b" x1="18" y1="46" x2="54" y2="10" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#E2E8F0"/><stop offset="50%" stop-color="#FFFFFF"/><stop offset="100%" stop-color="#38BDF8"/>
+    </linearGradient>
+    <linearGradient id="rk-f" x1="10" y1="54" x2="24" y2="40" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#EF4444"/><stop offset="55%" stop-color="#F97316"/><stop offset="100%" stop-color="#FEF08A"/>
+    </linearGradient>
+  </defs>
+  <path d="M12 52C12 44 17 40 22 40L24 42C24 47 20 52 12 52Z" fill="url(#rk-f)"/>
+  <path d="M22 28L12 30L18 39L24 36Z" fill="#EF4444" stroke="#FCA5A5" stroke-width="1.4" stroke-linejoin="round"/>
+  <path d="M36 42L34 52L25 46L28 40Z" fill="#EF4444" stroke="#FCA5A5" stroke-width="1.4" stroke-linejoin="round"/>
+  <path d="M54 10C42 10 31 16 21 28L36 43C48 33 54 22 54 10Z" fill="url(#rk-b)" stroke="#6366F1" stroke-width="2.2" stroke-linejoin="round"/>
+  <circle cx="40" cy="24" r="5.5" fill="#38BDF8" stroke="#1E3A8A" stroke-width="2.4"/>
+  <circle cx="38.5" cy="22.5" r="1.8" fill="#FFFFFF"/>
+  <path d="M44 11L53 20" stroke="#EF4444" stroke-width="3.5" stroke-linecap="round"/>
+</svg>

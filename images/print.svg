@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="pr-body" x1="8" y1="22" x2="56" y2="46" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#64748B"/><stop offset="100%" stop-color="#334155"/>
+    </linearGradient>
+    <linearGradient id="pr-pap" x1="18" y1="8" x2="46" y2="56" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFFFFF"/><stop offset="100%" stop-color="#E2E8F0"/>
+    </linearGradient>
+  </defs>
+  <rect x="18" y="8" width="28" height="16" rx="3" fill="url(#pr-pap)" stroke="#94A3B8" stroke-width="2"/>
+  <rect x="8" y="21" width="48" height="24" rx="7" fill="url(#pr-body)" stroke="#94A3B8" stroke-width="2"/>
+  <circle cx="47" cy="29" r="2.8" fill="#34D399"/>
+  <circle cx="40" cy="29" r="2" fill="#38BDF8"/>
+  <rect x="18" y="36" width="28" height="20" rx="3" fill="url(#pr-pap)" stroke="#64748B" stroke-width="2"/>
+  <path d="M23 43H41M23 48H37M23 52H33" stroke="#6366F1" stroke-width="2.4" stroke-linecap="round"/>
+</svg>
