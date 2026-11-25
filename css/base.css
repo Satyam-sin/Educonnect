@@ -147,3 +147,84 @@ button {
   color: var(--text-muted);
   font-size: 0.8rem;
 }
+
+/* ==========================================================================
+   Full-Color Gradient SVG Icon System (images/*.svg)
+   ========================================================================== */
+
+.svg-icon {
+  width: 1.22em;
+  height: 1.22em;
+  display: inline-block;
+  vertical-align: -0.22em;
+  flex-shrink: 0;
+  pointer-events: none;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.22));
+  transition: transform var(--transition-fast), filter var(--transition-fast);
+}
+
+.svg-icon--lg {
+  width: 2.35rem;
+  height: 2.35rem;
+  vertical-align: middle;
+}
+
+.svg-icon--btn {
+  width: 1.55rem;
+  height: 1.55rem;
+  vertical-align: middle;
+}
+
+.brand-icon {
+  background: var(--bg-surface-2);
+  border: 1px solid var(--border-strong);
+}
+
+.settings-row-icon {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+}
+
+
+/* ==========================================================================
+   V2 GLOBAL UI POLISH — Ambient Backdrop, Glass Depth & Tactile Quiz Cards
+   ========================================================================== */
+body {
+  background-image:
+    radial-gradient(circle at 12% 8%, var(--accent-primary-soft) 0%, transparent 36%),
+    radial-gradient(circle at 88% 18%, var(--accent-secondary-soft) 0%, transparent 34%);
+  background-attachment: fixed;
+}
+
+.setup-card,
+.question-card,
+.results-card,
+.settings-modal {
+  box-shadow: var(--shadow-md), inset 0 1px 0 rgba(255, 255, 255, 0.07);
+}
+
+.option-btn {
+  transition: transform 140ms ease, border-color 160ms ease, background 160ms ease, box-shadow 160ms ease;
+}
+
+.option-btn:hover:not(:disabled) {
+  transform: translateX(4px);
+}
+
+.progress-fill {
+  position: relative;
+  overflow: hidden;
+}
+
+.progress-fill::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.32), transparent);
+  animation: progressShimmer 2.4s linear infinite;
+}
+
+@keyframes progressShimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}

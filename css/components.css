@@ -1039,3 +1039,489 @@
 .setup-card {
   backdrop-filter: blur(12px);
 }
+
+
+/* ==========================================================================
+   QUIZ PANEL V2 — Sleek Setup Card, Question Cards, Option Pills & Feedback
+   ========================================================================== */
+.setup-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 26px !important;
+  border: 1.5px solid var(--border-strong) !important;
+  background: var(--bg-surface) !important;
+  box-shadow: var(--shadow-md), inset 0 1px 0 rgba(255, 255, 255, 0.08) !important;
+}
+
+.setup-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--accent-primary), var(--accent-secondary), var(--success));
+}
+
+.chip {
+  font-weight: 700 !important;
+  border-radius: 12px !important;
+  transition: transform 140ms ease, background 160ms ease, border-color 160ms ease, box-shadow 160ms ease !important;
+}
+
+.chip:hover {
+  transform: translateY(-1.5px);
+  border-color: var(--accent-primary);
+}
+
+.chip.active,
+.chip.is-active {
+  box-shadow: 0 4px 14px var(--accent-primary-soft) !important;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary)) !important;
+  border: none !important;
+  box-shadow: 0 8px 22px rgba(99, 102, 241, 0.32) !important;
+  transition: transform 150ms ease, box-shadow 150ms ease, filter 150ms ease !important;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.06);
+  box-shadow: 0 12px 28px rgba(99, 102, 241, 0.42) !important;
+}
+
+/* Live Quiz Question Card Polish */
+.question-card {
+  position: relative;
+  border-radius: 22px !important;
+  border: 1.5px solid var(--border-subtle) !important;
+  padding: 1.45rem 1.5rem !important;
+  transition: border-color 180ms ease, box-shadow 180ms ease;
+}
+
+.question-card:hover {
+  border-color: var(--border-strong) !important;
+}
+
+.question-text {
+  font-weight: 700;
+  line-height: 1.52;
+  letter-spacing: -0.005em;
+}
+
+/* Tactile Option Buttons with A/B/C/D Circular Badges */
+.option-btn {
+  border-radius: 15px !important;
+  border-width: 1.5px !important;
+  padding: 0.85rem 1rem !important;
+}
+
+.option-btn:hover:not(:disabled) {
+  border-color: var(--accent-primary) !important;
+  background: var(--accent-primary-soft) !important;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+}
+
+.option-letter,
+.option-badge {
+  border-radius: 10px !important;
+  font-weight: 800 !important;
+}
+
+.option-btn.correct {
+  border-color: var(--success) !important;
+  box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.18) !important;
+}
+
+.option-btn.wrong {
+  border-color: var(--danger) !important;
+  box-shadow: 0 0 0 2px rgba(239, 68, 68, 0.16) !important;
+}
+
+.explanation-box {
+  border-radius: 14px !important;
+  border-left: 4px solid var(--accent-secondary) !important;
+  background: var(--bg-surface-2) !important;
+}
+
+/* Results Celebration Card */
+.results-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 26px !important;
+  border: 1.5px solid var(--border-strong) !important;
+}
+
+.results-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #f59e0b, var(--success), var(--accent-primary));
+}
+
+
+/* ==========================================================================
+   QUIZ AREA V3 — VISIBLY UPGRADED CONNECTED UI (Exact HTML & JS Selectors!)
+   Targets: .quiz-banner, .setup-card, .mode-card, .top-progress-fill,
+            .panel (question cards), .option-btn, .option-key, .tts-btn,
+            .results-hero, .stat-card, .review-card
+   ========================================================================== */
+
+/* 1. Glowing Top Progress Rail */
+.top-progress-rail {
+  height: 5px !important;
+  background: rgba(148, 163, 184, 0.16) !important;
+}
+
+.top-progress-fill {
+  background: linear-gradient(90deg, var(--accent-primary), var(--accent-secondary), var(--success)) !important;
+  box-shadow: 0 0 12px var(--accent-primary) !important;
+  position: relative;
+  overflow: hidden;
+}
+
+.top-progress-fill::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.45), transparent);
+  animation: quizBarShimmer 2.2s linear infinite;
+}
+
+@keyframes quizBarShimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+/* 2. Quiz Hero Banner (Visible right when you open any quiz!) */
+.quiz-banner {
+  position: relative;
+  overflow: hidden;
+  padding: 2rem 1.75rem !important;
+  border-radius: 26px !important;
+  background:
+    radial-gradient(circle at 85% 15%, var(--accent-secondary-soft) 0%, transparent 50%),
+    radial-gradient(circle at 15% 85%, var(--accent-primary-soft) 0%, transparent 50%),
+    var(--bg-surface) !important;
+  border: 1.5px solid var(--border-strong) !important;
+  box-shadow: var(--shadow-md), inset 0 1px 0 rgba(255, 255, 255, 0.1) !important;
+  margin-bottom: 1.4rem !important;
+}
+
+.quiz-banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--accent-primary), var(--accent-secondary), var(--success));
+}
+
+.hero-title {
+  background: linear-gradient(135deg, var(--text-primary) 25%, var(--accent-primary-hover));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.highlight-chip {
+  background: var(--bg-surface-2) !important;
+  border: 1px solid var(--border-strong) !important;
+  box-shadow: var(--shadow-sm) !important;
+  padding: 0.42rem 0.88rem !important;
+  font-weight: 700 !important;
+}
+
+/* 3. Quiz Setup Card & Mode Cards */
+.setup-card {
+  padding: 1.85rem !important;
+  border-radius: 26px !important;
+  background: var(--bg-surface) !important;
+  border: 1.5px solid var(--border-strong) !important;
+  box-shadow: var(--shadow-md), inset 0 1px 0 rgba(255, 255, 255, 0.08) !important;
+}
+
+.mode-card {
+  border-radius: 18px !important;
+  border: 1.5px solid var(--border-subtle) !important;
+  background: var(--bg-surface-2) !important;
+  padding: 1.15rem 1.2rem !important;
+  transition: transform 160ms ease, border-color 160ms ease, box-shadow 160ms ease, background 160ms ease !important;
+}
+
+.mode-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent-primary) !important;
+}
+
+.mode-card.selected,
+.mode-card.active {
+  border-color: var(--accent-primary) !important;
+  background: linear-gradient(145deg, var(--accent-primary-soft), var(--accent-secondary-soft)) !important;
+  box-shadow: var(--shadow-glow), inset 0 1px 0 rgba(255, 255, 255, 0.12) !important;
+}
+
+.select-control {
+  border-radius: 14px !important;
+  border: 1.5px solid var(--border-strong) !important;
+  padding: 0.78rem 1rem !important;
+  font-weight: 600 !important;
+}
+
+.chip.selected,
+.chip.active {
+  background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary)) !important;
+  color: #ffffff !important;
+  border-color: transparent !important;
+  box-shadow: 0 6px 16px rgba(99, 102, 241, 0.34) !important;
+}
+
+/* 4. Live Question Cards (Rendered as .panel inside .questions-feed!) */
+.questions-feed .panel {
+  position: relative;
+  overflow: hidden;
+  border-radius: 22px !important;
+  border: 1.5px solid var(--border-subtle) !important;
+  border-left: 5px solid var(--accent-primary) !important;
+  padding: 1.5rem 1.55rem !important;
+  background: var(--bg-surface) !important;
+  box-shadow: var(--shadow-md), inset 0 1px 0 rgba(255, 255, 255, 0.07) !important;
+  transition: border-color 180ms ease, transform 180ms ease, box-shadow 180ms ease !important;
+}
+
+.questions-feed .panel:hover {
+  border-color: var(--border-strong) !important;
+  border-left-color: var(--accent-secondary) !important;
+}
+
+.questions-feed .panel.is-correct {
+  border-left-color: var(--success) !important;
+}
+
+.questions-feed .panel.is-wrong {
+  border-left-color: var(--danger) !important;
+}
+
+.question-top {
+  padding-bottom: 0.75rem;
+  margin-bottom: 0.9rem;
+  border-bottom: 1px dashed var(--border-subtle);
+}
+
+.question-text {
+  font-size: 1.08rem;
+  font-weight: 700;
+  line-height: 1.55;
+  margin-bottom: 1.1rem;
+}
+
+.tts-btn {
+  border-radius: 12px !important;
+  border: 1px solid var(--border-strong) !important;
+  background: var(--bg-surface-2) !important;
+  transition: transform 140ms ease, border-color 160ms ease, background 160ms ease !important;
+}
+
+.tts-btn:hover {
+  transform: scale(1.06);
+  border-color: var(--accent-primary) !important;
+  background: var(--accent-primary-soft) !important;
+}
+
+/* 5. Tactile Option Buttons & Circular/Rounded A/B/C/D Keys (.option-key) */
+.options-list {
+  gap: 0.7rem !important;
+}
+
+.option-btn {
+  border-radius: 16px !important;
+  border: 1.5px solid var(--border-subtle) !important;
+  background: var(--bg-surface-2) !important;
+  padding: 0.9rem 1.1rem !important;
+  transition: transform 150ms ease, border-color 150ms ease, background 150ms ease, box-shadow 150ms ease !important;
+}
+
+.option-btn:hover:not(:disabled) {
+  transform: translateX(5px) !important;
+  border-color: var(--accent-primary) !important;
+  background: var(--accent-primary-soft) !important;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.14) !important;
+}
+
+.option-key {
+  width: 34px !important;
+  height: 34px !important;
+  border-radius: 11px !important;
+  background: var(--bg-surface) !important;
+  border: 1.5px solid var(--border-strong) !important;
+  font-weight: 800 !important;
+  box-shadow: var(--shadow-sm) !important;
+  transition: background 150ms ease, color 150ms ease, border-color 150ms ease !important;
+}
+
+.option-btn:hover:not(:disabled) .option-key,
+.option-btn.selected .option-key {
+  background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary)) !important;
+  color: #ffffff !important;
+  border-color: transparent !important;
+}
+
+.option-btn.correct {
+  border-color: var(--success) !important;
+  background: rgba(16, 185, 129, 0.14) !important;
+  box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.22) !important;
+}
+
+.option-btn.correct .option-key {
+  background: var(--success) !important;
+  color: #ffffff !important;
+  border-color: transparent !important;
+}
+
+.option-btn.wrong {
+  border-color: var(--danger) !important;
+  background: rgba(239, 68, 68, 0.13) !important;
+  box-shadow: 0 0 0 2px rgba(239, 68, 68, 0.2) !important;
+}
+
+.option-btn.wrong .option-key {
+  background: var(--danger) !important;
+  color: #ffffff !important;
+  border-color: transparent !important;
+}
+
+/* 6. Results Hero, Stat Cards & Review Cards */
+.results-hero {
+  position: relative;
+  overflow: hidden;
+  border-radius: 26px !important;
+  border: 1.5px solid var(--border-strong) !important;
+  background:
+    radial-gradient(circle at 50% 0%, var(--accent-primary-soft) 0%, transparent 60%),
+    var(--bg-surface) !important;
+  box-shadow: var(--shadow-md), inset 0 1px 0 rgba(255, 255, 255, 0.1) !important;
+}
+
+.results-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #f59e0b, var(--success), var(--accent-primary));
+}
+
+.stat-card {
+  border-radius: 18px !important;
+  border: 1.5px solid var(--border-subtle) !important;
+  background: var(--bg-surface-2) !important;
+  box-shadow: var(--shadow-sm) !important;
+  transition: transform 150ms ease, border-color 150ms ease !important;
+}
+
+.stat-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent-primary) !important;
+}
+
+.review-card {
+  border-radius: 18px !important;
+  border: 1.5px solid var(--border-subtle) !important;
+  box-shadow: var(--shadow-sm) !important;
+}
+
+
+/* ==========================================================================
+   QUIZ AREA V4 — UNMISTAKABLE VISUAL REDESIGN (Emblem Crest + Glass Form Cards)
+   ========================================================================== */
+.quiz-emblem-wrap {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 90px;
+  border-radius: 26px;
+  margin: 0 auto 0.9rem;
+  background: linear-gradient(145deg, var(--accent-primary-soft), var(--accent-secondary-soft));
+  border: 1.5px solid var(--border-strong);
+  box-shadow: var(--shadow-glow), inset 0 1px 0 rgba(255, 255, 255, 0.18);
+  animation: emblemFloat 4s ease-in-out infinite;
+}
+
+.quiz-emblem-img {
+  width: 72px;
+  height: 72px;
+  display: block;
+  filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.3));
+}
+
+@keyframes emblemFloat {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-6px); }
+}
+
+.setup-header {
+  text-align: center;
+  padding: 1.5rem 1.25rem 1.35rem;
+  margin: -0.35rem -0.35rem 1.35rem;
+  border-radius: 20px;
+  background:
+    radial-gradient(circle at 80% 15%, var(--accent-secondary-soft) 0%, transparent 52%),
+    radial-gradient(circle at 20% 85%, var(--accent-primary-soft) 0%, transparent 52%),
+    var(--bg-surface-2);
+  border: 1px solid var(--border-subtle);
+}
+
+.setup-card .form-group {
+  background: var(--bg-surface-2);
+  border: 1px solid var(--border-subtle);
+  border-radius: 18px;
+  padding: 1.1rem 1.2rem;
+  margin-bottom: 1rem !important;
+  transition: border-color 160ms ease;
+}
+
+.setup-card .form-group:hover {
+  border-color: var(--border-strong);
+}
+
+.label-with-icon {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.48rem;
+  font-weight: 800;
+}
+
+.feedback-mode-btn {
+  border-radius: 16px !important;
+  border: 1.5px solid var(--border-subtle) !important;
+  background: var(--bg-surface) !important;
+  padding: 1rem 1.1rem !important;
+  transition: transform 150ms ease, border-color 160ms ease, box-shadow 160ms ease, background 160ms ease !important;
+}
+
+.feedback-mode-btn:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent-primary) !important;
+}
+
+.feedback-mode-btn.selected {
+  border-color: var(--success) !important;
+  background: linear-gradient(145deg, rgba(16, 185, 129, 0.14), var(--accent-primary-soft)) !important;
+  box-shadow: 0 8px 20px rgba(16, 185, 129, 0.18), inset 0 1px 0 rgba(255, 255, 255, 0.12) !important;
+}
+
+#startQuizBtn {
+  padding: 1.08rem 1.4rem !important;
+  font-size: 1.05rem !important;
+  font-weight: 800 !important;
+  border-radius: 16px !important;
+  letter-spacing: 0.01em;
+}
