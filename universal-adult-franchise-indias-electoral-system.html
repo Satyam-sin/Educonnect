@@ -26,7 +26,7 @@
   <header class="topbar" id="mainTopbar">
     <div class="topbar-inner">
       <div class="brand" id="brandHomeBtn" role="button" tabindex="0" aria-label="Back to Quiz Setup">
-        <div class="brand-icon" aria-hidden="true">🗳️</div>
+        <div class="brand-icon" aria-hidden="true"><img src="images/ballot.svg" class="svg-icon svg-icon--btn" alt="" aria-hidden="true" /></div>
         <div>
           <div class="brand-title">Universal Adult Franchise &amp; Electoral System</div>
           <div class="brand-subtitle">Class 8 New NCERT • CHS Civics Quiz</div>
@@ -39,7 +39,7 @@
           ← CHS Explorer
         </a>
         <button type="button" class="settings-gear-btn" id="settingsGearBtn" aria-label="Open Settings" title="Settings">
-          ⚙️
+          <img src="images/settings.svg" class="svg-icon svg-icon--btn" alt="" aria-hidden="true" />
         </button>
       </div>
     </div>
@@ -52,23 +52,26 @@
     <section id="viewHome">
       <div class="setup-card">
         <div class="setup-header">
+          <div class="quiz-emblem-wrap" aria-hidden="true">
+            <img src="images/quiz-emblem-civics.svg" class="quiz-emblem-img" alt="" />
+          </div>
           <span class="hero-badge">NCERT Class 8 SST • Chapter 5 • 160 MCQs</span>
           <h1 class="hero-title">Select Your Questions &amp; Start Quiz</h1>
           <p class="setup-subtitle">
-            Pick your topic, difficulty, question count, and answer style — then start immediately.
+            Master Universal Adult Franchise, Election Commission of India, Lok Sabha, Rajya Sabha, EVM/VVPAT, NOTA &amp; Electoral Reforms for BHU CHS.
           </p>
         </div>
 
         <div class="form-group">
           <label class="form-label" for="topicSelect">
-            <span>Chapter Sub-Topic</span>
+            <span class="label-with-icon"><img src="images/layers.svg" class="svg-icon" alt="" aria-hidden="true" /> Chapter Sub-Topic</span>
             <span class="pill" id="matchingPoolCount">160 MCQs available</span>
           </label>
           <select id="topicSelect" class="select-control"></select>
         </div>
 
         <div class="form-group">
-          <label class="form-label">Difficulty Level</label>
+          <label class="form-label"><span class="label-with-icon"><img src="images/difficulty-meter.svg" class="svg-icon" alt="" aria-hidden="true" /> Difficulty Level</span></label>
           <div class="chip-group">
             <button type="button" class="chip active" data-diff="ALL">All Levels</button>
             <button type="button" class="chip" data-diff="Easy">Easy</button>
@@ -78,7 +81,7 @@
         </div>
 
         <div class="form-group">
-          <label class="form-label">Number of Questions</label>
+          <label class="form-label"><span class="label-with-icon"><img src="images/question-count.svg" class="svg-icon" alt="" aria-hidden="true" /> Number of Questions</span></label>
           <div class="chip-group">
             <button type="button" class="chip" data-count="10">10 Qs</button>
             <button type="button" class="chip active" data-count="20">20 Qs</button>
@@ -89,28 +92,28 @@
         </div>
 
         <div class="form-group">
-          <label class="form-label">Quiz Type</label>
+          <label class="form-label"><span class="label-with-icon"><img src="images/stopwatch.svg" class="svg-icon" alt="" aria-hidden="true" /> Quiz Type</span></label>
           <div class="mode-grid">
             <button type="button" class="mode-card selected" data-mode="practice">
-              <div class="mode-card-title">⚡ Practice Mode</div>
+              <div class="mode-card-title"><img src="images/bolt.svg" class="svg-icon" alt="" aria-hidden="true" /> Practice Mode</div>
               <div class="mode-card-desc">Untimed practice at your own pace.</div>
             </button>
             <button type="button" class="mode-card" data-mode="exam">
-              <div class="mode-card-title">🎯 CHS Timed Exam</div>
+              <div class="mode-card-title"><img src="images/target.svg" class="svg-icon" alt="" aria-hidden="true" /> CHS Timed Exam</div>
               <div class="mode-card-desc">Countdown timer (45s/question).</div>
             </button>
           </div>
         </div>
 
         <div class="form-group">
-          <label class="form-label">Answer Check Mode</label>
+          <label class="form-label"><span class="label-with-icon"><img src="images/instant-check.svg" class="svg-icon" alt="" aria-hidden="true" /> Answer Check Mode</span></label>
           <div class="feedback-mode-grid">
             <button type="button" class="feedback-mode-btn selected" data-home-reveal="instant">
-              <strong>✓ Instant Check</strong>
+              <strong><img src="images/instant-check.svg" class="svg-icon" alt="" aria-hidden="true" /> Instant Check</strong>
               <span>Shows ✓ right or ✗ wrong immediately on clicking an option.</span>
             </button>
             <button type="button" class="feedback-mode-btn" data-home-reveal="submit-end">
-              <strong>📋 Submit at End</strong>
+              <strong><img src="images/clipboard.svg" class="svg-icon" alt="" aria-hidden="true" /> Submit at End</strong>
               <span>Answer all questions first; see all results together after Submit.</span>
             </button>
           </div>
@@ -118,14 +121,14 @@
 
         <div class="form-group">
           <div class="toggle-row">
-            <span>Shuffle Question Order</span>
+            <span class="label-with-icon"><img src="images/shuffle.svg" class="svg-icon" alt="" aria-hidden="true" /> Shuffle Question Order</span>
             <label class="switch">
               <input type="checkbox" id="shuffleQToggle" checked />
               <span class="slider"></span>
             </label>
           </div>
           <div class="toggle-row">
-            <span>Shuffle Options (A / B / C / D)</span>
+            <span class="label-with-icon"><img src="images/shuffle.svg" class="svg-icon" alt="" aria-hidden="true" /> Shuffle Options (A / B / C / D)</span>
             <label class="switch">
               <input type="checkbox" id="shuffleOptToggle" checked />
               <span class="slider"></span>
@@ -134,7 +137,7 @@
         </div>
 
         <button type="button" class="btn btn-primary btn-block" id="startQuizBtn">
-          🚀 Start Quiz
+          <img src="images/rocket.svg" class="svg-icon" alt="" aria-hidden="true" /> Start Civics Quiz
         </button>
       </div>
     </section>
@@ -147,9 +150,9 @@
         <div class="quiz-meta-pills">
           <span class="pill" id="quizModeLabel">✓ Instant Check</span>
           <span class="pill" id="quizProgressText">0 / 20 Attempted</span>
-          <span class="pill streak" id="quizStreak">🔥 Streak: 0</span>
+          <span class="pill streak" id="quizStreak"><img src="images/flame.svg" class="svg-icon" alt="" aria-hidden="true" /> Streak: 0</span>
         </div>
-        <span class="pill timer" id="quizTimer">⏱ 00:00</span>
+        <span class="pill timer" id="quizTimer"><img src="images/timer.svg" class="svg-icon" alt="" aria-hidden="true" /> 00:00</span>
       </div>
 
       <div class="questions-feed" id="questionsFeed"></div>
@@ -222,9 +225,9 @@
           </div>
 
           <div class="chip-group no-print">
-            <button type="button" class="btn btn-primary" id="retakeQuizBtn">🔄 Retake Quiz</button>
-            <button type="button" class="btn btn-secondary" id="backHomeFromResBtn">🎯 Select Questions</button>
-            <button type="button" class="btn btn-secondary" id="printResultBtn">🖨️ Print</button>
+            <button type="button" class="btn btn-primary" id="retakeQuizBtn"><img src="images/refresh.svg" class="svg-icon" alt="" aria-hidden="true" /> Retake Quiz</button>
+            <button type="button" class="btn btn-secondary" id="backHomeFromResBtn"><img src="images/target.svg" class="svg-icon" alt="" aria-hidden="true" /> Select Questions</button>
+            <button type="button" class="btn btn-secondary" id="printResultBtn"><img src="images/print.svg" class="svg-icon" alt="" aria-hidden="true" /> Print</button>
           </div>
         </div>
       </div>
@@ -245,13 +248,13 @@
   </main>
 
   <!-- ===================================================================== -->
-  <!-- COHESIVE GROUPED SETTINGS SHEET (Opened via Top-Right ⚙️ Button)      -->
+  <!-- COHESIVE GROUPED SETTINGS SHEET (Opened via Top-Right <img src="images/settings.svg" class="svg-icon svg-icon--btn" alt="" aria-hidden="true" /> Button)      -->
   <!-- ===================================================================== -->
   <div id="settingsModalBackdrop" class="drawer-backdrop hidden" role="dialog" aria-modal="true" aria-labelledby="settingsModalTitle">
     <div class="settings-modal">
       <div class="drawer-header">
         <div style="display:flex;align-items:center;gap:0.55rem;">
-          <span style="font-size:1.15rem;">⚙️</span>
+          <span style="font-size:1.15rem;"><img src="images/settings.svg" class="svg-icon svg-icon--btn" alt="" aria-hidden="true" /></span>
           <h3 id="settingsModalTitle" style="font-size:1.06rem;font-weight:800;">Settings</h3>
         </div>
         <button type="button" class="drawer-close-btn" id="closeSettingsBtn" aria-label="Close Settings">
@@ -267,15 +270,15 @@
             <!-- Dark / Light Mode -->
             <div class="settings-row">
               <div class="settings-row-info">
-                <div class="settings-row-icon">🌓</div>
+                <div class="settings-row-icon"><img src="images/theme-mode.svg" class="svg-icon" alt="" aria-hidden="true" /></div>
                 <div>
                   <div class="settings-row-title">Mode</div>
                   <div class="settings-row-sub">Dark default or Light</div>
                 </div>
               </div>
               <div class="seg-control">
-                <button type="button" class="seg-btn active" data-theme-choice="dark">🌙 Dark</button>
-                <button type="button" class="seg-btn" data-theme-choice="light">☀️ Light</button>
+                <button type="button" class="seg-btn active" data-theme-choice="dark"><img src="images/moon.svg" class="svg-icon" alt="" aria-hidden="true" /> Dark</button>
+                <button type="button" class="seg-btn" data-theme-choice="light"><img src="images/sun.svg" class="svg-icon" alt="" aria-hidden="true" /> Light</button>
               </div>
             </div>
 
@@ -283,7 +286,7 @@
             <div class="settings-row settings-row--stack">
               <div class="settings-row-head">
                 <div class="settings-row-info">
-                  <div class="settings-row-icon">🎨</div>
+                  <div class="settings-row-icon"><img src="images/palette.svg" class="svg-icon" alt="" aria-hidden="true" /></div>
                   <div>
                     <div class="settings-row-title">Color Theme</div>
                     <div class="settings-row-sub">Choose your favorite accent palette</div>
@@ -304,7 +307,7 @@
             <div class="settings-row settings-row--stack">
               <div class="settings-row-head">
                 <div class="settings-row-info">
-                  <div class="settings-row-icon">🔤</div>
+                  <div class="settings-row-icon"><img src="images/type.svg" class="svg-icon" alt="" aria-hidden="true" /></div>
                   <div>
                     <div class="settings-row-title">Font Size</div>
                     <div class="settings-row-sub">Slide smoothly from very small to extra large</div>
@@ -334,7 +337,7 @@
             <!-- Font Family -->
             <div class="settings-row">
               <div class="settings-row-info">
-                <div class="settings-row-icon">✍️</div>
+                <div class="settings-row-icon"><img src="images/pen.svg" class="svg-icon" alt="" aria-hidden="true" /></div>
                 <div>
                   <div class="settings-row-title">Font Style</div>
                   <div class="settings-row-sub">Text typeface</div>
@@ -350,7 +353,7 @@
             <!-- Card Density -->
             <div class="settings-row">
               <div class="settings-row-info">
-                <div class="settings-row-icon">📐</div>
+                <div class="settings-row-icon"><img src="images/layout.svg" class="svg-icon" alt="" aria-hidden="true" /></div>
                 <div>
                   <div class="settings-row-title">Card Spacing</div>
                   <div class="settings-row-sub">Comfortable or compact</div>
@@ -371,7 +374,7 @@
             <!-- Text-to-Speech Toggle -->
             <div class="settings-row">
               <div class="settings-row-info">
-                <div class="settings-row-icon">🔊</div>
+                <div class="settings-row-icon"><img src="images/volume.svg" class="svg-icon" alt="" aria-hidden="true" /></div>
                 <div>
                   <div class="settings-row-title">Text-to-Speech</div>
                   <div class="settings-row-sub">Read questions &amp; options aloud</div>
@@ -387,7 +390,7 @@
             <div class="settings-row settings-row--stack">
               <div class="settings-row-head">
                 <div class="settings-row-info">
-                  <div class="settings-row-icon">⏩</div>
+                  <div class="settings-row-icon"><img src="images/speed.svg" class="svg-icon" alt="" aria-hidden="true" /></div>
                   <div>
                     <div class="settings-row-title">Voice Speed</div>
                     <div class="settings-row-sub">Adjust reading pace</div>
@@ -401,7 +404,7 @@
                 </div>
               </div>
               <div class="volume-slider-wrap">
-                <span class="slider-end-label" style="font-size:0.76rem;">🐢</span>
+                <span class="slider-end-label" style="font-size:0.76rem;"><img src="images/slow.svg" class="svg-icon" alt="" aria-hidden="true" /></span>
                 <input
                   type="range"
                   id="ttsRateSlider"
@@ -412,14 +415,14 @@
                   value="1.0"
                   aria-label="Voice Speed Slider"
                 />
-                <span class="slider-end-label" style="font-size:0.95rem;">🐇</span>
+                <span class="slider-end-label" style="font-size:0.95rem;"><img src="images/bolt.svg" class="svg-icon" alt="" aria-hidden="true" /></span>
               </div>
             </div>
 
             <!-- Sound Effects Toggle -->
             <div class="settings-row">
               <div class="settings-row-info">
-                <div class="settings-row-icon">🔔</div>
+                <div class="settings-row-icon"><img src="images/bell.svg" class="svg-icon" alt="" aria-hidden="true" /></div>
                 <div>
                   <div class="settings-row-title">Sound Effects</div>
                   <div class="settings-row-sub">Chimes for right &amp; wrong answers</div>
@@ -454,7 +457,7 @@
             <!-- Active Quiz Quick Row (only visible while playing) -->
             <div class="settings-row hidden" id="settingsActiveQuizSection">
               <button type="button" class="btn btn-secondary" id="settingsChangeQuestionsBtn" style="flex:1;padding:0.55rem 0.8rem;font-size:0.82rem;">
-                🎯 Change Questions
+                <img src="images/target.svg" class="svg-icon" alt="" aria-hidden="true" /> Change Questions
               </button>
               <button type="button" class="btn btn-success" id="settingsSubmitQuizBtn" style="flex:1;padding:0.55rem 0.8rem;font-size:0.82rem;">
                 ✓ Submit Quiz

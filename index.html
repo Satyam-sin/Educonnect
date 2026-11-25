@@ -21,7 +21,7 @@
   <header class="topbar" id="mainTopbar">
     <div class="topbar-inner">
       <div class="brand" onclick="window.scrollTo({top:0,behavior:'smooth'})" role="button" tabindex="0">
-        <div class="brand-icon" aria-hidden="true">🧭</div>
+        <div class="brand-icon" aria-hidden="true"><img src="images/compass.svg" class="svg-icon svg-icon--btn" alt="" aria-hidden="true" /></div>
         <div>
           <div class="brand-title">CHS Explorer</div>
           <div class="brand-subtitle">CHS Entrance Preparation Hub</div>
@@ -30,18 +30,28 @@
 
       <!-- Top-Right Corner Settings Icon Button (Synced with Quiz Pages) -->
       <button type="button" class="settings-gear-btn" id="settingsGearBtn" aria-label="Open Settings" title="Settings">
-        ⚙️
+        <img src="images/settings.svg" class="svg-icon svg-icon--btn" alt="" aria-hidden="true" />
       </button>
     </div>
   </header>
 
   <main class="container">
     <section class="explorer-hero fade-in">
-      <span class="hero-badge">CHS Class 9 Entrance • NCERT Portal</span>
+      <div class="hero-crest-wrap" aria-hidden="true">
+        <img src="images/hero-crest.svg" class="hero-crest-img" alt="" />
+      </div>
+      <div>
+        <span class="hero-badge"><img src="images/graduation-cap.svg" class="svg-icon" alt="" aria-hidden="true" /> CHS Class 9 Entrance • NCERT Portal</span>
+      </div>
       <h1 class="explorer-title">CHS Explorer</h1>
       <p class="explorer-sub">
-        Explore textbooks and practice chapter-wise MCQs across all CHS exam subjects.
+        Explore rich chapter notes, interactive timelines, and exam-grade MCQs across all CHS entrance subjects.
       </p>
+      <div class="explorer-stats-row">
+        <span class="explorer-stat-pill"><img src="images/trophy.svg" class="svg-icon" alt="" aria-hidden="true" /> 740 CHS MCQs</span>
+        <span class="explorer-stat-pill"><img src="images/layers.svg" class="svg-icon" alt="" aria-hidden="true" /> 6 Live Modules</span>
+        <span class="explorer-stat-pill"><img src="images/shield-check.svg" class="svg-icon" alt="" aria-hidden="true" /> 100% Offline Ready</span>
+      </div>
     </section>
 
     <!-- Main Vertical Stack of Big Square Hub Cards -->
@@ -51,9 +61,14 @@
       <!-- =============================================================== -->
       <section class="hub-square" aria-labelledby="booksHeading">
         <div class="hub-square-trigger">
-          <div>
-            <h2 class="hub-big-label" id="booksHeading">BOOKS</h2>
-            <p class="hub-square-caption">All CHS Entrance Subjects — Study Material &amp; Notes</p>
+          <div class="hub-header-left">
+            <div class="hub-icon-badge" aria-hidden="true">
+              <img src="images/books-stack.svg" alt="" />
+            </div>
+            <div>
+              <h2 class="hub-big-label" id="booksHeading">BOOKS</h2>
+              <p class="hub-square-caption">All CHS Entrance Subjects — Study Material &amp; Notes</p>
+            </div>
           </div>
           <span class="hub-expand-pill">6 Subjects</span>
         </div>
@@ -69,6 +84,11 @@
       <!-- =============================================================== -->
       <section class="hub-square hub-square--quiz" aria-labelledby="quizHeading">
         <button type="button" class="hub-square-trigger--quiz" id="quizSquareTrigger" aria-expanded="false">
+          <div class="hub-quiz-icons-row" aria-hidden="true">
+            <img src="images/trophy.svg" class="hub-quiz-mini-img" alt="" />
+            <img src="images/quiz-brain.svg" class="hub-quiz-badge-img" alt="" />
+            <img src="images/star-badge.svg" class="hub-quiz-mini-img" alt="" />
+          </div>
           <span class="hub-big-label hub-big-label--quiz" id="quizHeading">QUIZ</span>
           <span class="hub-square-caption" id="quizTriggerHint">Tap to explore subjects →</span>
         </button>
@@ -92,7 +112,7 @@
     <div class="settings-modal">
       <div class="drawer-header">
         <div style="display:flex;align-items:center;gap:0.55rem;">
-          <span style="font-size:1.15rem;">⚙️</span>
+          <span style="font-size:1.15rem;"><img src="images/settings.svg" class="svg-icon svg-icon--btn" alt="" aria-hidden="true" /></span>
           <h3 id="settingsModalTitle" style="font-size:1.06rem;font-weight:800;">CHS Explorer Settings</h3>
         </div>
         <button type="button" class="drawer-close-btn" id="closeSettingsBtn" aria-label="Close Settings">
@@ -107,22 +127,22 @@
           <div class="settings-group">
             <div class="settings-row">
               <div class="settings-row-info">
-                <div class="settings-row-icon">🌓</div>
+                <div class="settings-row-icon"><img src="images/theme-mode.svg" class="svg-icon" alt="" aria-hidden="true" /></div>
                 <div>
                   <div class="settings-row-title">Mode</div>
                   <div class="settings-row-sub">Dark default or Light</div>
                 </div>
               </div>
               <div class="seg-control">
-                <button type="button" class="seg-btn active" data-theme-choice="dark">🌙 Dark</button>
-                <button type="button" class="seg-btn" data-theme-choice="light">☀️ Light</button>
+                <button type="button" class="seg-btn active" data-theme-choice="dark"><img src="images/moon.svg" class="svg-icon" alt="" aria-hidden="true" /> Dark</button>
+                <button type="button" class="seg-btn" data-theme-choice="light"><img src="images/sun.svg" class="svg-icon" alt="" aria-hidden="true" /> Light</button>
               </div>
             </div>
 
             <div class="settings-row settings-row--stack">
               <div class="settings-row-head">
                 <div class="settings-row-info">
-                  <div class="settings-row-icon">🎨</div>
+                  <div class="settings-row-icon"><img src="images/palette.svg" class="svg-icon" alt="" aria-hidden="true" /></div>
                   <div>
                     <div class="settings-row-title">Color Theme</div>
                     <div class="settings-row-sub">Applies to Home &amp; all Quiz pages</div>
@@ -142,7 +162,7 @@
             <div class="settings-row settings-row--stack">
               <div class="settings-row-head">
                 <div class="settings-row-info">
-                  <div class="settings-row-icon">🔤</div>
+                  <div class="settings-row-icon"><img src="images/type.svg" class="svg-icon" alt="" aria-hidden="true" /></div>
                   <div>
                     <div class="settings-row-title">Font Size</div>
                     <div class="settings-row-sub">Stays synced when you open any quiz</div>
@@ -171,7 +191,7 @@
 
             <div class="settings-row">
               <div class="settings-row-info">
-                <div class="settings-row-icon">✍️</div>
+                <div class="settings-row-icon"><img src="images/pen.svg" class="svg-icon" alt="" aria-hidden="true" /></div>
                 <div>
                   <div class="settings-row-title">Font Style</div>
                   <div class="settings-row-sub">Text typeface</div>
@@ -206,7 +226,7 @@
 
             <div class="settings-row">
               <div class="settings-row-info">
-                <div class="settings-row-icon">🏷️</div>
+                <div class="settings-row-icon"><img src="images/tag.svg" class="svg-icon" alt="" aria-hidden="true" /></div>
                 <div>
                   <div class="settings-row-title">Show "Soon" Badges</div>
                   <div class="settings-row-sub">Display upcoming subject tags</div>
@@ -220,7 +240,7 @@
 
             <div class="settings-row">
               <div class="settings-row-info">
-                <div class="settings-row-icon">⬆️</div>
+                <div class="settings-row-icon"><img src="images/arrow-up.svg" class="svg-icon" alt="" aria-hidden="true" /></div>
                 <div>
                   <div class="settings-row-title">Auto-Hide Header</div>
                   <div class="settings-row-sub">Hide top bar while scrolling down</div>
@@ -234,7 +254,7 @@
 
             <div class="settings-row">
               <div class="settings-row-info">
-                <div class="settings-row-icon">🔲</div>
+                <div class="settings-row-icon"><img src="images/contrast.svg" class="svg-icon" alt="" aria-hidden="true" /></div>
                 <div>
                   <div class="settings-row-title">High Contrast Borders</div>
                   <div class="settings-row-sub">Stronger outlines around cards</div>
@@ -248,7 +268,7 @@
 
             <div class="settings-row">
               <div class="settings-row-info">
-                <div class="settings-row-icon">✨</div>
+                <div class="settings-row-icon"><img src="images/sparkles.svg" class="svg-icon" alt="" aria-hidden="true" /></div>
                 <div>
                   <div class="settings-row-title">Smooth Animations</div>
                   <div class="settings-row-sub">Hover lift &amp; slide transitions</div>
