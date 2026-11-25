@@ -511,3 +511,190 @@
     padding: 1.15rem;
   }
 }
+
+
+/* ==========================================================================
+   MARATHA BOOK NOTES V2 — Royal Heritage UI, Short-Point Subcards & Polish
+   ========================================================================== */
+.maratha-crest-wrap {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 74px;
+  height: 74px;
+  border-radius: 22px;
+  margin: 0 auto 0.75rem;
+  background: linear-gradient(145deg, rgba(245, 158, 11, 0.22), var(--accent-primary-soft));
+  border: 1.5px solid rgba(245, 158, 11, 0.45);
+  box-shadow: 0 10px 26px rgba(245, 158, 11, 0.18), inset 0 1px 0 rgba(255, 255, 255, 0.15);
+}
+
+.maratha-crest-img {
+  width: 48px;
+  height: 48px;
+  display: block;
+}
+
+.notes-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 22px !important;
+  box-shadow: var(--shadow-md), inset 0 1px 0 rgba(255, 255, 255, 0.08) !important;
+  transition: border-color 180ms ease, box-shadow 180ms ease;
+}
+
+.notes-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3.5px;
+  background: linear-gradient(90deg, #f59e0b, var(--accent-primary), var(--accent-secondary));
+}
+
+.notes-card:hover {
+  border-color: var(--border-strong);
+}
+
+.notes-card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.05rem;
+  padding-bottom: 0.7rem;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.notes-card-header h2 {
+  margin: 0;
+  font-size: 1.18rem;
+  line-height: 1.3;
+}
+
+.sec-num {
+  display: inline-grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #f59e0b, #ea580c);
+  color: #ffffff;
+  font-size: 0.82rem;
+  font-weight: 900;
+  flex-shrink: 0;
+  box-shadow: 0 4px 12px rgba(234, 88, 12, 0.3);
+}
+
+.notes-subgrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.9rem;
+}
+
+.notes-subblock {
+  background: var(--bg-surface-2);
+  border: 1px solid var(--border-subtle);
+  border-radius: 16px;
+  padding: 1rem 1.1rem;
+  transition: border-color 160ms ease, transform 160ms ease;
+}
+
+.notes-subblock:hover {
+  border-color: var(--accent-primary);
+  transform: translateY(-2px);
+}
+
+.notes-subblock--wide {
+  grid-column: 1 / -1;
+}
+
+.notes-subblock h3 {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.95rem;
+  font-weight: 800;
+  margin: 0 0 0.65rem;
+  color: var(--text-primary);
+}
+
+.notes-list {
+  margin: 0;
+  padding-left: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.notes-list li {
+  font-size: 0.91rem;
+  line-height: 1.5;
+  color: var(--text-secondary);
+}
+
+.notes-list li strong {
+  color: var(--text-primary);
+}
+
+.exam-tip-box {
+  margin-top: 0.95rem;
+  padding: 0.78rem 1rem;
+  border-radius: 14px;
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.14), var(--accent-primary-soft));
+  border: 1px solid rgba(245, 158, 11, 0.38);
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.88rem;
+  color: var(--text-primary);
+}
+
+.ashtapradhan-wrap {
+  margin-top: 1rem;
+  padding-top: 0.95rem;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.mini-section-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.98rem;
+  font-weight: 800;
+  margin: 0 0 0.75rem;
+}
+
+.ashta-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.65rem;
+}
+
+.ashta-chip {
+  background: var(--bg-surface-2);
+  border: 1px solid var(--border-subtle);
+  border-left: 3.5px solid #f59e0b;
+  border-radius: 12px;
+  padding: 0.68rem 0.85rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.18rem;
+}
+
+.ashta-chip strong {
+  font-size: 0.88rem;
+  color: var(--text-primary);
+}
+
+.ashta-chip span {
+  font-size: 0.81rem;
+  color: var(--text-secondary);
+}
+
+@media (max-width: 720px) {
+  .notes-subgrid,
+  .ashta-grid {
+    grid-template-columns: 1fr;
+  }
+}

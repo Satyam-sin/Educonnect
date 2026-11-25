@@ -197,14 +197,14 @@
         if (btn.classList.contains("speaking")) {
           window.speechSynthesis.cancel();
           btn.classList.remove("speaking");
-          btn.textContent = "🔊 Listen";
+          btn.innerHTML = `<img src="../../../images/volume.svg" class="svg-icon" alt="" aria-hidden="true" /> Listen`;
           return;
         }
 
         window.speechSynthesis.cancel();
         document.querySelectorAll("[data-read-section].speaking").forEach((b) => {
           b.classList.remove("speaking");
-          b.textContent = "🔊 Listen";
+          b.innerHTML = `<img src="../../../images/volume.svg" class="svg-icon" alt="" aria-hidden="true" /> Listen`;
         });
 
         const clone = card.cloneNode(true);
@@ -217,14 +217,14 @@
         utter.rate = slider ? parseFloat(slider.value) || 1.0 : 1.0;
 
         btn.classList.add("speaking");
-        btn.textContent = "⏹ Stop";
+        btn.innerHTML = `<img src="../../../images/stop.svg" class="svg-icon" alt="" aria-hidden="true" /> Stop`;
         utter.onend = () => {
           btn.classList.remove("speaking");
-          btn.textContent = "🔊 Listen";
+          btn.innerHTML = `<img src="../../../images/volume.svg" class="svg-icon" alt="" aria-hidden="true" /> Listen`;
         };
         utter.onerror = () => {
           btn.classList.remove("speaking");
-          btn.textContent = "🔊 Listen";
+          btn.innerHTML = `<img src="../../../images/volume.svg" class="svg-icon" alt="" aria-hidden="true" /> Listen`;
         };
         window.speechSynthesis.speak(utter);
       });
