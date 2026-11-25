@@ -165,10 +165,10 @@
   function updateTimerDisplay() {
     if (!state.session) return;
     const fmt = window.QuizApp.engine.formatTime;
-    $("quizTimer").textContent =
+    $("quizTimer").innerHTML =
       state.session.mode === "exam"
-        ? `⏳ ${fmt(state.session.remainingSec)}`
-        : `⏱ ${fmt(state.session.elapsedSec)}`;
+        ? `<img src="images/timer.svg" class="svg-icon" alt="" aria-hidden="true" /> ${fmt(state.session.remainingSec)}`
+        : `<img src="images/timer.svg" class="svg-icon" alt="" aria-hidden="true" /> ${fmt(state.session.elapsedSec)}`;
   }
 
   function getDifficultyPillClass(diff) {
@@ -185,9 +185,9 @@
     const pct = total ? Math.round((answeredCount / total) * 100) : 0;
     const isInstant = s.answerRevealMode === "instant";
 
-    $("quizModeLabel").textContent = isInstant ? "✓ Instant Check" : "📋 Submit at End";
+    $("quizModeLabel").innerHTML = isInstant ? `<img src="images/check.svg" class="svg-icon" alt="" aria-hidden="true" /> Instant Check` : `<img src="images/clipboard.svg" class="svg-icon" alt="" aria-hidden="true" /> Submit at End`;
     $("quizProgressText").textContent = `${answeredCount} / ${total} Attempted`;
-    $("quizStreak").textContent = `🔥 Streak: ${s.streak}`;
+    $("quizStreak").innerHTML = `<img src="images/flame.svg" class="svg-icon" alt="" aria-hidden="true" /> Streak: ${s.streak}`;
     $("quizStreak").classList.toggle("hidden", !isInstant);
     $("topProgressFill").style.width = `${pct}%`;
     $("footerProgressNote").textContent = `Answered ${answeredCount} of ${total} questions`;
@@ -257,7 +257,7 @@
             <span class="pill ${getDifficultyPillClass(q.difficulty)}">${q.difficulty}</span>
           </div>
           <button type="button" class="tts-btn" data-tts-qidx="${idx}" aria-label="Listen to Question ${idx + 1}">
-            🔊 Listen
+            <img src="images/volume.svg" class="svg-icon" alt="" aria-hidden="true" /> Listen
           </button>
         </div>
         <h3 class="question-text">${q.question}</h3>

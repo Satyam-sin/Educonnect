@@ -39,7 +39,12 @@
         pool = pool.filter((q) => q.topic === config.topic);
       }
       if (config.difficulty && config.difficulty !== "ALL") {
-        pool = pool.filter((q) => q.difficulty === config.difficulty);
+        pool = pool.filter((q) => {
+          if (config.difficulty === "CHS Exam") {
+            return q.difficulty === "CHS Exam" || q.difficulty === "Hard";
+          }
+          return q.difficulty === config.difficulty;
+        });
       }
     }
 

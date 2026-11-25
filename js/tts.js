@@ -58,7 +58,7 @@
   function clearActiveButtons() {
     document.querySelectorAll(".tts-btn.speaking").forEach((btn) => {
       btn.classList.remove("speaking");
-      btn.innerHTML = "🔊 Listen";
+      btn.innerHTML = `<img src="${window.SVG_IMG_PREFIX || "images/"}volume.svg" class="svg-icon" alt="" aria-hidden="true" /> Listen`;
     });
     activeQIdx = null;
   }
@@ -98,7 +98,7 @@
     activeQIdx = qIdx;
     if (buttonEl) {
       buttonEl.classList.add("speaking");
-      buttonEl.innerHTML = "⏹ Stop";
+      buttonEl.innerHTML = `<img src="${window.SVG_IMG_PREFIX || "images/"}stop.svg" class="svg-icon" alt="" aria-hidden="true" /> Stop`;
     }
 
     utter.onend = () => clearActiveButtons();
