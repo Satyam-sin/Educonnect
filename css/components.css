@@ -1006,3 +1006,36 @@
   z-index: 120;
   white-space: nowrap;
 }
+
+
+/* ==========================================================================
+   Enhanced UI Polish — Quiz Highlights Strip & Glowing Option Hover Ring
+   ========================================================================== */
+
+.quiz-highlights-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.9rem;
+}
+
+.highlight-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.3rem 0.75rem;
+  border-radius: var(--radius-pill);
+  background: var(--bg-surface-2);
+  border: 1px solid var(--border-strong);
+  font-size: 0.76rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.option-btn:hover:not(:disabled) {
+  box-shadow: 0 0 0 2px var(--accent-primary-soft);
+}
+
+.setup-card {
+  backdrop-filter: blur(12px);
+}
