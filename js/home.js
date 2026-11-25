@@ -1,11 +1,14 @@
 /* ==========================================================================
-   CHS Explorer Home Page Controller — BOOKS (SST -> Ch. 3 Marathas) & QUIZ (SST -> Ch. 5)
+   CHS Explorer Home Page Controller
+   BOOKS: SST -> Part 1 -> Ch. 3 (The Rise of the Marathas)
+   QUIZ:  SST -> Part 1 -> Ch. 5 (Universal Franchise, 160 MCQs)
+          Science -> Ch. 7 (Particulate Nature of Matter, 120 MCQs)
    ========================================================================== */
 
 (function () {
   const SUBJECTS = [
     { id: "sst", name: "SST", icon: "🌍", booksActive: true, quizActive: true },
-    { id: "science", name: "Science", icon: "🔬", booksActive: false, quizActive: false },
+    { id: "science", name: "Science", icon: "🔬", booksActive: false, quizActive: true },
     { id: "maths", name: "Maths", icon: "📐", booksActive: false, quizActive: false },
     { id: "english", name: "English", icon: "📖", booksActive: false, quizActive: false },
     { id: "hindi", name: "Hindi", icon: "🪶", booksActive: false, quizActive: false },
@@ -42,10 +45,31 @@
     { num: 7, title: "Factors of Production", href: null }
   ];
 
+  const SCIENCE_CHAPTERS_QUIZ = [
+    { num: 1, title: "Exploring the Investigative World of Science", href: null },
+    { num: 2, title: "The Invisible Living World: Beyond Our Naked Eye", href: null },
+    { num: 3, title: "Health: The Ultimate Treasure", href: null },
+    { num: 4, title: "Electricity: Magnetic and Heating Effects", href: null },
+    { num: 5, title: "Exploring Forces", href: null },
+    { num: 6, title: "Pressure, Winds, Storms, and Cyclones", href: null },
+    {
+      num: 7,
+      title: "Particulate Nature of Matter",
+      href: "particulate-nature-of-matter.html",
+      meta: "120 MCQs"
+    },
+    { num: 8, title: "Nature of Matter: Elements, Compounds, and Mixtures", href: null },
+    { num: 9, title: "The Amazing World of Solutes, Solvents, and Solutions", href: null },
+    { num: 10, title: "Light: Mirrors and Lenses", href: null },
+    { num: 11, title: "Keeping Time with the Skies", href: null },
+    { num: 12, title: "How Nature Works in Harmony", href: null },
+    { num: 13, title: "Our Home: Earth, a Unique Life Sustaining Planet", href: null }
+  ];
+
   const state = {
     booksLevel: "subjects", // "subjects" | "sst-parts" | "sst-part1-chapters"
     quizOpen: false,
-    quizLevel: "subjects" // "subjects" | "sst-parts" | "sst-part1-chapters"
+    quizLevel: "subjects" // "subjects" | "sst-parts" | "sst-part1-chapters" | "science-chapters"
   };
 
   function $(id) {
@@ -59,6 +83,33 @@
     toast.classList.remove("hidden");
     clearTimeout(toast._t);
     toast._t = setTimeout(() => toast.classList.add("hidden"), 2200);
+  }
+
+  function renderChapterRows(list) {
+    return `
+      <div class="chapter-list">
+        ${list
+          .map((ch) =>
+            ch.href
+              ? `
+          <a class="chapter-row is-live" href="${ch.href}">
+            <div class="chapter-row-left">
+              <span class="chapter-num">Ch ${ch.num}</span>
+              <span class="chapter-title">${ch.title}</span>
+            </div>
+            <span class="live-badge">${ch.meta} →</span>
+          </a>`
+              : `
+          <div class="chapter-row is-disabled" aria-disabled="true">
+            <div class="chapter-row-left">
+              <span class="chapter-num">Ch ${ch.num}</span>
+              <span class="chapter-title">${ch.title}</span>
+            </div>
+            <span class="soon-badge">Soon</span>
+          </div>`
+          )
+          .join("")}
+      </div>`;
   }
 
   function renderBooksExplorer() {
@@ -142,28 +193,7 @@
         <span>/</span>
         <span>Part 1</span>`;
 
-      contentEl.innerHTML = `
-        <div class="chapter-list">
-          ${SST_PART1_CHAPTERS_BOOKS.map((ch) =>
-            ch.href
-              ? `
-            <a class="chapter-row is-live" href="${ch.href}">
-              <div class="chapter-row-left">
-                <span class="chapter-num">Ch ${ch.num}</span>
-                <span class="chapter-title">${ch.title}</span>
-              </div>
-              <span class="live-badge">${ch.meta} →</span>
-            </a>`
-              : `
-            <div class="chapter-row is-disabled" aria-disabled="true">
-              <div class="chapter-row-left">
-                <span class="chapter-num">Ch ${ch.num}</span>
-                <span class="chapter-title">${ch.title}</span>
-              </div>
-              <span class="soon-badge">Soon</span>
-            </div>`
-          ).join("")}
-        </div>`;
+      contentEl.innerHTML = renderChapterRows(SST_PART1_CHAPTERS_BOOKS);
     }
 
     crumbEl.querySelectorAll("[data-book-nav]").forEach((btn) => {
@@ -220,6 +250,9 @@
           if (btn.dataset.quizSubject === "sst") {
             state.quizLevel = "sst-parts";
             renderQuizExplorer();
+          } else if (btn.dataset.quizSubject === "science") {
+            state.quizLevel = "science-chapters";
+            renderQuizExplorer();
           }
         });
       });
@@ -264,28 +297,14 @@
         <span>/</span>
         <span>Part 1</span>`;
 
-      contentEl.innerHTML = `
-        <div class="chapter-list">
-          ${SST_PART1_CHAPTERS_QUIZ.map((ch) =>
-            ch.href
-              ? `
-            <a class="chapter-row is-live" href="${ch.href}">
-              <div class="chapter-row-left">
-                <span class="chapter-num">Ch ${ch.num}</span>
-                <span class="chapter-title">${ch.title}</span>
-              </div>
-              <span class="live-badge">${ch.meta} →</span>
-            </a>`
-              : `
-            <div class="chapter-row is-disabled" aria-disabled="true">
-              <div class="chapter-row-left">
-                <span class="chapter-num">Ch ${ch.num}</span>
-                <span class="chapter-title">${ch.title}</span>
-              </div>
-              <span class="soon-badge">Soon</span>
-            </div>`
-          ).join("")}
-        </div>`;
+      contentEl.innerHTML = renderChapterRows(SST_PART1_CHAPTERS_QUIZ);
+    } else if (state.quizLevel === "science-chapters") {
+      crumbEl.innerHTML = `
+        <button type="button" class="breadcrumb-btn" data-nav-level="subjects">Subjects</button>
+        <span>/</span>
+        <span>Science (Curiosity — 13 Chapters)</span>`;
+
+      contentEl.innerHTML = renderChapterRows(SCIENCE_CHAPTERS_QUIZ);
     }
 
     crumbEl.querySelectorAll("[data-nav-level]").forEach((btn) => {
