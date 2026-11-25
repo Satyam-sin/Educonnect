@@ -1,0 +1,1957 @@
+{
+  "chapter": "Chapter 7: Particulate Nature of Matter",
+  "source": "NCERT Class 8 Science (Curiosity — Textbook of Science for Grade 8)",
+  "totalQuestions": 130,
+  "questions": [
+    {
+      "id": 1,
+      "topic": "Composition of Matter & Acharya Kanad",
+      "difficulty": "Easy",
+      "question": "Anything that has mass and occupies space is called:",
+      "options": [
+        "Light",
+        "Matter",
+        "Force",
+        "Energy"
+      ],
+      "correctIndex": 1,
+      "explanation": "Matter is defined as anything that has mass and occupies space, such as stones, water, and air.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 98"
+    },
+    {
+      "id": 2,
+      "topic": "Composition of Matter & Acharya Kanad",
+      "difficulty": "Easy",
+      "question": "What are the tiny basic building blocks that make up any piece of matter called?",
+      "options": [
+        "Surface crystals",
+        "Mineral grains",
+        "Dust specks",
+        "Constituent particles"
+      ],
+      "correctIndex": 3,
+      "explanation": "A constituent particle is the basic unit that makes up a larger piece of any substance or material.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 100"
+    },
+    {
+      "id": 3,
+      "topic": "Composition of Matter & Acharya Kanad",
+      "difficulty": "Easy",
+      "question": "In Activity 7.1, grinding a stick of chalk into fine powder using a mortar and pestle is which type of change?",
+      "options": [
+        "Biological change",
+        "Permanent burning",
+        "Physical change",
+        "Chemical change"
+      ],
+      "correctIndex": 2,
+      "explanation": "Grinding chalk only reduces the size of its pieces without forming any new substance, so it is a physical change.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 99"
+    },
+    {
+      "id": 4,
+      "topic": "Composition of Matter & Acharya Kanad",
+      "difficulty": "Easy",
+      "question": "Can we see the constituent particles of chalk or sugar through an ordinary microscope?",
+      "options": [
+        "Yes, easily with a hand lens",
+        "Yes, with an ordinary school microscope",
+        "No, they are too small even for an ordinary microscope",
+        "Only when mixed with oil"
+      ],
+      "correctIndex": 2,
+      "explanation": "Constituent particles of matter are extremely small and cannot be seen even through an ordinary microscope.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 101"
+    },
+    {
+      "id": 5,
+      "topic": "Composition of Matter & Acharya Kanad",
+      "difficulty": "CHS Exam",
+      "question": "Which ancient Indian philosopher first proposed the idea of 'Parmanu'?",
+      "options": [
+        "Charaka",
+        "Acharya Kanad",
+        "Aryabhata",
+        "Sushruta"
+      ],
+      "correctIndex": 1,
+      "explanation": "Acharya Kanad first spoke about the idea of Parmanu (atom) as tiny, indivisible, eternal particles of matter.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 101"
+    },
+    {
+      "id": 6,
+      "topic": "Composition of Matter & Acharya Kanad",
+      "difficulty": "CHS Exam",
+      "question": "In which ancient Indian text did Acharya Kanad write about 'Parmanu'?",
+      "options": [
+        "Arthashastra",
+        "Charaka Samhita",
+        "Aryabhatiya",
+        "Vaisheshika Sutras"
+      ],
+      "correctIndex": 3,
+      "explanation": "Acharya Kanad wrote about the concept of Parmanu in his treatise called the Vaisheshika Sutras.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 101"
+    },
+    {
+      "id": 7,
+      "topic": "Composition of Matter & Acharya Kanad",
+      "difficulty": "CHS Exam",
+      "question": "According to Acharya Kanad, 'Parmanu' are:",
+      "options": [
+        "Liquid, colourful, and weightless",
+        "Tiny, indivisible, and eternal",
+        "Large, visible, and soft",
+        "Heavy, magnetic, and breakable"
+      ],
+      "correctIndex": 1,
+      "explanation": "Acharya Kanad described Parmanu as tiny, indivisible, and eternal particles that make up all matter.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 101"
+    },
+    {
+      "id": 8,
+      "topic": "Composition of Matter & Acharya Kanad",
+      "difficulty": "Easy",
+      "question": "In Activity 7.2, after sugar dissolves completely in water and disappears, how do we know it is still present at the top?",
+      "options": [
+        "Tasting a spoonful from the top tastes sweet",
+        "The water freezes immediately",
+        "The water turns pink",
+        "Large crystals float on top"
+      ],
+      "correctIndex": 0,
+      "explanation": "Even though dissolved sugar is invisible, tasting the top layer proves its particles have spread throughout the water.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 100"
+    },
+    {
+      "id": 9,
+      "topic": "Composition of Matter & Acharya Kanad",
+      "difficulty": "Medium",
+      "question": "Before stirring sugar placed at the bottom of a glass of water, why does the top layer NOT taste sweet?",
+      "options": [
+        "Water destroys sugar before stirring",
+        "Sugar particles have not yet spread up to the top layer",
+        "Sugar floats at the top",
+        "Cold water cannot dissolve sugar"
+      ],
+      "correctIndex": 1,
+      "explanation": "Before stirring, the sugar sits at the bottom and its particles have not yet separated and spread to the top layer.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 100"
+    },
+    {
+      "id": 10,
+      "topic": "Composition of Matter & Acharya Kanad",
+      "difficulty": "Medium",
+      "question": "How many constituent particles make up a single tiny grain of sugar?",
+      "options": [
+        "A few hundred particles",
+        "Millions and millions of particles",
+        "Only one particle",
+        "About ten particles"
+      ],
+      "correctIndex": 1,
+      "explanation": "Each tiny visible grain of sugar is made up of millions and millions of extremely small constituent particles.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 100"
+    },
+    {
+      "id": 11,
+      "topic": "Composition of Matter & Acharya Kanad",
+      "difficulty": "Easy",
+      "question": "Is a single fine grain of sand or clay the smallest unit of a rock?",
+      "options": [
+        "Only clay has particles, not sand",
+        "Yes, sand cannot be divided further",
+        "Only wet sand has particles",
+        "No, each grain is still made up of a huge number of constituent particles"
+      ],
+      "correctIndex": 3,
+      "explanation": "Just like chalk powder, fine grains of sand and clay are each made of a huge number of even smaller constituent particles.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 99–100"
+    },
+    {
+      "id": 12,
+      "topic": "Composition of Matter & Acharya Kanad",
+      "difficulty": "Easy",
+      "question": "Which natural process breaks big mountain rocks down into pebbles, stones, sand, and clay?",
+      "options": [
+        "Melting",
+        "Erosion by flowing rivers",
+        "Condensation",
+        "Evaporation"
+      ],
+      "correctIndex": 1,
+      "explanation": "In the mountains, rocks break down due to erosion, and flowing rivers grind them further into pebbles, stones, sand, and clay.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 99"
+    },
+    {
+      "id": 13,
+      "topic": "Composition of Matter & Acharya Kanad",
+      "difficulty": "CHS Exam",
+      "question": "If we could somehow remove ALL the constituent particles from a wooden chair, what would remain?",
+      "options": [
+        "Only the legs of the chair would remain",
+        "The chair would just become lighter",
+        "Nothing of the chair would remain",
+        "The chair would turn into a liquid"
+      ],
+      "correctIndex": 2,
+      "explanation": "Because the entire chair is made up of its constituent particles, removing all of them leaves nothing behind.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 114 (Exercise Q3)"
+    },
+    {
+      "id": 14,
+      "topic": "Composition of Matter & Acharya Kanad",
+      "difficulty": "Easy",
+      "question": "Why does an inflated balloon weigh more than an empty balloon?",
+      "options": [
+        "Light gets trapped inside the balloon",
+        "Balloons absorb water from the room",
+        "Rubber becomes heavier when stretched",
+        "Air is matter made of tiny particles that have mass"
+      ],
+      "correctIndex": 3,
+      "explanation": "Even though air is invisible, it is matter made of tiny particles that have mass and occupy space.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 98"
+    },
+    {
+      "id": 15,
+      "topic": "Composition of Matter & Acharya Kanad",
+      "difficulty": "Easy",
+      "question": "What are the forces that hold the constituent particles of matter together called?",
+      "options": [
+        "Air pressure",
+        "Interparticle attractions",
+        "Surface tension",
+        "Magnetic pulls"
+      ],
+      "correctIndex": 1,
+      "explanation": "Constituent particles of matter are held together by attractive forces called interparticle attractions.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 101"
+    },
+    {
+      "id": 16,
+      "topic": "Composition of Matter & Acharya Kanad",
+      "difficulty": "CHS Exam",
+      "question": "The strength of interparticle attractions depends on which two factors?",
+      "options": [
+        "Size of the jar and stirring speed",
+        "Colour of the substance and shape of the vessel",
+        "Weight of the vessel and room light",
+        "Nature of the substance and distance between particles"
+      ],
+      "correctIndex": 3,
+      "explanation": "Interparticle attraction strength depends on the nature of the substance and the interparticle distance.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 101"
+    },
+    {
+      "id": 17,
+      "topic": "Composition of Matter & Acharya Kanad",
+      "difficulty": "CHS Exam",
+      "question": "What happens to interparticle forces of attraction if the distance between particles increases even slightly?",
+      "options": [
+        "They increase rapidly",
+        "They turn into heat",
+        "They stay exactly the same",
+        "They decrease drastically"
+      ],
+      "correctIndex": 3,
+      "explanation": "Even a slight increase in interparticle distance decreases the interparticle forces of attraction drastically.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 101"
+    },
+    {
+      "id": 18,
+      "topic": "Composition of Matter & Acharya Kanad",
+      "difficulty": "Easy",
+      "question": "Why does ocean water taste salty even though we cannot see any salt crystals in it?",
+      "options": [
+        "Dissolved salt breaks into tiny invisible particles spread throughout the water",
+        "Salt turns into a gas in the ocean",
+        "Sunlight turns pure water salty",
+        "Ocean water contains white chalk"
+      ],
+      "correctIndex": 0,
+      "explanation": "Salt dissolves into tiny invisible constituent particles that occupy the spaces between water particles.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 114 (Exercise Q9)"
+    },
+    {
+      "id": 19,
+      "topic": "Composition of Matter & Acharya Kanad",
+      "difficulty": "Medium",
+      "question": "What mainly decides whether a substance exists as a solid, liquid, or gas?",
+      "options": [
+        "Whether it is kept in the dark",
+        "The size of the container",
+        "The strength of interparticle forces of attraction",
+        "The colour of the substance"
+      ],
+      "correctIndex": 2,
+      "explanation": "The strength of interparticle attractions (which depends on particle spacing and thermal energy) decides the state of matter.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 101 & 112"
+    },
+    {
+      "id": 20,
+      "topic": "Composition of Matter & Acharya Kanad",
+      "difficulty": "Easy",
+      "question": "Which statement is TRUE about all three states of matter (solids, liquids, and gases)?",
+      "options": [
+        "Only solids are made of particles",
+        "All matter is made up of extremely small particles with spaces between them",
+        "Matter has no empty space inside it",
+        "Particles exist only when matter is heated"
+      ],
+      "correctIndex": 1,
+      "explanation": "Solids, liquids, and gases are all made of extremely small constituent particles separated by interparticle spaces.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 101 & 113"
+    },
+    {
+      "id": 21,
+      "topic": "Composition of Matter & Acharya Kanad",
+      "difficulty": "Medium",
+      "question": "What does the word 'constituent' mean in 'constituent particles of matter'?",
+      "options": [
+        "A basic part that makes up a whole substance",
+        "A particle visible to the naked eye",
+        "A substance that only exists in water",
+        "An impurity mixed from outside"
+      ],
+      "correctIndex": 0,
+      "explanation": "Constituent particles (atoms and molecules) are the basic building blocks that make up any material.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 100 & 109"
+    },
+    {
+      "id": 22,
+      "topic": "Composition of Matter & Acharya Kanad",
+      "difficulty": "Easy",
+      "question": "Which two activities in Chapter 7 first prove that matter is made of extremely small particles?",
+      "options": [
+        "Activities 7.1 (grinding chalk) and 7.2 (dissolving sugar)",
+        "Activities 7.3 and 7.4",
+        "Activities 7.8 and 7.9",
+        "Activities 7.5 and 7.6"
+      ],
+      "correctIndex": 0,
+      "explanation": "Activities 7.1 (breaking/grinding chalk) and 7.2 (dissolving sugar in water) show that matter is composed of extremely small particles.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 99–101"
+    },
+    {
+      "id": 23,
+      "topic": "Solid State & Melting Point",
+      "difficulty": "Easy",
+      "question": "What are the shape and volume of a solid?",
+      "options": [
+        "No definite shape, definite volume",
+        "Neither definite shape nor definite volume",
+        "Definite shape, no definite volume",
+        "Definite shape and definite volume"
+      ],
+      "correctIndex": 3,
+      "explanation": "Solids have both a definite shape and a definite volume because their particles are held tightly in fixed positions.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 102"
+    },
+    {
+      "id": 24,
+      "topic": "Solid State & Melting Point",
+      "difficulty": "Easy",
+      "question": "Why do solids like an iron nail, stone, or wooden block keep a fixed shape?",
+      "options": [
+        "Their particles move freely in all directions",
+        "They are filled with air",
+        "They have no particles inside them",
+        "Their particles are tightly packed with very strong interparticle attractions"
+      ],
+      "correctIndex": 3,
+      "explanation": "Very strong interparticle attractions hold solid particles tightly in fixed positions.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 102"
+    },
+    {
+      "id": 25,
+      "topic": "Solid State & Melting Point",
+      "difficulty": "Easy",
+      "question": "How do particles move in a solid?",
+      "options": [
+        "They only vibrate (move to and fro) about their fixed positions",
+        "They fly freely across the room",
+        "They slide smoothly past each other",
+        "They jump from one corner to another"
+      ],
+      "correctIndex": 0,
+      "explanation": "Solid particles cannot move past each other; they only vibrate or oscillate to and fro about their fixed positions.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 102"
+    },
+    {
+      "id": 26,
+      "topic": "Solid State & Melting Point",
+      "difficulty": "Easy",
+      "question": "What happens to the particles of a solid when it is heated?",
+      "options": [
+        "They vibrate more vigorously and start leaving their fixed positions",
+        "They pack even closer together",
+        "They stop vibrating",
+        "They shrink in size"
+      ],
+      "correctIndex": 0,
+      "explanation": "Heating makes solid particles vibrate vigorously until interparticle attractions weaken and the solid melts.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 102"
+    },
+    {
+      "id": 27,
+      "topic": "Solid State & Melting Point",
+      "difficulty": "Easy",
+      "question": "What is the 'melting point' of a solid?",
+      "options": [
+        "Room temperature on a summer day",
+        "The temperature at which a gas cools down",
+        "The temperature at which a liquid boils",
+        "The minimum temperature at which a solid melts into a liquid at atmospheric pressure"
+      ],
+      "correctIndex": 3,
+      "explanation": "Melting point is the minimum temperature at which a solid converts into a liquid at atmospheric pressure.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 103"
+    },
+    {
+      "id": 28,
+      "topic": "Solid State & Melting Point",
+      "difficulty": "CHS Exam",
+      "question": "According to Table 7.1 of NCERT Class 8 Curiosity, what is the melting point of Ice?",
+      "options": [
+        "4 °C",
+        "-10 °C",
+        "0 °C",
+        "100 °C"
+      ],
+      "correctIndex": 2,
+      "explanation": "Table 7.1 lists the melting point of ice as 0 °C.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 103 (Table 7.1)"
+    },
+    {
+      "id": 29,
+      "topic": "Solid State & Melting Point",
+      "difficulty": "CHS Exam",
+      "question": "According to Table 7.1 of NCERT Class 8 Curiosity, what is the melting point of Urea?",
+      "options": [
+        "1538 °C",
+        "133 °C",
+        "100 °C",
+        "233 °C"
+      ],
+      "correctIndex": 1,
+      "explanation": "Table 7.1 lists the melting points of Ice (0 °C), Urea (133 °C), and Iron (1538 °C).",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 103 (Table 7.1)"
+    },
+    {
+      "id": 30,
+      "topic": "Solid State & Melting Point",
+      "difficulty": "CHS Exam",
+      "question": "According to Table 7.1 of NCERT Class 8 Curiosity, what is the melting point of Iron?",
+      "options": [
+        "538 °C",
+        "1000 °C",
+        "1538 °C",
+        "133 °C"
+      ],
+      "correctIndex": 2,
+      "explanation": "Iron has very strong interparticle attractions, giving it a very high melting point of 1538 °C.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 103 (Table 7.1)"
+    },
+    {
+      "id": 31,
+      "topic": "Solid State & Melting Point",
+      "difficulty": "CHS Exam",
+      "question": "Usually, particles in a liquid are farther apart than in a solid. Which common substance is an EXCEPTION to this rule?",
+      "options": [
+        "Ice (solid water)",
+        "Iron",
+        "Aluminium",
+        "Urea"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ice is an exception—its particles are farther apart in solid ice than in liquid water.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 103"
+    },
+    {
+      "id": 32,
+      "topic": "Solid State & Melting Point",
+      "difficulty": "Medium",
+      "question": "Why does Iron (1538 °C) have a much higher melting point than Ice (0 °C) and Urea (133 °C)?",
+      "options": [
+        "Iron has much stronger interparticle forces of attraction",
+        "Iron is darker in colour",
+        "Iron has no constituent particles",
+        "Iron has weaker interparticle attractions"
+      ],
+      "correctIndex": 0,
+      "explanation": "Solids with stronger interparticle attractions have higher melting points because more heat is needed to weaken those forces.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 103"
+    },
+    {
+      "id": 33,
+      "topic": "Solid State & Melting Point",
+      "difficulty": "CHS Exam",
+      "question": "Arrange Ice, Urea, and Iron in INCREASING order of their interparticle forces of attraction:",
+      "options": [
+        "Iron < Urea < Ice",
+        "Ice < Urea < Iron",
+        "Urea < Ice < Iron",
+        "Ice < Iron < Urea"
+      ],
+      "correctIndex": 1,
+      "explanation": "Higher melting point means stronger attraction: Ice (0 °C) < Urea (133 °C) < Iron (1538 °C).",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 103 (Table 7.1)"
+    },
+    {
+      "id": 34,
+      "topic": "Solid State & Melting Point",
+      "difficulty": "Medium",
+      "question": "What happens to interparticle forces of attraction when a solid melts into a liquid?",
+      "options": [
+        "They become stronger",
+        "They disappear completely",
+        "They become weaker",
+        "They stay unchanged"
+      ],
+      "correctIndex": 2,
+      "explanation": "At the melting point, heat energy weakens the interparticle attractions so particles can leave their fixed positions.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 102 & 113"
+    },
+    {
+      "id": 35,
+      "topic": "Solid State & Melting Point",
+      "difficulty": "CHS Exam",
+      "question": "Rice grains or rice flour take the shape of the jar they are poured into. Are they solids or liquids?",
+      "options": [
+        "Solids, because each individual grain keeps its own fixed shape and volume",
+        "Gases, because air sits between grains",
+        "Liquids, because they take the jar's shape",
+        "Fluids, just like water"
+      ],
+      "correctIndex": 0,
+      "explanation": "Each individual grain of rice or flour is a solid with a fixed shape and volume; only a heap of many tiny grains takes the jar's shape.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 114 (Exercise Q10)"
+    },
+    {
+      "id": 36,
+      "topic": "Solid State & Melting Point",
+      "difficulty": "Easy",
+      "question": "Why can you make a heap of stones or sand, but NOT a heap of water?",
+      "options": [
+        "Water is heavier than stone",
+        "Sand has no interparticle attractions",
+        "Water disappears instantly in air",
+        "Stones and sand are solids with fixed shapes, while water is a liquid that flows"
+      ],
+      "correctIndex": 3,
+      "explanation": "Solids keep their fixed shapes and stay piled up, whereas liquid particles slide past each other and flow away.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 98"
+    },
+    {
+      "id": 37,
+      "topic": "Solid State & Melting Point",
+      "difficulty": "Medium",
+      "question": "In Activity 7.3, we hammer an iron nail, rock salt, stone, wood, key, and aluminium. What does this show?",
+      "options": [
+        "All solids break into powder equally easily",
+        "All solids have strong interparticle forces, though the strength varies by material",
+        "Rock salt is harder than iron",
+        "None of them are solids"
+      ],
+      "correctIndex": 1,
+      "explanation": "All six are solids with strong interparticle forces, yet materials like iron resist breaking much more strongly than rock salt.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 102"
+    },
+    {
+      "id": 38,
+      "topic": "Solid State & Melting Point",
+      "difficulty": "Easy",
+      "question": "Compared to liquids and gases, the interparticle spacing in solids is:",
+      "options": [
+        "Completely absent (zero)",
+        "Equal to gases",
+        "Maximum",
+        "Minimum"
+      ],
+      "correctIndex": 3,
+      "explanation": "Among the three states of matter, solids have the minimum interparticle spacing.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 112–113"
+    },
+    {
+      "id": 39,
+      "topic": "Solid State & Melting Point",
+      "difficulty": "Easy",
+      "question": "Compared to liquids and gases, the interparticle forces of attraction in solids are:",
+      "options": [
+        "Weakest",
+        "Zero",
+        "Strongest (maximum)",
+        "Same as liquids"
+      ],
+      "correctIndex": 2,
+      "explanation": "Solids have the strongest interparticle forces of attraction among all three states of matter.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 112"
+    },
+    {
+      "id": 40,
+      "topic": "Solid State & Melting Point",
+      "difficulty": "Medium",
+      "question": "Why can you NOT move your finger through a solid wooden block the way you can through water?",
+      "options": [
+        "Strong interparticle attractions hold wood particles firmly in fixed positions",
+        "Water is a gas",
+        "Wood has a low melting point",
+        "Wood has no particles"
+      ],
+      "correctIndex": 0,
+      "explanation": "In solids, very strong interparticle attractions prevent particles from moving aside when pushed by a finger.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 105"
+    },
+    {
+      "id": 41,
+      "topic": "Solid State & Melting Point",
+      "difficulty": "Easy",
+      "question": "Which of the following from Exercise Q7 is a SOLID at room temperature?",
+      "options": [
+        "Glycerin",
+        "Methane",
+        "Steam",
+        "Aluminium foil"
+      ],
+      "correctIndex": 3,
+      "explanation": "Aluminium foil is a solid with closely packed particles in fixed positions; glycerin is a liquid and methane is a gas.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 114 (Exercise Q7)"
+    },
+    {
+      "id": 42,
+      "topic": "Solid State & Melting Point",
+      "difficulty": "Medium",
+      "question": "Why do two solid blocks kept side by side NOT mix into each other on their own?",
+      "options": [
+        "Solids have no mass",
+        "Solids repel each other like magnets",
+        "Solid particles move faster than gas particles",
+        "Solid particles are held tightly in fixed positions and cannot move freely past each other"
+      ],
+      "correctIndex": 3,
+      "explanation": "Because solid particles only vibrate in fixed positions, they cannot move freely to mix with another solid.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 114 (Exercise Q4)"
+    },
+    {
+      "id": 43,
+      "topic": "Solid State & Melting Point",
+      "difficulty": "Medium",
+      "question": "In the solid state, the thermal (heat) energy of particles is:",
+      "options": [
+        "Equal to gases",
+        "Very high",
+        "Infinite",
+        "Low, allowing only small vibrations in fixed positions"
+      ],
+      "correctIndex": 3,
+      "explanation": "Low thermal energy keeps solid particles close together under strong attractions, allowing only small vibrations.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 112"
+    },
+    {
+      "id": 44,
+      "topic": "Solid State & Melting Point",
+      "difficulty": "Medium",
+      "question": "At a solid's melting point, what is the supplied heat energy used for?",
+      "options": [
+        "To overcome interparticle attractions so the solid becomes a liquid",
+        "To destroy the constituent particles",
+        "To turn the solid into iron",
+        "To make the solid harder"
+      ],
+      "correctIndex": 0,
+      "explanation": "At the melting point, heat energy overcomes the strong interparticle attractions so particles can leave their fixed positions.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 102 & 112"
+    },
+    {
+      "id": 45,
+      "topic": "Liquid State, Boiling & Evaporation",
+      "difficulty": "Easy",
+      "question": "What are the shape and volume of a liquid?",
+      "options": [
+        "Neither fixed shape nor fixed volume",
+        "No fixed shape, but a definite (fixed) volume",
+        "Fixed shape, no fixed volume",
+        "Fixed shape and fixed volume"
+      ],
+      "correctIndex": 1,
+      "explanation": "Liquids take the shape of their container (no fixed shape) but always keep the same volume.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 104"
+    },
+    {
+      "id": 46,
+      "topic": "Liquid State, Boiling & Evaporation",
+      "difficulty": "Easy",
+      "question": "In Activity 7.4, pouring 200 mL of water into three differently shaped containers (A, B, and C) shows that:",
+      "options": [
+        "Liquids compress easily",
+        "Water keeps the same shape in every container",
+        "Water changes its volume in each container",
+        "Liquids have no fixed shape but have a definite volume"
+      ],
+      "correctIndex": 3,
+      "explanation": "The water changes shape to match Containers A, B, and C, while its volume remains 200 mL in all three.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 104"
+    },
+    {
+      "id": 47,
+      "topic": "Liquid State, Boiling & Evaporation",
+      "difficulty": "Medium",
+      "question": "In Activity 7.4, why might the water level look slightly less than 200 mL after pouring if a container is not clean?",
+      "options": [
+        "Gravity shrinks the water",
+        "Some water sticks to the walls of the previous container",
+        "Water particles disappear permanently",
+        "Water turns into solid ice"
+      ],
+      "correctIndex": 1,
+      "explanation": "NCERT notes that if a container is not clean, some water may stick to its walls during pouring.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 104"
+    },
+    {
+      "id": 48,
+      "topic": "Liquid State, Boiling & Evaporation",
+      "difficulty": "Easy",
+      "question": "How do particles move in the liquid state?",
+      "options": [
+        "They do not move at all",
+        "They are locked in fixed positions",
+        "They move freely past each other, but within a limited space",
+        "They fly out to fill the whole room instantly"
+      ],
+      "correctIndex": 2,
+      "explanation": "Liquid particles slide past one another freely, while interparticle attractions keep them within a limited volume.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 104 & 112"
+    },
+    {
+      "id": 49,
+      "topic": "Liquid State, Boiling & Evaporation",
+      "difficulty": "Medium",
+      "question": "When you move your finger through water in a shallow vessel (Fig. 7.6) and lift it out, what happens?",
+      "options": [
+        "The water turns into vapour",
+        "The water freezes around the finger",
+        "Water moves aside temporarily and immediately joins back",
+        "A permanent cut stays in the water"
+      ],
+      "correctIndex": 2,
+      "explanation": "Because interparticle attractions in liquids are slightly weaker than in solids, water particles shift aside and then rejoin.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 105"
+    },
+    {
+      "id": 50,
+      "topic": "Liquid State, Boiling & Evaporation",
+      "difficulty": "Easy",
+      "question": "What is the 'boiling point' of a liquid?",
+      "options": [
+        "The temperature at which evaporation stops",
+        "Any temperature below 0 °C",
+        "The temperature at which a solid melts",
+        "The temperature at which a liquid boils and turns into vapour at atmospheric pressure"
+      ],
+      "correctIndex": 3,
+      "explanation": "Boiling point is the temperature at which a liquid boils rapidly and converts into vapour at atmospheric pressure.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 105"
+    },
+    {
+      "id": 51,
+      "topic": "Liquid State, Boiling & Evaporation",
+      "difficulty": "CHS Exam",
+      "question": "Which statement correctly distinguishes BOILING from EVAPORATION?",
+      "options": [
+        "Both occur only at 100 °C",
+        "Boiling is slow and happens only at the surface; evaporation is fast",
+        "There is no difference between boiling and evaporation",
+        "Boiling is fast and happens throughout the liquid; evaporation is slow and happens only at the surface"
+      ],
+      "correctIndex": 3,
+      "explanation": "Boiling is rapid and forms vapour both at the surface and inside the liquid (bubbles), while evaporation is slow and occurs only at the surface at all temperatures.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 105"
+    },
+    {
+      "id": 52,
+      "topic": "Liquid State, Boiling & Evaporation",
+      "difficulty": "Easy",
+      "question": "Evaporation of a liquid takes place:",
+      "options": [
+        "At all temperatures, slowly and only from the surface",
+        "Only inside closed jars",
+        "Only at 0 °C",
+        "Only at its boiling point"
+      ],
+      "correctIndex": 0,
+      "explanation": "Evaporation happens slowly at the surface of a liquid at all temperatures.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 105"
+    },
+    {
+      "id": 53,
+      "topic": "Liquid State, Boiling & Evaporation",
+      "difficulty": "Easy",
+      "question": "Why does water spilled on a floor dry up after some time without boiling?",
+      "options": [
+        "Because of melting",
+        "Because water turns into a solid",
+        "Because floor tiles destroy water particles",
+        "Because of evaporation at room temperature"
+      ],
+      "correctIndex": 3,
+      "explanation": "Spilled water disappears through evaporation, as surface particles slowly escape into the air.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 105"
+    },
+    {
+      "id": 54,
+      "topic": "Liquid State, Boiling & Evaporation",
+      "difficulty": "Medium",
+      "question": "What visible sign shows that vapour is forming inside the liquid at its boiling point?",
+      "options": [
+        "Change in vessel colour",
+        "Ice forming on the rim",
+        "Water turning milky white",
+        "Formation of bubbles throughout the liquid"
+      ],
+      "correctIndex": 3,
+      "explanation": "At the boiling point, rapid vapour formation inside the bulk liquid appears as bubbles rising to the surface.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 105"
+    },
+    {
+      "id": 55,
+      "topic": "Liquid State, Boiling & Evaporation",
+      "difficulty": "CHS Exam",
+      "question": "What is the primary difference between solids and liquids (Exercise Q1)?",
+      "options": [
+        "Solids can flow while liquids cannot",
+        "Particles are closely packed in solids, while they move past each other in liquids",
+        "Particles are far apart in solids and fixed in liquids",
+        "Liquids have stronger attractions than solids"
+      ],
+      "correctIndex": 1,
+      "explanation": "In solids, particles are closely packed in fixed positions, whereas in liquids they can move past each other.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 113 (Exercise Q1)"
+    },
+    {
+      "id": 56,
+      "topic": "Liquid State, Boiling & Evaporation",
+      "difficulty": "Medium",
+      "question": "When milk in a glass tumbler spills on a table, the milk spreads out while the glass tumbler keeps its shape. Why?",
+      "options": [
+        "Glass has weaker attractions than milk",
+        "Glass is lighter than milk",
+        "Milk is a liquid whose particles slide past each other, while glass is a solid with fixed particles",
+        "Milk is a gas at room temperature"
+      ],
+      "correctIndex": 2,
+      "explanation": "Milk is a liquid (fluid) that flows easily, while the glass tumbler is a rigid solid.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 114 (Exercise Q5)"
+    },
+    {
+      "id": 57,
+      "topic": "Liquid State, Boiling & Evaporation",
+      "difficulty": "Easy",
+      "question": "Why does water take the shape of your folded hands when held, but flow away when you open your hands?",
+      "options": [
+        "Water has no fixed shape and its particles are free to flow",
+        "Hands melt the water",
+        "Water has no volume",
+        "Water particles cannot move"
+      ],
+      "correctIndex": 0,
+      "explanation": "Water is a liquid, so it takes the shape of whatever holds it and flows away once released.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 98 & 104"
+    },
+    {
+      "id": 58,
+      "topic": "Liquid State, Boiling & Evaporation",
+      "difficulty": "Medium",
+      "question": "How strong are the interparticle attractions in liquids compared to solids and gases?",
+      "options": [
+        "Slightly weaker than in solids, but much stronger than in gases",
+        "Zero",
+        "Same as gases",
+        "Stronger than solids"
+      ],
+      "correctIndex": 0,
+      "explanation": "Interparticle attractions are strongest in solids, slightly weaker in liquids, and negligible in gases.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 112–113"
+    },
+    {
+      "id": 59,
+      "topic": "Liquid State, Boiling & Evaporation",
+      "difficulty": "Easy",
+      "question": "Which substance from Exercise Q7 is a LIQUID at room temperature?",
+      "options": [
+        "Glycerin",
+        "Rock salt",
+        "Methane",
+        "Aluminium foil"
+      ],
+      "correctIndex": 0,
+      "explanation": "Glycerin is a liquid whose particles are slightly loosely packed and move within a limited space.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 114 (Exercise Q7)"
+    },
+    {
+      "id": 60,
+      "topic": "Liquid State, Boiling & Evaporation",
+      "difficulty": "Medium",
+      "question": "Why do liquids keep a definite volume even though they have no fixed shape?",
+      "options": [
+        "They turn into solids inside a bottle",
+        "Their particles cannot move at all",
+        "Air pushes them down from above",
+        "Interparticle attractions are still strong enough to keep particles within a limited space"
+      ],
+      "correctIndex": 3,
+      "explanation": "Liquid particles can slide past each other (no fixed shape), yet attractions keep them close together (definite volume).",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 104–105"
+    },
+    {
+      "id": 61,
+      "topic": "Liquid State, Boiling & Evaporation",
+      "difficulty": "Medium",
+      "question": "What happens to liquid particles when heated to the boiling point?",
+      "options": [
+        "They move so vigorously that attractions weaken and particles escape as vapour",
+        "They pack tightly into crystals",
+        "They lose all their mass",
+        "They slow down and freeze"
+      ],
+      "correctIndex": 0,
+      "explanation": "At the boiling point, vigorous particle movement overcomes interparticle attractions and particles escape as gas/vapour.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 105"
+    },
+    {
+      "id": 62,
+      "topic": "Liquid State, Boiling & Evaporation",
+      "difficulty": "Easy",
+      "question": "Which state of wax is seen right near the wick of a burning candle?",
+      "options": [
+        "Iron filings",
+        "Chalk powder",
+        "Molten liquid wax",
+        "Solid ice"
+      ],
+      "correctIndex": 2,
+      "explanation": "A burning candle shows solid wax in the body, molten liquid wax near the wick, and wax vapour around the flame.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 114 (Exercise Q8)"
+    },
+    {
+      "id": 63,
+      "topic": "Liquid State, Boiling & Evaporation",
+      "difficulty": "Medium",
+      "question": "Compared to solids, the interparticle spacing in liquids is:",
+      "options": [
+        "Same as in gases",
+        "Ten times smaller than in solids",
+        "A little more than in solids (except water vs. ice)",
+        "Zero"
+      ],
+      "correctIndex": 2,
+      "explanation": "Liquid particles are slightly loosely packed with a little more spacing than solids (with ice being an exception).",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 103 & 112"
+    },
+    {
+      "id": 64,
+      "topic": "Liquid State, Boiling & Evaporation",
+      "difficulty": "Medium",
+      "question": "Why are liquids like water practically incompressible inside a sealed syringe?",
+      "options": [
+        "Liquid particles do not move",
+        "Liquid particles are already close together with very little free space between them",
+        "Syringes cannot hold water",
+        "Water turns into iron under pressure"
+      ],
+      "correctIndex": 1,
+      "explanation": "Unlike gases, liquid particles have very little empty space between them, so pressing the plunger barely changes their volume.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 107"
+    },
+    {
+      "id": 65,
+      "topic": "Gaseous State, Fluids & Compressibility",
+      "difficulty": "Easy",
+      "question": "What are the shape and volume of a gas?",
+      "options": [
+        "Neither a fixed shape nor a fixed volume",
+        "Fixed shape and fixed volume",
+        "No fixed shape, fixed volume",
+        "Fixed shape, no fixed volume"
+      ],
+      "correctIndex": 0,
+      "explanation": "Gases take the shape of their container and expand to fill all available space, so they have neither fixed shape nor fixed volume.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 106"
+    },
+    {
+      "id": 66,
+      "topic": "Gaseous State, Fluids & Compressibility",
+      "difficulty": "Easy",
+      "question": "In Activity 7.5, when the glass plate between Gas Jar A (filled with incense smoke) and Gas Jar B (empty) is removed, what happens?",
+      "options": [
+        "The smoke stays only inside Gas Jar A",
+        "The smoke turns into liquid water",
+        "The smoke disappears completely",
+        "The smoke spreads freely to fill all of Gas Jar B as well"
+      ],
+      "correctIndex": 3,
+      "explanation": "The smoke spreads into Gas Jar B and fills the entire space, showing gases have no fixed volume and move freely.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 105–106"
+    },
+    {
+      "id": 67,
+      "topic": "Gaseous State, Fluids & Compressibility",
+      "difficulty": "CHS Exam",
+      "question": "In Activity 7.5, how does smoke help us see the movement of invisible gas particles?",
+      "options": [
+        "Tiny visible smoke particles in air are constantly hit by invisible gas particles",
+        "Smoke stops air from moving",
+        "Smoke is a pure liquid",
+        "Smoke is heavier than iron"
+      ],
+      "correctIndex": 0,
+      "explanation": "Tiny smoke particles suspended in air are constantly struck by invisible moving gas particles, showing us how gases move.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 106"
+    },
+    {
+      "id": 68,
+      "topic": "Gaseous State, Fluids & Compressibility",
+      "difficulty": "CHS Exam",
+      "question": "Which coloured vapour is mentioned in NCERT Curiosity as an alternative to incense smoke in a closed gas jar (Fig. 7.8)?",
+      "options": [
+        "Carbon dioxide snow",
+        "Chlorine gas",
+        "Mercury vapour",
+        "Iodine vapour (from solid iodine)"
+      ],
+      "correctIndex": 3,
+      "explanation": "Placing some solid iodine in a closed gas jar produces visible iodine vapour that spreads throughout the jar.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 106 (Fig. 7.8)"
+    },
+    {
+      "id": 69,
+      "topic": "Gaseous State, Fluids & Compressibility",
+      "difficulty": "Medium",
+      "question": "What safety precaution is given in NCERT Curiosity while using solid iodine?",
+      "options": [
+        "Mix iodine with sugar",
+        "Be careful because iodine vapours can cause irritation",
+        "Inhale the vapour deeply",
+        "Heat it with bare hands"
+      ],
+      "correctIndex": 1,
+      "explanation": "The Safety First box warns to be careful with solid iodine because its vapours can cause irritation.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 106"
+    },
+    {
+      "id": 70,
+      "topic": "Gaseous State, Fluids & Compressibility",
+      "difficulty": "CHS Exam",
+      "question": "Why are BOTH liquids and gases classified together as 'fluids'?",
+      "options": [
+        "Both have a fixed volume",
+        "Both are invisible",
+        "Both can flow and do not retain a fixed shape",
+        "Both are easily compressible"
+      ],
+      "correctIndex": 2,
+      "explanation": "Both liquids and gases flow and do not keep a fixed shape, which sets them apart from solids and classifies them as fluids.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 106"
+    },
+    {
+      "id": 71,
+      "topic": "Gaseous State, Fluids & Compressibility",
+      "difficulty": "Easy",
+      "question": "Which of the following is NOT a fluid?",
+      "options": [
+        "Rock salt",
+        "Water",
+        "Glycerin",
+        "Air"
+      ],
+      "correctIndex": 0,
+      "explanation": "Rock salt is a solid with a fixed shape; liquids (water, glycerin) and gases (air) are fluids.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 102 & 106"
+    },
+    {
+      "id": 72,
+      "topic": "Gaseous State, Fluids & Compressibility",
+      "difficulty": "Easy",
+      "question": "How strong are the interparticle attractions in gases?",
+      "options": [
+        "Moderate",
+        "Stronger than iron",
+        "Maximum",
+        "Negligible (minimum)"
+      ],
+      "correctIndex": 3,
+      "explanation": "In gases, particles are very far apart and interparticle attractions are negligible (minimum).",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 106 & 112"
+    },
+    {
+      "id": 73,
+      "topic": "Gaseous State, Fluids & Compressibility",
+      "difficulty": "Easy",
+      "question": "In Activity 7.6 (syringe without a needle), pushing the plunger while closing the open end with your thumb shows that:",
+      "options": [
+        "Air turns into sand",
+        "The syringe melts",
+        "Air cannot be compressed",
+        "Air volume decreases because gas particles have large spaces between them"
+      ],
+      "correctIndex": 3,
+      "explanation": "Pushing the plunger forces gas particles closer together, proving gases have large interparticle spaces and are compressible.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 107"
+    },
+    {
+      "id": 74,
+      "topic": "Gaseous State, Fluids & Compressibility",
+      "difficulty": "Medium",
+      "question": "In Activity 7.6, what happens when you stop pushing the syringe plunger filled with compressed air?",
+      "options": [
+        "Water forms inside the syringe",
+        "The plunger stays stuck forever",
+        "The syringe breaks",
+        "Gas particles spread out again and push the plunger back to its original position"
+      ],
+      "correctIndex": 3,
+      "explanation": "When external pressure is removed, moving gas particles spread back out and push the plunger to its original position.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 107"
+    },
+    {
+      "id": 75,
+      "topic": "Gaseous State, Fluids & Compressibility",
+      "difficulty": "Easy",
+      "question": "What happens when you repeat Activity 7.6 by filling the syringe with WATER instead of air?",
+      "options": [
+        "Water disappears",
+        "Water compresses more easily than air",
+        "Water is practically incompressible",
+        "Water freezes immediately"
+      ],
+      "correctIndex": 2,
+      "explanation": "Testing the syringe with water shows that liquids are practically incompressible compared to gases.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 107"
+    },
+    {
+      "id": 76,
+      "topic": "Gaseous State, Fluids & Compressibility",
+      "difficulty": "Easy",
+      "question": "In which state of matter is the interparticle spacing MAXIMUM?",
+      "options": [
+        "Gas",
+        "Liquid",
+        "Solid",
+        "All three are equal"
+      ],
+      "correctIndex": 0,
+      "explanation": "Gases have the maximum interparticle spacing and complete freedom of particle movement.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 112"
+    },
+    {
+      "id": 77,
+      "topic": "Gaseous State, Fluids & Compressibility",
+      "difficulty": "CHS Exam",
+      "question": "Arrange Solid, Liquid, and Gas in DECREASING order of compressibility:",
+      "options": [
+        "Gas > Liquid > Solid",
+        "Liquid > Gas > Solid",
+        "Gas > Solid > Liquid",
+        "Solid > Liquid > Gas"
+      ],
+      "correctIndex": 0,
+      "explanation": "Gases are highly compressible, liquids are practically incompressible, and solids are rigid and virtually incompressible.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 107 & 112"
+    },
+    {
+      "id": 78,
+      "topic": "Gaseous State, Fluids & Compressibility",
+      "difficulty": "Medium",
+      "question": "Why do gases mix with each other very easily, whereas solids do not?",
+      "options": [
+        "Gases have stronger attractions than solids",
+        "Gas particles are heavier than solid particles",
+        "Solids have no particles",
+        "Gas particles have large spaces, negligible attraction, and move freely in all directions"
+      ],
+      "correctIndex": 3,
+      "explanation": "Free movement in all directions and huge interparticle spaces allow gas particles to mix rapidly.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 114 (Exercise Q4)"
+    },
+    {
+      "id": 79,
+      "topic": "Gaseous State, Fluids & Compressibility",
+      "difficulty": "Easy",
+      "question": "Which substance from Exercise Q7 is a GAS at room temperature?",
+      "options": [
+        "Aluminium foil",
+        "Methane",
+        "Glycerin",
+        "Urea"
+      ],
+      "correctIndex": 1,
+      "explanation": "Methane is a gas at room temperature with maximum interparticle spacing and negligible attraction.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 114 (Exercise Q7)"
+    },
+    {
+      "id": 80,
+      "topic": "Gaseous State, Fluids & Compressibility",
+      "difficulty": "Medium",
+      "question": "Why can a large amount of cooking gas (LPG) or oxygen be packed into a small cylinder?",
+      "options": [
+        "Gas particles lose their mass",
+        "Gases have large interparticle spaces and can be compressed under pressure",
+        "Gases turn into iron inside cylinders",
+        "Cylinders destroy half the gas"
+      ],
+      "correctIndex": 1,
+      "explanation": "High compressibility due to large interparticle spaces allows large volumes of gas to be stored in cylinders under pressure.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 107"
+    },
+    {
+      "id": 81,
+      "topic": "Gaseous State, Fluids & Compressibility",
+      "difficulty": "CHS Exam",
+      "question": "If 100 mL of a gas is transferred into an empty 1-litre flask, what will be the volume of the gas now?",
+      "options": [
+        "1 litre (it fills the entire flask)",
+        "100 mL",
+        "Zero",
+        "500 mL"
+      ],
+      "correctIndex": 0,
+      "explanation": "Gases have no fixed volume—they always expand to occupy the entire available space of their container.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 106"
+    },
+    {
+      "id": 82,
+      "topic": "Gaseous State, Fluids & Compressibility",
+      "difficulty": "Easy",
+      "question": "How do gas particles move inside a closed container?",
+      "options": [
+        "They settle at the bottom like sand",
+        "They move freely in all directions, filling the entire container",
+        "They vibrate in fixed rows",
+        "They stick only to the lid"
+      ],
+      "correctIndex": 1,
+      "explanation": "Gas particles have enough thermal energy to overcome attractions and move freely in all directions.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 106 & 112"
+    },
+    {
+      "id": 83,
+      "topic": "Gaseous State, Fluids & Compressibility",
+      "difficulty": "Medium",
+      "question": "Why do gas particles have complete freedom of movement?",
+      "options": [
+        "Their thermal energy is high enough to overcome interparticle attractions",
+        "Gas particles are glued together",
+        "Gravity does not act on gases",
+        "Gases have zero mass"
+      ],
+      "correctIndex": 0,
+      "explanation": "High thermal energy lets gas particles overcome interparticle attractive forces and move freely everywhere.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 112"
+    },
+    {
+      "id": 84,
+      "topic": "Gaseous State, Fluids & Compressibility",
+      "difficulty": "Easy",
+      "question": "When a burning candle is blown out, the white wispy smoke rising from the wick is mainly:",
+      "options": [
+        "Solid rock salt",
+        "Iron dust",
+        "Liquid water",
+        "Wax vapour (gaseous state of wax) mixing with air"
+      ],
+      "correctIndex": 3,
+      "explanation": "A candle shows all three states of wax: solid wax, molten liquid wax, and rising wax vapour (gas).",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 114 (Exercise Q8)"
+    },
+    {
+      "id": 85,
+      "topic": "Gaseous State, Fluids & Compressibility",
+      "difficulty": "CHS Exam",
+      "question": "Which everyday object shows all three states of the SAME substance (solid, liquid, and gas) at once?",
+      "options": [
+        "A piece of chalk",
+        "A dry iron nail",
+        "A wooden chair",
+        "A burning candle (solid wax, molten wax, wax vapour)"
+      ],
+      "correctIndex": 3,
+      "explanation": "Exercise Q8 highlights a burning candle as an example showing solid wax, molten liquid wax, and gaseous wax vapour together.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 114 (Exercise Q8)"
+    },
+    {
+      "id": 86,
+      "topic": "Interparticle Spaces, Solubility & SPM",
+      "difficulty": "Easy",
+      "question": "What are the tiny empty gaps present between the constituent particles of matter called?",
+      "options": [
+        "Interparticle spaces",
+        "Water channels",
+        "Air pockets",
+        "Dust pores"
+      ],
+      "correctIndex": 0,
+      "explanation": "The spaces present between constituent particles of matter are called interparticle spaces.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 101"
+    },
+    {
+      "id": 87,
+      "topic": "Interparticle Spaces, Solubility & SPM",
+      "difficulty": "CHS Exam",
+      "question": "What is present inside the interparticle spaces between the particles of a solid?",
+      "options": [
+        "Water vapour",
+        "Air",
+        "Nothing at all (empty space)",
+        "Tiny dust grains"
+      ],
+      "correctIndex": 2,
+      "explanation": "NCERT Curiosity clearly states that interparticle spaces contain NOTHING at all—they are not filled with air.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 109"
+    },
+    {
+      "id": 88,
+      "topic": "Interparticle Spaces, Solubility & SPM",
+      "difficulty": "CHS Exam",
+      "question": "In Activity 7.7, water is marked at level A, sugar is added raising it to B, and after stirring to dissolve the sugar, level C is marked. How does level C compare to level B?",
+      "options": [
+        "Level C drops slightly below B",
+        "All the water disappears",
+        "The glass overflows",
+        "Level C rises much higher than B"
+      ],
+      "correctIndex": 0,
+      "explanation": "After dissolving, sugar particles occupy the interparticle spaces between water particles, so level C drops slightly below B.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 108"
+    },
+    {
+      "id": 89,
+      "topic": "Interparticle Spaces, Solubility & SPM",
+      "difficulty": "Medium",
+      "question": "In Activity 7.7, why is the final volume of sugar solution LESS than the sum of the volumes of water and sugar?",
+      "options": [
+        "Sugar turns into air",
+        "Water shrinks permanently",
+        "Sugar evaporates during stirring",
+        "Dissolved sugar particles fit into the interparticle spaces between water particles"
+      ],
+      "correctIndex": 3,
+      "explanation": "Because sugar particles occupy the available interparticle spaces between water particles, the total volume is less than the separate sum.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 108"
+    },
+    {
+      "id": 90,
+      "topic": "Interparticle Spaces, Solubility & SPM",
+      "difficulty": "Easy",
+      "question": "In Activity 7.7, which tool is used to stir the sugar in the glass vessel?",
+      "options": [
+        "Plastic syringe",
+        "Iron hammer",
+        "Mortar and pestle",
+        "Glass rod"
+      ],
+      "correctIndex": 3,
+      "explanation": "A glass rod is used to stir and dissolve the sugar in Activity 7.7 (Fig. 7.10c).",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 108"
+    },
+    {
+      "id": 91,
+      "topic": "Interparticle Spaces, Solubility & SPM",
+      "difficulty": "Easy",
+      "question": "Which group contains ONLY soluble solids mentioned in Activity 7.7?",
+      "options": [
+        "Wood chips and pebbles",
+        "Sand and stone pieces",
+        "Chalk and iron filings",
+        "Sugar, common salt, and glucose"
+      ],
+      "correctIndex": 3,
+      "explanation": "Activity 7.7 names sugar, common salt, and glucose as soluble solids, and sand and stone pieces as insoluble solids.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 108"
+    },
+    {
+      "id": 92,
+      "topic": "Interparticle Spaces, Solubility & SPM",
+      "difficulty": "Easy",
+      "question": "What happens to the water level when insoluble SAND is added and stirred in a beaker of water?",
+      "options": [
+        "The water evaporates instantly",
+        "The water level drops to zero",
+        "Sand settles at the bottom and increases the total water level",
+        "Sand dissolves and lowers the level"
+      ],
+      "correctIndex": 2,
+      "explanation": "Because sand does not dissolve, its grains settle at the bottom and take up space, increasing the total level.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 109"
+    },
+    {
+      "id": 93,
+      "topic": "Interparticle Spaces, Solubility & SPM",
+      "difficulty": "CHS Exam",
+      "question": "Both sugar and sand are solids. Why does sugar dissolve in water while sand does NOT?",
+      "options": [
+        "Water particles stop moving around sand",
+        "In sand, constituent particles are held together so strongly that water particles cannot pull them out",
+        "Sand is not made of particles",
+        "Sugar is actually a liquid"
+      ],
+      "correctIndex": 1,
+      "explanation": "In insoluble solids like sand, constituent particles are bound too strongly for moving water particles to pull them apart.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 110"
+    },
+    {
+      "id": 94,
+      "topic": "Interparticle Spaces, Solubility & SPM",
+      "difficulty": "Easy",
+      "question": "Which of the following solids will settle at the bottom and raise the water level without dissolving?",
+      "options": [
+        "Common salt",
+        "Stone pieces",
+        "Sugar",
+        "Glucose"
+      ],
+      "correctIndex": 1,
+      "explanation": "Stone pieces are insoluble in water, so they settle at the bottom and displace water upward.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 108–109"
+    },
+    {
+      "id": 95,
+      "topic": "Interparticle Spaces, Solubility & SPM",
+      "difficulty": "Medium",
+      "question": "Do closely packed solids still have any interparticle space between their particles?",
+      "options": [
+        "No, zero space exists",
+        "Only when melted",
+        "Only wooden solids have spaces",
+        "Yes, small empty interparticle spaces remain even in closely packed solids"
+      ],
+      "correctIndex": 3,
+      "explanation": "Fig. 7.12a shows that even closely packed solids have tiny empty interparticle spaces between their particles.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 109"
+    },
+    {
+      "id": 96,
+      "topic": "Interparticle Spaces, Solubility & SPM",
+      "difficulty": "CHS Exam",
+      "question": "Arrange Solid, Liquid, and Gas in INCREASING order of interparticle spaces:",
+      "options": [
+        "Liquid < Solid < Gas",
+        "Gas < Liquid < Solid",
+        "Solid < Liquid < Gas",
+        "Solid < Gas < Liquid"
+      ],
+      "correctIndex": 2,
+      "explanation": "Interparticle space is minimum in solids, slightly more in liquids, and maximum in gases.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 109 & 112"
+    },
+    {
+      "id": 97,
+      "topic": "Interparticle Spaces, Solubility & SPM",
+      "difficulty": "CHS Exam",
+      "question": "Arrange Solid, Liquid, and Gas in DECREASING order of interparticle spaces:",
+      "options": [
+        "Gas > Liquid > Solid",
+        "Gas > Solid > Liquid",
+        "Liquid > Gas > Solid",
+        "Solid > Liquid > Gas"
+      ],
+      "correctIndex": 0,
+      "explanation": "Gases have the largest interparticle spaces, followed by liquids, and solids have the smallest spaces.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 109 & 112"
+    },
+    {
+      "id": 98,
+      "topic": "Interparticle Spaces, Solubility & SPM",
+      "difficulty": "CHS Exam",
+      "question": "In 'A Step Further' (air pollution studies), what is the full form of SPM?",
+      "options": [
+        "Suspended Particulate Matter",
+        "Surface Pollution Matter",
+        "Standard Particle Mass",
+        "Solid Pressure Meter"
+      ],
+      "correctIndex": 0,
+      "explanation": "SPM stands for Suspended Particulate Matter—tiny dust particles suspended in the air.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 109"
+    },
+    {
+      "id": 99,
+      "topic": "Interparticle Spaces, Solubility & SPM",
+      "difficulty": "CHS Exam",
+      "question": "Is a tiny dust particle of SPM the same as a constituent particle (atom or molecule) of matter?",
+      "options": [
+        "Yes, SPM has no mass",
+        "No, even one tiny SPM dust particle is made of a very large number of atoms and molecules",
+        "Yes, one dust particle is a single atom",
+        "No, SPM is a pure liquid"
+      ],
+      "correctIndex": 1,
+      "explanation": "SPM dust particles are far larger than constituent particles—each dust speck contains a huge number of atoms and molecules.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 109"
+    },
+    {
+      "id": 100,
+      "topic": "Interparticle Spaces, Solubility & SPM",
+      "difficulty": "Easy",
+      "question": "What are the ultra-tiny constituent particles that make up even a single dust speck of SPM?",
+      "options": [
+        "Atoms and molecules",
+        "Air bubbles",
+        "Water drops",
+        "Pebbles and sand"
+      ],
+      "correctIndex": 0,
+      "explanation": "Even a tiny dust particle is made of a very large number of constituent particles—atoms and molecules.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 109"
+    },
+    {
+      "id": 101,
+      "topic": "Interparticle Spaces, Solubility & SPM",
+      "difficulty": "Easy",
+      "question": "In Fig. 7.11, how are dissolved sugar particles shown inside water?",
+      "options": [
+        "Completely replacing all water particles",
+        "Floating only on top",
+        "All clumped at the bottom",
+        "Evenly distributed in the interparticle spaces between water particles"
+      ],
+      "correctIndex": 3,
+      "explanation": "Fig. 7.11 shows tiny sugar particles nestled evenly inside the spaces between water particles.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 108 (Fig. 7.11)"
+    },
+    {
+      "id": 102,
+      "topic": "Interparticle Spaces, Solubility & SPM",
+      "difficulty": "Medium",
+      "question": "If you add two spoons of glucose to water and stir well, what happens to the water level after dissolving?",
+      "options": [
+        "It drops slightly compared to the level right after adding undissolved glucose",
+        "It doubles in height",
+        "It freezes into ice",
+        "It overflows immediately"
+      ],
+      "correctIndex": 0,
+      "explanation": "Just like sugar and salt, glucose dissolves and its particles occupy the interparticle spaces of water.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 108"
+    },
+    {
+      "id": 103,
+      "topic": "Interparticle Spaces, Solubility & SPM",
+      "difficulty": "CHS Exam",
+      "question": "Which of the following statements is FALSE according to NCERT Chapter 7?",
+      "options": [
+        "Interparticle spaces in solids are filled with air",
+        "Sugar particles occupy interparticle spaces in water",
+        "Gases have the largest interparticle spaces",
+        "Interparticle spaces are smallest in solids"
+      ],
+      "correctIndex": 0,
+      "explanation": "Interparticle spaces contain nothing at all—it is a misconception to think they are filled with air.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 109"
+    },
+    {
+      "id": 104,
+      "topic": "Interparticle Spaces, Solubility & SPM",
+      "difficulty": "Medium",
+      "question": "When common salt dissolves completely in water, why does the water level NOT rise by the full volume of the salt?",
+      "options": [
+        "Water evaporates during stirring",
+        "Salt disappears into air",
+        "Salt has no volume",
+        "Salt particles fit into the interparticle spaces between water particles"
+      ],
+      "correctIndex": 3,
+      "explanation": "Dissolved salt particles occupy existing interparticle spaces among water particles.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 108"
+    },
+    {
+      "id": 105,
+      "topic": "Interparticle Spaces, Solubility & SPM",
+      "difficulty": "Medium",
+      "question": "Why does increasing the interparticle space turn a solid into a liquid or a gas?",
+      "options": [
+        "Interparticle attractive forces weaken drastically as distance increases",
+        "Gravity stops acting",
+        "Particles lose all their mass",
+        "Air enters between the particles"
+      ],
+      "correctIndex": 0,
+      "explanation": "Greater spacing drastically weakens interparticle attractions, allowing particles to move more freely.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 101 & 112"
+    },
+    {
+      "id": 106,
+      "topic": "Interparticle Spaces, Solubility & SPM",
+      "difficulty": "Medium",
+      "question": "Which activity directly proves that there are empty interparticle spaces between water particles?",
+      "options": [
+        "Activity 7.1 (grinding chalk)",
+        "Activity 7.3 (hammering solids)",
+        "Activity 7.7 (marking water levels A, B, and C with sugar)",
+        "Activity 7.5 (smoke in gas jars)"
+      ],
+      "correctIndex": 2,
+      "explanation": "Activity 7.7 tracks water levels A, B, and C before and after dissolving sugar to show interparticle spaces in water.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 108"
+    },
+    {
+      "id": 107,
+      "topic": "Interparticle Spaces, Solubility & SPM",
+      "difficulty": "Medium",
+      "question": "Why is the volume increase permanent when sand is stirred into water, unlike sugar?",
+      "options": [
+        "Water freezes around sand",
+        "Sand absorbs water and expands",
+        "Sand particles cannot break apart to enter water's interparticle spaces",
+        "Sand turns into a gas"
+      ],
+      "correctIndex": 2,
+      "explanation": "Sand is insoluble, so its grains stay intact at the bottom and displace water, keeping the level raised.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 109–110"
+    },
+    {
+      "id": 108,
+      "topic": "Interparticle Spaces, Solubility & SPM",
+      "difficulty": "Easy",
+      "question": "In Fig. 7.12, which state of matter shows particles very far apart with huge empty spaces between them?",
+      "options": [
+        "Solid (Fig. 7.12a)",
+        "Liquid (Fig. 7.12b)",
+        "Gas (Fig. 7.12c)",
+        "None of these"
+      ],
+      "correctIndex": 2,
+      "explanation": "Fig. 7.12c represents the gaseous state, where interparticle spaces are maximum.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 109 (Fig. 7.12)"
+    },
+    {
+      "id": 109,
+      "topic": "Interparticle Spaces, Solubility & SPM",
+      "difficulty": "CHS Exam",
+      "question": "Which statement correctly links interparticle spacing and interparticle attraction?",
+      "options": [
+        "Larger spacing → Stronger attraction",
+        "Smaller spacing → Zero attraction",
+        "Smaller spacing → Stronger attraction (Solids); Larger spacing → Weaker attraction (Gases)",
+        "Spacing has no effect on attraction"
+      ],
+      "correctIndex": 2,
+      "explanation": "Closely packed particles (solids) have the strongest attractions, while far-apart particles (gases) have negligible attractions.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 101 & 112"
+    },
+    {
+      "id": 110,
+      "topic": "Particle Motion, Thermal Energy & Applications",
+      "difficulty": "Easy",
+      "question": "In Activity 7.8, what colour spreads through still water when a few grains of potassium permanganate are dropped in?",
+      "options": [
+        "Deep yellow",
+        "Bright green",
+        "Uniform pink / purple-pink",
+        "Milky white"
+      ],
+      "correctIndex": 2,
+      "explanation": "Streaks of pink colour spread out from the grain until the entire water turns a uniform pink colour.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 110 (Fig. 7.13)"
+    },
+    {
+      "id": 111,
+      "topic": "Particle Motion, Thermal Energy & Applications",
+      "difficulty": "Medium",
+      "question": "Why does potassium permanganate spread throughout still water even without stirring (Activity 7.8)?",
+      "options": [
+        "Air pushes the water downward",
+        "Potassium permanganate floats on top",
+        "Glass attracts pink colour",
+        "Constantly moving water particles pull out potassium permanganate particles and hit them until they spread evenly"
+      ],
+      "correctIndex": 3,
+      "explanation": "Water particles are always in motion—they pull out potassium permanganate particles from the grain and collide with them to spread them evenly.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 110"
+    },
+    {
+      "id": 112,
+      "topic": "Particle Motion, Thermal Energy & Applications",
+      "difficulty": "Easy",
+      "question": "What safety precaution must be followed while handling potassium permanganate in Activity 7.8?",
+      "options": [
+        "Heat it directly on a palm",
+        "Do not touch it with bare hands; use a spoon or spatula",
+        "Crush it with bare fingers",
+        "Taste a small grain first"
+      ],
+      "correctIndex": 1,
+      "explanation": "The Safety First box warns not to touch potassium permanganate with bare hands and to use a spoon or spatula.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 109"
+    },
+    {
+      "id": 113,
+      "topic": "Particle Motion, Thermal Energy & Applications",
+      "difficulty": "CHS Exam",
+      "question": "In 'Think Like a Scientist', potassium permanganate is added to hot water, room-temperature water, and ice-cold water. Where does it spread the FASTEST?",
+      "options": [
+        "Ice-cold water",
+        "Room-temperature water",
+        "Hot water",
+        "Same speed in all three"
+      ],
+      "correctIndex": 2,
+      "explanation": "Water particles move fastest in hot water and slowest in ice-cold water, so the pink colour spreads fastest in hot water.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 110"
+    },
+    {
+      "id": 114,
+      "topic": "Particle Motion, Thermal Energy & Applications",
+      "difficulty": "Easy",
+      "question": "Where does potassium permanganate spread the SLOWEST among hot water, room-temperature water, and ice-cold water?",
+      "options": [
+        "Room-temperature water",
+        "Ice-cold water",
+        "It does not spread in any water",
+        "Hot water"
+      ],
+      "correctIndex": 1,
+      "explanation": "In ice-cold water, particles have the least thermal energy and move the slowest.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 110"
+    },
+    {
+      "id": 115,
+      "topic": "Particle Motion, Thermal Energy & Applications",
+      "difficulty": "Easy",
+      "question": "What does the hot-vs-cold water potassium permanganate experiment prove?",
+      "options": [
+        "Cold water has more heat energy than hot water",
+        "Heat slows down particle motion",
+        "Temperature has no effect on particles",
+        "Providing heat (thermal energy) increases the speed of particle movement"
+      ],
+      "correctIndex": 3,
+      "explanation": "Supplying heat increases thermal energy, making constituent particles move faster.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 110"
+    },
+    {
+      "id": 116,
+      "topic": "Particle Motion, Thermal Energy & Applications",
+      "difficulty": "Easy",
+      "question": "In Activity 7.9, why does the fragrance of an incense stick lit in one corner reach the entire room?",
+      "options": [
+        "Walls create the smell",
+        "Constantly moving air particles hit the fragrance particles and carry them throughout the room",
+        "Gravity pulls smell sideways",
+        "Incense smoke is a solid"
+      ],
+      "correctIndex": 1,
+      "explanation": "Air particles are always moving; they collide with fragrance particles and spread them across the whole room.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 110–111"
+    },
+    {
+      "id": 117,
+      "topic": "Particle Motion, Thermal Energy & Applications",
+      "difficulty": "CHS Exam",
+      "question": "How do soap particles remove oil stains from clothes ('Ever Heard Of...', Fig. 7.15)?",
+      "options": [
+        "Soap particles surround the oil—one end attaches to oil and the other mixes with water to wash it away",
+        "Soap turns oil into solid sand",
+        "Soap melts the cloth",
+        "Soap only changes the colour of oil"
+      ],
+      "correctIndex": 0,
+      "explanation": "Each soap particle has one end that attaches to oil and another end that mixes with water, lifting and rinsing oil stains away.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 111 (Fig. 7.15)"
+    },
+    {
+      "id": 118,
+      "topic": "Particle Motion, Thermal Energy & Applications",
+      "difficulty": "Medium",
+      "question": "Why can plain water alone NOT wash away an oil stain easily without soap?",
+      "options": [
+        "Oil dissolves instantly in cold water",
+        "Water particles cannot attach to oil; soap particles bridge oil and water",
+        "Oil is heavier than iron",
+        "Water turns solid on cloth"
+      ],
+      "correctIndex": 1,
+      "explanation": "Oil does not mix with plain water, whereas soap particles attach to both oil and water to lift the stain off.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 111"
+    },
+    {
+      "id": 119,
+      "topic": "Particle Motion, Thermal Energy & Applications",
+      "difficulty": "CHS Exam",
+      "question": "Exercise Q2 states: 'On heating camphor, energy is released as a smell.' Is this statement TRUE or FALSE?",
+      "options": [
+        "False — heating gives camphor particles thermal energy so they escape as vapour particles that reach our nose",
+        "False — camphor cannot be heated",
+        "True — energy itself turns into smell",
+        "True — smell has no particles"
+      ],
+      "correctIndex": 0,
+      "explanation": "Smell is not energy being released; heating converts camphor into vapour particles that travel through the air to our nose.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 114 (Exercise Q2)"
+    },
+    {
+      "id": 120,
+      "topic": "Particle Motion, Thermal Energy & Applications",
+      "difficulty": "Easy",
+      "question": "When camphor is heated in one corner of a room, why does its smell reach every corner?",
+      "options": [
+        "Air freezes around camphor",
+        "Camphor turns into liquid water",
+        "Camphor vapour particles move freely and spread throughout the air",
+        "Solid camphor jumps across the room"
+      ],
+      "correctIndex": 2,
+      "explanation": "Heating turns camphor into vapour whose particles move freely and spread across the entire room.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 114 (Exercise Q2)"
+    },
+    {
+      "id": 121,
+      "topic": "Particle Motion, Thermal Energy & Applications",
+      "difficulty": "CHS Exam",
+      "question": "According to Page 112 of NCERT Curiosity, what single factor governs interparticle spacing, attraction strength, and the state of matter?",
+      "options": [
+        "Shape of the container",
+        "Colour of the substance",
+        "Sound waves",
+        "Thermal (heat) energy of the particles"
+      ],
+      "correctIndex": 3,
+      "explanation": "Thermal energy controls particle motion and spacing, which in turn determines attraction strength and physical state.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 112"
+    },
+    {
+      "id": 122,
+      "topic": "Particle Motion, Thermal Energy & Applications",
+      "difficulty": "Easy",
+      "question": "Why does the smell of hot food reach you from a distance much faster than cold food?",
+      "options": [
+        "Hot air blocks smell",
+        "Particles from hot food have more thermal energy and move faster through air",
+        "Cold food is heavier than iron",
+        "Cold food has no particles"
+      ],
+      "correctIndex": 1,
+      "explanation": "Higher temperature gives aroma particles more thermal energy, so they move and spread much faster.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 110–111"
+    },
+    {
+      "id": 123,
+      "topic": "Particle Motion, Thermal Energy & Applications",
+      "difficulty": "Easy",
+      "question": "In which state of matter is particle movement described as 'negligible (only vibrations)'?",
+      "options": [
+        "Solid",
+        "Steam",
+        "Gas",
+        "Liquid"
+      ],
+      "correctIndex": 0,
+      "explanation": "The summary on Page 112 states that particle movement in solids is negligible (only vibrations in fixed positions).",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 112"
+    },
+    {
+      "id": 124,
+      "topic": "Particle Motion, Thermal Energy & Applications",
+      "difficulty": "Easy",
+      "question": "In which state of matter is particle movement 'restricted to a limited space'?",
+      "options": [
+        "Liquid",
+        "Solid",
+        "Gas",
+        "Vacuum"
+      ],
+      "correctIndex": 0,
+      "explanation": "In liquids, particles move past each other freely but stay within a limited space.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 112"
+    },
+    {
+      "id": 125,
+      "topic": "Particle Motion, Thermal Energy & Applications",
+      "difficulty": "Easy",
+      "question": "In which state of matter can particles move freely in 'all the available space'?",
+      "options": [
+        "Liquid",
+        "Crystal",
+        "Solid",
+        "Gas"
+      ],
+      "correctIndex": 3,
+      "explanation": "Gas particles have negligible attraction and move freely in all available space.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 112"
+    },
+    {
+      "id": 126,
+      "topic": "Particle Motion, Thermal Energy & Applications",
+      "difficulty": "Medium",
+      "question": "Why does perfume sprayed in one corner of a classroom quickly reach students sitting far away?",
+      "options": [
+        "Light carries perfume particles",
+        "Perfume vapour particles mix and collide with constantly moving air particles",
+        "Perfume droplets roll along the floor",
+        "Perfume turns into solid crystals"
+      ],
+      "correctIndex": 1,
+      "explanation": "Like incense fragrance, perfume vapour particles spread across the room by colliding with constantly moving air particles.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 111"
+    },
+    {
+      "id": 127,
+      "topic": "Particle Motion, Thermal Energy & Applications",
+      "difficulty": "CHS Exam",
+      "question": "If you drop a crystal of potassium permanganate into ice-cold water (2 °C) and another into hot water (70 °C), which turns uniformly pink faster?",
+      "options": [
+        "Both turn pink at the exact same second",
+        "Potassium permanganate does not dissolve in hot water",
+        "The 2 °C water turns pink faster",
+        "The 70 °C water turns pink much faster because water particles move faster at higher temperatures"
+      ],
+      "correctIndex": 3,
+      "explanation": "Higher thermal energy in 70 °C water makes particles move faster, spreading the colour much more quickly.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 110"
+    },
+    {
+      "id": 128,
+      "topic": "Particle Motion, Thermal Energy & Applications",
+      "difficulty": "Medium",
+      "question": "When ice melts into water and then boils into steam, what happens to thermal energy and interparticle spacing?",
+      "options": [
+        "Thermal energy stays zero",
+        "Both thermal energy and spacing decrease",
+        "Thermal energy increases, weakening attractions so particles move much farther apart",
+        "Particles merge into one giant particle"
+      ],
+      "correctIndex": 2,
+      "explanation": "Heating raises thermal energy from solid to liquid to gas, overcoming attractions and greatly increasing particle spacing.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 112 & 114"
+    },
+    {
+      "id": 129,
+      "topic": "Particle Motion, Thermal Energy & Applications",
+      "difficulty": "CHS Exam",
+      "question": "Which option correctly matches a state of matter with its particle properties?",
+      "options": [
+        "Solid → Free motion in all directions",
+        "Gas → Negligible attraction, maximum spacing, free motion in all directions",
+        "Solid → Minimum attraction, maximum spacing",
+        "Liquid → Maximum spacing, no fixed volume"
+      ],
+      "correctIndex": 1,
+      "explanation": "Gases have negligible interparticle attraction, maximum interparticle spacing, and free motion in all directions.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 112–113"
+    },
+    {
+      "id": 130,
+      "topic": "Particle Motion, Thermal Energy & Applications",
+      "difficulty": "CHS Exam",
+      "question": "Arrange Solid, Liquid, and Gas in INCREASING order of thermal (heat) energy of particles for the same substance (ice, water, steam):",
+      "options": [
+        "Gas < Liquid < Solid",
+        "Solid < Liquid < Gas",
+        "Liquid < Solid < Gas",
+        "Solid < Gas < Liquid"
+      ],
+      "correctIndex": 1,
+      "explanation": "Thermal energy is lowest in solids, higher in liquids, and highest in gases.",
+      "ncertRef": "NCERT Curiosity Ch. 7 • Page 112"
+    }
+  ]
+}
