@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" data-accent="indigo" data-font="sans" data-density="comfortable">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CHS Formula &amp; SI Units Vault — SMART PROCESS</title>
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/notes-studio.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <style>
+    .formula-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0.95rem;
+      margin-top: 1rem;
+    }
+    .formula-item-card {
+      background: var(--bg-surface-2);
+      border: 1.5px solid var(--border-subtle);
+      border-radius: 16px;
+      padding: 1rem 1.1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      transition: transform 150ms ease, border-color 150ms ease;
+    }
+    .formula-item-card:hover {
+      transform: translateY(-2px);
+      border-color: var(--accent-primary);
+    }
+    .formula-item-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .formula-item-head h4 {
+      margin: 0;
+      font-size: 0.98rem;
+      font-weight: 800;
+    }
+    .formula-unit-pill {
+      font-size: 0.72rem;
+      font-weight: 800;
+      padding: 0.2rem 0.55rem;
+      border-radius: 999px;
+      background: color-mix(in srgb, var(--accent-primary) 18%, var(--bg-surface));
+      color: var(--accent-primary);
+      border: 1px solid color-mix(in srgb, var(--accent-primary) 40%, transparent);
+      white-space: nowrap;
+    }
+    .formula-eq-box {
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 1.02rem;
+      font-weight: 900;
+      padding: 0.55rem 0.8rem;
+      border-radius: 11px;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      color: var(--accent-gold, #fbbf24);
+      letter-spacing: 0.01em;
+    }
+    .formula-explain {
+      margin: 0;
+      font-size: 0.86rem;
+      color: var(--text-secondary);
+      line-height: 1.48;
+    }
+    .formula-example {
+      font-size: 0.82rem;
+      color: var(--success);
+      background: color-mix(in srgb, var(--success) 10%, var(--bg-surface));
+      padding: 0.42rem 0.65rem;
+      border-radius: 9px;
+      border-left: 3px solid var(--success);
+    }
+    .formula-search-bar {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      padding: 0.75rem 1rem;
+      border-radius: 16px;
+      background: var(--bg-surface);
+      border: 1.5px solid var(--border-subtle);
+      margin-bottom: 1.25rem;
+    }
+    .formula-search-bar input {
+      flex: 1;
+      border: none;
+      background: transparent;
+      color: var(--text-primary);
+      font-size: 0.96rem;
+      outline: none;
+    }
+    .svg-diagram-box {
+      margin: 0.85rem 0 1rem;
+      border-radius: 18px;
+      overflow: hidden;
+      border: 1px solid var(--border-subtle);
+      background: #0f172a;
+    }
+    .svg-diagram-box img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .calc-panel-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 0.75rem;
+      margin-top: 0.75rem;
+    }
+    .calc-input {
+      width: 100%;
+      padding: 0.6rem 0.75rem;
+      border-radius: 11px;
+      border: 1.5px solid var(--border-subtle);
+      background: var(--bg-surface);
+      color: var(--text-primary);
+      font-weight: 700;
+      font-size: 0.92rem;
+    }
+    .calc-result-strip {
+      margin-top: 0.8rem;
+      padding: 0.8rem 1rem;
+      border-radius: 12px;
+      background: color-mix(in srgb, var(--accent-primary) 15%, var(--bg-surface));
+      border: 1px solid color-mix(in srgb, var(--accent-primary) 40%, transparent);
+      font-weight: 800;
+      font-size: 0.96rem;
+    }
+    @media (max-width: 760px) {
+      .formula-grid { grid-template-columns: 1fr; }
+      .calc-panel-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+  <link rel="icon" type="image/png" href="images/smart-process-logo.png" />
+</head>
+<body>
+  <header class="topbar" id="mainTopbar">
+    <div class="topbar-inner">
+      <a class="brand" href="index.html">
+        <div class="brand-icon"><img src="images/extra-formulas.svg" class="svg-icon svg-icon--btn" alt="" aria-hidden="true" /></div>
+        <div>
+          <div class="brand-title">CHS Formula &amp; SI Vault</div>
+          <div class="brand-subtitle">Extra Things • Class 8 NCERT &amp; BHU CHS</div>
+        </div>
+      </a>
+      <a class="btn btn-secondary" href="index.html" style="padding:0.45rem 0.85rem;font-size:0.84rem;">← Home</a>
+    </div>
+  </header>
+
+  <div class="notes-shell">
+    <aside class="notes-sidebar">
+      <div class="sidebar-title">Formula Chapters</div>
+      <nav class="sidebar-nav">
+        <a href="#sec-motion">1. Motion &amp; Speed</a>
+        <a href="#sec-force">2. Force, Pressure &amp; Energy</a>
+        <a href="#sec-density">3. Density &amp; Buoyancy</a>
+        <a href="#sec-electricity">4. Electricity &amp; Heating</a>
+        <a href="#sec-optics">5. Light, Mirrors &amp; Lenses</a>
+        <a href="#sec-heat-sound">6. Heat &amp; Sound Waves</a>
+        <a href="#sec-mensuration">7. Maths: Mensuration</a>
+        <a href="#sec-algebra">8. Maths: Algebra &amp; SI/CI</a>
+        <a href="#sec-si-units">9. Master SI Units Table</a>
+        <a href="#sec-labs">10. Live Formula Solver</a>
+        <a href="#sec-flashcards">11. 16 Flip Flashcards</a>
+      </nav>
+    </aside>
+
+    <main class="notes-main">
+      <!-- Hero Banner -->
+      <section class="notes-hero">
+        <div style="display:flex;align-items:center;gap:1.15rem;flex-wrap:wrap;">
+          <img src="images/svg-formula-emblem.svg" style="width:86px;height:86px;flex-shrink:0;" alt="Formula Vault Emblem" />
+          <div style="flex:1;min-width:240px;">
+            <span class="hero-badge">EXTRA THINGS • BHU CHS MASTER REFERENCE</span>
+            <h1 style="margin:0.35rem 0 0.35rem;">CHS Formula &amp; SI Units Studio</h1>
+            <p style="margin:0;color:var(--text-secondary);">
+              Every Class 8 NCERT Physics, Chemistry &amp; Maths formula explained clearly with solved examples, 10 visual diagrams, 35+ SI units, live calculator &amp; flashcards.
+            </p>
+          </div>
+        </div>
+
+        <div class="notes-stat-strip" style="margin-top:1.1rem;">
+          <div class="notes-stat-box"><strong>42+</strong><span>Core Formulas</span></div>
+          <div class="notes-stat-box"><strong>35+</strong><span>SI &amp; Derived Units</span></div>
+          <div class="notes-stat-box"><strong>10</strong><span>Visual Diagrams</span></div>
+          <div class="notes-stat-box"><strong>4</strong><span>Live Solvers</span></div>
+          <div class="notes-stat-box"><strong>16</strong><span>Flashcards</span></div>
+        </div>
+      </section>
+
+      <!-- Instant Filter Bar -->
+      <div class="formula-search-bar">
+        <img src="images/ui-search.svg" class="svg-icon" alt="" aria-hidden="true" />
+        <input type="search" id="formulaFilterInput" placeholder="Filter formulas or SI units (e.g., Pressure, Ohm, Watt, Cylinder, Kelvin, Compound)..." autocomplete="off" />
+      </div>
+
+      <!-- SECTION 1: MOTION & SPEED -->
+      <section class="notes-section" id="sec-motion">
+        <h2>1. Motion, Speed &amp; Acceleration</h2>
+        <div class="svg-diagram-box"><img src="images/svg-formula-motion.svg" alt="Speed Distance Time Triangle and km/h to m/s Conversion" /></div>
+        <div class="formula-grid">
+          
+      <div class="formula-item-card" data-search="speed speed (v) = distance (d) / time (t) si: m/s measures how fast an object covers distance. cover 's' in the d-s-t triangle to get d/t.">
+        <div class="formula-item-head">
+          <h4>Speed</h4>
+          <span class="formula-unit-pill">SI: m/s</span>
+        </div>
+        <div class="formula-eq-box">Speed (v) = Distance (d) / Time (t)</div>
+        <p class="formula-explain">Measures how fast an object covers distance. Cover 'S' in the D-S-T triangle to get D/T.</p>
+        <div class="formula-example"><strong>Example:</strong> A bus covers 120 km in 2 h → Speed = 120 / 2 = 60 km/h.</div>
+      </div>
+          
+      <div class="formula-item-card" data-search="average speed avg speed = total distance / total time si: m/s used when speed changes during a journey. never just average two speeds if times differ!">
+        <div class="formula-item-head">
+          <h4>Average Speed</h4>
+          <span class="formula-unit-pill">SI: m/s</span>
+        </div>
+        <div class="formula-eq-box">Avg Speed = Total Distance / Total Time</div>
+        <p class="formula-explain">Used when speed changes during a journey. Never just average two speeds if times differ!</p>
+        <div class="formula-example"><strong>Example:</strong> 40 km in 1 h + 80 km in 2 h → 120 / 3 = 40 km/h.</div>
+      </div>
+          
+      <div class="formula-item-card" data-search="km/h to m/s shortcut v (m/s) = v (km/h) × (5 / 18) conversion since 1 km = 1000 m and 1 h = 3600 s, 1000/3600 simplifies directly to 5/18. reverse with 18/5.">
+        <div class="formula-item-head">
+          <h4>km/h to m/s Shortcut</h4>
+          <span class="formula-unit-pill">Conversion</span>
+        </div>
+        <div class="formula-eq-box">v (m/s) = v (km/h) × (5 / 18)</div>
+        <p class="formula-explain">Since 1 km = 1000 m and 1 h = 3600 s, 1000/3600 simplifies directly to 5/18. Reverse with 18/5.</p>
+        <div class="formula-example"><strong>Example:</strong> 72 km/h × 5/18 = 20 m/s.</div>
+      </div>
+          
+      <div class="formula-item-card" data-search="acceleration a = (v − u) / t si: m/s² rate of change of velocity per second. here u = initial velocity, v = final velocity, t = time.">
+        <div class="formula-item-head">
+          <h4>Acceleration</h4>
+          <span class="formula-unit-pill">SI: m/s²</span>
+        </div>
+        <div class="formula-eq-box">a = (v − u) / t</div>
+        <p class="formula-explain">Rate of change of velocity per second. Here u = initial velocity, v = final velocity, t = time.</p>
+        <div class="formula-example"><strong>Example:</strong> Velocity rises from 4 m/s to 20 m/s in 4 s → a = (20−4)/4 = 4 m/s².</div>
+      </div>
+        </div>
+      </section>
+
+      <!-- SECTION 2: FORCE, WEIGHT, PRESSURE & ENERGY -->
+      <section class="notes-section" id="sec-force">
+        <h2>2. Force, Weight, Pressure, Work &amp; Energy</h2>
+        <div class="svg-diagram-box"><img src="images/svg-formula-force-pressure.svg" alt="Force F=ma and Pressure P=F/A Diagram" /></div>
+        <div class="formula-grid">
+          
+      <div class="formula-item-card" data-search="newton's 2nd law (force) f = m × a si: newton (n) force equals mass (kg) multiplied by acceleration (m/s²). 1 n gives 1 kg mass an acceleration of 1 m/s².">
+        <div class="formula-item-head">
+          <h4>Newton's 2nd Law (Force)</h4>
+          <span class="formula-unit-pill">SI: Newton (N)</span>
+        </div>
+        <div class="formula-eq-box">F = m × a</div>
+        <p class="formula-explain">Force equals mass (kg) multiplied by acceleration (m/s²). 1 N gives 1 kg mass an acceleration of 1 m/s².</p>
+        <div class="formula-example"><strong>Example:</strong> A 5 kg box accelerated at 3 m/s² needs F = 5 × 3 = 15 N.</div>
+      </div>
+          
+      <div class="formula-item-card" data-search="weight of an object w = m × g si: newton (n) gravitational pull on a mass. on earth g ≈ 9.8 m/s² (or 10 m/s²); on moon g is 1/6th of earth.">
+        <div class="formula-item-head">
+          <h4>Weight of an Object</h4>
+          <span class="formula-unit-pill">SI: Newton (N)</span>
+        </div>
+        <div class="formula-eq-box">W = m × g</div>
+        <p class="formula-explain">Gravitational pull on a mass. On Earth g ≈ 9.8 m/s² (or 10 m/s²); on Moon g is 1/6th of Earth.</p>
+        <div class="formula-example"><strong>Example:</strong> Mass 10 kg on Earth → W = 10 × 9.8 = 98 N.</div>
+      </div>
+          
+      <div class="formula-item-card" data-search="pressure on solids p = thrust (f) / area (a) si: pascal (pa) force acting perpendicularly per unit area. smaller contact area produces much higher pressure (e.g., sharp knife).">
+        <div class="formula-item-head">
+          <h4>Pressure on Solids</h4>
+          <span class="formula-unit-pill">SI: Pascal (Pa)</span>
+        </div>
+        <div class="formula-eq-box">P = Thrust (F) / Area (A)</div>
+        <p class="formula-explain">Force acting perpendicularly per unit area. Smaller contact area produces much higher pressure (e.g., sharp knife).</p>
+        <div class="formula-example"><strong>Example:</strong> Force 200 N on 0.5 m² → P = 200 / 0.5 = 400 Pa.</div>
+      </div>
+          
+      <div class="formula-item-card" data-search="liquid column pressure p = h × ρ × g si: pascal (pa) pressure inside a liquid increases with depth (h) and liquid density (ρ), independent of container shape.">
+        <div class="formula-item-head">
+          <h4>Liquid Column Pressure</h4>
+          <span class="formula-unit-pill">SI: Pascal (Pa)</span>
+        </div>
+        <div class="formula-eq-box">P = h × ρ × g</div>
+        <p class="formula-explain">Pressure inside a liquid increases with depth (h) and liquid density (ρ), independent of container shape.</p>
+        <div class="formula-example"><strong>Example:</strong> At 2 m depth in water (ρ = 1000, g = 10) → P = 20,000 Pa.</div>
+      </div>
+          
+      <div class="formula-item-card" data-search="work done w = force (f) × displacement (d) si: joule (j) work is done only when a force moves an object in the direction of the force. 1 j = 1 n·m.">
+        <div class="formula-item-head">
+          <h4>Work Done</h4>
+          <span class="formula-unit-pill">SI: Joule (J)</span>
+        </div>
+        <div class="formula-eq-box">W = Force (F) × Displacement (d)</div>
+        <p class="formula-explain">Work is done only when a force moves an object in the direction of the force. 1 J = 1 N·m.</p>
+        <div class="formula-example"><strong>Example:</strong> Pushing with 30 N over 4 m → W = 30 × 4 = 120 J.</div>
+      </div>
+          
+      <div class="formula-item-card" data-search="kinetic & potential energy ke = ½ m v²   |   pe = m g h si: joule (j) ke is energy of motion (doubles mass → 2× ke; doubles speed → 4× ke). pe is energy stored due to height h.">
+        <div class="formula-item-head">
+          <h4>Kinetic & Potential Energy</h4>
+          <span class="formula-unit-pill">SI: Joule (J)</span>
+        </div>
+        <div class="formula-eq-box">KE = ½ m v²   |   PE = m g h</div>
+        <p class="formula-explain">KE is energy of motion (doubles mass → 2× KE; doubles speed → 4× KE). PE is energy stored due to height h.</p>
+        <div class="formula-example"><strong>Example:</strong> 2 kg ball moving at 3 m/s → KE = ½ × 2 × 9 = 9 J.</div>
+      </div>
+          
+      <div class="formula-item-card" data-search="mechanical power power (p) = work (w) / time (t) si: watt (w) rate of doing work per second. 1 watt = 1 joule/second. 1 horsepower (hp) = 746 w.">
+        <div class="formula-item-head">
+          <h4>Mechanical Power</h4>
+          <span class="formula-unit-pill">SI: Watt (W)</span>
+        </div>
+        <div class="formula-eq-box">Power (P) = Work (W) / Time (t)</div>
+        <p class="formula-explain">Rate of doing work per second. 1 Watt = 1 Joule/second. 1 Horsepower (HP) = 746 W.</p>
+        <div class="formula-example"><strong>Example:</strong> 600 J work done in 10 s → P = 600 / 10 = 60 W.</div>
+      </div>
+          
+      <div class="formula-item-card" data-search="net resultant force f_net = f₁ + f₂ (same) | |f₁ − f₂| (opp) si: newton (n) forces in the same direction add up; forces in opposite directions subtract. balanced forces give f_net = 0.">
+        <div class="formula-item-head">
+          <h4>Net Resultant Force</h4>
+          <span class="formula-unit-pill">SI: Newton (N)</span>
+        </div>
+        <div class="formula-eq-box">F_net = F₁ + F₂ (same) | |F₁ − F₂| (opp)</div>
+        <p class="formula-explain">Forces in the same direction add up; forces in opposite directions subtract. Balanced forces give F_net = 0.</p>
+        <div class="formula-example"><strong>Example:</strong> 25 N right vs 15 N left → F_net = 10 N right.</div>
+      </div>
+        </div>
+      </section>
+
+      <!-- SECTION 3: DENSITY & BUOYANCY -->
+      <section class="notes-section" id="sec-density">
+        <h2>3. Density, Relative Density &amp; Buoyancy</h2>
+        <div class="svg-diagram-box"><img src="images/svg-formula-density-buoyancy.svg" alt="Density Floating and Sinking Diagram" /></div>
+        <div class="formula-grid">
+          
+      <div class="formula-item-card" data-search="density ρ = mass (m) / volume (v) si: kg/m³ measures how tightly matter is packed. water has density 1 g/cm³ = 1000 kg/m³.">
+        <div class="formula-item-head">
+          <h4>Density</h4>
+          <span class="formula-unit-pill">SI: kg/m³</span>
+        </div>
+        <div class="formula-eq-box">ρ = Mass (m) / Volume (V)</div>
+        <p class="formula-explain">Measures how tightly matter is packed. Water has density 1 g/cm³ = 1000 kg/m³.</p>
+        <div class="formula-example"><strong>Example:</strong> Mass 500 g, Volume 250 cm³ → ρ = 2 g/cm³ = 2000 kg/m³.</div>
+      </div>
+          
+      <div class="formula-item-card" data-search="relative density (rd) rd = ρ_substance / ρ_water unitless ratio of two densities, so units cancel completely! if rd > 1, the object sinks in water; if rd < 1, it floats.">
+        <div class="formula-item-head">
+          <h4>Relative Density (RD)</h4>
+          <span class="formula-unit-pill">Unitless</span>
+        </div>
+        <div class="formula-eq-box">RD = ρ_substance / ρ_water</div>
+        <p class="formula-explain">Ratio of two densities, so units cancel completely! If RD > 1, the object sinks in water; if RD < 1, it floats.</p>
+        <div class="formula-example"><strong>Example:</strong> Iron ρ = 7800 kg/m³ → RD = 7800 / 1000 = 7.8 (sinks).</div>
+      </div>
+          
+      <div class="formula-item-card" data-search="archimedes' buoyant force f_b = weight of displaced fluid si: newton (n) upward thrust exerted by a fluid equals the weight of the fluid pushed aside by the submerged object.">
+        <div class="formula-item-head">
+          <h4>Archimedes' Buoyant Force</h4>
+          <span class="formula-unit-pill">SI: Newton (N)</span>
+        </div>
+        <div class="formula-eq-box">F_b = Weight of Displaced Fluid</div>
+        <p class="formula-explain">Upward thrust exerted by a fluid equals the weight of the fluid pushed aside by the submerged object.</p>
+        <div class="formula-example"><strong>Example:</strong> Object displaces 0.5 kg water → Upthrust ≈ 0.5 × 9.8 = 4.9 N.</div>
+      </div>
+          
+      <div class="formula-item-card" data-search="apparent weight in water w_apparent = w_air − f_buoyant si: newton (n) objects feel lighter inside water because upward buoyant force reduces the downward pull.">
+        <div class="formula-item-head">
+          <h4>Apparent Weight in Water</h4>
+          <span class="formula-unit-pill">SI: Newton (N)</span>
+        </div>
+        <div class="formula-eq-box">W_apparent = W_air − F_buoyant</div>
+        <p class="formula-explain">Objects feel lighter inside water because upward buoyant force reduces the downward pull.</p>
+        <div class="formula-example"><strong>Example:</strong> Stone weighs 20 N in air, upthrust 6 N → 14 N in water.</div>
+      </div>
+        </div>
+      </section>
+
+      <!-- SECTION 4: ELECTRICITY & HEATING -->
+      <section class="notes-section" id="sec-electricity">
+        <h2>4. Electricity, Ohm's Law &amp; Joule Heating</h2>
+        <div class="svg-diagram-box"><img src="images/svg-formula-electricity.svg" alt="Ohm Law Triangle and Electric Power Formulas" /></div>
+        <div class="formula-grid">
+          
+      <div class="formula-item-card" data-search="electric current i = charge (q) / time (t) si: ampere (a) rate of flow of electric charge through a conductor. measured by an ammeter connected in series.">
+        <div class="formula-item-head">
+          <h4>Electric Current</h4>
+          <span class="formula-unit-pill">SI: Ampere (A)</span>
+        </div>
+        <div class="formula-eq-box">I = Charge (Q) / Time (t)</div>
+        <p class="formula-explain">Rate of flow of electric charge through a conductor. Measured by an Ammeter connected in series.</p>
+        <div class="formula-example"><strong>Example:</strong> 20 C charge flows in 4 s → I = 20 / 4 = 5 A.</div>
+      </div>
+          
+      <div class="formula-item-card" data-search="ohm's law v = i × r si: volt (v) at constant temperature, voltage (v) across a wire is directly proportional to current (i). r is resistance (ω).">
+        <div class="formula-item-head">
+          <h4>Ohm's Law</h4>
+          <span class="formula-unit-pill">SI: Volt (V)</span>
+        </div>
+        <div class="formula-eq-box">V = I × R</div>
+        <p class="formula-explain">At constant temperature, voltage (V) across a wire is directly proportional to current (I). R is Resistance (Ω).</p>
+        <div class="formula-example"><strong>Example:</strong> I = 2 A through R = 6 Ω → V = 2 × 6 = 12 V.</div>
+      </div>
+          
+      <div class="formula-item-card" data-search="series & parallel resistance r_s = r₁ + r₂   |   1/r_p = 1/r₁ + 1/r₂ si: ohm (ω) series increases total resistance; parallel decreases total resistance below the smallest resistor.">
+        <div class="formula-item-head">
+          <h4>Series & Parallel Resistance</h4>
+          <span class="formula-unit-pill">SI: Ohm (Ω)</span>
+        </div>
+        <div class="formula-eq-box">R_s = R₁ + R₂   |   1/R_p = 1/R₁ + 1/R₂</div>
+        <p class="formula-explain">Series increases total resistance; Parallel decreases total resistance below the smallest resistor.</p>
+        <div class="formula-example"><strong>Example:</strong> Two 6 Ω resistors: Series = 12 Ω, Parallel = 3 Ω.</div>
+      </div>
+          
+      <div class="formula-item-card" data-search="joule's law of heating h = i² × r × t si: joule (j) heat produced in a wire grows with square of current (i²), resistance (r), and time (t). used in heaters & fuses.">
+        <div class="formula-item-head">
+          <h4>Joule's Law of Heating</h4>
+          <span class="formula-unit-pill">SI: Joule (J)</span>
+        </div>
+        <div class="formula-eq-box">H = I² × R × t</div>
+        <p class="formula-explain">Heat produced in a wire grows with square of current (I²), resistance (R), and time (t). Used in heaters & fuses.</p>
+        <div class="formula-example"><strong>Example:</strong> I = 2 A, R = 5 Ω, t = 10 s → H = 4 × 5 × 10 = 200 J.</div>
+      </div>
+          
+      <div class="formula-item-card" data-search="electric power p = v × i = i²r = v² / r si: watt (w) electrical energy consumed per second. 1000 w = 1 kw.">
+        <div class="formula-item-head">
+          <h4>Electric Power</h4>
+          <span class="formula-unit-pill">SI: Watt (W)</span>
+        </div>
+        <div class="formula-eq-box">P = V × I = I²R = V² / R</div>
+        <p class="formula-explain">Electrical energy consumed per second. 1000 W = 1 kW.</p>
+        <div class="formula-example"><strong>Example:</strong> 220 V bulb drawing 0.5 A → P = 220 × 0.5 = 110 W.</div>
+      </div>
+          
+      <div class="formula-item-card" data-search="commercial electricity unit 1 kwh = 1000 w × 3600 s = 3.6 × 10⁶ j 1 unit (kwh) your home electricity bill counts 'units' in kilowatt-hours (kwh), a unit of energy, not power!">
+        <div class="formula-item-head">
+          <h4>Commercial Electricity Unit</h4>
+          <span class="formula-unit-pill">1 Unit (kWh)</span>
+        </div>
+        <div class="formula-eq-box">1 kWh = 1000 W × 3600 s = 3.6 × 10⁶ J</div>
+        <p class="formula-explain">Your home electricity bill counts 'Units' in kilowatt-hours (kWh), a unit of energy, NOT power!</p>
+        <div class="formula-example"><strong>Example:</strong> A 2 kW geyser run for 3 hours uses 2 × 3 = 6 Units.</div>
+      </div>
+        </div>
+      </section>
+
+      <!-- SECTION 5: OPTICS -->
+      <section class="notes-section" id="sec-optics">
+        <h2>5. Light: Mirrors &amp; Lenses (Optics)</h2>
+        <div class="svg-diagram-box"><img src="images/svg-formula-optics.svg" alt="Laws of Reflection and Optics Formulas" /></div>
+        <div class="formula-grid">
+          
+      <div class="formula-item-card" data-search="law of reflection ∠i = ∠r degrees (°) angle of incidence (between incident ray and normal) always equals angle of reflection.">
+        <div class="formula-item-head">
+          <h4>Law of Reflection</h4>
+          <span class="formula-unit-pill">Degrees (°)</span>
+        </div>
+        <div class="formula-eq-box">∠i = ∠r</div>
+        <p class="formula-explain">Angle of incidence (between incident ray and normal) always equals angle of reflection.</p>
+        <div class="formula-example"><strong>Example:</strong> If ∠i = 35°, then ∠r = 35° and angle between rays = 70°.</div>
+      </div>
+          
+      <div class="formula-item-card" data-search="glancing angle with mirror θ = 90° − ∠i degrees (°) normal is always 90° to the mirror surface. chs loves giving the surface angle to trap students!">
+        <div class="formula-item-head">
+          <h4>Glancing Angle with Mirror</h4>
+          <span class="formula-unit-pill">Degrees (°)</span>
+        </div>
+        <div class="formula-eq-box">θ = 90° − ∠i</div>
+        <p class="formula-explain">Normal is always 90° to the mirror surface. CHS loves giving the surface angle to trap students!</p>
+        <div class="formula-example"><strong>Example:</strong> Ray makes 30° with mirror → ∠i = 90° − 30° = 60°.</div>
+      </div>
+          
+      <div class="formula-item-card" data-search="multiple images (two mirrors) n = (360° / θ) − 1 count number of images formed when two plane mirrors are placed at angle θ (when 360°/θ is even).">
+        <div class="formula-item-head">
+          <h4>Multiple Images (Two Mirrors)</h4>
+          <span class="formula-unit-pill">Count</span>
+        </div>
+        <div class="formula-eq-box">n = (360° / θ) − 1</div>
+        <p class="formula-explain">Number of images formed when two plane mirrors are placed at angle θ (when 360°/θ is even).</p>
+        <div class="formula-example"><strong>Example:</strong> Mirrors at 90° → (360/90) − 1 = 3 images; at 60° → 5 images.</div>
+      </div>
+          
+      <div class="formula-item-card" data-search="focal length & radius f = r / 2 si: metre (m) for spherical mirrors (concave/convex), focal length (f) is half the radius of curvature (r).">
+        <div class="formula-item-head">
+          <h4>Focal Length & Radius</h4>
+          <span class="formula-unit-pill">SI: metre (m)</span>
+        </div>
+        <div class="formula-eq-box">f = R / 2</div>
+        <p class="formula-explain">For spherical mirrors (concave/convex), focal length (f) is half the radius of curvature (R).</p>
+        <div class="formula-example"><strong>Example:</strong> Concave mirror with R = 24 cm → f = 12 cm.</div>
+      </div>
+          
+      <div class="formula-item-card" data-search="power of a lens p = 1 / f (in metres) si: dioptre (d) convex (converging) lens has positive (+) power; concave (diverging) lens has negative (−) power.">
+        <div class="formula-item-head">
+          <h4>Power of a Lens</h4>
+          <span class="formula-unit-pill">SI: Dioptre (D)</span>
+        </div>
+        <div class="formula-eq-box">P = 1 / f (in metres)</div>
+        <p class="formula-explain">Convex (converging) lens has positive (+) power; Concave (diverging) lens has negative (−) power.</p>
+        <div class="formula-example"><strong>Example:</strong> Convex lens with f = 50 cm (0.5 m) → P = 1 / 0.5 = +2 D.</div>
+      </div>
+          
+      <div class="formula-item-card" data-search="linear magnification m = height of image (h′) / height of object (h) unitless if |m| > 1 image is magnified; if |m| < 1 diminished; if |m| = 1 same size (plane mirror).">
+        <div class="formula-item-head">
+          <h4>Linear Magnification</h4>
+          <span class="formula-unit-pill">Unitless</span>
+        </div>
+        <div class="formula-eq-box">m = Height of Image (h′) / Height of Object (h)</div>
+        <p class="formula-explain">If |m| > 1 image is magnified; if |m| < 1 diminished; if |m| = 1 same size (plane mirror).</p>
+        <div class="formula-example"><strong>Example:</strong> Object 4 cm produces 12 cm image → m = 12 / 4 = 3×.</div>
+      </div>
+        </div>
+      </section>
+
+      <!-- SECTION 6: HEAT & SOUND -->
+      <section class="notes-section" id="sec-heat-sound">
+        <h2>6. Heat, Temperature &amp; Sound Waves</h2>
+        <div class="svg-diagram-box"><img src="images/svg-formula-heat-sound.svg" alt="Temperature Scales and Sound Wave Formulas" /></div>
+        <div class="formula-grid">
+          
+      <div class="formula-item-card" data-search="celsius to fahrenheit °f = (9/5 × °c) + 32 °f / °c converts clinical or weather temperatures. note that −40°c equals exactly −40°f!">
+        <div class="formula-item-head">
+          <h4>Celsius to Fahrenheit</h4>
+          <span class="formula-unit-pill">°F / °C</span>
+        </div>
+        <div class="formula-eq-box">°F = (9/5 × °C) + 32</div>
+        <p class="formula-explain">Converts clinical or weather temperatures. Note that −40°C equals exactly −40°F!</p>
+        <div class="formula-example"><strong>Example:</strong> 37°C = (9/5 × 37) + 32 = 98.6°F (normal human body).</div>
+      </div>
+          
+      <div class="formula-item-card" data-search="celsius to kelvin (si) k = °c + 273.15 si: kelvin (k) kelvin is the si unit of temperature (never write a degree ° sign before k!). 0 k is absolute zero.">
+        <div class="formula-item-head">
+          <h4>Celsius to Kelvin (SI)</h4>
+          <span class="formula-unit-pill">SI: Kelvin (K)</span>
+        </div>
+        <div class="formula-eq-box">K = °C + 273.15</div>
+        <p class="formula-explain">Kelvin is the SI unit of temperature (never write a degree ° sign before K!). 0 K is Absolute Zero.</p>
+        <div class="formula-example"><strong>Example:</strong> 27°C = 27 + 273 = 300 K.</div>
+      </div>
+          
+      <div class="formula-item-card" data-search="frequency & time period f = 1 / t   |   t = 1 / f si: hertz (hz) frequency is number of vibrations per second; time period (t) is seconds for 1 complete oscillation.">
+        <div class="formula-item-head">
+          <h4>Frequency & Time Period</h4>
+          <span class="formula-unit-pill">SI: Hertz (Hz)</span>
+        </div>
+        <div class="formula-eq-box">f = 1 / T   |   T = 1 / f</div>
+        <p class="formula-explain">Frequency is number of vibrations per second; Time Period (T) is seconds for 1 complete oscillation.</p>
+        <div class="formula-example"><strong>Example:</strong> Pendulum makes 50 oscillations in 10 s → f = 5 Hz, T = 0.2 s.</div>
+      </div>
+          
+      <div class="formula-item-card" data-search="wave speed formula v = f × λ si: m/s speed of sound equals frequency (hz) times wavelength (λ in metres). sound travels fastest in solids!">
+        <div class="formula-item-head">
+          <h4>Wave Speed Formula</h4>
+          <span class="formula-unit-pill">SI: m/s</span>
+        </div>
+        <div class="formula-eq-box">v = f × λ</div>
+        <p class="formula-explain">Speed of sound equals frequency (Hz) times wavelength (λ in metres). Sound travels fastest in solids!</p>
+        <div class="formula-example"><strong>Example:</strong> f = 200 Hz, λ = 1.7 m → v = 200 × 1.7 = 340 m/s.</div>
+      </div>
+        </div>
+      </section>
+
+      <!-- SECTION 7: MATHS MENSURATION -->
+      <section class="notes-section" id="sec-mensuration">
+        <h2>7. CHS Maths: Mensuration &amp; Geometry</h2>
+        <div class="svg-diagram-box"><img src="images/svg-formula-maths-mensuration.svg" alt="Cube Cylinder Triangle Circle Mensuration Formulas" /></div>
+        <div class="formula-grid">
+          
+      <div class="formula-item-card" data-search="circle area & circumference area = πr²   |   circumference = 2πr π ≈ 22/7 or 3.14 radius r = diameter / 2. semicircle perimeter is πr + 2r (don't forget the straight diameter!).">
+        <div class="formula-item-head">
+          <h4>Circle Area & Circumference</h4>
+          <span class="formula-unit-pill">π ≈ 22/7 or 3.14</span>
+        </div>
+        <div class="formula-eq-box">Area = πr²   |   Circumference = 2πr</div>
+        <p class="formula-explain">Radius r = Diameter / 2. Semicircle perimeter is πr + 2r (don't forget the straight diameter!).</p>
+        <div class="formula-example"><strong>Example:</strong> r = 7 cm → Area = (22/7)×7×7 = 154 cm², C = 44 cm.</div>
+      </div>
+          
+      <div class="formula-item-card" data-search="trapezium & rhombus area trap = ½(a+b)h   |   rhombus = ½ × d₁ × d₂ sq. units a and b are parallel sides of trapezium; d₁ and d₂ are perpendicular diagonals of a rhombus.">
+        <div class="formula-item-head">
+          <h4>Trapezium & Rhombus Area</h4>
+          <span class="formula-unit-pill">sq. units</span>
+        </div>
+        <div class="formula-eq-box">Trap = ½(a+b)h   |   Rhombus = ½ × d₁ × d₂</div>
+        <p class="formula-explain">a and b are parallel sides of trapezium; d₁ and d₂ are perpendicular diagonals of a rhombus.</p>
+        <div class="formula-example"><strong>Example:</strong> Rhombus diagonals 10 cm & 8 cm → Area = ½×10×8 = 40 cm².</div>
+      </div>
+          
+      <div class="formula-item-card" data-search="cube surface area & volume lsa = 4a²  |  tsa = 6a²  |  vol = a³ m² / m³ all 6 faces of a cube are identical squares of side a. diagonal of cube = a√3.">
+        <div class="formula-item-head">
+          <h4>Cube Surface Area & Volume</h4>
+          <span class="formula-unit-pill">m² / m³</span>
+        </div>
+        <div class="formula-eq-box">LSA = 4a²  |  TSA = 6a²  |  Vol = a³</div>
+        <p class="formula-explain">All 6 faces of a cube are identical squares of side a. Diagonal of cube = a√3.</p>
+        <div class="formula-example"><strong>Example:</strong> Side a = 5 cm → TSA = 150 cm², Volume = 125 cm³.</div>
+      </div>
+          
+      <div class="formula-item-card" data-search="cuboid surface area & volume tsa = 2(lb + bh + hl)   |   vol = l × b × h m² / m³ area of 4 walls (lsa) = 2h(l + b). very frequent in chs painting/room-flooring problems.">
+        <div class="formula-item-head">
+          <h4>Cuboid Surface Area & Volume</h4>
+          <span class="formula-unit-pill">m² / m³</span>
+        </div>
+        <div class="formula-eq-box">TSA = 2(lb + bh + hl)   |   Vol = l × b × h</div>
+        <p class="formula-explain">Area of 4 walls (LSA) = 2h(l + b). Very frequent in CHS painting/room-flooring problems.</p>
+        <div class="formula-example"><strong>Example:</strong> l=4, b=3, h=2 m → Vol = 24 m³, TSA = 52 m².</div>
+      </div>
+          
+      <div class="formula-item-card" data-search="cylinder area & volume csa = 2πrh | tsa = 2πr(r+h) | v = πr²h m² / m³ csa is the curved label area; tsa adds both circular top and bottom lids (2πr²).">
+        <div class="formula-item-head">
+          <h4>Cylinder Area & Volume</h4>
+          <span class="formula-unit-pill">m² / m³</span>
+        </div>
+        <div class="formula-eq-box">CSA = 2πrh | TSA = 2πr(r+h) | V = πr²h</div>
+        <p class="formula-explain">CSA is the curved label area; TSA adds both circular top and bottom lids (2πr²).</p>
+        <div class="formula-example"><strong>Example:</strong> r = 7 cm, h = 10 cm → V = (22/7)×49×10 = 1540 cm³.</div>
+      </div>
+          
+      <div class="formula-item-card" data-search="polygon interior angles & pythagoras sum = (n − 2) × 180°   |   h² = p² + b² geometry sum of exterior angles of any convex polygon is always 360°. right triangle satisfies h² = p² + b².">
+        <div class="formula-item-head">
+          <h4>Polygon Interior Angles & Pythagoras</h4>
+          <span class="formula-unit-pill">Geometry</span>
+        </div>
+        <div class="formula-eq-box">Sum = (n − 2) × 180°   |   h² = p² + b²</div>
+        <p class="formula-explain">Sum of exterior angles of ANY convex polygon is ALWAYS 360°. Right triangle satisfies h² = p² + b².</p>
+        <div class="formula-example"><strong>Example:</strong> Pentagon (n=5) interior sum = 3 × 180° = 540°.</div>
+      </div>
+        </div>
+      </section>
+
+      <!-- SECTION 8: ALGEBRA & COMMERCIAL MATHS -->
+      <section class="notes-section" id="sec-algebra">
+        <h2>8. CHS Maths: Algebra, Interest &amp; Exponents</h2>
+        <div class="svg-diagram-box"><img src="images/svg-formula-maths-algebra.svg" alt="Algebraic Identities and Interest Formulas" /></div>
+        <div class="formula-grid">
+          
+      <div class="formula-item-card" data-search="square identities (a±b)² = a² ± 2ab + b²  |  a²−b² = (a+b)(a−b) algebra fastest mental-math shortcut for squaring numbers like 103² or computing 99² − 98² in 2 seconds.">
+        <div class="formula-item-head">
+          <h4>Square Identities</h4>
+          <span class="formula-unit-pill">Algebra</span>
+        </div>
+        <div class="formula-eq-box">(a±b)² = a² ± 2ab + b²  |  a²−b² = (a+b)(a−b)</div>
+        <p class="formula-explain">Fastest mental-math shortcut for squaring numbers like 103² or computing 99² − 98² in 2 seconds.</p>
+        <div class="formula-example"><strong>Example:</strong> 52² − 48² = (52+48)(52−48) = 100 × 4 = 400.</div>
+      </div>
+          
+      <div class="formula-item-card" data-search="simple interest (si) si = (p × r × t) / 100   |   amount = p + si finance p = principal, r = annual rate %, t = time in years. interest stays identical every year.">
+        <div class="formula-item-head">
+          <h4>Simple Interest (SI)</h4>
+          <span class="formula-unit-pill">Finance</span>
+        </div>
+        <div class="formula-eq-box">SI = (P × R × T) / 100   |   Amount = P + SI</div>
+        <p class="formula-explain">P = Principal, R = Annual Rate %, T = Time in years. Interest stays identical every year.</p>
+        <div class="formula-example"><strong>Example:</strong> P = ₹2000, R = 10%, T = 3 yrs → SI = ₹600.</div>
+      </div>
+          
+      <div class="formula-item-card" data-search="compound interest (ci) a = p(1 + r/100)ⁿ   |   ci = a − p finance interest earns interest each period. for half-yearly compounding, use r/2 and 2n!">
+        <div class="formula-item-head">
+          <h4>Compound Interest (CI)</h4>
+          <span class="formula-unit-pill">Finance</span>
+        </div>
+        <div class="formula-eq-box">A = P(1 + R/100)ⁿ   |   CI = A − P</div>
+        <p class="formula-explain">Interest earns interest each period. For half-yearly compounding, use R/2 and 2n!</p>
+        <div class="formula-example"><strong>Example:</strong> ₹1000 at 10% for 2 yrs → A = 1000×(1.1)² = ₹1210, CI = ₹210.</div>
+      </div>
+          
+      <div class="formula-item-card" data-search="laws of exponents aᵐ·aⁿ = aᵐ⁺ⁿ | aᵐ/aⁿ = aᵐ⁻ⁿ | a⁰ = 1 | a⁻ⁿ = 1/aⁿ exponents any non-zero number raised to power 0 equals 1. negative power means reciprocal.">
+        <div class="formula-item-head">
+          <h4>Laws of Exponents</h4>
+          <span class="formula-unit-pill">Exponents</span>
+        </div>
+        <div class="formula-eq-box">aᵐ·aⁿ = aᵐ⁺ⁿ | aᵐ/aⁿ = aᵐ⁻ⁿ | a⁰ = 1 | a⁻ⁿ = 1/aⁿ</div>
+        <p class="formula-explain">Any non-zero number raised to power 0 equals 1. Negative power means reciprocal.</p>
+        <div class="formula-example"><strong>Example:</strong> 2³ × 2⁴ = 2⁷ = 128;   5⁻² = 1/25.</div>
+      </div>
+        </div>
+      </section>
+
+      <!-- SECTION 9: MASTER SI UNITS TABLE -->
+      <section class="notes-section" id="sec-si-units">
+        <h2>9. Master SI Units, Prefixes &amp; Golden Constants</h2>
+        <div class="svg-diagram-box"><img src="images/svg-si-base-units.svg" alt="7 Fundamental SI Base Units" /></div>
+
+        <h3 style="margin-top:1.1rem;">A. 24 Most-Asked Derived SI Units in BHU CHS</h3>
+        <div class="notes-table-wrap">
+          <table class="notes-table">
+            <thead>
+              <tr><th>Physical Quantity</th><th>SI Unit</th><th>Symbol</th><th>Equivalent / CHS Tip</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Force / Weight / Thrust</td><td>Newton</td><td>N</td><td>kg·m/s² (Measured by Spring Balance)</td></tr>
+              <tr><td>Pressure / Stress</td><td>Pascal</td><td>Pa</td><td>N/m² (1 atm = 1.013 × 10⁵ Pa)</td></tr>
+              <tr><td>Work / Energy / Heat</td><td>Joule</td><td>J</td><td>N·m (1 cal = 4.184 J)</td></tr>
+              <tr><td>Power</td><td>Watt</td><td>W</td><td>J/s (1 HP = 746 W)</td></tr>
+              <tr><td>Frequency</td><td>Hertz</td><td>Hz</td><td>cycles/second (s⁻¹)</td></tr>
+              <tr><td>Electric Charge</td><td>Coulomb</td><td>C</td><td>Ampere × second (A·s)</td></tr>
+              <tr><td>Electric Current</td><td>Ampere</td><td>A</td><td>C/s (Measured by Ammeter)</td></tr>
+              <tr><td>Potential Difference (Voltage)</td><td>Volt</td><td>V</td><td>J/C (Measured by Voltmeter)</td></tr>
+              <tr><td>Electrical Resistance</td><td>Ohm</td><td>Ω</td><td>V/A (Depends on length &amp; thickness)</td></tr>
+              <tr><td>Power of a Lens</td><td>Dioptre</td><td>D</td><td>1 / focal length (in metres)</td></tr>
+              <tr><td>Speed / Velocity</td><td>Metre per second</td><td>m/s</td><td>1 m/s = 3.6 km/h</td></tr>
+              <tr><td>Acceleration</td><td>Metre per sec²</td><td>m/s²</td><td>Earth's g ≈ 9.8 m/s²</td></tr>
+              <tr><td>Density</td><td>Kilogram per m³</td><td>kg/m³</td><td>Water = 1000 kg/m³ = 1 g/cm³</td></tr>
+              <tr><td>Area</td><td>Square metre</td><td>m²</td><td>1 hectare = 10,000 m²</td></tr>
+              <tr><td>Volume</td><td>Cubic metre</td><td>m³</td><td>1 m³ = 1000 Litres</td></tr>
+              <tr><td>Momentum</td><td>Kilogram·m/s</td><td>kg·m/s</td><td>p = mass × velocity</td></tr>
+              <tr><td>Temperature</td><td>Kelvin</td><td>K</td><td>SI scale (no ° symbol)</td></tr>
+              <tr><td>Commercial Electrical Energy</td><td>Kilowatt-hour</td><td>kWh</td><td>1 kWh = 3.6 × 10⁶ J</td></tr>
+              <tr><td>Loudness of Sound</td><td>Decibel</td><td>dB</td><td>&gt; 80 dB is noise pollution</td></tr>
+              <tr><td>Wavelength</td><td>Metre</td><td>m</td><td>Distance between two crests</td></tr>
+              <tr><td>Magnetic Field Strength</td><td>Tesla</td><td>T</td><td>Named after Nikola Tesla</td></tr>
+              <tr><td>Luminous Intensity</td><td>Candela</td><td>cd</td><td>Base SI unit of brightness</td></tr>
+              <tr><td>Amount of Substance</td><td>Mole</td><td>mol</td><td>6.022 × 10²³ particles</td></tr>
+              <tr><td>Astronomical Distance</td><td>Light Year</td><td>ly</td><td>≈ 9.46 × 10¹⁵ m (Distance, NOT time!)</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3 style="margin-top:1.25rem;">B. SI Metric Prefixes (Big to Tiny)</h3>
+        <div class="notes-table-wrap">
+          <table class="notes-table">
+            <thead>
+              <tr><th>Prefix</th><th>Symbol</th><th>Power of 10</th><th>Prefix</th><th>Symbol</th><th>Power of 10</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Tera</td><td>T</td><td>10¹²</td><td>Deci</td><td>d</td><td>10⁻¹</td></tr>
+              <tr><td>Giga</td><td>G</td><td>10⁹</td><td>Centi</td><td>c</td><td>10⁻²</td></tr>
+              <tr><td>Mega</td><td>M</td><td>10⁶</td><td>Milli</td><td>m</td><td>10⁻³</td></tr>
+              <tr><td>Kilo</td><td>k</td><td>10³</td><td>Micro</td><td>µ</td><td>10⁻⁶</td></tr>
+              <tr><td>Hecto</td><td>h</td><td>10²</td><td>Nano</td><td>n</td><td>10⁻⁹</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="did-you-know-box" style="margin-top:1rem;">
+          <strong>Did You Know?</strong> A <strong>Light Year</strong> is a unit of <em>distance</em> (not time) — the distance light travels in one year (about 9.46 trillion km). Similarly, <strong>kWh</strong> is a unit of <em>energy</em> (not power)! Both are classic BHU CHS exam traps.
+        </div>
+      </section>
+
+      <!-- SECTION 10: LIVE INTERACTIVE FORMULA SOLVER -->
+      <section class="notes-section" id="sec-labs">
+        <h2>10. Interactive CHS Formula Solver Lab</h2>
+        <p style="color:var(--text-secondary);font-size:0.9rem;">Pick any formula below, type your numbers, and see the step-by-step CHS result instantly.</p>
+        <div style="margin-top:0.75rem;">
+          <select id="fvLabMode" class="calc-input" style="max-width:360px;">
+            <option value="pressure">Pressure Solver: P = Force / Area</option>
+            <option value="ohm">Ohm's Law Solver: V = I × R</option>
+            <option value="si">Simple Interest Solver: SI = (P × R × T) / 100</option>
+            <option value="lens">Lens Power Solver: P = 100 / f (cm)</option>
+          </select>
+          <div class="calc-panel-grid" id="fvLabInputs"></div>
+          <div class="calc-result-strip" id="fvLabResult">Result will appear here.</div>
+        </div>
+      </section>
+
+      <!-- SECTION 11: 16 V2 FLIP FLASHCARDS -->
+      <section class="notes-section" id="sec-flashcards">
+        <h2>11. Rapid Revision Flip Flashcards (16 CHS Cards)</h2>
+        <p style="color:var(--text-secondary);font-size:0.88rem;">Tap any card to flip and test your SI unit &amp; formula memory!</p>
+        <div class="flashcards-grid" id="formulaFlashcardsGrid"></div>
+      </section>
+    </main>
+  </div>
+
+  <script src="js/theme.js"></script>
+  <script src="js/scroll-behavior.js"></script>
+  <script>
+    (function () {
+      if (window.QuizApp && window.QuizApp.theme) window.QuizApp.theme.initTheme();
+      if (window.QuizApp && window.QuizApp.scroll) window.QuizApp.scroll.initScrollBehavior();
+
+      // 1. Live Filter across all formula cards and SI rows
+      const filterInput = document.getElementById("formulaFilterInput");
+      if (filterInput) {
+        filterInput.addEventListener("input", () => {
+          const q = filterInput.value.trim().toLowerCase();
+          document.querySelectorAll(".formula-item-card").forEach((card) => {
+            const text = (card.dataset.search || card.textContent).toLowerCase();
+            card.style.display = !q || text.includes(q) ? "" : "none";
+          });
+          document.querySelectorAll("#sec-si-units tbody tr").forEach((row) => {
+            row.style.display = !q || row.textContent.toLowerCase().includes(q) ? "" : "none";
+          });
+        });
+      }
+
+      // 2. Interactive 4-in-1 Formula Solver
+      const modeSel = document.getElementById("fvLabMode");
+      const inputsBox = document.getElementById("fvLabInputs");
+      const resultBox = document.getElementById("fvLabResult");
+
+      function renderSolver() {
+        const m = modeSel.value;
+        if (m === "pressure") {
+          inputsBox.innerHTML = `
+            <div><label style="font-size:0.8rem;">Force F (Newton)</label><input id="fvA" type="number" class="calc-input" value="250" step="any" /></div>
+            <div><label style="font-size:0.8rem;">Area A (m²)</label><input id="fvB" type="number" class="calc-input" value="0.5" step="any" /></div>`;
+        } else if (m === "ohm") {
+          inputsBox.innerHTML = `
+            <div><label style="font-size:0.8rem;">Current I (Ampere)</label><input id="fvA" type="number" class="calc-input" value="2.5" step="any" /></div>
+            <div><label style="font-size:0.8rem;">Resistance R (Ohm Ω)</label><input id="fvB" type="number" class="calc-input" value="12" step="any" /></div>`;
+        } else if (m === "si") {
+          inputsBox.innerHTML = `
+            <div><label style="font-size:0.8rem;">Principal P (₹)</label><input id="fvA" type="number" class="calc-input" value="5000" step="any" /></div>
+            <div><label style="font-size:0.8rem;">Rate R (% per year)</label><input id="fvB" type="number" class="calc-input" value="8" step="any" /></div>
+            <div><label style="font-size:0.8rem;">Time T (years)</label><input id="fvC" type="number" class="calc-input" value="3" step="any" /></div>`;
+        } else {
+          inputsBox.innerHTML = `
+            <div><label style="font-size:0.8rem;">Focal Length f (cm) [+ convex, − concave]</label><input id="fvA" type="number" class="calc-input" value="25" step="any" /></div>`;
+        }
+
+        const compute = () => {
+          const a = parseFloat(document.getElementById("fvA")?.value);
+          const b = parseFloat(document.getElementById("fvB")?.value);
+          const c = parseFloat(document.getElementById("fvC")?.value);
+          if (m === "pressure") {
+            if (!b || Number.isNaN(a)) { resultBox.textContent = "Enter valid Force and non-zero Area."; return; }
+            const p = a / b;
+            resultBox.textContent = `Pressure P = ${a} / ${b} = ${p.toFixed(2)} Pa (${(p / 1000).toFixed(3)} kPa)`;
+          } else if (m === "ohm") {
+            if (Number.isNaN(a) || Number.isNaN(b)) return;
+            const v = a * b;
+            const p = v * a;
+            resultBox.textContent = `Voltage V = ${v.toFixed(2)} V   |   Electric Power P = V × I = ${p.toFixed(2)} W`;
+          } else if (m === "si") {
+            if (Number.isNaN(a) || Number.isNaN(b) || Number.isNaN(c)) return;
+            const si = (a * b * c) / 100;
+            const ciAmt = a * Math.pow(1 + b / 100, c);
+            resultBox.textContent = `SI = ₹${si.toFixed(2)} (Total ₹${(a + si).toFixed(2)})   |   CI = ₹${(ciAmt - a).toFixed(2)}`;
+          } else {
+            if (!a || Number.isNaN(a)) { resultBox.textContent = "Enter non-zero focal length."; return; }
+            const d = 100 / a;
+            resultBox.textContent = `Lens Power P = ${d >= 0 ? "+" : ""}${d.toFixed(2)} D (${d > 0 ? "Convex / Converging" : "Concave / Diverging"})`;
+          }
+        };
+
+        inputsBox.querySelectorAll("input").forEach((inp) => inp.addEventListener("input", compute));
+        compute();
+      }
+      modeSel.addEventListener("change", renderSolver);
+      renderSolver();
+
+      // 3. 16 V2 Flip Flashcards
+      const CARDS = [
+        ["SI Unit of Pressure?", "Pascal (Pa) = 1 N/m²"],
+        ["SI Unit of Power of a Lens?", "Dioptre (D) = 1 / f (in metres)"],
+        ["1 Kilowatt-hour (1 Unit) = ? Joules", "3.6 × 10⁶ Joules (Unit of Energy)"],
+        ["Shortcut to convert km/h → m/s?", "Multiply by 5 / 18"],
+        ["SI Unit of Temperature?", "Kelvin (K) — no degree sign!"],
+        ["What is the unit of Relative Density?", "No unit (it is a pure ratio)"],
+        ["Formula for Joule's Law of Heating?", "H = I² × R × t (in Joules)"],
+        ["1 Horsepower (HP) = ? Watts", "746 Watts"],
+        ["Light Year is a unit of?", "Distance (≈ 9.46 × 10¹⁵ m), NOT time!"],
+        ["Formula for Compound Interest Amount?", "A = P(1 + R/100)ⁿ  and  CI = A − P"],
+        ["SI Unit of Frequency?", "Hertz (Hz) = 1 / Time Period"],
+        ["Volume of a Cylinder?", "V = π r² h"],
+        ["Number of images in 2 mirrors at 90°?", "(360° / 90°) − 1 = 3 images"],
+        ["SI Unit of Electric Charge?", "Coulomb (C) = Ampere × second"],
+        ["At what temperature is °C = °F?", "−40°C = −40°F"],
+        ["Sum of exterior angles of ANY polygon?", "Always 360°"]
+      ];
+      const fcGrid = document.getElementById("formulaFlashcardsGrid");
+      if (fcGrid) {
+        fcGrid.innerHTML = CARDS.map(([q, a], i) => `
+          <div class="flashcard-v2" tabindex="0" role="button" aria-label="Flashcard ${i + 1}">
+            <div class="flashcard-v2-inner">
+              <div class="flashcard-v2-front">
+                <span class="fc-badge">Card ${i + 1} / ${CARDS.length}</span>
+                <p>${q}</p>
+                <span class="fc-hint">Tap to reveal</span>
+              </div>
+              <div class="flashcard-v2-back">
+                <span class="fc-badge">Answer</span>
+                <p>${a}</p>
+              </div>
+            </div>
+          </div>`).join("");
+        fcGrid.querySelectorAll(".flashcard-v2").forEach((c) => {
+          c.addEventListener("click", () => c.classList.toggle("is-flipped"));
+          c.addEventListener("keydown", (e) => {
+            if (e.key === "Enter" || e.key === " ") { e.preventDefault(); c.classList.toggle("is-flipped"); }
+          });
+        });
+      }
+    })();
+  </script>
+</body>
+</html>

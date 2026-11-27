@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" data-accent="indigo" data-font="sans" data-density="comfortable">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Citizenship: Rights and Duties — CHS SST Part 2 Quiz (160 MCQs)</title>
+  <meta
+    name="description"
+    content="Interactive CHS Entrance Exam Quiz on NCERT Class 8 Science (Curiosity) Chapter 5: Citizenship: Rights and Duties (150 CHS MCQs on Contact & Non-Contact Forces, Friction, Gravity, Mass vs Weight, Spring Balance & Buoyancy)."
+  />
+
+  <!-- Shared SMART PROCESS Stylesheets (100% Synced Settings & Themes) -->
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/home.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="icon" type="image/png" href="images/smart-process-logo.png" />
+</head>
+<body>
+  <!-- Thin Top Progress Rail (visible during active quiz) -->
+  <div class="top-progress-rail hidden" id="topProgressRail" aria-hidden="true">
+    <div class="top-progress-fill" id="topProgressFill"></div>
+  </div>
+
+  <!-- Minimal Auto-Hide Header (Hides on scroll down, ONLY unhides at the very top) -->
+  <header class="topbar" id="mainTopbar">
+    <div class="topbar-inner">
+      <div class="brand" id="brandHomeBtn" role="button" tabindex="0" aria-label="Back to Quiz Setup">
+        <div class="brand-icon" aria-hidden="true"><img src="images/shield-check.svg" class="svg-icon" alt="" aria-hidden="true" /></div>
+        <div>
+          <div class="brand-title">The Invisible Living World</div>
+          <div class="brand-subtitle">Class 8 Science (Curiosity) • Chapter 2 Quiz</div>
+        </div>
+      </div>
+
+      <!-- Home Link + Top-Right Settings Icon Button -->
+      <div style="display:flex;align-items:center;gap:0.55rem;">
+        <a href="index.html" class="pill" style="padding:0.48rem 0.85rem;font-size:0.8rem;text-decoration:none;color:var(--text-primary);">
+          ← SMART PROCESS
+        </a>
+        <button type="button" class="settings-gear-btn" id="settingsGearBtn" aria-label="Open Settings" title="Settings">
+          <img src="images/settings.svg" class="svg-icon svg-icon--btn" alt="" aria-hidden="true" />
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- =================================================================== -->
+    <!-- VIEW 1: CLEAN QUIZ QUESTION SELECTOR                                -->
+    <!-- =================================================================== -->
+    <section id="viewHome">
+      <div class="setup-card">
+        <div class="setup-header">
+          <div class="quiz-emblem-wrap" aria-hidden="true">
+            <img src="images/quiz-emblem-civics.svg" class="quiz-emblem-img" alt="" />
+          </div>
+          <span class="hero-badge"><img src="images/shield-check.svg" class="svg-icon" alt="" aria-hidden="true" /> NCERT Class 8 SST Part 2 • Chapter 5 • 160 MCQs</span>
+          <h1 class="hero-title">Citizenship: Rights and Duties</h1>
+          <p class="setup-subtitle">
+            Master Citizenship, Six Fundamental Rights (Articles 14–32), 11 Fundamental Duties (Article 51A), Childline 1098, Equity, Inclusion &amp; Social Reformers for BHU CHS.
+          </p>
+          <div class="quiz-highlights-strip">
+            <span class="highlight-chip"><img src="images/bolt.svg" class="svg-icon" alt="" aria-hidden="true" /> 8 Civics Topics</span>
+            <span class="highlight-chip"><img src="images/target.svg" class="svg-icon" alt="" aria-hidden="true" /> 160 CHS Exam MCQs</span>
+            <span class="highlight-chip"><img src="images/volume.svg" class="svg-icon" alt="" aria-hidden="true" /> Voice Read-Aloud</span>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="topicSelect">
+            <span class="label-with-icon"><img src="images/layers.svg" class="svg-icon" alt="" aria-hidden="true" /> Chapter Sub-Topic</span>
+            <span class="pill" id="matchingPoolCount">160 MCQs available</span>
+          </label>
+          <select id="topicSelect" class="select-control"></select>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label"><span class="label-with-icon"><img src="images/difficulty-meter.svg" class="svg-icon" alt="" aria-hidden="true" /> Difficulty Level</span></label>
+          <div class="chip-group">
+            <button type="button" class="chip active" data-diff="ALL">All Levels</button>
+            <button type="button" class="chip" data-diff="Easy">Easy</button>
+            <button type="button" class="chip" data-diff="Medium">Medium</button>
+            <button type="button" class="chip" data-diff="CHS Exam">CHS Exam</button>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label"><span class="label-with-icon"><img src="images/question-count.svg" class="svg-icon" alt="" aria-hidden="true" /> Number of Questions</span></label>
+          <div class="chip-group">
+            <button type="button" class="chip" data-count="10">10 Qs</button>
+            <button type="button" class="chip active" data-count="20">20 Qs</button>
+            <button type="button" class="chip" data-count="30">30 Qs</button>
+            <button type="button" class="chip" data-count="50">50 Qs</button>
+            <button type="button" class="chip" data-count="ALL">All 160</button>
+          </div>
+        </div>
+
+        <button type="button" class="btn btn-primary btn-block" id="startQuizBtn">
+          <img src="images/rocket.svg" class="svg-icon" alt="" aria-hidden="true" /> Start Civics Quiz
+        </button>
+
+        <!-- Collapsible Advanced Features Drawer (Everything Else Lives Here!) -->
+        <div class="advanced-drawer-wrap">
+          <button
+            type="button"
+            class="advanced-toggle-btn"
+            id="advancedFeaturesToggle"
+            aria-expanded="false"
+            aria-controls="advancedFeaturesPanel"
+          >
+            <span class="advanced-toggle-left">
+              <img src="images/advanced-sliders.svg" class="svg-icon svg-icon--lg" alt="" aria-hidden="true" />
+              <span>
+                <strong>Advanced Features</strong>
+                <small id="advancedSummaryText">Timed Exam, Mistakes, Bookmarks, Answer Mode &amp; Shuffle</small>
+              </span>
+            </span>
+            <img src="images/chevron-down.svg" class="svg-icon adv-chevron" alt="" aria-hidden="true" />
+          </button>
+
+          <div id="advancedFeaturesPanel" class="advanced-panel hidden">
+            <div class="form-group">
+              <label class="form-label">
+                <span class="label-with-icon"><img src="images/bookmark-star.svg" class="svg-icon" alt="" aria-hidden="true" /> Smart Focus Pool</span>
+                <span class="pill" id="smartPoolBadge">Standard</span>
+              </label>
+              <div class="chip-group">
+                <button type="button" class="chip active" data-special-pool="standard">All Matching</button>
+                <button type="button" class="chip" data-special-pool="mistakes">
+                  <img src="images/mistake-target.svg" class="svg-icon" alt="" aria-hidden="true" /> Mistakes (<span id="mistakeCountBadge">0</span>)
+                </button>
+                <button type="button" class="chip" data-special-pool="bookmarks">
+                  <img src="images/bookmark-star.svg" class="svg-icon" alt="" aria-hidden="true" /> Bookmarked (<span id="bookmarkCountBadge">0</span>)
+                </button>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label"><span class="label-with-icon"><img src="images/stopwatch.svg" class="svg-icon" alt="" aria-hidden="true" /> Quiz Type</span></label>
+              <div class="mode-grid">
+                <button type="button" class="mode-card selected" data-mode="practice">
+                  <div class="mode-card-title"><img src="images/bolt.svg" class="svg-icon" alt="" aria-hidden="true" /> Practice Mode</div>
+                  <div class="mode-card-desc">Untimed practice at your own pace.</div>
+                </button>
+                <button type="button" class="mode-card" data-mode="exam">
+                  <div class="mode-card-title"><img src="images/target.svg" class="svg-icon" alt="" aria-hidden="true" /> CHS Timed Exam</div>
+                  <div class="mode-card-desc">Countdown timer (45s/question).</div>
+                </button>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label"><span class="label-with-icon"><img src="images/instant-check.svg" class="svg-icon" alt="" aria-hidden="true" /> Answer Check Mode</span></label>
+              <div class="feedback-mode-grid">
+                <button type="button" class="feedback-mode-btn selected" data-home-reveal="instant">
+                  <strong><img src="images/instant-check.svg" class="svg-icon" alt="" aria-hidden="true" /> Instant Check</strong>
+                  <span>Shows ✓ right or ✗ wrong immediately on clicking an option.</span>
+                </button>
+                <button type="button" class="feedback-mode-btn" data-home-reveal="submit-end">
+                  <strong><img src="images/clipboard.svg" class="svg-icon" alt="" aria-hidden="true" /> Submit at End</strong>
+                  <span>Answer all questions first; see all results together after Submit.</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="toggle-row">
+                <span class="label-with-icon"><img src="images/shuffle.svg" class="svg-icon" alt="" aria-hidden="true" /> Shuffle Question Order</span>
+                <label class="switch">
+                  <input type="checkbox" id="shuffleQToggle" checked />
+                  <span class="slider"></span>
+                </label>
+              </div>
+              <div class="toggle-row">
+                <span class="label-with-icon"><img src="images/shuffle.svg" class="svg-icon" alt="" aria-hidden="true" /> Shuffle Options (A / B / C / D)</span>
+                <label class="switch">
+                  <input type="checkbox" id="shuffleOptToggle" checked />
+                  <span class="slider"></span>
+                </label>
+              </div>
+              <div class="toggle-row">
+                <span class="label-with-icon"><img src="images/auto-scroll.svg" class="svg-icon" alt="" aria-hidden="true" /> Auto-Scroll to Next Question</span>
+                <label class="switch">
+                  <input type="checkbox" id="autoScrollToggle" />
+                  <span class="slider"></span>
+                </label>
+              </div>
+            </div>
+
+            <div class="kbd-hint-bar">
+              <img src="images/keyboard-keys.svg" class="svg-icon" alt="" aria-hidden="true" />
+              <span>Tip: On keyboard, press <strong>A–D</strong> or <strong>1–4</strong> to answer quickly!</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+        <!-- =================================================================== -->
+    <!-- VIEW 2: FULL-SCREEN SINGLE-QUESTION QUIZ STUDIO                     -->
+    <!-- =================================================================== -->
+    <section id="viewQuiz" class="fs-quiz-overlay hidden" aria-label="Full-Screen Quiz">
+      <div class="fs-progress-rail" aria-hidden="true">
+        <div class="fs-progress-fill" id="fsProgressFill"></div>
+      </div>
+
+      <!-- Top Bar: Left Corner Exit (Icon-Only) | Center Status | Right Corner Question List (Icon-Only) -->
+      <header class="fs-quiz-topbar">
+        <button
+          type="button"
+          class="fs-icon-btn fs-icon-btn--exit"
+          id="fsExitQuizBtn"
+          aria-label="Exit Quiz"
+          title="Exit Quiz"
+        >
+          <img src="images/quiz-exit.svg" alt="" aria-hidden="true" />
+        </button>
+
+        <div class="fs-top-status">
+          <span class="fs-stat-chip fs-stat-chip--qnum" id="fsQuestionCounter">Q 1 / 20</span>
+          <span class="fs-stat-chip" id="quizProgressText">0 / 20</span>
+          <span class="fs-stat-chip fs-stat-chip--streak" id="quizStreak"><img src="images/streak-fire.svg" class="svg-icon" alt="" aria-hidden="true" /> 0</span>
+          <span class="fs-stat-chip fs-stat-chip--timer" id="quizTimer"><img src="images/timer.svg" class="svg-icon" alt="" aria-hidden="true" /> 00:00</span>
+          <span class="hidden" id="quizModeLabel"></span>
+          <span class="hidden" id="quizAccuracyPill"></span>
+          <span class="hidden" id="footerProgressNote"></span>
+        </div>
+
+        <button
+          type="button"
+          class="fs-icon-btn fs-icon-btn--list"
+          id="fsOpenListBtn"
+          aria-label="Open Question List"
+          title="Question List"
+        >
+          <img src="images/quiz-list.svg" alt="" aria-hidden="true" />
+        </button>
+      </header>
+
+      <!-- Center Non-Scrolling Question Stage (1 Question + All 4 Options Fit Full Screen) -->
+      <div class="fs-quiz-stage">
+        <div class="fs-question-host" id="questionsFeed"></div>
+      </div>
+
+      <!-- Bottom Dock: ONLY Two Icon-Only SVG Buttons (Previous & Next / Submit on Last Question) -->
+      <footer class="fs-quiz-bottombar">
+        <button
+          type="button"
+          class="fs-nav-icon-btn fs-nav-icon-btn--prev"
+          id="fsPrevBtn"
+          aria-label="Previous Question"
+          title="Previous Question"
+        >
+          <img src="images/quiz-prev.svg" alt="" aria-hidden="true" />
+        </button>
+
+        <button
+          type="button"
+          class="fs-nav-icon-btn fs-nav-icon-btn--next"
+          id="fsNextBtn"
+          aria-label="Next Question"
+          title="Next Question"
+        >
+          <img src="images/quiz-next.svg" id="fsNextBtnImg" alt="" aria-hidden="true" />
+        </button>
+      </footer>
+
+      <!-- Scrollable Question List Navigator Drawer -->
+      <div id="fsQuestionListBackdrop" class="fs-qlist-backdrop hidden" role="dialog" aria-modal="true" aria-label="Question Navigator">
+        <div class="fs-qlist-drawer">
+          <div class="fs-qlist-header">
+            <div>
+              <h3 class="fs-qlist-title">Question List</h3>
+              <p class="fs-qlist-sub" id="fsQListSummary">0 of 20 answered</p>
+            </div>
+            <button type="button" class="fs-icon-btn fs-icon-btn--sm" id="fsCloseListBtn" aria-label="Close Question List" title="Close">
+              <img src="images/quiz-close-drawer.svg" alt="" aria-hidden="true" />
+            </button>
+          </div>
+
+          <div class="fs-qlist-legend">
+            <span class="fs-legend-item"><i class="dot dot-current"></i>Current</span>
+            <span class="fs-legend-item"><i class="dot dot-answered"></i>Answered</span>
+            <span class="fs-legend-item"><i class="dot dot-unanswered"></i>Unanswered</span>
+          </div>
+
+          <div class="fs-qlist-scroll" id="fsQuestionListContainer"></div>
+
+          <div class="fs-qlist-footer">
+            <button type="button" class="btn btn-success" id="fsDrawerSubmitBtn" style="width:100%;">
+              <img src="images/quiz-submit.svg" class="svg-icon" alt="" aria-hidden="true" /> Submit Quiz Now
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Exit Quiz Confirmation Modal -->
+      <div id="exitQuizModal" class="fs-exit-backdrop hidden" role="dialog" aria-modal="true" aria-label="Exit Quiz Confirmation">
+        <div class="fs-exit-card">
+          <img src="images/quiz-exit.svg" class="fs-exit-emblem" alt="" aria-hidden="true" />
+          <h3>Exit Full-Screen Quiz?</h3>
+          <p>Your current quiz session will end and you will return to the setup screen.</p>
+          <div class="fs-exit-actions">
+            <button type="button" class="btn btn-secondary" id="cancelExitQuizBtn">Continue Quiz</button>
+            <button type="button" class="btn btn-danger" id="confirmExitQuizBtn">Exit Quiz</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================== -->
+    <!-- VIEW 3: RESULTS & REVIEW                                            -->
+    <!-- =================================================================== -->
+    <section id="viewResults" class="hidden">
+      <div class="results-hero">
+        <div class="score-ring-wrap">
+          <svg width="170" height="170" viewBox="0 0 170 170">
+            <circle cx="85" cy="85" r="70" fill="none" stroke="var(--bg-surface-2)" stroke-width="13" />
+            <circle
+              id="scoreRingCircle"
+              cx="85"
+              cy="85"
+              r="70"
+              fill="none"
+              stroke="var(--success)"
+              stroke-width="13"
+              stroke-linecap="round"
+              transform="rotate(-90 85 85)"
+              style="transition: stroke-dashoffset 600ms ease;"
+            />
+          </svg>
+          <div class="score-ring-center">
+            <div class="score-ring-pct" id="resPercent">0%</div>
+            <div class="score-ring-sub" id="resFraction">0 / 0</div>
+          </div>
+        </div>
+
+        <div>
+          <span class="hero-badge">CHS Civics Scorecard</span>
+          <h2 class="hero-title" id="resVerdict" style="font-size:1.55rem;">Quiz Completed!</h2>
+          <div class="stats-grid" style="margin:0.9rem 0 1.15rem;">
+            <div class="stat-card">
+              <div class="stat-label">Correct</div>
+              <div class="stat-value success" id="resCorrect">0</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-label">Incorrect</div>
+              <div class="stat-value" style="color:var(--danger)" id="resWrong">0</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-label">Skipped</div>
+              <div class="stat-value" id="resSkipped">0</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-label">Time</div>
+              <div class="stat-value accent" id="resTime">00:00</div>
+            </div>
+          </div>
+
+          <div class="chip-group no-print">
+            <button type="button" class="btn btn-primary" id="retakeQuizBtn"><img src="images/refresh.svg" class="svg-icon" alt="" aria-hidden="true" /> Retake Quiz</button>
+            <button type="button" class="btn btn-secondary" id="backHomeFromResBtn"><img src="images/target.svg" class="svg-icon" alt="" aria-hidden="true" /> Select Questions</button>
+            <button type="button" class="btn btn-secondary" id="printResultBtn"><img src="images/print.svg" class="svg-icon" alt="" aria-hidden="true" /> Print</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="panel-title" style="flex-wrap:wrap;">
+          <span>Answer Review</span>
+          <div class="chip-group no-print">
+            <button type="button" class="chip active" data-rev-filter="ALL">All</button>
+            <button type="button" class="chip" data-rev-filter="wrong">Incorrect</button>
+            <button type="button" class="chip" data-rev-filter="correct">Correct</button>
+            <button type="button" class="chip" data-rev-filter="skipped">Unanswered</button>
+          </div>
+        </div>
+        <div class="review-list" id="reviewList"></div>
+      </div>
+
+      <!-- Icon-Only Download Question Paper Button (No visible text — pure SVG logo icon) -->
+      <div class="pdf-download-dock no-print">
+        <button
+          type="button"
+          class="pdf-icon-only-btn"
+          id="openPdfStudioBtn"
+          aria-label="Download Question Paper PDF"
+          title="Download Question Paper PDF"
+        >
+          <img src="images/download-pdf.svg" class="pdf-icon-only-img" alt="" aria-hidden="true" />
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================================================================== -->
+  <!-- COHESIVE GROUPED SETTINGS SHEET (100% Synced with SMART PROCESS!)      -->
+  <!-- ===================================================================== -->
+  <div id="settingsModalBackdrop" class="drawer-backdrop hidden" role="dialog" aria-modal="true" aria-labelledby="settingsModalTitle">
+    <div class="settings-modal">
+      <div class="drawer-header">
+        <div style="display:flex;align-items:center;gap:0.55rem;">
+          <span style="font-size:1.15rem;"><img src="images/settings.svg" class="svg-icon svg-icon--btn" alt="" aria-hidden="true" /></span>
+          <h3 id="settingsModalTitle" style="font-size:1.06rem;font-weight:800;">Settings</h3>
+        </div>
+        <button type="button" class="drawer-close-btn" id="closeSettingsBtn" aria-label="Close Settings">✕</button>
+      </div>
+
+      <div class="settings-body">
+        <div>
+          <div class="settings-group-label">Appearance &amp; Display</div>
+          <div class="settings-group">
+            <div class="settings-row">
+              <div class="settings-row-info">
+                <div class="settings-row-icon"><img src="images/theme-mode.svg" class="svg-icon" alt="" aria-hidden="true" /></div>
+                <div>
+                  <div class="settings-row-title">Mode</div>
+                  <div class="settings-row-sub">Dark default or Light</div>
+                </div>
+              </div>
+              <div class="seg-control">
+                <button type="button" class="seg-btn active" data-theme-choice="dark"><img src="images/moon.svg" class="svg-icon" alt="" aria-hidden="true" /> Dark</button>
+                <button type="button" class="seg-btn" data-theme-choice="light"><img src="images/sun.svg" class="svg-icon" alt="" aria-hidden="true" /> Light</button>
+              </div>
+            </div>
+
+            <div class="settings-row settings-row--stack">
+              <div class="settings-row-head">
+                <div class="settings-row-info">
+                  <div class="settings-row-icon"><img src="images/palette.svg" class="svg-icon" alt="" aria-hidden="true" /></div>
+                  <div>
+                    <div class="settings-row-title">Color Theme</div>
+                    <div class="settings-row-sub">Synced across all SMART PROCESS pages</div>
+                  </div>
+                </div>
+              </div>
+              <div class="swatch-row">
+                <button type="button" class="swatch-btn active" data-accent-choice="indigo" style="background:#6366f1;" title="Indigo Night"></button>
+                <button type="button" class="swatch-btn" data-accent-choice="emerald" style="background:#10b981;" title="Emerald Forest"></button>
+                <button type="button" class="swatch-btn" data-accent-choice="amber" style="background:#f59e0b;" title="Royal Amber"></button>
+                <button type="button" class="swatch-btn" data-accent-choice="rose" style="background:#f43f5e;" title="Crimson Rose"></button>
+                <button type="button" class="swatch-btn" data-accent-choice="cyan" style="background:#06b6d4;" title="Ocean Cyan"></button>
+                <button type="button" class="swatch-btn" data-accent-choice="violet" style="background:#8b5cf6;" title="Violet Pulse"></button>
+              </div>
+            </div>
+
+            <div class="settings-row settings-row--stack">
+              <div class="settings-row-head">
+                <div class="settings-row-info">
+                  <div class="settings-row-icon"><img src="images/type.svg" class="svg-icon" alt="" aria-hidden="true" /></div>
+                  <div>
+                    <div class="settings-row-title">Font Size</div>
+                    <div class="settings-row-sub">Slide smoothly from very small to extra large</div>
+                  </div>
+                </div>
+                <span class="slider-value-pill" id="fontSizeValue">16px</span>
+              </div>
+              <div class="volume-slider-wrap">
+                <span class="slider-end-label" style="font-size:0.75rem;">A</span>
+                <input type="range" id="fontSizeSlider" class="volume-range" min="11" max="26" step="1" value="16" aria-label="Font Size Slider" />
+                <span class="slider-end-label" style="font-size:1.3rem;">A</span>
+              </div>
+              <div class="font-preview-box">
+                Preview: Robert Hooke coined the term 'cell' in Micrographia (1665).
+              </div>
+            </div>
+
+            <div class="settings-row">
+              <div class="settings-row-info">
+                <div class="settings-row-icon"><img src="images/pen.svg" class="svg-icon" alt="" aria-hidden="true" /></div>
+                <div>
+                  <div class="settings-row-title">Font Style</div>
+                  <div class="settings-row-sub">Text typeface</div>
+                </div>
+              </div>
+              <div class="seg-control">
+                <button type="button" class="seg-btn active" data-font-family="sans">Sans</button>
+                <button type="button" class="seg-btn" data-font-family="serif">Serif</button>
+                <button type="button" class="seg-btn" data-font-family="rounded">Soft</button>
+              </div>
+            </div>
+
+            <div class="settings-row">
+              <div class="settings-row-info">
+                <div class="settings-row-icon"><img src="images/layout.svg" class="svg-icon" alt="" aria-hidden="true" /></div>
+                <div>
+                  <div class="settings-row-title">Card Spacing</div>
+                  <div class="settings-row-sub">Comfortable or compact</div>
+                </div>
+              </div>
+              <div class="seg-control">
+                <button type="button" class="seg-btn active" data-density-choice="comfortable">Comfy</button>
+                <button type="button" class="seg-btn" data-density-choice="compact">Compact</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="settings-group-label">Voice &amp; Audio</div>
+          <div class="settings-group">
+            <div class="settings-row">
+              <div class="settings-row-info">
+                <div class="settings-row-icon"><img src="images/volume.svg" class="svg-icon" alt="" aria-hidden="true" /></div>
+                <div>
+                  <div class="settings-row-title">Text-to-Speech</div>
+                  <div class="settings-row-sub">Read questions &amp; options aloud</div>
+                </div>
+              </div>
+              <label class="switch">
+                <input type="checkbox" id="settingsTtsToggle" checked />
+                <span class="slider"></span>
+              </label>
+            </div>
+
+            <div class="settings-row settings-row--stack">
+              <div class="settings-row-head">
+                <div class="settings-row-info">
+                  <div class="settings-row-icon"><img src="images/speed.svg" class="svg-icon" alt="" aria-hidden="true" /></div>
+                  <div>
+                    <div class="settings-row-title">Voice Speed</div>
+                    <div class="settings-row-sub">Adjust reading pace</div>
+                  </div>
+                </div>
+                <div style="display:flex;align-items:center;gap:0.45rem;">
+                  <span class="slider-value-pill" id="ttsRateValue">1.0×</span>
+                  <button type="button" class="chip" id="settingsTtsTestBtn" style="padding:0.2rem 0.6rem;font-size:0.74rem;">▶ Test</button>
+                </div>
+              </div>
+              <div class="volume-slider-wrap">
+                <span class="slider-end-label" style="font-size:0.76rem;"><img src="images/slow.svg" class="svg-icon" alt="" aria-hidden="true" /></span>
+                <input type="range" id="ttsRateSlider" class="volume-range" min="0.6" max="1.6" step="0.05" value="1.0" aria-label="Voice Speed Slider" />
+                <span class="slider-end-label" style="font-size:0.95rem;"><img src="images/bolt.svg" class="svg-icon" alt="" aria-hidden="true" /></span>
+              </div>
+            </div>
+
+            <div class="settings-row">
+              <div class="settings-row-info">
+                <div class="settings-row-icon"><img src="images/bell.svg" class="svg-icon" alt="" aria-hidden="true" /></div>
+                <div>
+                  <div class="settings-row-title">Sound Effects</div>
+                  <div class="settings-row-sub">Chimes for right &amp; wrong answers</div>
+                </div>
+              </div>
+              <label class="switch">
+                <input type="checkbox" id="settingsSoundToggle" checked />
+                <span class="slider"></span>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="settings-group-label">Quiz Mode</div>
+          <div class="settings-group">
+            <div class="settings-row">
+              <div class="settings-row-info">
+                <div class="settings-row-icon">✓</div>
+                <div>
+                  <div class="settings-row-title">Answer Check</div>
+                  <div class="settings-row-sub">Instant ✓/✗ or all at end</div>
+                </div>
+              </div>
+              <div class="seg-control">
+                <button type="button" class="seg-btn active" data-settings-reveal="instant">Instant</button>
+                <button type="button" class="seg-btn" data-settings-reveal="submit-end">At End</button>
+              </div>
+            </div>
+
+            <div class="settings-row hidden" id="settingsActiveQuizSection">
+              <button type="button" class="btn btn-secondary" id="settingsChangeQuestionsBtn" style="flex:1;padding:0.55rem 0.8rem;font-size:0.82rem;">
+                <img src="images/target.svg" class="svg-icon" alt="" aria-hidden="true" /> Change Questions
+              </button>
+              <button type="button" class="btn btn-success" id="settingsSubmitQuizBtn" style="flex:1;padding:0.55rem 0.8rem;font-size:0.82rem;">
+                ✓ Submit Quiz
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="settings-footer">
+        <button type="button" class="btn btn-secondary" id="resetSettingsDefaultsBtn" style="padding:0.55rem 0.9rem;font-size:0.82rem;">↺ Reset Defaults</button>
+        <button type="button" class="btn btn-primary" id="doneSettingsBtn" style="padding:0.55rem 1.2rem;font-size:0.84rem;">Done</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Submit Confirmation Modal -->
+  <div id="submitModal" class="modal-backdrop hidden" role="dialog" aria-modal="true" aria-labelledby="submitModalTitle">
+    <div class="modal-box">
+      <h3 id="submitModalTitle" style="font-size:1.15rem;margin-bottom:0.5rem;">Submit Quiz?</h3>
+      <p id="submitModalDesc" style="color:var(--text-secondary);font-size:0.92rem;"></p>
+      <div class="modal-actions">
+        <button type="button" class="btn btn-secondary" id="cancelSubmitBtn">Keep Reviewing</button>
+        <button type="button" class="btn btn-primary" id="confirmSubmitBtn">Submit &amp; Score</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="toast hidden" role="status" aria-live="polite"></div>
+
+  <footer class="footer">
+    SMART PROCESS • NCERT Class 8 Social Science (<em>Exploring Society: India and Beyond — Part 2</em>, Chapter 5: Citizenship: Rights and Duties) • 160 CHS MCQs
+  </footer>
+
+  <!-- Configure Multi-Quiz Data Loader for SST Part 2 Ch. 5 -->
+  <script>
+    window.QUIZ_DATA_CONFIG = {
+      jsonPath: "data/sst-citizenship-rights-and-duties.json",
+      fallbackKey: "SST_P2_CH5_FALLBACK"
+    };
+  </script>
+
+  <!-- Offline Fallback Data -->
+  <script src="data/sst-citizenship-rights-and-duties-fallback.js"></script>
+
+  <!-- Shared Modular JavaScript Files -->
+  <script src="js/theme.js"></script>
+  <script src="js/sound.js"></script>
+  <script src="js/tts.js"></script>
+  <script src="js/storage.js"></script>
+  <script src="js/scroll-behavior.js"></script>
+  <script src="js/data-loader.js"></script>
+  <script src="js/quiz-engine.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

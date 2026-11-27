@@ -9,12 +9,13 @@
     content="Interactive CHS Entrance Exam Quiz on NCERT Class 8 Science (Curiosity) Chapter 2: The Invisible Living World: Beyond Our Naked Eye (140 MCQs, Microscopes, Cells, Microorganisms, Spirulina, Rhizobium)."
   />
 
-  <!-- Shared CHS Explorer Stylesheets (100% Synced Settings & Themes) -->
+  <!-- Shared SMART PROCESS Stylesheets (100% Synced Settings & Themes) -->
   <link rel="stylesheet" href="css/variables.css" />
   <link rel="stylesheet" href="css/base.css" />
   <link rel="stylesheet" href="css/components.css" />
   <link rel="stylesheet" href="css/home.css" />
   <link rel="stylesheet" href="css/animations.css" />
+  <link rel="icon" type="image/png" href="images/smart-process-logo.png" />
 </head>
 <body>
   <!-- Thin Top Progress Rail (visible during active quiz) -->
@@ -36,7 +37,7 @@
       <!-- Home Link + Top-Right Settings Icon Button -->
       <div style="display:flex;align-items:center;gap:0.55rem;">
         <a href="index.html" class="pill" style="padding:0.48rem 0.85rem;font-size:0.8rem;text-decoration:none;color:var(--text-primary);">
-          ← CHS Explorer
+          ← SMART PROCESS
         </a>
         <button type="button" class="settings-gear-btn" id="settingsGearBtn" aria-label="Open Settings" title="Settings">
           <img src="images/settings.svg" class="svg-icon svg-icon--btn" alt="" aria-hidden="true" />
@@ -96,86 +97,215 @@
           </div>
         </div>
 
-        <div class="form-group">
-          <label class="form-label"><span class="label-with-icon"><img src="images/stopwatch.svg" class="svg-icon" alt="" aria-hidden="true" /> Quiz Type</span></label>
-          <div class="mode-grid">
-            <button type="button" class="mode-card selected" data-mode="practice">
-              <div class="mode-card-title"><img src="images/bolt.svg" class="svg-icon" alt="" aria-hidden="true" /> Practice Mode</div>
-              <div class="mode-card-desc">Untimed practice at your own pace.</div>
-            </button>
-            <button type="button" class="mode-card" data-mode="exam">
-              <div class="mode-card-title"><img src="images/target.svg" class="svg-icon" alt="" aria-hidden="true" /> CHS Timed Exam</div>
-              <div class="mode-card-desc">Countdown timer (45s/question).</div>
-            </button>
-          </div>
-        </div>
-
-        <div class="form-group">
-          <label class="form-label"><span class="label-with-icon"><img src="images/instant-check.svg" class="svg-icon" alt="" aria-hidden="true" /> Answer Check Mode</span></label>
-          <div class="feedback-mode-grid">
-            <button type="button" class="feedback-mode-btn selected" data-home-reveal="instant">
-              <strong><img src="images/instant-check.svg" class="svg-icon" alt="" aria-hidden="true" /> Instant Check</strong>
-              <span>Shows ✓ right or ✗ wrong immediately on clicking an option.</span>
-            </button>
-            <button type="button" class="feedback-mode-btn" data-home-reveal="submit-end">
-              <strong><img src="images/clipboard.svg" class="svg-icon" alt="" aria-hidden="true" /> Submit at End</strong>
-              <span>Answer all questions first; see all results together after Submit.</span>
-            </button>
-          </div>
-        </div>
-
-        <div class="form-group">
-          <div class="toggle-row">
-            <span class="label-with-icon"><img src="images/shuffle.svg" class="svg-icon" alt="" aria-hidden="true" /> Shuffle Question Order</span>
-            <label class="switch">
-              <input type="checkbox" id="shuffleQToggle" checked />
-              <span class="slider"></span>
-            </label>
-          </div>
-          <div class="toggle-row">
-            <span class="label-with-icon"><img src="images/shuffle.svg" class="svg-icon" alt="" aria-hidden="true" /> Shuffle Options (A / B / C / D)</span>
-            <label class="switch">
-              <input type="checkbox" id="shuffleOptToggle" checked />
-              <span class="slider"></span>
-            </label>
-          </div>
-        </div>
-
         <button type="button" class="btn btn-primary btn-block" id="startQuizBtn">
           <img src="images/rocket.svg" class="svg-icon" alt="" aria-hidden="true" /> Start Biology Quiz
         </button>
+
+        <!-- Collapsible Advanced Features Drawer (Everything Else Lives Here!) -->
+        <div class="advanced-drawer-wrap">
+          <button
+            type="button"
+            class="advanced-toggle-btn"
+            id="advancedFeaturesToggle"
+            aria-expanded="false"
+            aria-controls="advancedFeaturesPanel"
+          >
+            <span class="advanced-toggle-left">
+              <img src="images/advanced-sliders.svg" class="svg-icon svg-icon--lg" alt="" aria-hidden="true" />
+              <span>
+                <strong>Advanced Features</strong>
+                <small id="advancedSummaryText">Timed Exam, Mistakes, Bookmarks, Answer Mode &amp; Shuffle</small>
+              </span>
+            </span>
+            <img src="images/chevron-down.svg" class="svg-icon adv-chevron" alt="" aria-hidden="true" />
+          </button>
+
+          <div id="advancedFeaturesPanel" class="advanced-panel hidden">
+            <div class="form-group">
+              <label class="form-label">
+                <span class="label-with-icon"><img src="images/bookmark-star.svg" class="svg-icon" alt="" aria-hidden="true" /> Smart Focus Pool</span>
+                <span class="pill" id="smartPoolBadge">Standard</span>
+              </label>
+              <div class="chip-group">
+                <button type="button" class="chip active" data-special-pool="standard">All Matching</button>
+                <button type="button" class="chip" data-special-pool="mistakes">
+                  <img src="images/mistake-target.svg" class="svg-icon" alt="" aria-hidden="true" /> Mistakes (<span id="mistakeCountBadge">0</span>)
+                </button>
+                <button type="button" class="chip" data-special-pool="bookmarks">
+                  <img src="images/bookmark-star.svg" class="svg-icon" alt="" aria-hidden="true" /> Bookmarked (<span id="bookmarkCountBadge">0</span>)
+                </button>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label"><span class="label-with-icon"><img src="images/stopwatch.svg" class="svg-icon" alt="" aria-hidden="true" /> Quiz Type</span></label>
+              <div class="mode-grid">
+                <button type="button" class="mode-card selected" data-mode="practice">
+                  <div class="mode-card-title"><img src="images/bolt.svg" class="svg-icon" alt="" aria-hidden="true" /> Practice Mode</div>
+                  <div class="mode-card-desc">Untimed practice at your own pace.</div>
+                </button>
+                <button type="button" class="mode-card" data-mode="exam">
+                  <div class="mode-card-title"><img src="images/target.svg" class="svg-icon" alt="" aria-hidden="true" /> CHS Timed Exam</div>
+                  <div class="mode-card-desc">Countdown timer (45s/question).</div>
+                </button>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label"><span class="label-with-icon"><img src="images/instant-check.svg" class="svg-icon" alt="" aria-hidden="true" /> Answer Check Mode</span></label>
+              <div class="feedback-mode-grid">
+                <button type="button" class="feedback-mode-btn selected" data-home-reveal="instant">
+                  <strong><img src="images/instant-check.svg" class="svg-icon" alt="" aria-hidden="true" /> Instant Check</strong>
+                  <span>Shows ✓ right or ✗ wrong immediately on clicking an option.</span>
+                </button>
+                <button type="button" class="feedback-mode-btn" data-home-reveal="submit-end">
+                  <strong><img src="images/clipboard.svg" class="svg-icon" alt="" aria-hidden="true" /> Submit at End</strong>
+                  <span>Answer all questions first; see all results together after Submit.</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="toggle-row">
+                <span class="label-with-icon"><img src="images/shuffle.svg" class="svg-icon" alt="" aria-hidden="true" /> Shuffle Question Order</span>
+                <label class="switch">
+                  <input type="checkbox" id="shuffleQToggle" checked />
+                  <span class="slider"></span>
+                </label>
+              </div>
+              <div class="toggle-row">
+                <span class="label-with-icon"><img src="images/shuffle.svg" class="svg-icon" alt="" aria-hidden="true" /> Shuffle Options (A / B / C / D)</span>
+                <label class="switch">
+                  <input type="checkbox" id="shuffleOptToggle" checked />
+                  <span class="slider"></span>
+                </label>
+              </div>
+              <div class="toggle-row">
+                <span class="label-with-icon"><img src="images/auto-scroll.svg" class="svg-icon" alt="" aria-hidden="true" /> Auto-Scroll to Next Question</span>
+                <label class="switch">
+                  <input type="checkbox" id="autoScrollToggle" />
+                  <span class="slider"></span>
+                </label>
+              </div>
+            </div>
+
+            <div class="kbd-hint-bar">
+              <img src="images/keyboard-keys.svg" class="svg-icon" alt="" aria-hidden="true" />
+              <span>Tip: On keyboard, press <strong>A–D</strong> or <strong>1–4</strong> to answer quickly!</span>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
+        <!-- =================================================================== -->
+    <!-- VIEW 2: FULL-SCREEN SINGLE-QUESTION QUIZ STUDIO                     -->
     <!-- =================================================================== -->
-    <!-- VIEW 2: FULL-FEED SCROLLABLE QUIZ                                   -->
-    <!-- =================================================================== -->
-    <section id="viewQuiz" class="hidden">
-      <div class="quiz-banner">
-        <div class="quiz-meta-pills">
-          <span class="pill" id="quizModeLabel">✓ Instant Check</span>
-          <span class="pill" id="quizProgressText">0 / 20 Attempted</span>
-          <span class="pill streak" id="quizStreak"><img src="images/flame.svg" class="svg-icon" alt="" aria-hidden="true" /> Streak: 0</span>
-        </div>
-        <span class="pill timer" id="quizTimer"><img src="images/timer.svg" class="svg-icon" alt="" aria-hidden="true" /> 00:00</span>
+    <section id="viewQuiz" class="fs-quiz-overlay hidden" aria-label="Full-Screen Quiz">
+      <div class="fs-progress-rail" aria-hidden="true">
+        <div class="fs-progress-fill" id="fsProgressFill"></div>
       </div>
 
-      <div class="questions-feed" id="questionsFeed"></div>
+      <!-- Top Bar: Left Corner Exit (Icon-Only) | Center Status | Right Corner Question List (Icon-Only) -->
+      <header class="fs-quiz-topbar">
+        <button
+          type="button"
+          class="fs-icon-btn fs-icon-btn--exit"
+          id="fsExitQuizBtn"
+          aria-label="Exit Quiz"
+          title="Exit Quiz"
+        >
+          <img src="images/quiz-exit.svg" alt="" aria-hidden="true" />
+        </button>
 
-      <div class="quiz-submit-footer">
-        <div>
-          <strong style="display:block;font-size:1rem;">Ready to see your score?</strong>
-          <span id="footerProgressNote" style="font-size:0.85rem;color:var(--text-secondary);">
-            Answered 0 of 20 questions
-          </span>
+        <div class="fs-top-status">
+          <span class="fs-stat-chip fs-stat-chip--qnum" id="fsQuestionCounter">Q 1 / 20</span>
+          <span class="fs-stat-chip" id="quizProgressText">0 / 20</span>
+          <span class="fs-stat-chip fs-stat-chip--streak" id="quizStreak"><img src="images/streak-fire.svg" class="svg-icon" alt="" aria-hidden="true" /> 0</span>
+          <span class="fs-stat-chip fs-stat-chip--timer" id="quizTimer"><img src="images/timer.svg" class="svg-icon" alt="" aria-hidden="true" /> 00:00</span>
+          <span class="hidden" id="quizModeLabel"></span>
+          <span class="hidden" id="quizAccuracyPill"></span>
+          <span class="hidden" id="footerProgressNote"></span>
         </div>
-        <div class="quiz-meta-pills">
-          <button type="button" class="btn btn-secondary" id="scrollTopFromBottomBtn">
-            ↑ Top
-          </button>
-          <button type="button" class="btn btn-success" id="bottomSubmitQuizBtn">
-            ✓ Submit Quiz
-          </button>
+
+        <button
+          type="button"
+          class="fs-icon-btn fs-icon-btn--list"
+          id="fsOpenListBtn"
+          aria-label="Open Question List"
+          title="Question List"
+        >
+          <img src="images/quiz-list.svg" alt="" aria-hidden="true" />
+        </button>
+      </header>
+
+      <!-- Center Non-Scrolling Question Stage (1 Question + All 4 Options Fit Full Screen) -->
+      <div class="fs-quiz-stage">
+        <div class="fs-question-host" id="questionsFeed"></div>
+      </div>
+
+      <!-- Bottom Dock: ONLY Two Icon-Only SVG Buttons (Previous & Next / Submit on Last Question) -->
+      <footer class="fs-quiz-bottombar">
+        <button
+          type="button"
+          class="fs-nav-icon-btn fs-nav-icon-btn--prev"
+          id="fsPrevBtn"
+          aria-label="Previous Question"
+          title="Previous Question"
+        >
+          <img src="images/quiz-prev.svg" alt="" aria-hidden="true" />
+        </button>
+
+        <button
+          type="button"
+          class="fs-nav-icon-btn fs-nav-icon-btn--next"
+          id="fsNextBtn"
+          aria-label="Next Question"
+          title="Next Question"
+        >
+          <img src="images/quiz-next.svg" id="fsNextBtnImg" alt="" aria-hidden="true" />
+        </button>
+      </footer>
+
+      <!-- Scrollable Question List Navigator Drawer -->
+      <div id="fsQuestionListBackdrop" class="fs-qlist-backdrop hidden" role="dialog" aria-modal="true" aria-label="Question Navigator">
+        <div class="fs-qlist-drawer">
+          <div class="fs-qlist-header">
+            <div>
+              <h3 class="fs-qlist-title">Question List</h3>
+              <p class="fs-qlist-sub" id="fsQListSummary">0 of 20 answered</p>
+            </div>
+            <button type="button" class="fs-icon-btn fs-icon-btn--sm" id="fsCloseListBtn" aria-label="Close Question List" title="Close">
+              <img src="images/quiz-close-drawer.svg" alt="" aria-hidden="true" />
+            </button>
+          </div>
+
+          <div class="fs-qlist-legend">
+            <span class="fs-legend-item"><i class="dot dot-current"></i>Current</span>
+            <span class="fs-legend-item"><i class="dot dot-answered"></i>Answered</span>
+            <span class="fs-legend-item"><i class="dot dot-unanswered"></i>Unanswered</span>
+          </div>
+
+          <div class="fs-qlist-scroll" id="fsQuestionListContainer"></div>
+
+          <div class="fs-qlist-footer">
+            <button type="button" class="btn btn-success" id="fsDrawerSubmitBtn" style="width:100%;">
+              <img src="images/quiz-submit.svg" class="svg-icon" alt="" aria-hidden="true" /> Submit Quiz Now
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Exit Quiz Confirmation Modal -->
+      <div id="exitQuizModal" class="fs-exit-backdrop hidden" role="dialog" aria-modal="true" aria-label="Exit Quiz Confirmation">
+        <div class="fs-exit-card">
+          <img src="images/quiz-exit.svg" class="fs-exit-emblem" alt="" aria-hidden="true" />
+          <h3>Exit Full-Screen Quiz?</h3>
+          <p>Your current quiz session will end and you will return to the setup screen.</p>
+          <div class="fs-exit-actions">
+            <button type="button" class="btn btn-secondary" id="cancelExitQuizBtn">Continue Quiz</button>
+            <button type="button" class="btn btn-danger" id="confirmExitQuizBtn">Exit Quiz</button>
+          </div>
         </div>
       </div>
     </section>
@@ -249,11 +379,24 @@
         </div>
         <div class="review-list" id="reviewList"></div>
       </div>
+
+      <!-- Icon-Only Download Question Paper Button (No visible text — pure SVG logo icon) -->
+      <div class="pdf-download-dock no-print">
+        <button
+          type="button"
+          class="pdf-icon-only-btn"
+          id="openPdfStudioBtn"
+          aria-label="Download Question Paper PDF"
+          title="Download Question Paper PDF"
+        >
+          <img src="images/download-pdf.svg" class="pdf-icon-only-img" alt="" aria-hidden="true" />
+        </button>
+      </div>
     </section>
   </main>
 
   <!-- ===================================================================== -->
-  <!-- COHESIVE GROUPED SETTINGS SHEET (100% Synced with CHS Explorer!)      -->
+  <!-- COHESIVE GROUPED SETTINGS SHEET (100% Synced with SMART PROCESS!)      -->
   <!-- ===================================================================== -->
   <div id="settingsModalBackdrop" class="drawer-backdrop hidden" role="dialog" aria-modal="true" aria-labelledby="settingsModalTitle">
     <div class="settings-modal">
@@ -289,7 +432,7 @@
                   <div class="settings-row-icon"><img src="images/palette.svg" class="svg-icon" alt="" aria-hidden="true" /></div>
                   <div>
                     <div class="settings-row-title">Color Theme</div>
-                    <div class="settings-row-sub">Synced across all CHS Explorer pages</div>
+                    <div class="settings-row-sub">Synced across all SMART PROCESS pages</div>
                   </div>
                 </div>
               </div>
@@ -461,7 +604,7 @@
   <div id="toast" class="toast hidden" role="status" aria-live="polite"></div>
 
   <footer class="footer">
-    CHS Explorer • NCERT Class 8 Science (<em>Curiosity</em>, Chapter 2: The Invisible Living World: Beyond Our Naked Eye) • 140 CHS MCQs
+    SMART PROCESS • NCERT Class 8 Science (<em>Curiosity</em>, Chapter 2: The Invisible Living World: Beyond Our Naked Eye) • 140 CHS MCQs
   </footer>
 
   <!-- Configure Multi-Quiz Data Loader for Science Ch. 2 -->

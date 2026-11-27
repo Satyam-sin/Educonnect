@@ -3,86 +3,264 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CHS Explorer — Books &amp; Quizzes</title>
-  <meta
-    name="description"
-    content="CHS Explorer — Your complete Class 8 NCERT & CHS Entrance Exam hub featuring Books and Interactive Chapter Quizzes."
-  />
+  <title>Smart Process — Learn • Prepare • Excel | CHS Class 9 Hub</title>
+  <meta name="description" content="Smart Process — Learn, Prepare, Excel. Your complete Class 8 NCERT & BHU CHS Class 9 Entrance Exam Hub." />
+  <link rel="icon" type="image/png" href="images/smart-process-logo.png" />
 
-  <!-- Shared Modular Stylesheets (Connected across ALL pages) -->
   <link rel="stylesheet" href="css/variables.css" />
   <link rel="stylesheet" href="css/base.css" />
   <link rel="stylesheet" href="css/components.css" />
   <link rel="stylesheet" href="css/home.css" />
   <link rel="stylesheet" href="css/animations.css" />
 </head>
-<body>
-  <!-- Minimal Auto-Hide Header (Hides on scroll down, ONLY unhides at the very top) -->
-  <header class="topbar" id="mainTopbar">
-    <div class="topbar-inner">
-      <div class="brand" onclick="window.scrollTo({top:0,behavior:'smooth'})" role="button" tabindex="0">
-        <div class="brand-icon" aria-hidden="true"><img src="images/compass.svg" class="svg-icon svg-icon--btn" alt="" aria-hidden="true" /></div>
+<body class="sp-home-body">
+  <!-- Cosmic Ambient Background Glows -->
+  <div class="sp-cosmic-bg" aria-hidden="true">
+    <canvas id="spCosmicCanvas" class="sp-cosmic-canvas"></canvas>
+    <div class="sp-orb sp-orb--blue"></div>
+    <div class="sp-orb sp-orb--purple"></div>
+    <div class="sp-orb sp-orb--gold"></div>
+  </div>
+
+  <!-- =================================================================== -->
+  <!-- TOP GLASSMORPHIC NAVBAR (Exact Smart Process Style)                 -->
+  <!-- =================================================================== -->
+  <header class="topbar sp-topbar" id="mainTopbar">
+    <div class="topbar-inner sp-topbar-inner">
+      <div class="brand sp-brand" onclick="window.scrollTo({top:0,behavior:'smooth'})" role="button" tabindex="0">
+        <img src="images/smart-process-logo.png" class="sp-nav-logo" alt="Smart Process Logo" />
         <div>
-          <div class="brand-title">CHS Explorer</div>
-          <div class="brand-subtitle">CHS Entrance Preparation Hub</div>
+          <div class="sp-brand-title"><span>Smart</span> <span class="sp-gold">Process</span></div>
+          <div class="sp-brand-sub">Learn • Prepare • Excel</div>
         </div>
       </div>
 
-      <!-- Top-Right Corner Settings Icon Button (Synced with Quiz Pages) -->
-      <button type="button" class="settings-gear-btn" id="settingsGearBtn" aria-label="Open Settings" title="Settings">
-        <img src="images/settings.svg" class="svg-icon svg-icon--btn" alt="" aria-hidden="true" />
-      </button>
+      <nav class="sp-nav-pills" aria-label="Primary Navigation">
+        <button type="button" class="sp-nav-pill is-active" id="navHomeBtn">
+          <img src="images/sp-nav-home.svg" class="svg-icon" alt="" aria-hidden="true" /> Home
+        </button>
+        <button type="button" class="sp-nav-pill" id="navChaptersBtn">
+          <img src="images/sp-card-notes.svg" class="svg-icon" alt="" aria-hidden="true" /> Chapters
+        </button>
+        <button type="button" class="sp-nav-pill" id="navNotesBtn">
+          <img src="images/books-spark-left.svg" class="svg-icon" alt="" aria-hidden="true" /> Notes
+        </button>
+        <button type="button" class="sp-nav-pill" id="navQuizBtn">
+          <img src="images/sp-trophy-gold.svg" class="svg-icon" alt="" aria-hidden="true" /> Quiz
+        </button>
+        <button type="button" class="sp-nav-pill" id="navMoreBtn">
+          More ▾
+        </button>
+      </nav>
+
+      <div class="sp-nav-right">
+        <button type="button" class="sp-circle-btn" id="navSearchBtn" aria-label="Search Chapters" title="Search">
+          <img src="images/ui-search.svg" class="svg-icon" alt="" aria-hidden="true" />
+        </button>
+        <button type="button" class="sp-circle-btn sp-circle-btn--theme" id="quickThemeToggleBtn" aria-label="Toggle Dark or Light Mode" title="Switch Theme">
+          <img src="images/moon.svg" id="quickThemeIcon" class="svg-icon" alt="" aria-hidden="true" />
+        </button>
+        <button type="button" class="sp-circle-btn" id="settingsGearBtn" aria-label="Open Settings" title="Settings">
+          <img src="images/settings.svg" class="svg-icon" alt="" aria-hidden="true" />
+        </button>
+      </div>
     </div>
   </header>
 
-  <main class="container">
-    <section class="explorer-hero fade-in">
-      <div class="hero-crest-wrap" aria-hidden="true">
-        <img src="images/hero-crest.svg" class="hero-crest-img" alt="" />
+  <main class="container sp-main">
+    <!-- ================================================================= -->
+    <!-- HERO SECTION: Welcome to Smart Process + 3D Holographic Pedestal  -->
+    <!-- ================================================================= -->
+    <section class="sp-hero fade-in">
+      <div class="sp-hero-left">
+        <span class="sp-hub-badge">
+          <img src="images/sp-card-resources.svg" class="svg-icon" alt="" aria-hidden="true" />
+          Your CHS Preparation Hub
+        </span>
+
+        <h1 class="sp-hero-title">
+          <span class="sp-hero-welcome">Welcome to</span>
+          <span class="sp-hero-brand"><em>Smart</em> <em class="sp-gold-glow">Process</em></span>
+        </h1>
+
+        <div class="sp-tagline-row">
+          <span class="sp-tagline-line"></span>
+          <span class="sp-tagline-text">Learn • Prepare • Excel</span>
+          <span class="sp-tagline-line"></span>
+        </div>
+
+        <p class="sp-hero-desc">
+          Explore NCERT Chapters, Smart Notes, Interactive Quizzes and more for
+          <strong class="sp-gold">CHS Class 9</strong> Entrance Exam.
+        </p>
+
+        <div class="sp-hero-cta-row">
+          <button type="button" class="sp-cta-gold" id="spStartLearningBtn">
+            <img src="images/sp-rocket.svg" class="svg-icon" alt="" aria-hidden="true" />
+            <span>Start Learning</span>
+            <span class="sp-cta-arrow">→</span>
+          </button>
+        </div>
       </div>
-      <div>
-        <span class="hero-badge"><img src="images/graduation-cap.svg" class="svg-icon" alt="" aria-hidden="true" /> CHS Class 9 Entrance • NCERT Portal</span>
-      </div>
-      <h1 class="explorer-title">CHS Explorer</h1>
-      <p class="explorer-sub">
-        Explore rich chapter notes, interactive timelines, and exam-grade MCQs across all CHS entrance subjects.
-      </p>
-      <div class="explorer-stats-row">
-        <span class="explorer-stat-pill"><img src="images/trophy.svg" class="svg-icon" alt="" aria-hidden="true" /> 740 CHS MCQs</span>
-        <span class="explorer-stat-pill"><img src="images/layers.svg" class="svg-icon" alt="" aria-hidden="true" /> 6 Live Modules</span>
-        <span class="explorer-stat-pill"><img src="images/shield-check.svg" class="svg-icon" alt="" aria-hidden="true" /> 100% Offline Ready</span>
+
+      <div class="sp-hero-right" aria-hidden="true">
+        <div class="sp-pedestal-stage">
+          <div class="sp-logo-orbit">
+            <img src="images/smart-process-logo.png" class="sp-hero-logo" alt="Smart Process Official Emblem" />
+          </div>
+          <div class="sp-holo-pedestal">
+            <canvas id="spHoloCanvas" class="sp-holo-canvas"></canvas>
+            <div class="sp-pedestal-glow"></div>
+            <div class="sp-pedestal-ring sp-ring-1"></div>
+            <div class="sp-pedestal-ring sp-ring-2"></div>
+            <div class="sp-pedestal-base"></div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <!-- Main Vertical Stack of Big Square Hub Cards -->
-    <div class="hub-stack fade-in">
-      <!-- =============================================================== -->
-      <!-- SQUARE 1 (TOP): BOOKS                                           -->
-      <!-- =============================================================== -->
-      <section class="hub-square" aria-labelledby="booksHeading">
-        <div class="hub-square-trigger">
-          <div class="hub-header-left">
-            <div class="hub-icon-badge" aria-hidden="true">
-              <img src="images/books-stack.svg" alt="" />
-            </div>
-            <div>
-              <h2 class="hub-big-label" id="booksHeading">BOOKS</h2>
-              <p class="hub-square-caption">All CHS Entrance Subjects — Study Material &amp; Notes</p>
-            </div>
-          </div>
-          <span class="hub-expand-pill">6 Subjects</span>
-        </div>
+    <!-- ================================================================= -->
+    <!-- 4 NEON GLASSMORPHIC FEATURE CARDS                                 -->
+    <!-- ================================================================= -->
+    <section class="sp-feature-grid fade-in" aria-label="Quick Access Features">
+      <button type="button" class="sp-feat-card sp-feat--blue" id="featNotesCard">
+        <img src="images/sp-card-notes.svg" class="sp-feat-icon" alt="" aria-hidden="true" />
+        <h3>NCERT Notes</h3>
+        <p>Clear &amp; Concise Chapter Notes</p>
+        <span class="sp-feat-arrow" aria-hidden="true">→</span>
+      </button>
 
-        <div class="breadcrumb-bar hidden" id="booksBreadcrumbWrap" style="margin-top:1rem;">
-          <div class="breadcrumb-trail" id="booksBreadcrumb"></div>
+      <button type="button" class="sp-feat-card sp-feat--purple" id="featQuizCard">
+        <img src="images/sp-card-quiz.svg" class="sp-feat-icon" alt="" aria-hidden="true" />
+        <h3>Practice Quiz</h3>
+        <p>Test Your Knowledge (900 MCQs)</p>
+        <span class="sp-feat-arrow" aria-hidden="true">→</span>
+      </button>
+
+      <button type="button" class="sp-feat-card sp-feat--emerald" id="featProgressCard">
+        <img src="images/sp-card-progress.svg" class="sp-feat-icon" alt="" aria-hidden="true" />
+        <h3>Track Progress</h3>
+        <p>See Your Performance &amp; Vault</p>
+        <span class="sp-feat-arrow" aria-hidden="true">→</span>
+      </button>
+
+      <button type="button" class="sp-feat-card sp-feat--gold" id="featResourcesCard">
+        <img src="images/sp-card-resources.svg" class="sp-feat-icon" alt="" aria-hidden="true" />
+        <h3>Top Resources</h3>
+        <p>Formulas, SI Units &amp; PDF Studio</p>
+        <span class="sp-feat-arrow" aria-hidden="true">→</span>
+      </button>
+    </section>
+
+    <!-- ================================================================= -->
+    <!-- GLOWING NEON PILL SEARCH BAR                                      -->
+    <!-- ================================================================= -->
+    <section class="sp-search-section fade-in">
+      <div class="global-search-wrap sp-search-wrap">
+        <div class="sp-neon-search">
+          <img src="images/ui-search.svg" class="sp-search-left-icon" alt="" aria-hidden="true" />
+          <input type="search" id="globalChapterSearch" placeholder="Search any chapter, notes or quiz..." autocomplete="off" />
+          <button type="button" class="sp-search-go-btn" id="spSearchGoBtn" aria-label="Search">→</button>
         </div>
-        <div id="booksContent"></div>
+        <div id="globalSearchResults" class="global-search-results hidden"></div>
+      </div>
+    </section>
+
+    <!-- ================================================================= -->
+    <!-- POPULAR CHAPTERS CAROUSEL                                         -->
+    <!-- ================================================================= -->
+    <section class="sp-popular-section fade-in" aria-labelledby="popularHeading">
+      <div class="sp-popular-head">
+        <div class="sp-popular-title-wrap">
+          <img src="images/sp-trophy-gold.svg" class="sp-popular-trophy" alt="" aria-hidden="true" />
+          <div>
+            <h2 id="popularHeading"><em>Popular</em> <em class="sp-gold">Chapters</em></h2>
+            <p>Start with the most important chapters</p>
+          </div>
+        </div>
+        <button type="button" class="sp-view-all-btn" id="spViewAllChaptersBtn">
+          View All Chapters <span class="sp-gold">→</span>
+        </button>
+      </div>
+
+      <div class="sp-carousel-wrap">
+        <button type="button" class="sp-car-arrow sp-car-prev" id="popPrevBtn" aria-label="Previous Chapters">‹</button>
+        <div class="sp-carousel-viewport">
+          <div class="sp-carousel-track" id="popularChaptersTrack">
+            <a class="sp-pop-card sp-pop--purple" href="chapters/maths/cylinder/cylinder.html">
+              <img src="images/ch-cylinder.svg" class="sp-pop-art" alt="" aria-hidden="true" />
+              <h4>Cylinder (Maths)</h4>
+              <div class="sp-pop-foot"><span class="sp-pop-pill">Maths →</span><span class="sp-pop-dot">→</span></div>
+            </a>
+            <a class="sp-pop-card sp-pop--gold" href="chapters/sst/the-rise-of-the-marathas/the-rise-of-the-marathas.html">
+              <img src="images/sp-pop-marathas.svg" class="sp-pop-art" alt="" aria-hidden="true" />
+              <h4>The Rise of Marathas</h4>
+              <div class="sp-pop-foot"><span class="sp-pop-pill">History →</span><span class="sp-pop-dot">→</span></div>
+            </a>
+
+            <a class="sp-pop-card sp-pop--blue" href="chapters/sst/world-geography-some-glimpses/world-geography-some-glimpses.html">
+              <img src="images/sp-pop-geography.svg" class="sp-pop-art" alt="" aria-hidden="true" />
+              <h4>World Geography</h4>
+              <div class="sp-pop-foot"><span class="sp-pop-pill">Geography →</span><span class="sp-pop-dot">→</span></div>
+            </a>
+
+            <a class="sp-pop-card sp-pop--cyan" href="chapters/science/exploring-forces/exploring-forces.html">
+              <img src="images/sp-pop-forces.svg" class="sp-pop-art" alt="" aria-hidden="true" />
+              <h4>Exploring Forces</h4>
+              <div class="sp-pop-foot"><span class="sp-pop-pill">Science →</span><span class="sp-pop-dot">→</span></div>
+            </a>
+
+            <a class="sp-pop-card sp-pop--purple" href="chs-formulas-and-si-units.html">
+              <img src="images/sp-pop-formulas.svg" class="sp-pop-art" alt="" aria-hidden="true" />
+              <h4>CHS Formulas &amp; SI Units</h4>
+              <div class="sp-pop-foot"><span class="sp-pop-pill">Vault →</span><span class="sp-pop-dot">→</span></div>
+            </a>
+
+            <a class="sp-pop-card sp-pop--cyan" href="chapters/science/light-mirrors-and-lenses/light-mirrors-and-lenses.html">
+              <img src="images/sp-pop-light.svg" class="sp-pop-art" alt="" aria-hidden="true" />
+              <h4>Light: Mirrors &amp; Lenses</h4>
+              <div class="sp-pop-foot"><span class="sp-pop-pill">Optics →</span><span class="sp-pop-dot">→</span></div>
+            </a>
+
+            <a class="sp-pop-card sp-pop--gold" href="chapters/science/electricity-magnetic-and-heating-effects/electricity-magnetic-and-heating-effects.html">
+              <img src="images/sp-pop-electricity.svg" class="sp-pop-art" alt="" aria-hidden="true" />
+              <h4>Electricity &amp; Magnetism</h4>
+              <div class="sp-pop-foot"><span class="sp-pop-pill">Physics →</span><span class="sp-pop-dot">→</span></div>
+            </a>
+          </div>
+        </div>
+        <button type="button" class="sp-car-arrow sp-car-next" id="popNextBtn" aria-label="Next Chapters">›</button>
+      </div>
+
+      <div class="sp-car-dots" id="popCarouselDots" aria-hidden="true"></div>
+    </section>
+
+    <!-- ================================================================= -->
+    <!-- COLLAPSIBLE SUBJECT HUBS (BOOKS -> QUIZ -> EXTRA THINGS)          -->
+    <!-- ================================================================= -->
+    <div class="hub-stack sp-hub-stack fade-in" id="smartProcessHubs">
+      <!-- SQUARE 1: BOOKS -->
+      <section class="hub-square hub-square--books" id="booksHubSection" aria-labelledby="booksHeading">
+        <button type="button" class="hub-square-trigger--quiz hub-square-trigger--books" id="booksSquareTrigger" aria-expanded="false">
+          <div class="hub-quiz-icons-row" aria-hidden="true">
+            <img src="images/books-spark-left.svg" class="hub-quiz-mini-img" alt="" />
+            <img src="images/books-hub-main.svg" class="hub-quiz-badge-img" alt="" />
+            <img src="images/books-spark-right.svg" class="hub-quiz-mini-img" alt="" />
+          </div>
+          <span class="hub-big-label hub-big-label--quiz" id="booksHeading">BOOKS</span>
+          <span class="hub-square-caption" id="booksTriggerHint">Tap to explore subjects →</span>
+        </button>
+
+        <div class="quiz-explorer-panel hidden fade-in" id="booksExplorerPanel">
+          <div class="breadcrumb-bar" id="booksBreadcrumbWrap">
+            <div class="breadcrumb-trail" id="booksBreadcrumb"></div>
+          </div>
+          <div id="booksContent"></div>
+        </div>
       </section>
 
-      <!-- =============================================================== -->
-      <!-- SQUARE 2 (BELOW): QUIZ                                          -->
-      <!-- =============================================================== -->
-      <section class="hub-square hub-square--quiz" aria-labelledby="quizHeading">
+      <!-- SQUARE 2: QUIZ -->
+      <section class="hub-square hub-square--quiz" id="quizHubSection" aria-labelledby="quizHeading">
         <button type="button" class="hub-square-trigger--quiz" id="quizSquareTrigger" aria-expanded="false">
           <div class="hub-quiz-icons-row" aria-hidden="true">
             <img src="images/trophy.svg" class="hub-quiz-mini-img" alt="" />
@@ -93,7 +271,6 @@
           <span class="hub-square-caption" id="quizTriggerHint">Tap to explore subjects →</span>
         </button>
 
-        <!-- Dynamic Drill-Down: Subjects -> SST -> Part 1 & Part 2 -> Part 1 Chapters -->
         <div class="quiz-explorer-panel hidden fade-in" id="quizExplorerPanel">
           <div class="breadcrumb-bar">
             <div class="breadcrumb-trail" id="quizBreadcrumb"></div>
@@ -101,27 +278,71 @@
           <div id="quizExplorerContent"></div>
         </div>
       </section>
+
+      <!-- SQUARE 3: EXTRA THINGS -->
+      <section class="hub-square hub-square--extra" id="extraHubSection" aria-labelledby="extraHeading">
+        <button type="button" class="hub-square-trigger--quiz hub-square-trigger--extra" id="extraSquareTrigger" aria-expanded="false">
+          <div class="hub-quiz-icons-row" aria-hidden="true">
+            <img src="images/extra-toolbox-left.svg" class="hub-quiz-mini-img" alt="" />
+            <img src="images/extra-hub-main.svg" class="hub-quiz-badge-img" alt="" />
+            <img src="images/extra-rocket-right.svg" class="hub-quiz-mini-img" alt="" />
+          </div>
+          <span class="hub-big-label hub-big-label--quiz" id="extraHeading">EXTRA THINGS</span>
+          <span class="hub-square-caption" id="extraTriggerHint">Tap to explore tools &amp; study boosters →</span>
+        </button>
+
+        <div class="quiz-explorer-panel hidden fade-in" id="extraExplorerPanel">
+          <div id="extraExplorerContent"></div>
+        </div>
+      </section>
     </div>
+
+    <!-- ================================================================= -->
+    <!-- MOTIVATIONAL NEON FOOTER BANNER                                   -->
+    <!-- ================================================================= -->
+    <footer class="sp-footer-banner fade-in">
+      <div class="sp-footer-pillars">
+        <div class="sp-footer-pillar">
+          <img src="images/graduation-cap.svg" class="sp-footer-icon" alt="" aria-hidden="true" />
+          <span>CHS Focus<br /><strong>Class 9</strong></span>
+        </div>
+        <div class="sp-footer-sep" aria-hidden="true"></div>
+        <div class="sp-footer-pillar">
+          <img src="images/sp-card-notes.svg" class="sp-footer-icon" alt="" aria-hidden="true" />
+          <span>NCERT Aligned<br /><strong>Study Material</strong></span>
+        </div>
+        <div class="sp-footer-sep" aria-hidden="true"></div>
+        <div class="sp-footer-pillar">
+          <img src="images/sp-bolt.svg" class="sp-footer-icon" alt="" aria-hidden="true" />
+          <span>Smart Learning<br /><strong>Made Easy</strong></span>
+        </div>
+      </div>
+
+      <div class="sp-footer-motto">
+        <div class="sp-motto-text">
+          <span>Dream Big</span>
+          <span class="sp-gold">Learn Better</span>
+          <span class="sp-gold">Achieve More</span>
+        </div>
+        <img src="images/sp-trophy-gold.svg" class="sp-footer-trophy" alt="" aria-hidden="true" />
+      </div>
+    </footer>
   </main>
 
   <!-- ===================================================================== -->
-  <!-- HOME PAGE SETTINGS SHEET (Shared Appearance + Home-Specific Controls) -->
-  <!-- Quiz-only controls (TTS, Answer Check, Quiz Sound) are hidden here!   -->
+  <!-- SETTINGS SHEET (Synced Across Smart Process & All Quiz/Note Pages)    -->
   <!-- ===================================================================== -->
   <div id="settingsModalBackdrop" class="drawer-backdrop hidden" role="dialog" aria-modal="true" aria-labelledby="settingsModalTitle">
     <div class="settings-modal">
       <div class="drawer-header">
         <div style="display:flex;align-items:center;gap:0.55rem;">
-          <span style="font-size:1.15rem;"><img src="images/settings.svg" class="svg-icon svg-icon--btn" alt="" aria-hidden="true" /></span>
-          <h3 id="settingsModalTitle" style="font-size:1.06rem;font-weight:800;">CHS Explorer Settings</h3>
+          <img src="images/settings.svg" class="svg-icon svg-icon--btn" alt="" aria-hidden="true" />
+          <h3 id="settingsModalTitle" style="font-size:1.06rem;font-weight:800;">Smart Process Settings</h3>
         </div>
-        <button type="button" class="drawer-close-btn" id="closeSettingsBtn" aria-label="Close Settings">
-          ✕
-        </button>
+        <button type="button" class="drawer-close-btn" id="closeSettingsBtn" aria-label="Close Settings">✕</button>
       </div>
 
       <div class="settings-body">
-        <!-- GROUP 1: SHARED APPEARANCE (Synced across Home + All Quiz Pages) -->
         <div>
           <div class="settings-group-label">Appearance (Synced Everywhere)</div>
           <div class="settings-group">
@@ -130,7 +351,7 @@
                 <div class="settings-row-icon"><img src="images/theme-mode.svg" class="svg-icon" alt="" aria-hidden="true" /></div>
                 <div>
                   <div class="settings-row-title">Mode</div>
-                  <div class="settings-row-sub">Dark default or Light</div>
+                  <div class="settings-row-sub">Dark cosmic default or Light</div>
                 </div>
               </div>
               <div class="seg-control">
@@ -150,12 +371,12 @@
                 </div>
               </div>
               <div class="swatch-row" role="radiogroup" aria-label="Color Theme">
-                <button type="button" class="swatch-btn active" data-accent-choice="indigo" style="background:#6366f1;" title="Indigo Night" aria-label="Indigo Theme"></button>
-                <button type="button" class="swatch-btn" data-accent-choice="emerald" style="background:#10b981;" title="Emerald Forest" aria-label="Emerald Theme"></button>
-                <button type="button" class="swatch-btn" data-accent-choice="amber" style="background:#f59e0b;" title="Royal Amber" aria-label="Amber Theme"></button>
-                <button type="button" class="swatch-btn" data-accent-choice="rose" style="background:#f43f5e;" title="Crimson Rose" aria-label="Rose Theme"></button>
-                <button type="button" class="swatch-btn" data-accent-choice="cyan" style="background:#06b6d4;" title="Ocean Cyan" aria-label="Cyan Theme"></button>
-                <button type="button" class="swatch-btn" data-accent-choice="violet" style="background:#8b5cf6;" title="Violet Pulse" aria-label="Violet Theme"></button>
+                <button type="button" class="swatch-btn active" data-accent-choice="indigo" style="background:#6366f1;" title="Indigo Night"></button>
+                <button type="button" class="swatch-btn" data-accent-choice="emerald" style="background:#10b981;" title="Emerald Forest"></button>
+                <button type="button" class="swatch-btn" data-accent-choice="amber" style="background:#f59e0b;" title="Royal Amber"></button>
+                <button type="button" class="swatch-btn" data-accent-choice="rose" style="background:#f43f5e;" title="Crimson Rose"></button>
+                <button type="button" class="swatch-btn" data-accent-choice="cyan" style="background:#06b6d4;" title="Ocean Cyan"></button>
+                <button type="button" class="swatch-btn" data-accent-choice="violet" style="background:#8b5cf6;" title="Violet Pulse"></button>
               </div>
             </div>
 
@@ -165,27 +386,15 @@
                   <div class="settings-row-icon"><img src="images/type.svg" class="svg-icon" alt="" aria-hidden="true" /></div>
                   <div>
                     <div class="settings-row-title">Font Size</div>
-                    <div class="settings-row-sub">Stays synced when you open any quiz</div>
+                    <div class="settings-row-sub">Stays synced across all pages</div>
                   </div>
                 </div>
                 <span class="slider-value-pill" id="fontSizeValue">16px</span>
               </div>
               <div class="volume-slider-wrap">
                 <span class="slider-end-label" style="font-size:0.75rem;">A</span>
-                <input
-                  type="range"
-                  id="fontSizeSlider"
-                  class="volume-range"
-                  min="11"
-                  max="26"
-                  step="1"
-                  value="16"
-                  aria-label="Font Size Slider"
-                />
+                <input type="range" id="fontSizeSlider" class="volume-range" min="11" max="26" step="1" value="16" aria-label="Font Size Slider" />
                 <span class="slider-end-label" style="font-size:1.3rem;">A</span>
-              </div>
-              <div class="font-preview-box">
-                Preview: Welcome to CHS Explorer — prepare smartly for every subject.
               </div>
             </div>
 
@@ -206,13 +415,12 @@
           </div>
         </div>
 
-        <!-- GROUP 2: HOME PAGE EXTRA CONTROLS -->
         <div>
           <div class="settings-group-label">Explorer Layout &amp; Controls</div>
           <div class="settings-group">
             <div class="settings-row">
               <div class="settings-row-info">
-                <div class="settings-row-icon">▦</div>
+                <div class="settings-row-icon"><img src="images/ui-grid-layout.svg" class="svg-icon" alt="" aria-hidden="true" /></div>
                 <div>
                   <div class="settings-row-title">Subject Tiles</div>
                   <div class="settings-row-sub">Square grid or full-width list</div>
@@ -251,59 +459,40 @@
                 <span class="slider"></span>
               </label>
             </div>
-
-            <div class="settings-row">
-              <div class="settings-row-info">
-                <div class="settings-row-icon"><img src="images/contrast.svg" class="svg-icon" alt="" aria-hidden="true" /></div>
-                <div>
-                  <div class="settings-row-title">High Contrast Borders</div>
-                  <div class="settings-row-sub">Stronger outlines around cards</div>
-                </div>
-              </div>
-              <label class="switch">
-                <input type="checkbox" id="settingsContrastToggle" />
-                <span class="slider"></span>
-              </label>
-            </div>
-
-            <div class="settings-row">
-              <div class="settings-row-info">
-                <div class="settings-row-icon"><img src="images/sparkles.svg" class="svg-icon" alt="" aria-hidden="true" /></div>
-                <div>
-                  <div class="settings-row-title">Smooth Animations</div>
-                  <div class="settings-row-sub">Hover lift &amp; slide transitions</div>
-                </div>
-              </div>
-              <label class="switch">
-                <input type="checkbox" id="settingsAnimToggle" checked />
-                <span class="slider"></span>
-              </label>
-            </div>
           </div>
         </div>
-      </div>
 
-      <div class="settings-footer">
-        <button type="button" class="btn btn-secondary" id="resetSettingsDefaultsBtn" style="padding:0.55rem 0.9rem;font-size:0.82rem;">
-          ↺ Reset Defaults
-        </button>
-        <button type="button" class="btn btn-primary" id="doneSettingsBtn" style="padding:0.55rem 1.2rem;font-size:0.84rem;">
-          Done
-        </button>
+        <div style="display:flex;gap:0.6rem;justify-content:flex-end;margin-top:0.5rem;">
+          <button type="button" class="btn btn-secondary" id="resetSettingsDefaultsBtn">Reset Defaults</button>
+          <button type="button" class="btn btn-primary" id="doneSettingsBtn">Done</button>
+        </div>
       </div>
     </div>
   </div>
 
-  <!-- Toast Notification -->
+  <!-- EXTRA THINGS INTERACTIVE TOOL MODAL -->
+  <div id="extraToolBackdrop" class="drawer-backdrop hidden" role="dialog" aria-modal="true" aria-labelledby="extraToolTitle">
+    <div class="settings-modal extra-tool-modal">
+      <div class="drawer-header">
+        <div style="display:flex;align-items:center;gap:0.65rem;">
+          <img id="extraToolIcon" src="images/extra-hub-main.svg" class="svg-icon svg-icon--lg" alt="" aria-hidden="true" />
+          <h3 id="extraToolTitle" style="font-size:1.08rem;font-weight:800;">Smart Process Tool</h3>
+        </div>
+        <button type="button" class="drawer-close-btn" id="closeExtraToolBtn" aria-label="Close Tool">
+          <img src="images/quiz-close-drawer.svg" style="width:26px;height:26px;display:block;" alt="" aria-hidden="true" />
+        </button>
+      </div>
+      <div class="settings-body" id="extraToolBody"></div>
+    </div>
+  </div>
+
   <div id="toast" class="toast hidden" role="status" aria-live="polite"></div>
 
-  <footer class="footer">
-    CHS Explorer • Class 8 NCERT &amp; CHS Entrance Preparation Portal
-  </footer>
-
-  <!-- Shared & Home JS Modules -->
   <script src="js/theme.js"></script>
   <script src="js/scroll-behavior.js"></script>
   <script src="js/home.js"></script>
+  <script src="animation/home-cosmic-bg.js"></script>
+  <script src="animation/home-pedestal-holo.js"></script>
+  <script src="animation/home-interactions.js"></script>
 </body>
 </html>

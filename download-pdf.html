@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" data-accent="indigo" data-font="sans" data-density="comfortable" data-contrast="normal" data-animations="on" data-auto-hide="on">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Download Question Paper PDF — SMART PROCESS Studio</title>
+  <meta name="description" content="Customize and download your SMART PROCESS quiz as a styled PDF Question Paper with custom question range, options/direct answers, explanations, and full color controls." />
+
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/home.css" />
+  <link rel="stylesheet" href="css/pdf-studio.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="icon" type="image/png" href="images/smart-process-logo.png" />
+</head>
+<body>
+  <header class="topbar no-print" id="mainTopbar">
+    <div class="topbar-inner">
+      <a class="brand" href="index.html" style="text-decoration:none;color:inherit;">
+        <div class="brand-icon" aria-hidden="true"><img src="images/compass.svg" class="svg-icon svg-icon--btn" alt="" /></div>
+        <div>
+          <div class="brand-title">← SMART PROCESS</div>
+          <div class="brand-subtitle">Question Paper PDF Studio</div>
+        </div>
+      </a>
+
+      <button type="button" class="settings-gear-btn" id="settingsGearBtn" aria-label="Open Settings" title="Settings">
+        <img src="images/settings.svg" class="svg-icon svg-icon--btn" alt="" aria-hidden="true" />
+      </button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="pdf-studio-hero fade-in no-print">
+      <div class="pdf-hero-emblem" aria-hidden="true">
+        <img src="images/pdf-doc.svg" alt="" />
+      </div>
+      <span class="hero-badge"><img src="images/download-pdf.svg" class="svg-icon" alt="" aria-hidden="true" /> Custom Question Paper Builder</span>
+      <h1 class="explorer-title" style="margin-top:0.35rem;">Download Question Paper PDF</h1>
+      <p class="explorer-sub" id="pdfHeroSub">
+        Customize question range, options or direct answers, explanations, and every color before downloading your PDF.
+      </p>
+    </section>
+
+    <div class="pdf-studio-grid">
+      <!-- LEFT: STUDIO CONTROLS -->
+      <aside class="pdf-controls-card no-print">
+        <!-- 1. Source & Paper Title -->
+        <div class="pdf-section-box">
+          <div class="pdf-section-title">
+            <span class="pdf-section-title-left"><img src="images/layers.svg" class="svg-icon" alt="" aria-hidden="true" /> Question Source</span>
+            <span class="pill" id="sourceTotalBadge">0 Qs</span>
+          </div>
+          <select id="pdfSourceSelect" class="select-control" style="margin-bottom:0.65rem;"></select>
+          <input type="text" id="pdfTitleInput" class="text-input" placeholder="Custom Question Paper Title" />
+          <div class="chip-group" id="pdfStatusFilterGroup" style="margin-top:0.65rem;">
+            <button type="button" class="chip active" data-status-filter="ALL">All</button>
+            <button type="button" class="chip" data-status-filter="wrong">Wrong</button>
+            <button type="button" class="chip" data-status-filter="correct">Correct</button>
+            <button type="button" class="chip" data-status-filter="skipped">Skipped</button>
+          </div>
+        </div>
+
+        <!-- 2. Question Number Range -->
+        <div class="pdf-section-box">
+          <div class="pdf-section-title">
+            <span class="pdf-section-title-left"><img src="images/range-slider.svg" class="svg-icon" alt="" aria-hidden="true" /> Question Range (From → To)</span>
+            <span class="pill" id="rangeCountBadge">0 selected</span>
+          </div>
+          <div class="range-inputs-row">
+            <input type="number" id="rangeFromInput" class="num-input" min="1" value="1" aria-label="From question number" />
+            <span style="font-weight:800;color:var(--text-secondary);">to</span>
+            <input type="number" id="rangeToInput" class="num-input" min="1" value="20" aria-label="To question number" />
+          </div>
+          <div class="chip-group">
+            <button type="button" class="chip" data-quick-range="10">1–10</button>
+            <button type="button" class="chip" data-quick-range="20">1–20</button>
+            <button type="button" class="chip" data-quick-range="30">1–30</button>
+            <button type="button" class="chip" data-quick-range="50">1–50</button>
+            <button type="button" class="chip active" data-quick-range="ALL">All</button>
+          </div>
+        </div>
+
+        <!-- 3. Options vs Direct Answer Mode -->
+        <div class="pdf-section-box">
+          <div class="pdf-section-title">
+            <span class="pdf-section-title-left"><img src="images/answer-key.svg" class="svg-icon" alt="" aria-hidden="true" /> Options &amp; Answer Style</span>
+          </div>
+          <div class="format-radio-list">
+            <button type="button" class="format-option-btn active" data-paper-format="mcq-marked">
+              <strong>MCQs with Options + Marked Answer</strong>
+              <span>Shows A/B/C/D options and highlights the right answer.</span>
+            </button>
+            <button type="button" class="format-option-btn" data-paper-format="mcq-blank">
+              <strong>MCQs with Options (Blank Test Paper)</strong>
+              <span>Shows A/B/C/D options only — ideal for practice exams.</span>
+            </button>
+            <button type="button" class="format-option-btn" data-paper-format="direct-qa">
+              <strong>Direct Question &amp; Answer (No Options)</strong>
+              <span>Hides A/B/C/D options and prints clean Q &amp; Direct Answer.</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- 4. Extra Toggles & Layout -->
+        <div class="pdf-section-box">
+          <div class="pdf-section-title">
+            <span class="pdf-section-title-left"><img src="images/explanation-card.svg" class="svg-icon" alt="" aria-hidden="true" /> Content &amp; Layout Options</span>
+          </div>
+          <div class="toggle-row">
+            <span>Include Explanation</span>
+            <label class="switch"><input type="checkbox" id="toggleExplanation" checked /><span class="slider"></span></label>
+          </div>
+          <div class="toggle-row">
+            <span>Answer Key Table at End</span>
+            <label class="switch"><input type="checkbox" id="toggleAnswerKey" /><span class="slider"></span></label>
+          </div>
+          <div class="toggle-row">
+            <span>Show Your Attempted Answer</span>
+            <label class="switch"><input type="checkbox" id="toggleUserAttempt" checked /><span class="slider"></span></label>
+          </div>
+          <div class="toggle-row">
+            <span>Show Topic &amp; Difficulty Tags</span>
+            <label class="switch"><input type="checkbox" id="toggleTags" checked /><span class="slider"></span></label>
+          </div>
+          <div class="toggle-row">
+            <span>Show Student Name / Score Box</span>
+            <label class="switch"><input type="checkbox" id="toggleHeaderBox" checked /><span class="slider"></span></label>
+          </div>
+          <div class="toggle-row">
+            <span class="label-with-icon"><img src="images/columns-layout.svg" class="svg-icon" alt="" aria-hidden="true" /> 2-Column Compact Paper</span>
+            <label class="switch"><input type="checkbox" id="toggleTwoCol" /><span class="slider"></span></label>
+          </div>
+          <div style="margin-top:0.75rem;">
+            <div style="display:flex;justify-content:space-between;font-size:0.8rem;font-weight:700;margin-bottom:0.3rem;">
+              <span>Paper Font Size</span>
+              <span id="paperFontSizeVal">14px</span>
+            </div>
+            <input type="range" id="paperFontSizeSlider" class="volume-range" min="11" max="20" step="1" value="14" />
+          </div>
+        </div>
+
+        <!-- 5. Full Custom Color Studio -->
+        <div class="pdf-section-box">
+          <div class="pdf-section-title">
+            <span class="pdf-section-title-left"><img src="images/color-dropper.svg" class="svg-icon" alt="" aria-hidden="true" /> Custom Paper Colors</span>
+            <button type="button" class="breadcrumb-btn" id="resetPaperColorsBtn">Reset</button>
+          </div>
+
+          <div class="preset-swatches-row">
+            <button type="button" class="paper-preset-btn" data-color-preset="classic">Classic White</button>
+            <button type="button" class="paper-preset-btn" data-color-preset="cream">Exam Cream</button>
+            <button type="button" class="paper-preset-btn" data-color-preset="indigo">Royal Indigo</button>
+            <button type="button" class="paper-preset-btn" data-color-preset="mint">Mint Study</button>
+            <button type="button" class="paper-preset-btn" data-color-preset="rose">Rose Pastel</button>
+            <button type="button" class="paper-preset-btn" data-color-preset="dark">Dark Slate</button>
+          </div>
+
+          <div class="color-pickers-grid">
+            <label class="color-picker-item">
+              <span>Background</span>
+              <input type="color" id="colorBg" value="#ffffff" />
+            </label>
+            <label class="color-picker-item">
+              <span>Accent / Border</span>
+              <input type="color" id="colorAccent" value="#4f46e5" />
+            </label>
+            <label class="color-picker-item">
+              <span>General Text</span>
+              <input type="color" id="colorText" value="#1e293b" />
+            </label>
+            <label class="color-picker-item">
+              <span>Question Color</span>
+              <input type="color" id="colorQuestion" value="#0f172a" />
+            </label>
+            <label class="color-picker-item">
+              <span>Options Color</span>
+              <input type="color" id="colorOptions" value="#334155" />
+            </label>
+            <label class="color-picker-item">
+              <span>Answer Color</span>
+              <input type="color" id="colorAnswer" value="#047857" />
+            </label>
+            <label class="color-picker-item" style="grid-column:1 / -1;">
+              <span>Explanation Color</span>
+              <input type="color" id="colorExplanation" value="#1d4ed8" />
+            </label>
+          </div>
+        </div>
+
+        <!-- 6. Download Actions -->
+        <div class="pdf-actions-stack">
+          <button type="button" class="btn btn-primary btn-block" id="downloadPdfActionBtn">
+            <img src="images/download-pdf.svg" class="svg-icon" alt="" aria-hidden="true" /> Download / Save as PDF
+          </button>
+          <button type="button" class="btn btn-secondary btn-block" id="downloadHtmlCopyBtn">
+            <img src="images/print.svg" class="svg-icon" alt="" aria-hidden="true" /> Save Offline Paper Paper
+          </button>
+        </div>
+      </aside>
+
+      <!-- RIGHT: LIVE A4 PAPER PREVIEW -->
+      <section class="pdf-preview-shell">
+        <div class="pdf-preview-bar no-print">
+          <span class="label-with-icon"><img src="images/preview-eye.svg" class="svg-icon" alt="" aria-hidden="true" /> Live Question Paper Preview</span>
+          <span class="pill" id="previewCountPill">0 Questions Ready</span>
+        </div>
+
+        <article class="paper-sheet" id="paperSheet"></article>
+      </section>
+    </div>
+  </main>
+
+  <!-- Synced Settings Sheet -->
+  <div id="settingsModalBackdrop" class="drawer-backdrop hidden no-print" role="dialog" aria-modal="true" aria-labelledby="settingsModalTitle">
+    <div class="settings-modal">
+      <div class="drawer-header">
+        <div style="display:flex;align-items:center;gap:0.55rem;">
+          <img src="images/settings.svg" class="svg-icon svg-icon--btn" alt="" aria-hidden="true" />
+          <h2 id="settingsModalTitle" style="font-size:1.12rem;font-weight:800;">App Settings</h2>
+        </div>
+        <button type="button" class="drawer-close-btn" id="closeSettingsBtn" aria-label="Close Settings">✕</button>
+      </div>
+      <div class="settings-body">
+        <div class="settings-group">
+          <div class="settings-group-label">Appearance</div>
+          <div class="settings-row">
+            <div class="settings-row-info">
+              <div class="settings-row-title">Theme Mode</div>
+              <div class="settings-row-sub">Switch between Dark and Light mode</div>
+            </div>
+            <div class="seg-control">
+              <button type="button" class="seg-btn" data-theme-choice="dark">Dark</button>
+              <button type="button" class="seg-btn" data-theme-choice="light">Light</button>
+            </div>
+          </div>
+          <div class="settings-row settings-row--stack">
+            <div class="settings-row-title">Accent Theme</div>
+            <div class="swatch-row">
+              <button type="button" class="swatch-btn" data-accent-choice="indigo" style="--sw:#6366f1" title="Indigo"></button>
+              <button type="button" class="swatch-btn" data-accent-choice="emerald" style="--sw:#10b981" title="Emerald"></button>
+              <button type="button" class="swatch-btn" data-accent-choice="amber" style="--sw:#f59e0b" title="Amber"></button>
+              <button type="button" class="swatch-btn" data-accent-choice="rose" style="--sw:#f43f5e" title="Rose"></button>
+              <button type="button" class="swatch-btn" data-accent-choice="cyan" style="--sw:#06b6d4" title="Cyan"></button>
+              <button type="button" class="swatch-btn" data-accent-choice="violet" style="--sw:#8b5cf6" title="Violet"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="settings-footer">
+        <button type="button" class="btn btn-secondary" id="resetSettingsDefaultsBtn">Reset Defaults</button>
+        <button type="button" class="btn btn-primary" id="doneSettingsBtn">Done</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="toast" class="toast hidden no-print" role="status" aria-live="polite"></div>
+
+  <footer class="footer no-print">
+    SMART PROCESS • Custom Question Paper PDF Studio • 100% Offline Ready
+  </footer>
+
+  <!-- Offline Chapter Fallbacks so ANY chapter can also be exported anytime -->
+  <script src="data/questions-fallback.js"></script>
+  <script src="data/sst-world-geography-some-glimpses-fallback.js"></script>
+  <script src="data/sst-citizenship-rights-and-duties-fallback.js"></script>
+  <script src="data/science-invisible-living-world-fallback.js"></script>
+  <script src="data/science-exploring-forces-fallback.js"></script>
+  <script src="data/science-particulate-nature-of-matter-fallback.js"></script>
+
+  <script src="js/theme.js"></script>
+  <script src="js/storage.js"></script>
+  <script src="js/scroll-behavior.js"></script>
+  <script src="js/pdf-studio.js"></script>
+</body>
+</html>
