@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 190" fill="none">
+  <rect width="420" height="190" rx="16" fill="#0F172A"/>
+  <line x1="210" y1="16" x2="210" y2="174" stroke="#334155" stroke-width="2" stroke-dasharray="5 5"/>
+  <!-- Left: Switch OFF -->
+  <text x="105" y="26" text-anchor="middle" fill="#94A3B8" font-family="sans-serif" font-size="11" font-weight="bold">SWITCH OFF (No Current)</text>
+  <line x1="28" y1="86" x2="182" y2="86" stroke="#64748B" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="105" cy="116" r="32" fill="#1E293B" stroke="#64748B" stroke-width="2.5"/>
+  <path d="M105 90L111 116H99L105 90Z" fill="#EF4444"/>
+  <path d="M105 142L111 116H99L105 142Z" fill="#38BDF8"/>
+  <circle cx="105" cy="116" r="3.5" fill="#F8FAFC"/>
+  <text x="105" y="168" text-anchor="middle" fill="#CBD5E1" font-family="sans-serif" font-size="10">Compass stays along North–South</text>
+  <!-- Right: Switch ON -->
+  <text x="315" y="26" text-anchor="middle" fill="#34D399" font-family="sans-serif" font-size="11" font-weight="bold">SWITCH ON (Current Flows!)</text>
+  <line x1="238" y1="86" x2="392" y2="86" stroke="#F59E0B" stroke-width="4.5" stroke-linecap="round"/>
+  <path d="M298 76L314 86L298 96" stroke="#FEF08A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="315" cy="116" r="32" fill="#1E293B" stroke="#38BDF8" stroke-width="2.5"/>
+  <g transform="rotate(42 315 116)">
+    <path d="M315 90L321 116H309L315 90Z" fill="#EF4444"/>
+    <path d="M315 142L321 116H309L315 142Z" fill="#38BDF8"/>
+  </g>
+  <circle cx="315" cy="116" r="3.5" fill="#F8FAFC"/>
+  <text x="315" y="168" text-anchor="middle" fill="#A7F3D0" font-family="sans-serif" font-size="10" font-weight="bold">Needle Deflects! (Oersted, 1820)</text>
+</svg>

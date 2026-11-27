@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 190" fill="none">
+  <rect width="420" height="190" rx="16" fill="#0F172A"/>
+  <!-- Tank 1: Wood Floats -->
+  <rect x="20" y="42" width="112" height="114" rx="10" fill="#0C4A6E" stroke="#38BDF8" stroke-width="2.2"/>
+  <rect x="24" y="76" width="104" height="76" rx="6" fill="#0284C7" opacity="0.6"/>
+  <rect x="50" y="58" width="52" height="32" rx="6" fill="#D97706" stroke="#FDE68A" stroke-width="2"/>
+  <text x="76" y="174" text-anchor="middle" fill="#34D399" font-family="sans-serif" font-size="10" font-weight="bold">Wood: Floats</text>
+  <!-- Tank 2: Coin Sinks -->
+  <rect x="154" y="42" width="112" height="114" rx="10" fill="#0C4A6E" stroke="#38BDF8" stroke-width="2.2"/>
+  <rect x="158" y="76" width="104" height="76" rx="6" fill="#0284C7" opacity="0.6"/>
+  <ellipse cx="210" cy="140" rx="18" ry="7" fill="#FACC15" stroke="#FEF9C3" stroke-width="1.8"/>
+  <text x="210" y="174" text-anchor="middle" fill="#FB7185" font-family="sans-serif" font-size="10" font-weight="bold">Coin: Sinks (W &gt; U)</text>
+  <!-- Tank 3: Pumice Floats -->
+  <rect x="288" y="42" width="112" height="114" rx="10" fill="#0C4A6E" stroke="#38BDF8" stroke-width="2.2"/>
+  <rect x="292" y="76" width="104" height="76" rx="6" fill="#0284C7" opacity="0.6"/>
+  <ellipse cx="344" cy="76" rx="26" ry="18" fill="#94A3B8" stroke="#E2E8F0" stroke-width="2"/>
+  <circle cx="335" cy="72" r="2.5" fill="#334155"/><circle cx="351" cy="70" r="3" fill="#334155"/><circle cx="343" cy="81" r="2.5" fill="#334155"/>
+  <text x="344" y="174" text-anchor="middle" fill="#FDE047" font-family="sans-serif" font-size="10" font-weight="bold">Pumice Rock: Floats!</text>
+</svg>

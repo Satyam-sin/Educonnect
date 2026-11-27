@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 240" fill="none">
+  <rect x="6" y="6" width="628" height="228" rx="20" fill="#0f172a" stroke="#334155" stroke-width="2"/>
+  <!-- Magic Triangle D / (S x T) -->
+  <polygon points="150,32 52,202 248,202" fill="#6366f1" fill-opacity="0.18" stroke="#818cf8" stroke-width="3" stroke-linejoin="round"/>
+  <line x1="94" y1="128" x2="206" y2="128" stroke="#38bdf8" stroke-width="3"/>
+  <line x1="150" y1="128" x2="150" y2="202" stroke="#38bdf8" stroke-width="3"/>
+  <text x="137" y="106" fill="#fde047" font-family="sans-serif" font-weight="900" font-size="34">D</text>
+  <text x="102" y="178" fill="#38bdf8" font-family="sans-serif" font-weight="900" font-size="30">S</text>
+  <text x="174" y="178" fill="#34d399" font-family="sans-serif" font-weight="900" font-size="30">T</text>
+  <text x="72" y="222" fill="#94a3b8" font-family="sans-serif" font-weight="700" font-size="13">Distance = Speed × Time</text>
+
+  <!-- Right Side: km/h <-> m/s Conversion Bridge -->
+  <rect x="290" y="28" width="320" height="86" rx="14" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+  <text x="314" y="56" fill="#e2e8f0" font-family="sans-serif" font-weight="800" font-size="16">Speed Conversion Shortcut</text>
+  <rect x="312" y="68" width="82" height="32" rx="8" fill="#6366f1"/>
+  <text x="330" y="89" fill="#ffffff" font-family="sans-serif" font-weight="800" font-size="14">km/h</text>
+  <path d="M404 78H496M488 72L496 78L488 84" stroke="#fde047" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="424" y="72" fill="#fde047" font-family="sans-serif" font-weight="900" font-size="13">× 5 / 18</text>
+  <path d="M496 92H404M412 86L404 92L412 98" stroke="#34d399" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="422" y="108" fill="#34d399" font-family="sans-serif" font-weight="900" font-size="13">× 18 / 5</text>
+  <rect x="506" y="68" width="82" height="32" rx="8" fill="#10b981"/>
+  <text x="530" y="89" fill="#ffffff" font-family="sans-serif" font-weight="800" font-size="14">m/s</text>
+
+  <!-- Bottom Right: Acceleration Card -->
+  <rect x="290" y="130" width="320" height="82" rx="14" fill="#1e293b" stroke="#a855f7" stroke-width="2"/>
+  <text x="314" y="158" fill="#c084fc" font-family="sans-serif" font-weight="800" font-size="16">Acceleration:  a = (v − u) / t</text>
+  <text x="314" y="182" fill="#cbd5e1" font-family="sans-serif" font-size="13">u = initial velocity, v = final velocity</text>
+  <text x="314" y="200" fill="#38bdf8" font-family="sans-serif" font-weight="700" font-size="13">SI Unit: m/s²   |   Avg Speed = Total D / Total T</text>
+</svg>

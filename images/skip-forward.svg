@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <radialGradient id="sf-bg" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#38BDF8"/><stop offset="55%" stop-color="#4F46E5"/><stop offset="100%" stop-color="#1E1B4B"/>
+    </radialGradient>
+    <linearGradient id="sf-p1" x1="16" y1="20" x2="36" y2="44" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFFFFF"/><stop offset="100%" stop-color="#BAE6FD"/>
+    </linearGradient>
+    <linearGradient id="sf-p2" x1="34" y1="20" x2="52" y2="44" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FEF08A"/><stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+  </defs>
+  <circle cx="32" cy="32" r="27" fill="url(#sf-bg)" stroke="#BAE6FD" stroke-width="2.4"/>
+  <circle cx="32" cy="32" r="22" stroke="#FFFFFF" stroke-width="1.2" opacity="0.25"/>
+  <path d="M18 21L33 32L18 43V21Z" fill="url(#sf-p1)" stroke="#E0F2FE" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M33 21L48 32L33 43V21Z" fill="url(#sf-p2)" stroke="#FEF9C3" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M18 14C24 10 32 9 40 11" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+</svg>

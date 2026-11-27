@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 205" fill="none">
+  <rect width="440" height="205" rx="16" fill="#0F172A"/>
+  <text x="220" y="24" text-anchor="middle" fill="#38BDF8" font-family="sans-serif" font-size="12" font-weight="bold">LAWS OF REFLECTION: ∠i = ∠r (ALL IN SAME PLANE)</text>
+  <!-- Mirror Line -->
+  <line x1="60" y1="158" x2="380" y2="158" stroke="#E2E8F0" stroke-width="5" stroke-linecap="round"/>
+  <path d="M72 158L64 168M96 158L88 168M120 158L112 168M144 158L136 168M168 158L160 168M192 158L184 168M216 158L208 168M240 158L232 168M264 158L256 168M288 158L280 168M312 158L304 168M336 158L328 168M360 158L352 168" stroke="#64748B" stroke-width="2"/>
+  <!-- Normal -->
+  <line x1="220" y1="44" x2="220" y2="158" stroke="#94A3B8" stroke-width="2.5" stroke-dasharray="6 5"/>
+  <text x="220" y="39" text-anchor="middle" fill="#CBD5E1" font-family="sans-serif" font-size="10.5" font-weight="bold">Normal (90°)</text>
+  <!-- Incident Ray -->
+  <path d="M108 58L220 158" stroke="#FDE047" stroke-width="4" stroke-linecap="round"/>
+  <path d="M158 96L167 110L151 106" stroke="#FDE047" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="118" y="96" text-anchor="middle" fill="#FEF08A" font-family="sans-serif" font-size="10.5" font-weight="bold">Incident Ray</text>
+  <!-- Reflected Ray -->
+  <path d="M220 158L332 58" stroke="#34D399" stroke-width="4" stroke-linecap="round"/>
+  <path d="M274 102L286 98L281 112" stroke="#34D399" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="328" y="96" text-anchor="middle" fill="#A7F3D0" font-family="sans-serif" font-size="10.5" font-weight="bold">Reflected Ray</text>
+  <!-- Angles -->
+  <path d="M192 133A36 36 0 0 1 220 122" stroke="#FDE047" stroke-width="2.2"/>
+  <path d="M220 122A36 36 0 0 1 248 133" stroke="#34D399" stroke-width="2.2"/>
+  <text x="202" y="116" text-anchor="middle" fill="#FEF08A" font-family="sans-serif" font-size="12" font-weight="bold">i</text>
+  <text x="238" y="116" text-anchor="middle" fill="#A7F3D0" font-family="sans-serif" font-size="12" font-weight="bold">r</text>
+  <circle cx="220" cy="158" r="4.5" fill="#F43F5E"/>
+  <text x="220" y="188" text-anchor="middle" fill="#FB7185" font-family="sans-serif" font-size="10" font-weight="bold">Normal Incidence: Ray along Normal → ∠i = 0° and ∠r = 0° (bounces straight back!)</text>
+</svg>

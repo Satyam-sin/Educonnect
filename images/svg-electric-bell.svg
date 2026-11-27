@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 210" fill="none">
+  <defs>
+    <linearGradient id="eb-bg" x1="0" y1="0" x2="440" y2="210" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0F172A"/><stop offset="100%" stop-color="#1E1B4B"/>
+    </linearGradient>
+    <radialGradient id="eb-gong" cx="40%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#FEF08A"/><stop offset="60%" stop-color="#F59E0B"/><stop offset="100%" stop-color="#B45309"/>
+    </radialGradient>
+  </defs>
+  <rect width="440" height="210" rx="16" fill="url(#eb-bg)"/>
+  <text x="220" y="24" text-anchor="middle" fill="#38BDF8" font-family="sans-serif" font-size="12" font-weight="bold">WORKING OF AN ELECTRIC BELL (MAKE-AND-BREAK CYCLE)</text>
+  <!-- U-shaped Electromagnet -->
+  <path d="M72 64H132V138H72" stroke="#64748B" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M84 54V74M98 54V74M112 54V74" stroke="#F97316" stroke-width="4.5" stroke-linecap="round"/>
+  <path d="M84 128V148M98 128V148M112 128V148" stroke="#F97316" stroke-width="4.5" stroke-linecap="round"/>
+  <text x="102" y="166" text-anchor="middle" fill="#FED7AA" font-family="sans-serif" font-size="10" font-weight="bold">Electromagnet</text>
+  <!-- Soft Iron Armature & Spring Strip -->
+  <rect x="164" y="62" width="12" height="84" rx="4" fill="#94A3B8" stroke="#E2E8F0" stroke-width="1.8"/>
+  <line x1="170" y1="74" x2="270" y2="74" stroke="#E2E8F0" stroke-width="4"/>
+  <!-- Hammer -->
+  <circle cx="276" cy="74" r="10" fill="#EF4444" stroke="#FECDD3" stroke-width="2"/>
+  <text x="226" y="64" text-anchor="middle" fill="#BAE6FD" font-family="sans-serif" font-size="10" font-weight="bold">Hammer</text>
+  <!-- Gong -->
+  <path d="M312 42A36 36 0 0 1 312 114Z" fill="url(#eb-gong)" stroke="#FEF9C3" stroke-width="2.2"/>
+  <path d="M358 58C365 66 365 90 358 98M368 50C378 62 378 94 368 106" stroke="#FDE047" stroke-width="2.5" stroke-linecap="round"/>
+  <text x="334" y="132" text-anchor="middle" fill="#FEF08A" font-family="sans-serif" font-size="11" font-weight="bold">Metallic Gong</text>
+  <!-- Contact Screw -->
+  <rect x="190" y="106" width="28" height="10" rx="3" fill="#34D399"/>
+  <text x="230" y="132" text-anchor="middle" fill="#A7F3D0" font-family="sans-serif" font-size="10" font-weight="bold">Contact Screw</text>
+  <!-- Circuit & Battery -->
+  <path d="M132 100H52V182H198V116" stroke="#38BDF8" stroke-width="2.6"/>
+  <rect x="96" y="172" width="56" height="20" rx="5" fill="#10B981"/>
+  <text x="124" y="186" text-anchor="middle" fill="#FFF" font-family="sans-serif" font-size="10" font-weight="bold">+ CELL −</text>
+  <text x="305" y="186" text-anchor="middle" fill="#CBD5E1" font-family="sans-serif" font-size="9.5">Circuit breaks → spring pulls back → repeats!</text>
+</svg>

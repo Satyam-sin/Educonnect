@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 195" fill="none">
+  <rect width="440" height="195" rx="16" fill="#0F172A"/>
+  <line x1="220" y1="16" x2="220" y2="178" stroke="#334155" stroke-width="2" stroke-dasharray="5 5"/>
+  <!-- Left: Concave Mirror -->
+  <text x="110" y="26" text-anchor="middle" fill="#38BDF8" font-family="sans-serif" font-size="11.5" font-weight="bold">CONCAVE MIRROR (Curves Inward)</text>
+  <path d="M138 46C166 76 166 120 138 150" stroke="#38BDF8" stroke-width="6" stroke-linecap="round"/>
+  <path d="M148 52L157 48M156 72L166 70M160 98L170 98M156 124L166 126M148 144L157 148" stroke="#94A3B8" stroke-width="2.2"/>
+  <text x="84" y="96" text-anchor="middle" fill="#A7F3D0" font-family="sans-serif" font-size="10.5" font-weight="bold">Reflecting</text>
+  <text x="84" y="110" text-anchor="middle" fill="#A7F3D0" font-family="sans-serif" font-size="10.5" font-weight="bold">Inner Side →</text>
+  <text x="110" y="174" text-anchor="middle" fill="#BAE6FD" font-family="sans-serif" font-size="10">Like INNER shiny side of a spoon</text>
+  <!-- Right: Convex Mirror -->
+  <text x="330" y="26" text-anchor="middle" fill="#F59E0B" font-family="sans-serif" font-size="11.5" font-weight="bold">CONVEX MIRROR (Bulges Outward)</text>
+  <path d="M312 46C284 76 284 120 312 150" stroke="#F59E0B" stroke-width="6" stroke-linecap="round"/>
+  <path d="M308 58L318 54M302 78L312 76M299 98L309 98M302 118L312 120M308 138L318 142" stroke="#94A3B8" stroke-width="2.2"/>
+  <text x="256" y="96" text-anchor="middle" fill="#FEF08A" font-family="sans-serif" font-size="10.5" font-weight="bold">← Reflecting</text>
+  <text x="256" y="110" text-anchor="middle" fill="#FEF08A" font-family="sans-serif" font-size="10.5" font-weight="bold">Outer Side</text>
+  <text x="330" y="174" text-anchor="middle" fill="#FED7AA" font-family="sans-serif" font-size="10">Like OUTER bulging side of a spoon</text>
+</svg>

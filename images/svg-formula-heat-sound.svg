@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 230" fill="none">
+  <rect x="6" y="6" width="628" height="218" rx="20" fill="#0f172a" stroke="#334155" stroke-width="2"/>
+  <!-- Left: Temperature Scales -->
+  <rect x="26" y="24" width="286" height="182" rx="16" fill="#1e293b" stroke="#fb923c" stroke-width="2"/>
+  <text x="44" y="52" fill="#fb923c" font-family="sans-serif" font-weight="900" font-size="17">Temperature Conversions</text>
+  <text x="44" y="84" fill="#fde047" font-family="sans-serif" font-weight="800" font-size="15">°F = (9/5 × °C) + 32</text>
+  <text x="44" y="112" fill="#38bdf8" font-family="sans-serif" font-weight="800" font-size="15">K = °C + 273.15  (SI Unit: K)</text>
+  <text x="44" y="142" fill="#cbd5e1" font-family="sans-serif" font-size="13">• Water Freezes: 0°C = 32°F = 273 K</text>
+  <text x="44" y="164" fill="#cbd5e1" font-family="sans-serif" font-size="13">• Water Boils: 100°C = 212°F = 373 K</text>
+  <text x="44" y="188" fill="#34d399" font-family="sans-serif" font-weight="700" font-size="13">• Human Body: 37°C = 98.6°F</text>
+
+  <!-- Right: Sound Wave -->
+  <rect x="330" y="24" width="284" height="182" rx="16" fill="#1e293b" stroke="#a855f7" stroke-width="2"/>
+  <text x="348" y="52" fill="#c084fc" font-family="sans-serif" font-weight="900" font-size="17">Sound &amp; Wave Formulas</text>
+  <path d="M352 104 Q378 64 404 104 T456 104 T508 104 T560 104" stroke="#38bdf8" stroke-width="3.2" fill="none"/>
+  <line x1="350" y1="104" x2="572" y2="104" stroke="#64748b" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <text x="348" y="144" fill="#fde047" font-family="sans-serif" font-weight="800" font-size="15">f = 1 / T   (SI Unit: Hertz, Hz)</text>
+  <text x="348" y="168" fill="#34d399" font-family="sans-serif" font-weight="800" font-size="15">Wave Speed: v = f × λ</text>
+  <text x="348" y="192" fill="#cbd5e1" font-family="sans-serif" font-size="13">Audible: 20 Hz – 20 kHz | Echo ≥ 17.2 m</text>
+</svg>

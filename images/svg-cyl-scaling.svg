@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 230" fill="none">
+  <rect x="6" y="6" width="648" height="218" rx="22" fill="#070d24" stroke="#f59e0b" stroke-width="2.2"/>
+  <text x="155" y="34" fill="#fde047" font-family="sans-serif" font-weight="900" font-size="16">CHS EXAM TRAP: DOUBLE HEIGHT vs DOUBLE RADIUS</text>
+  <!-- Original -->
+  <rect x="44" y="96" width="84" height="82" rx="10" fill="#38bdf8" fill-opacity="0.22" stroke="#38bdf8" stroke-width="2.4"/>
+  <text x="58" y="142" fill="#ffffff" font-family="sans-serif" font-weight="900" font-size="15">Vol = V</text>
+  <text x="56" y="200" fill="#94a3b8" font-family="sans-serif" font-weight="700" font-size="12">Original (r, h)</text>
+
+  <!-- Double Height -->
+  <rect x="220" y="54" width="84" height="124" rx="10" fill="#10b981" fill-opacity="0.25" stroke="#34d399" stroke-width="2.6"/>
+  <text x="234" y="122" fill="#6ee7b7" font-family="sans-serif" font-weight="900" font-size="16">Vol = 2V</text>
+  <text x="210" y="200" fill="#34d399" font-family="sans-serif" font-weight="800" font-size="12">Double h → 2× Vol</text>
+
+  <!-- Double Radius -->
+  <rect x="424" y="96" width="168" height="82" rx="12" fill="#f43f5e" fill-opacity="0.25" stroke="#fb7185" stroke-width="3"/>
+  <text x="464" y="136" fill="#fda4af" font-family="sans-serif" font-weight="900" font-size="18">Vol = 4V !!</text>
+  <text x="454" y="158" fill="#fde047" font-family="sans-serif" font-weight="700" font-size="12">Because (2r)² = 4r²</text>
+  <text x="436" y="200" fill="#fb7185" font-family="sans-serif" font-weight="800" font-size="12">Double r → 4× Vol!</text>
+</svg>

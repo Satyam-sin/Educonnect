@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 230" fill="none">
+  <rect x="6" y="6" width="628" height="218" rx="20" fill="#0f172a" stroke="#334155" stroke-width="2"/>
+  <!-- Cube -->
+  <rect x="36" y="62" width="70" height="70" fill="#6366f1" fill-opacity="0.25" stroke="#818cf8" stroke-width="2.5"/>
+  <polygon points="36,62 60,40 130,40 106,62" fill="#818cf8" fill-opacity="0.22" stroke="#818cf8" stroke-width="2.2"/>
+  <polygon points="106,62 130,40 130,110 106,132" fill="#4f46e5" fill-opacity="0.28" stroke="#818cf8" stroke-width="2.2"/>
+  <text x="48" y="160" fill="#fde047" font-family="sans-serif" font-weight="800" font-size="14">Cube: V = a³</text>
+  <text x="48" y="180" fill="#cbd5e1" font-family="sans-serif" font-size="12">TSA = 6a²</text>
+
+  <!-- Cylinder -->
+  <ellipse cx="255" cy="54" rx="44" ry="14" fill="#06b6d4" fill-opacity="0.3" stroke="#22d3ee" stroke-width="2.5"/>
+  <line x1="211" y1="54" x2="211" y2="128" stroke="#22d3ee" stroke-width="2.5"/>
+  <line x1="299" y1="54" x2="299" y2="128" stroke="#22d3ee" stroke-width="2.5"/>
+  <path d="M211 128 C211 138 299 138 299 128" stroke="#22d3ee" stroke-width="2.5" fill="#06b6d4" fill-opacity="0.2"/>
+  <text x="206" y="160" fill="#22d3ee" font-family="sans-serif" font-weight="800" font-size="14">Cylinder: πr²h</text>
+  <text x="206" y="180" fill="#cbd5e1" font-family="sans-serif" font-size="12">CSA = 2πrh</text>
+
+  <!-- Right Triangle Pythagoras -->
+  <polygon points="366,134 484,134 366,44" fill="#10b981" fill-opacity="0.22" stroke="#34d399" stroke-width="2.8" stroke-linejoin="round"/>
+  <rect x="366" y="120" width="14" height="14" stroke="#34d399" stroke-width="2"/>
+  <text x="348" y="96" fill="#fde047" font-family="sans-serif" font-weight="900" font-size="15">p</text>
+  <text x="420" y="152" fill="#fde047" font-family="sans-serif" font-weight="900" font-size="15">b</text>
+  <text x="432" y="84" fill="#34d399" font-family="sans-serif" font-weight="900" font-size="15">h</text>
+  <text x="362" y="176" fill="#34d399" font-family="sans-serif" font-weight="800" font-size="14">h² = p² + b²</text>
+
+  <!-- Circle -->
+  <circle cx="560" cy="88" r="42" fill="#f59e0b" fill-opacity="0.2" stroke="#fbbf24" stroke-width="2.8"/>
+  <line x1="560" y1="88" x2="602" y2="88" stroke="#fde047" stroke-width="2.5"/>
+  <text x="576" y="82" fill="#fde047" font-family="sans-serif" font-weight="900" font-size="13">r</text>
+  <text x="518" y="160" fill="#fbbf24" font-family="sans-serif" font-weight="800" font-size="14">Area = πr²</text>
+  <text x="518" y="180" fill="#cbd5e1" font-family="sans-serif" font-size="12">Circ = 2πr</text>
+</svg>

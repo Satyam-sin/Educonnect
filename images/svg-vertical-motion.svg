@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 190" fill="none">
+  <rect width="420" height="190" rx="16" fill="#0F172A"/>
+  <rect x="20" y="162" width="380" height="10" rx="5" fill="#10B981"/>
+  <!-- Going Up -->
+  <circle cx="110" cy="118" r="14" fill="#38BDF8" stroke="#FFFFFF" stroke-width="2"/>
+  <path d="M110 96V64M110 64L103 72M110 64L117 72" stroke="#34D399" stroke-width="3.5" stroke-linecap="round"/>
+  <text x="110" y="52" text-anchor="middle" fill="#34D399" font-family="sans-serif" font-size="10" font-weight="bold">Speed Decreases ↑</text>
+  <!-- Topmost Peak -->
+  <circle cx="210" cy="44" r="14" fill="#F59E0B" stroke="#FEF08A" stroke-width="2.5"/>
+  <path d="M210 62V96M210 96L203 88M210 96L217 88" stroke="#FB7185" stroke-width="3.5" stroke-linecap="round"/>
+  <text x="210" y="22" text-anchor="middle" fill="#FEF08A" font-family="sans-serif" font-size="10" font-weight="bold">Top Peak: Speed = 0</text>
+  <text x="210" y="114" text-anchor="middle" fill="#FDA4AF" font-family="sans-serif" font-size="10" font-weight="bold">Gravity STILL pulls ↓</text>
+  <!-- Coming Down -->
+  <circle cx="310" cy="108" r="14" fill="#A855F7" stroke="#E9D5FF" stroke-width="2"/>
+  <path d="M310 126V154M310 154L303 146M310 154L317 146" stroke="#FB7185" stroke-width="3.5" stroke-linecap="round"/>
+  <text x="310" y="84" text-anchor="middle" fill="#E9D5FF" font-family="sans-serif" font-size="10" font-weight="bold">Speed Increases ↓</text>
+</svg>

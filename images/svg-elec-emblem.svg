@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+  <defs>
+    <radialGradient id="ee-gl" cx="50%" cy="48%" r="52%">
+      <stop offset="0%" stop-color="#F59E0B" stop-opacity="0.35"/><stop offset="100%" stop-color="#6366F1" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ee-core" x1="30" y1="30" x2="90" y2="90" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#94A3B8"/><stop offset="100%" stop-color="#475569"/>
+    </linearGradient>
+    <linearGradient id="ee-coil" x1="25" y1="40" x2="95" y2="80" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FDE047"/><stop offset="50%" stop-color="#F97316"/><stop offset="100%" stop-color="#EF4444"/>
+    </linearGradient>
+  </defs>
+  <circle cx="60" cy="60" r="56" fill="url(#ee-gl)"/>
+  <circle cx="60" cy="60" r="47" stroke="#38BDF8" stroke-width="2.4" stroke-dasharray="7 5" opacity="0.55"/>
+  <rect x="22" y="49" width="76" height="22" rx="8" fill="url(#ee-core)" stroke="#CBD5E1" stroke-width="2.2"/>
+  <path d="M35 44C39 44 39 76 43 76C47 76 47 44 51 44C55 44 55 76 59 76C63 76 63 44 67 44C71 44 71 76 75 76C79 76 79 44 83 44" stroke="url(#ee-coil)" stroke-width="5.5" stroke-linecap="round"/>
+  <path d="M64 14L49 38H61L57 54L74 31H62L64 14Z" fill="#FEF08A" stroke="#F59E0B" stroke-width="1.8" stroke-linejoin="round"/>
+  <circle cx="24" cy="60" r="7" fill="#EF4444"/><text x="24" y="64" text-anchor="middle" fill="#FFF" font-family="sans-serif" font-size="10" font-weight="bold">N</text>
+  <circle cx="96" cy="60" r="7" fill="#3B82F6"/><text x="96" y="64" text-anchor="middle" fill="#FFF" font-family="sans-serif" font-size="10" font-weight="bold">S</text>
+</svg>

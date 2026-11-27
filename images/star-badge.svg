@@ -1,10 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
   <defs>
-    <linearGradient id="sb-g" x1="10" y1="8" x2="54" y2="56" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#FEF08A"/><stop offset="50%" stop-color="#F59E0B"/><stop offset="100%" stop-color="#EA580C"/>
+    <linearGradient id="sb-1" x1="10" y1="8" x2="54" y2="56" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FEF9C3"/><stop offset="45%" stop-color="#FACC15"/><stop offset="100%" stop-color="#EA580C"/>
     </linearGradient>
   </defs>
-  <circle cx="32" cy="32" r="25" fill="#F59E0B" opacity="0.18"/>
-  <path d="M32 7L39.2 22.4L56 24.4L43.6 36L46.8 52.8L32 44.6L17.2 52.8L20.4 36L8 24.4L24.8 22.4L32 7Z" fill="url(#sb-g)" stroke="#FEF9C3" stroke-width="2.2" stroke-linejoin="round"/>
-  <circle cx="32" cy="31" r="5" fill="#FFFFFF" opacity="0.4"/>
+  <circle cx="32" cy="32" r="26" fill="#F59E0B" opacity="0.2"/>
+  <circle cx="32" cy="32" r="22" stroke="#FDE047" stroke-width="1.5" stroke-dasharray="4 4" opacity="0.6"/>
+  <path d="M32 7L39.2 22.4L56 24.4L43.6 36L46.8 52.8L32 44.6L17.2 52.8L20.4 36L8 24.4L24.8 22.4L32 7Z" fill="url(#sb-1)" stroke="#FEF9C3" stroke-width="2.2" stroke-linejoin="round"/>
+  <circle cx="32" cy="31" r="5" fill="#FFFFFF" opacity="0.45"/>
 </svg>

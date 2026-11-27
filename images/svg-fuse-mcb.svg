@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 200" fill="none">
+  <defs>
+    <linearGradient id="fm-bg" x1="0" y1="0" x2="440" y2="200" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0F172A"/><stop offset="100%" stop-color="#1E293B"/>
+    </linearGradient>
+  </defs>
+  <rect width="440" height="200" rx="16" fill="url(#fm-bg)"/>
+  <line x1="220" y1="18" x2="220" y2="182" stroke="#334155" stroke-width="2" stroke-dasharray="5 5"/>
+  <!-- Left: Electric Fuse -->
+  <text x="110" y="28" text-anchor="middle" fill="#FB923C" font-family="sans-serif" font-size="11.5" font-weight="bold">ELECTRIC FUSE (Heating Effect)</text>
+  <rect x="34" y="64" width="26" height="44" rx="5" fill="#F59E0B" stroke="#FEF08A" stroke-width="2"/>
+  <rect x="160" y="64" width="26" height="44" rx="5" fill="#F59E0B" stroke="#FEF08A" stroke-width="2"/>
+  <rect x="60" y="68" width="100" height="36" rx="6" fill="#38BDF8" opacity="0.18" stroke="#7DD3FC" stroke-width="2"/>
+  <path d="M60 86H96M124 86H160" stroke="#FDE047" stroke-width="3.2" stroke-linecap="round"/>
+  <path d="M104 76L114 86L104 96" stroke="#EF4444" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="110" cy="86" r="10" fill="#EF4444" opacity="0.3"/>
+  <text x="110" y="132" text-anchor="middle" fill="#FED7AA" font-family="sans-serif" font-size="10.5" font-weight="bold">Low-Melting-Point Wire Melts</text>
+  <text x="110" y="150" text-anchor="middle" fill="#CBD5E1" font-family="sans-serif" font-size="9.5">Must be replaced after blowing</text>
+  <text x="110" y="172" text-anchor="middle" fill="#FDE047" font-family="sans-serif" font-size="9.5">Tin–Lead Alloy Wire</text>
+  <!-- Right: MCB -->
+  <text x="330" y="28" text-anchor="middle" fill="#34D399" font-family="sans-serif" font-size="11.5" font-weight="bold">MCB (Auto-Trip Switch)</text>
+  <rect x="284" y="48" width="92" height="92" rx="12" fill="#E2E8F0" stroke="#94A3B8" stroke-width="2.5"/>
+  <rect x="304" y="66" width="52" height="38" rx="6" fill="#1E293B"/>
+  <rect x="314" y="84" width="32" height="14" rx="4" fill="#EF4444"/>
+  <text x="330" y="79" text-anchor="middle" fill="#34D399" font-family="sans-serif" font-size="9" font-weight="bold">OFF / TRIP</text>
+  <text x="330" y="128" text-anchor="middle" fill="#0F172A" font-family="sans-serif" font-size="10" font-weight="bold">ISI • 16A</text>
+  <text x="330" y="160" text-anchor="middle" fill="#A7F3D0" font-family="sans-serif" font-size="10.5" font-weight="bold">Trips Automatically on Overload</text>
+  <text x="330" y="177" text-anchor="middle" fill="#CBD5E1" font-family="sans-serif" font-size="9.5">Simply flip back ON — reusable!</text>
+</svg>

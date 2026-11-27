@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 190" fill="none">
+  <rect width="420" height="190" rx="16" fill="#0F172A"/>
+  <text x="210" y="26" text-anchor="middle" fill="#FB923C" font-family="sans-serif" font-size="12" font-weight="bold">HEATING EFFECT: NICHROME HIGH-RESISTANCE COIL</text>
+  <!-- Glowing Aura -->
+  <ellipse cx="210" cy="86" rx="132" ry="34" fill="#EF4444" opacity="0.22"/>
+  <!-- Glowing Nichrome Coil -->
+  <path d="M74 86H104C112 62 126 62 134 86C142 110 156 110 164 86C172 62 186 62 194 86C202 110 216 110 224 86C232 62 246 62 254 86C262 110 276 110 284 86C292 62 306 62 314 86H346" stroke="#F97316" stroke-width="6.5" stroke-linecap="round"/>
+  <path d="M104 86C112 62 126 62 134 86C142 110 156 110 164 86C172 62 186 62 194 86C202 110 216 110 224 86C232 62 246 62 254 86C262 110 276 110 284 86C292 62 306 62 314 86" stroke="#FEF08A" stroke-width="2.4" stroke-linecap="round"/>
+  <!-- Heat waves -->
+  <path d="M150 48Q155 40 150 32M210 48Q215 40 210 32M270 48Q275 40 270 32" stroke="#FDE047" stroke-width="2.4" stroke-linecap="round"/>
+  <!-- Appliances Row -->
+  <rect x="24" y="130" width="84" height="36" rx="8" fill="#1E293B" stroke="#FB923C" stroke-width="1.5"/>
+  <text x="66" y="152" text-anchor="middle" fill="#FED7AA" font-family="sans-serif" font-size="10" font-weight="bold">Electric Iron</text>
+  <rect x="118" y="130" width="86" height="36" rx="8" fill="#1E293B" stroke="#FB923C" stroke-width="1.5"/>
+  <text x="161" y="152" text-anchor="middle" fill="#FED7AA" font-family="sans-serif" font-size="10" font-weight="bold">Room Heater</text>
+  <rect x="214" y="130" width="88" height="36" rx="8" fill="#1E293B" stroke="#FB923C" stroke-width="1.5"/>
+  <text x="258" y="152" text-anchor="middle" fill="#FED7AA" font-family="sans-serif" font-size="10" font-weight="bold">Electric Kettle</text>
+  <rect x="312" y="130" width="84" height="36" rx="8" fill="#1E293B" stroke="#FB923C" stroke-width="1.5"/>
+  <text x="354" y="152" text-anchor="middle" fill="#FED7AA" font-family="sans-serif" font-size="10" font-weight="bold">Hair Dryer</text>
+</svg>

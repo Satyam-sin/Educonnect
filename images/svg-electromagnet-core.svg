@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 190" fill="none">
+  <rect width="420" height="190" rx="16" fill="#0F172A"/>
+  <text x="210" y="26" text-anchor="middle" fill="#38BDF8" font-family="sans-serif" font-size="12" font-weight="bold">ELECTROMAGNET = CURRENT COIL + SOFT IRON CORE</text>
+  <!-- Soft Iron Nail Core -->
+  <rect x="86" y="76" width="224" height="24" rx="6" fill="#64748B" stroke="#CBD5E1" stroke-width="2"/>
+  <rect x="74" y="68" width="14" height="40" rx="4" fill="#94A3B8"/>
+  <polygon points="310,76 334,88 310,100" fill="#94A3B8"/>
+  <!-- Insulated Copper Coil Turns -->
+  <path d="M114 70C122 70 122 106 130 106C138 106 138 70 146 70C154 70 154 106 162 106C170 106 170 70 178 70C186 70 186 106 194 106C202 106 202 70 210 70C218 70 218 106 226 106C234 106 234 70 242 70C250 70 250 106 258 106C266 106 266 70 274 70" stroke="#F97316" stroke-width="5.5" stroke-linecap="round"/>
+  <!-- Leads to Battery -->
+  <path d="M114 70V146H172M274 70V146H234" stroke="#FDE047" stroke-width="3"/>
+  <rect x="172" y="132" width="62" height="28" rx="6" fill="#10B981" stroke="#A7F3D0" stroke-width="2"/>
+  <text x="203" y="150" text-anchor="middle" fill="#FFFFFF" font-family="sans-serif" font-size="11" font-weight="bold">+ CELL −</text>
+  <!-- Poles -->
+  <circle cx="56" cy="88" r="14" fill="#EF4444"/><text x="56" y="93" text-anchor="middle" fill="#FFF" font-family="sans-serif" font-size="12" font-weight="bold">N</text>
+  <circle cx="358" cy="88" r="14" fill="#3B82F6"/><text x="358" y="93" text-anchor="middle" fill="#FFF" font-family="sans-serif" font-size="12" font-weight="bold">S</text>
+  <text x="210" y="178" text-anchor="middle" fill="#FEF08A" font-family="sans-serif" font-size="10" font-weight="bold">More Turns / More Cells = Stronger Magnet • Reverse Current = Reversed Poles</text>
+</svg>

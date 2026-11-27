@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 190" fill="none">
+  <rect width="420" height="190" rx="16" fill="#0F172A"/>
+  <line x1="210" y1="16" x2="210" y2="174" stroke="#334155" stroke-width="2" stroke-dasharray="5 5"/>
+  <!-- Left: Same Direction -->
+  <text x="105" y="28" text-anchor="middle" fill="#34D399" font-family="sans-serif" font-size="12" font-weight="bold">SAME DIRECTION (ADD)</text>
+  <rect x="75" y="64" width="60" height="44" rx="8" fill="#2563EB" stroke="#93C5FD" stroke-width="2"/>
+  <text x="105" y="90" text-anchor="middle" fill="#FFFFFF" font-family="sans-serif" font-size="11" font-weight="bold">BOX</text>
+  <path d="M22 76H68M68 76L60 70M68 76L60 82" stroke="#38BDF8" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M22 96H68M68 96L60 90M68 96L60 102" stroke="#FDE047" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="42" y="69" text-anchor="middle" fill="#7DD3FC" font-family="sans-serif" font-size="10" font-weight="bold">35 N</text>
+  <text x="42" y="114" text-anchor="middle" fill="#FEF08A" font-family="sans-serif" font-size="10" font-weight="bold">25 N</text>
+  <rect x="30" y="132" width="150" height="32" rx="8" fill="#064E3B" stroke="#34D399" stroke-width="1.8"/>
+  <text x="105" y="152" text-anchor="middle" fill="#A7F3D0" font-family="sans-serif" font-size="11" font-weight="bold">Net = 35 + 25 = 60 N →</text>
+  <!-- Right: Opposite Direction -->
+  <text x="315" y="28" text-anchor="middle" fill="#FB7185" font-family="sans-serif" font-size="12" font-weight="bold">OPPOSITE (SUBTRACT)</text>
+  <rect x="285" y="64" width="60" height="44" rx="8" fill="#7C3AED" stroke="#DDD6FE" stroke-width="2"/>
+  <text x="315" y="90" text-anchor="middle" fill="#FFFFFF" font-family="sans-serif" font-size="11" font-weight="bold">BOX</text>
+  <path d="M235 86H278M278 86L270 80M278 86L270 92" stroke="#38BDF8" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M398 86H352M352 86L360 80M352 86L360 92" stroke="#FB7185" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="255" y="74" text-anchor="middle" fill="#7DD3FC" font-family="sans-serif" font-size="10" font-weight="bold">180 N</text>
+  <text x="376" y="74" text-anchor="middle" fill="#FDA4AF" font-family="sans-serif" font-size="10" font-weight="bold">220 N</text>
+  <rect x="235" y="132" width="160" height="32" rx="8" fill="#881337" stroke="#FB7185" stroke-width="1.8"/>
+  <text x="315" y="152" text-anchor="middle" fill="#FECDD3" font-family="sans-serif" font-size="11" font-weight="bold">← Net = 220 − 180 = 40 N</text>
+</svg>

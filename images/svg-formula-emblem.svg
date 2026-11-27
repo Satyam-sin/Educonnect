@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+  <defs>
+    <linearGradient id="fe1" x1="10" y1="10" x2="110" y2="110" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#6366f1"/><stop offset="50%" stop-color="#06b6d4"/><stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+  </defs>
+  <rect x="8" y="8" width="104" height="104" rx="28" fill="url(#fe1)" fill-opacity="0.18" stroke="url(#fe1)" stroke-width="3.5"/>
+  <circle cx="60" cy="60" r="36" stroke="#818cf8" stroke-width="2.2" stroke-dasharray="6 5"/>
+  <text x="27" y="54" fill="#fde047" font-family="sans-serif" font-weight="900" font-size="22">F=ma</text>
+  <text x="29" y="80" fill="#38bdf8" font-family="sans-serif" font-weight="900" font-size="20">V = IR</text>
+  <circle cx="94" cy="26" r="10" fill="#f59e0b"/>
+  <text x="89" y="31" fill="#ffffff" font-family="sans-serif" font-weight="900" font-size="13">SI</text>
+</svg>

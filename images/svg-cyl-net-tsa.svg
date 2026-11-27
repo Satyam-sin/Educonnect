@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 250" fill="none">
+  <rect x="6" y="6" width="648" height="238" rx="22" fill="#070d24" stroke="#818cf8" stroke-width="2.2"/>
+  <!-- Top Lid Circle -->
+  <circle cx="195" cy="48" r="32" fill="#f59e0b" fill-opacity="0.28" stroke="#fbbf24" stroke-width="2.8"/>
+  <text x="176" y="53" fill="#fde047" font-family="sans-serif" font-weight="900" font-size="15">πr²</text>
+  <!-- Middle Unrolled Rectangle -->
+  <rect x="70" y="86" width="250" height="82" rx="8" fill="#0ea5e9" fill-opacity="0.25" stroke="#38bdf8" stroke-width="2.8"/>
+  <text x="132" y="124" fill="#ffffff" font-family="sans-serif" font-weight="900" font-size="17">CSA = 2πrh</text>
+  <text x="128" y="148" fill="#7dd3fc" font-family="sans-serif" font-size="13">(2πr wide × h tall)</text>
+  <!-- Bottom Lid Circle -->
+  <circle cx="195" cy="206" r="32" fill="#f59e0b" fill-opacity="0.28" stroke="#fbbf24" stroke-width="2.8"/>
+  <text x="176" y="211" fill="#fde047" font-family="sans-serif" font-weight="900" font-size="15">πr²</text>
+
+  <!-- Right Formula Breakdown -->
+  <rect x="352" y="30" width="278" height="190" rx="16" fill="#0f172a" stroke="#fbbf24" stroke-width="2"/>
+  <text x="372" y="60" fill="#fde047" font-family="sans-serif" font-weight="900" font-size="17">TOTAL SURFACE AREA (TSA)</text>
+  <text x="372" y="92" fill="#e2e8f0" font-family="sans-serif" font-weight="700" font-size="14">TSA = CSA + Top Lid + Bottom Lid</text>
+  <text x="372" y="120" fill="#38bdf8" font-family="sans-serif" font-weight="800" font-size="15">TSA = 2πrh + πr² + πr²</text>
+  <text x="372" y="148" fill="#c084fc" font-family="sans-serif" font-weight="800" font-size="15">TSA = 2πrh + 2πr²</text>
+  <rect x="372" y="164" width="236" height="40" rx="10" fill="#10b981" fill-opacity="0.24" stroke="#34d399" stroke-width="2"/>
+  <text x="404" y="190" fill="#6ee7b7" font-family="sans-serif" font-weight="900" font-size="18">TSA = 2πr(r + h)</text>
+</svg>

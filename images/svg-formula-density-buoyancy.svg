@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 230" fill="none">
+  <rect x="6" y="6" width="628" height="218" rx="20" fill="#0f172a" stroke="#334155" stroke-width="2"/>
+  <!-- Beaker -->
+  <path d="M48 56V194C48 202 54 208 62 208H254C262 208 268 202 268 194V56" stroke="#94a3b8" stroke-width="3.5" stroke-linecap="round"/>
+  <rect x="52" y="92" width="212" height="112" rx="8" fill="#0ea5e9" fill-opacity="0.28"/>
+  <line x1="52" y1="92" x2="264" y2="92" stroke="#38bdf8" stroke-width="2.5"/>
+  <!-- Floating Wood -->
+  <rect x="76" y="76" width="64" height="32" rx="6" fill="#f59e0b" stroke="#fde047" stroke-width="2"/>
+  <text x="86" y="97" fill="#0f172a" font-family="sans-serif" font-weight="900" font-size="12">FLOATS</text>
+  <path d="M108 134V112M102 118L108 112L114 118" stroke="#34d399" stroke-width="2.5" stroke-linecap="round"/>
+  <text x="64" y="148" fill="#6ee7b7" font-family="sans-serif" font-weight="700" font-size="11">ρ_obj &lt; ρ_water</text>
+  <!-- Sinking Iron -->
+  <rect x="176" y="162" width="62" height="36" rx="6" fill="#64748b" stroke="#cbd5e1" stroke-width="2"/>
+  <text x="187" y="185" fill="#ffffff" font-family="sans-serif" font-weight="900" font-size="12">SINKS</text>
+  <text x="166" y="152" fill="#fda4af" font-family="sans-serif" font-weight="700" font-size="11">ρ_obj &gt; ρ_water</text>
+
+  <!-- Right Formula Box -->
+  <rect x="300" y="28" width="312" height="174" rx="16" fill="#1e293b" stroke="#22d3ee" stroke-width="2"/>
+  <text x="322" y="60" fill="#22d3ee" font-family="sans-serif" font-weight="900" font-size="20">Density:  ρ = Mass / Volume</text>
+  <text x="322" y="92" fill="#e2e8f0" font-family="sans-serif" font-size="14">• SI Unit: kg/m³   (CGS: g/cm³)</text>
+  <text x="322" y="118" fill="#fde047" font-family="sans-serif" font-weight="700" font-size="14">• 1 g/cm³ = 1000 kg/m³ (Water)</text>
+  <text x="322" y="146" fill="#cbd5e1" font-family="sans-serif" font-size="14">• Relative Density = ρ_sub / ρ_water</text>
+  <text x="322" y="172" fill="#34d399" font-family="sans-serif" font-weight="700" font-size="14">• Relative Density has NO unit!</text>
+</svg>

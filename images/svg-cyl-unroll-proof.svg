@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 260" fill="none">
+  <rect x="6" y="6" width="668" height="248" rx="22" fill="#070d24" stroke="#38bdf8" stroke-width="2.2"/>
+  <text x="125" y="36" fill="#fde047" font-family="sans-serif" font-weight="900" font-size="17">VISUAL PROOF: WHY LATERAL SURFACE AREA (CSA) = 2πrh</text>
+
+  <!-- Step 1: Cylinder without lids + Scissor Cut Line -->
+  <path d="M46 84 V186 C46 198 134 198 134 186 V84" fill="#0ea5e9" fill-opacity="0.24" stroke="#38bdf8" stroke-width="2.6"/>
+  <ellipse cx="90" cy="84" rx="44" ry="12" stroke="#38bdf8" stroke-width="2.2" stroke-dasharray="4 4"/>
+  <line x1="90" y1="96" x2="90" y2="194" stroke="#f43f5e" stroke-width="3" stroke-dasharray="6 5"/>
+  <text x="32" y="220" fill="#fda4af" font-family="sans-serif" font-weight="800" font-size="12">1. Remove 2 lids</text>
+  <text x="32" y="236" fill="#fda4af" font-family="sans-serif" font-size="12">&amp; cut straight down</text>
+
+  <!-- Arrow 1 -->
+  <path d="M154 136H194M186 128L194 136L186 144" stroke="#fde047" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Step 2: Unrolling Sheet -->
+  <path d="M214 90 Q246 72 284 90 V184 Q246 166 214 184 Z" fill="#8b5cf6" fill-opacity="0.28" stroke="#c084fc" stroke-width="2.6"/>
+  <path d="M284 90 L330 96 V190 L284 184 Z" fill="#6366f1" fill-opacity="0.34" stroke="#a5b4fc" stroke-width="2.6"/>
+  <text x="216" y="220" fill="#c084fc" font-family="sans-serif" font-weight="800" font-size="12">2. Unroll curved</text>
+  <text x="228" y="236" fill="#c084fc" font-family="sans-serif" font-size="12">sheet flat</text>
+
+  <!-- Arrow 2 -->
+  <path d="M350 136H390M382 128L390 136L382 144" stroke="#fde047" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Step 3: Flat Rectangle (2πr × h) -->
+  <rect x="412" y="84" width="222" height="104" rx="8" fill="#10b981" fill-opacity="0.22" stroke="#34d399" stroke-width="3"/>
+  <text x="456" y="74" fill="#fde047" font-family="sans-serif" font-weight="900" font-size="15">Circumference = 2πr</text>
+  <text x="642" y="142" fill="#38bdf8" font-family="sans-serif" font-weight="900" font-size="16">h</text>
+  <text x="434" y="132" fill="#ffffff" font-family="sans-serif" font-weight="900" font-size="16">RECTANGLE AREA</text>
+  <text x="444" y="158" fill="#34d399" font-family="sans-serif" font-weight="900" font-size="18">= 2πr × h = 2πrh</text>
+  <text x="438" y="220" fill="#6ee7b7" font-family="sans-serif" font-weight="800" font-size="12">3. Length × Breadth = 2πrh!</text>
+</svg>

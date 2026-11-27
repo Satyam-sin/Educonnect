@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 190" fill="none">
+  <rect width="420" height="190" rx="16" fill="#0F172A"/>
+  <line x1="210" y1="16" x2="210" y2="174" stroke="#334155" stroke-width="2" stroke-dasharray="5 5"/>
+  <!-- Left: Voltaic Cell -->
+  <text x="105" y="25" text-anchor="middle" fill="#38BDF8" font-family="sans-serif" font-size="11" font-weight="bold">VOLTAIC (GALVANIC) CELL</text>
+  <rect x="42" y="58" width="126" height="92" rx="10" fill="#1E293B" stroke="#7DD3FC" stroke-width="2.5"/>
+  <rect x="46" y="88" width="118" height="58" rx="6" fill="#0284C7" opacity="0.5"/>
+  <rect x="68" y="44" width="16" height="84" rx="4" fill="#F97316" stroke="#FED7AA" stroke-width="1.5"/>
+  <rect x="126" y="44" width="16" height="84" rx="4" fill="#94A3B8" stroke="#E2E8F0" stroke-width="1.5"/>
+  <text x="76" y="40" text-anchor="middle" fill="#FB923C" font-family="sans-serif" font-size="10" font-weight="bold">Cu (+)</text>
+  <text x="134" y="40" text-anchor="middle" fill="#CBD5E1" font-family="sans-serif" font-size="10" font-weight="bold">Zn (−)</text>
+  <text x="105" y="168" text-anchor="middle" fill="#BAE6FD" font-family="sans-serif" font-size="10">Liquid Electrolyte (Weak Acid / Salt)</text>
+  <!-- Right: Lemon Cell -->
+  <text x="315" y="25" text-anchor="middle" fill="#FDE047" font-family="sans-serif" font-size="11" font-weight="bold">LEMON CELL + LED</text>
+  <ellipse cx="315" cy="112" rx="54" ry="36" fill="#FACC15" stroke="#FEF08A" stroke-width="2.5"/>
+  <rect x="284" y="64" width="10" height="44" rx="3" fill="#EA580C"/>
+  <rect x="336" y="64" width="10" height="44" rx="3" fill="#64748B"/>
+  <path d="M289 64V44H306M341 64V44H324" stroke="#34D399" stroke-width="2.5"/>
+  <circle cx="315" cy="44" r="10" fill="#EF4444" stroke="#FEF08A" stroke-width="2"/>
+  <text x="315" y="168" text-anchor="middle" fill="#FEF08A" font-family="sans-serif" font-size="10">Lemon Juice = Acidic Electrolyte!</text>
+</svg>

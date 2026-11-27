@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+  <defs>
+    <radialGradient id="oe-gl" cx="50%" cy="50%" r="52%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.38"/><stop offset="100%" stop-color="#6366F1" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="oe-ln" x1="48" y1="16" x2="72" y2="104" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#BAE6FD"/><stop offset="50%" stop-color="#38BDF8"/><stop offset="100%" stop-color="#2563EB"/>
+    </linearGradient>
+  </defs>
+  <circle cx="60" cy="60" r="56" fill="url(#oe-gl)"/>
+  <circle cx="60" cy="60" r="47" stroke="#7DD3FC" stroke-width="2.2" stroke-dasharray="6 5" opacity="0.55"/>
+  <!-- Parallel incoming rays -->
+  <path d="M12 36H56M12 60H56M12 84H56" stroke="#FDE047" stroke-width="3.2" stroke-linecap="round"/>
+  <!-- Converged outgoing rays -->
+  <path d="M64 36L104 60M64 60H104M64 84L104 60" stroke="#F97316" stroke-width="3.2" stroke-linecap="round"/>
+  <!-- Convex Lens -->
+  <path d="M60 18C74 36 74 84 60 102C46 84 46 36 60 18Z" fill="url(#oe-ln)" fill-opacity="0.72" stroke="#E0F2FE" stroke-width="2.8"/>
+  <circle cx="104" cy="60" r="6" fill="#FEF08A" stroke="#F97316" stroke-width="2"/>
+</svg>
