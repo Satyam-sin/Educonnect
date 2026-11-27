@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 190" fill="none">
+  <rect width="360" height="190" rx="16" fill="#0F172A"/>
+  <!-- Spring Balance -->
+  <circle cx="78" cy="24" r="9" stroke="#F59E0B" stroke-width="4"/>
+  <rect x="56" y="33" width="44" height="92" rx="8" fill="#1E293B" stroke="#38BDF8" stroke-width="3"/>
+  <path d="M78 40L70 48L86 56L70 64L86 72L78 80V108" stroke="#34D399" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="64" y="88" width="28" height="4" rx="2" fill="#F43F5E"/>
+  <path d="M78 125V138C78 144 86 144 86 138" stroke="#F59E0B" stroke-width="3.5" stroke-linecap="round"/>
+  <rect x="64" y="144" width="28" height="24" rx="5" fill="#6366F1" stroke="#BAE6FD" stroke-width="2"/>
+  <text x="78" y="160" text-anchor="middle" fill="#FFFFFF" font-family="sans-serif" font-size="11" font-weight="bold">10 N</text>
+  <!-- Buoyancy Comparison -->
+  <rect x="150" y="45" width="185" height="122" rx="12" fill="#0C4A6E" stroke="#38BDF8" stroke-width="2.5"/>
+  <rect x="154" y="84" width="177" height="79" rx="8" fill="#0284C7" opacity="0.55"/>
+  <rect x="195" y="66" width="52" height="36" rx="7" fill="#F59E0B" stroke="#FEF08A" stroke-width="2"/>
+  <path d="M221 106V134M221 106L213 114M221 106L229 114" stroke="#34D399" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M221 62V36M221 62L214 55M221 62L228 55" stroke="#FB7185" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="278" y="114" fill="#A7F3D0" font-family="sans-serif" font-size="11" font-weight="bold">Upthrust</text>
+  <text x="278" y="54" fill="#FECDD3" font-family="sans-serif" font-size="11" font-weight="bold">Gravity</text>
+  <text x="242" y="154" text-anchor="middle" fill="#E0F2FE" font-family="sans-serif" font-size="11" font-weight="bold">Floating: Upthrust = Weight</text>
+</svg>

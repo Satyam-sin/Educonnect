@@ -1,10 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
   <defs>
-    <linearGradient id="ft-g" x1="12" y1="52" x2="54" y2="10" gradientUnits="userSpaceOnUse">
+    <linearGradient id="ft-1" x1="12" y1="52" x2="54" y2="10" gradientUnits="userSpaceOnUse">
       <stop offset="0%" stop-color="#F59E0B"/><stop offset="50%" stop-color="#EC4899"/><stop offset="100%" stop-color="#8B5CF6"/>
     </linearGradient>
   </defs>
-  <path d="M52 10C36 10 21 21 15 38L10 54L26 49C43 43 54 28 52 10Z" fill="url(#ft-g)" stroke="#FDE68A" stroke-width="2" stroke-linejoin="round"/>
-  <path d="M10 54L46 18" stroke="#FFFFFF" stroke-width="2.8" stroke-linecap="round"/>
-  <path d="M24 40L36 40M30 34L42 34M36 28L46 28" stroke="#FEF9C3" stroke-width="1.8" stroke-linecap="round" opacity="0.7"/>
+  <circle cx="32" cy="32" r="26" fill="#8B5CF6" opacity="0.16"/>
+  <path d="M53 9C36 9 21 20 14.5 38L9 55L26 49.5C44 43 55 28 53 9Z" fill="url(#ft-1)" stroke="#FDE68A" stroke-width="2.2" stroke-linejoin="round"/>
+  <path d="M9 55L47 17" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+  <path d="M23 41L36 41M29 35L42 35M35 29L46 29" stroke="#FEF9C3" stroke-width="2" stroke-linecap="round" opacity="0.75"/>
 </svg>

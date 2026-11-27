@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+  <defs>
+    <linearGradient id="pd-sh" x1="22" y1="12" x2="98" y2="108" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFFFFF"/><stop offset="100%" stop-color="#E0E7FF"/>
+    </linearGradient>
+    <linearGradient id="pd-bd" x1="18" y1="66" x2="88" y2="96" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#F43F5E"/><stop offset="100%" stop-color="#E11D48"/>
+    </linearGradient>
+    <linearGradient id="pd-dl" x1="74" y1="68" x2="108" y2="106" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#34D399"/><stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+  </defs>
+  <path d="M28 14H72L92 34V100C92 104.4 88.4 108 84 108H28C23.6 108 20 104.4 20 100V22C20 17.6 23.6 14 28 14Z" fill="url(#pd-sh)" stroke="#818CF8" stroke-width="3.5" stroke-linejoin="round"/>
+  <path d="M72 14V34H92" fill="#C7D2FE" stroke="#818CF8" stroke-width="3" stroke-linejoin="round"/>
+  <rect x="31" y="34" width="32" height="5.5" rx="2.75" fill="#6366F1"/>
+  <rect x="31" y="46" width="48" height="4.5" rx="2.25" fill="#94A3B8"/>
+  <rect x="31" y="56" width="40" height="4.5" rx="2.25" fill="#94A3B8"/>
+  <rect x="14" y="68" width="58" height="24" rx="8" fill="url(#pd-bd)" stroke="#FECDD3" stroke-width="2.2"/>
+  <path d="M25 84V76H29.5C31.5 76 32.8 77.2 32.8 79C32.8 80.8 31.5 82 29.5 82H25M38 84V76H42C44.5 76 46 77.6 46 80C46 82.4 44.5 84 42 84H38M51 84V76H58M51 80H56.5" stroke="#FFFFFF" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="90" cy="88" r="20" fill="url(#pd-dl)" stroke="#A7F3D0" stroke-width="3"/>
+  <path d="M90 79V95M90 95L83 88M90 95L97 88" stroke="#FFFFFF" stroke-width="3.8" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

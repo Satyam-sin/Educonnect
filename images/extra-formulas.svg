@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <rect x="8" y="8" width="48" height="48" rx="14" fill="#6366f1" fill-opacity="0.2" stroke="#818cf8" stroke-width="2.8"/>
+  <text x="16" y="30" fill="#fde047" font-family="sans-serif" font-weight="900" font-size="16">F=ma</text>
+  <text x="15" y="48" fill="#38bdf8" font-family="sans-serif" font-weight="800" font-size="14">P=F/A</text>
+</svg>

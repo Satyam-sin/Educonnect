@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 190" fill="none">
+  <rect width="360" height="190" rx="16" fill="#0F172A"/>
+  <!-- Sea & Sun -->
+  <circle cx="290" cy="48" r="24" fill="#F59E0B" opacity="0.85"/>
+  <rect x="0" y="120" width="360" height="70" fill="#0369A1"/>
+  <path d="M0 135Q45 125 90 135T180 135T270 135T360 135" stroke="#7DD3FC" stroke-width="3" fill="none"/>
+  <!-- Sea Fort -->
+  <rect x="28" y="76" width="96" height="48" rx="4" fill="#78716C" stroke="#D6D3D1" stroke-width="2"/>
+  <rect x="34" y="64" width="16" height="12" fill="#78716C"/><rect x="66" y="64" width="16" height="12" fill="#78716C"/><rect x="98" y="64" width="16" height="12" fill="#78716C"/>
+  <path d="M76 40V64" stroke="#FEF08A" stroke-width="2.5"/>
+  <path d="M76 40L96 47L76 54Z" fill="#F97316"/>
+  <!-- Maratha Ship -->
+  <path d="M185 112H295L278 134H202L185 112Z" fill="#B45309" stroke="#FDE68A" stroke-width="2"/>
+  <path d="M238 48V112" stroke="#FEF3C7" stroke-width="3.5"/>
+  <path d="M238 54L276 96H238V54Z" fill="#F8FAFC"/>
+  <path d="M235 64L202 100H235V64Z" fill="#FED7AA"/>
+  <path d="M238 44L254 49L238 54Z" fill="#F97316"/>
+  <text x="180" y="172" text-anchor="middle" fill="#E0F2FE" font-family="sans-serif" font-size="12" font-weight="bold">Sindhudurg Sea Fort &amp; Maratha Navy</text>
+</svg>
