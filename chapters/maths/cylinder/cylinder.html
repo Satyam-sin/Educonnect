@@ -1,1 +1,446 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" data-accent="indigo" data-font="sans" data-density="comfortable">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cylinder: Surface Area &amp; Volume — SMART PROCESS</title>
+  <link rel="icon" type="image/png" href="../../../images/smart-process-logo.png" />
+  <link rel="stylesheet" href="../../../css/variables.css" />
+  <link rel="stylesheet" href="../../../css/base.css" />
+  <link rel="stylesheet" href="../../../css/components.css" />
+  <link rel="stylesheet" href="../../../css/notes-studio.css" />
+  <link rel="stylesheet" href="../../../css/animations.css" />
+  <style>
+    [data-theme="dark"] body {
+      background: radial-gradient(circle at 18% 8%, #0d1b4c 0%, #050a1e 50%, #030612 100%);
+    }
+    .sp-chapter-topbar {
+      background: rgba(7, 14, 38, 0.86) !important;
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(56, 189, 248, 0.28) !important;
+    }
+    [data-theme="light"] .sp-chapter-topbar { background: rgba(255, 255, 255, 0.92) !important; }
+    .sp-nav-logo {
+      width: 40px; height: 40px; border-radius: 50%; object-fit: cover;
+      border: 1.5px solid rgba(56, 189, 248, 0.7);
+      box-shadow: 0 0 12px rgba(56, 189, 248, 0.45);
+    }
+    .sp-gold { color: #fbbf24; }
+    .svg-frame {
+      margin: 0.9rem 0 1.1rem;
+      border-radius: 20px;
+      overflow: hidden;
+      border: 1.5px solid rgba(56, 189, 248, 0.35);
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.28);
+      background: #070d24;
+    }
+    .svg-frame img { width: 100%; height: auto; display: block; }
 
+    .anim-theater {
+      margin: 1rem 0 1.2rem;
+      border-radius: 22px;
+      background: linear-gradient(145deg, #070e29, #0e1638);
+      border: 1.8px solid rgba(56, 189, 248, 0.55);
+      box-shadow: 0 18px 46px rgba(0, 0, 0, 0.4), inset 0 0 36px rgba(14, 165, 233, 0.12);
+      padding: 1.1rem 1.2rem;
+      color: #f8fafc;
+    }
+    .anim-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      margin-bottom: 0.75rem;
+    }
+    .anim-title { font-size: 1rem; font-weight: 900; color: #fde047; }
+    .anim-controls { display: flex; align-items: center; gap: 0.45rem; flex-wrap: wrap; }
+    .anim-btn {
+      padding: 0.45rem 0.9rem;
+      border-radius: 999px;
+      border: 1.5px solid rgba(56, 189, 248, 0.5);
+      background: rgba(15, 23, 42, 0.85);
+      color: #e2e8f0;
+      font-size: 0.82rem;
+      font-weight: 800;
+      cursor: pointer;
+      transition: transform 140ms ease, border-color 150ms ease;
+    }
+    .anim-btn:hover { transform: translateY(-1px); border-color: #fde047; }
+    .anim-btn--play {
+      background: linear-gradient(135deg, #fde047, #f59e0b);
+      color: #0f172a;
+      border-color: #fef08a;
+      box-shadow: 0 0 18px rgba(251, 191, 36, 0.45);
+    }
+    .anim-btn.is-active {
+      background: linear-gradient(135deg, #0ea5e9, #6366f1);
+      color: #ffffff;
+      border-color: #38bdf8;
+    }
+    .anim-canvas {
+      width: 100%;
+      display: block;
+      border-radius: 16px;
+      border: 1px solid rgba(148, 163, 184, 0.24);
+    }
+    .anim-scrub { width: 100%; margin-top: 0.7rem; accent-color: #fbbf24; cursor: pointer; }
+    .anim-caption {
+      margin-top: 0.65rem;
+      padding: 0.65rem 0.9rem;
+      border-radius: 12px;
+      background: rgba(15, 23, 42, 0.75);
+      border-left: 3.5px solid #38bdf8;
+      font-size: 0.88rem;
+      color: #e2e8f0;
+    }
+    .anim-steps-row { display: flex; gap: 0.4rem; flex-wrap: wrap; margin-top: 0.7rem; }
+
+    .proof-steps-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.85rem; margin: 0.9rem 0; }
+    .proof-step-card { background: var(--bg-surface-2); border: 1.5px solid rgba(56, 189, 248, 0.35); border-radius: 16px; padding: 0.95rem 1rem; }
+    .proof-step-num { display: inline-block; padding: 0.18rem 0.6rem; border-radius: 999px; background: linear-gradient(135deg, #0ea5e9, #6366f1); color: #fff; font-size: 0.75rem; font-weight: 800; margin-bottom: 0.45rem; }
+    .proof-step-card h4 { margin: 0 0 0.3rem; font-size: 0.96rem; font-weight: 800; }
+    .proof-step-card p { margin: 0; font-size: 0.85rem; color: var(--text-secondary); line-height: 1.45; }
+
+    .cyl-cards-2col { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.9rem; margin-top: 0.85rem; }
+    .cyl-neon-card { background: var(--bg-surface-2); border: 1.5px solid var(--border-subtle); border-radius: 16px; padding: 1rem 1.1rem; }
+    .cyl-neon-card h4 { margin: 0 0 0.35rem; font-size: 0.98rem; font-weight: 800; }
+    .cyl-eq { display: inline-block; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-weight: 900; font-size: 1rem; color: #fbbf24; background: var(--bg-surface); padding: 0.32rem 0.68rem; border-radius: 10px; border: 1px solid rgba(251, 191, 36, 0.35); margin-bottom: 0.45rem; }
+
+    .cyl-calc-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.75rem; margin: 0.8rem 0; }
+    .cyl-input { width: 100%; padding: 0.6rem 0.75rem; border-radius: 11px; border: 1.5px solid rgba(56, 189, 248, 0.45); background: var(--bg-surface); color: var(--text-primary); font-weight: 800; font-size: 0.94rem; }
+    .cyl-out-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.7rem; margin-top: 0.8rem; }
+    .cyl-out-pill { background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: 13px; padding: 0.7rem 0.85rem; }
+    .cyl-out-pill span { display: block; font-size: 0.75rem; color: var(--text-secondary); }
+    .cyl-out-pill strong { font-size: 1.05rem; color: #38bdf8; }
+
+    @media (max-width: 760px) {
+      .proof-steps-grid, .cyl-cards-2col, .cyl-calc-grid, .cyl-out-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar sp-chapter-topbar" id="mainTopbar">
+    <div class="topbar-inner">
+      <a class="brand" href="../../../index.html">
+        <img src="../../../images/smart-process-logo.png" class="sp-nav-logo" alt="SMART PROCESS Logo" />
+        <div>
+          <div class="brand-title"><span>Smart</span> <span class="sp-gold">Process</span></div>
+          <div class="brand-subtitle">Maths • Mensuration • Cylinder</div>
+        </div>
+      </a>
+      <a class="btn btn-secondary" href="../../../index.html" style="padding:0.45rem 0.9rem;font-size:0.84rem;">← Home</a>
+    </div>
+  </header>
+
+  <div class="notes-shell">
+    <aside class="notes-sidebar">
+      <div class="sidebar-title">Cylinder</div>
+      <nav class="sidebar-nav">
+        <a href="#sec-anatomy">1. 3D Anatomy</a>
+        <a href="#sec-csa-theater">2. Curved Surface Area</a>
+        <a href="#sec-tsa-anim">3. Total Surface Area</a>
+        <a href="#sec-vol-anim">4. Volume of Cylinder</a>
+        <a href="#sec-roller-anim">5. Road Roller Concept</a>
+        <a href="#sec-hollow">6. Hollow Cylinder</a>
+        <a href="#sec-traps">7. CHS Exam Traps</a>
+        <a href="#sec-facts">8. Amazing Facts</a>
+        <a href="#sec-solved">9. Solved Numericals</a>
+        <a href="#sec-lab">10. Practice Calculator</a>
+        <a href="#sec-flashcards">11. 14 Flashcards</a>
+      </nav>
+    </aside>
+
+    <main class="notes-main">
+      <section class="notes-hero">
+        <div style="display:flex;align-items:center;gap:1.1rem;flex-wrap:wrap;">
+          <img src="../../../images/ch-cylinder.svg" style="width:76px;height:76px;flex-shrink:0;" alt="Cylinder" />
+          <div style="flex:1;min-width:240px;">
+            <span class="hero-badge">SMART PROCESS • CLASS 8 MATHS</span>
+            <h1 style="margin:0.3rem 0;">Cylinder: <span class="sp-gold">Surface Area &amp; Volume</span></h1>
+            <p style="margin:0;color:var(--text-secondary);">
+              Master Lateral Surface Area (2πrh), Total Surface Area (2πr(r+h)), Volume (πr²h), Hollow Pipes, Road Rollers, and CHS exam tricks with smooth visual demonstrations.
+            </p>
+          </div>
+        </div>
+        <div class="notes-stat-strip" style="margin-top:1.05rem;">
+          <div class="notes-stat-box"><strong>4</strong><span>Interactive Visuals</span></div>
+          <div class="notes-stat-box"><strong>8</strong><span>Concept Diagrams</span></div>
+          <div class="notes-stat-box"><strong>6</strong><span>CHS Numericals</span></div>
+          <div class="notes-stat-box"><strong>1</strong><span>Practice Calculator</span></div>
+          <div class="notes-stat-box"><strong>14</strong><span>Flashcards</span></div>
+        </div>
+      </section>
+
+      <!-- SECTION 1: ANATOMY -->
+      <section class="notes-section" id="sec-anatomy">
+        <h2>1. Anatomy of a Right Circular Cylinder</h2>
+        <div class="svg-frame"><img src="../../../images/svg-cyl-hero.svg" alt="Anatomy of a Right Circular Cylinder" /></div>
+        <ul class="notes-bullets">
+          <li>A <strong>Right Circular Cylinder</strong> has <strong>2 identical circular bases</strong> (top lid and bottom base) and <strong>1 smooth curved side wall</strong> at 90° to the bases.</li>
+          <li><strong>Geometry Counts:</strong> <strong>3 Faces</strong> (2 flat circular + 1 curved), <strong>2 Curved Edges</strong>, and <strong>0 Vertices</strong> (no sharp corners).</li>
+        </ul>
+      </section>
+
+      <!-- SECTION 2: CSA 3D UNROLL CANVAS -->
+      <section class="notes-section" id="sec-csa-theater">
+        <h2>2. Curved Surface Area (CSA = 2πrh) — Visual Proof</h2>
+        <div class="anim-theater">
+          <div class="anim-header">
+            <div class="anim-title">Visual Proof: Curved Surface Area (2πrh)</div>
+            <div class="anim-controls">
+              <button type="button" class="anim-btn anim-btn--play" id="csaPlayBtn">▶ Play</button>
+              <button type="button" class="anim-btn" id="csaResetBtn">↺ Replay</button>
+            </div>
+          </div>
+
+          <canvas id="csaCanvas" class="anim-canvas"></canvas>
+          <input type="range" id="csaScrub" class="anim-scrub" min="0" max="100" value="0" aria-label="Animation Progress" />
+          <div class="anim-caption" id="csaCaption">Step 1: A complete Right Circular Cylinder with 2 flat circular lids and 1 curved side wall.</div>
+
+          <div class="anim-steps-row">
+            <button type="button" class="anim-btn is-active" data-csa-step="1">1. Full Cylinder</button>
+            <button type="button" class="anim-btn" data-csa-step="2">2. Remove Lids</button>
+            <button type="button" class="anim-btn" data-csa-step="3">3. Vertical Cut</button>
+            <button type="button" class="anim-btn" data-csa-step="4">4. Unroll Wall</button>
+            <button type="button" class="anim-btn" data-csa-step="5">5. Rectangle = 2πrh</button>
+          </div>
+        </div>
+
+        <div class="proof-steps-grid">
+          <div class="proof-step-card">
+            <span class="proof-step-num">Step 1</span>
+            <h4>Remove Both Circular Lids</h4>
+            <p>Lateral Surface Area counts only the side wall — excluding both top and bottom circular bases.</p>
+          </div>
+          <div class="proof-step-card">
+            <span class="proof-step-num">Step 2</span>
+            <h4>Cut Straight &amp; Spread Flat</h4>
+            <p>Making one straight cut down the curved wall lets it unroll flat into a clean <strong>Rectangle</strong>.</p>
+          </div>
+          <div class="proof-step-card">
+            <span class="proof-step-num">Step 3</span>
+            <h4>Length × Breadth = 2πrh</h4>
+            <p>Rectangle's length equals circle's circumference (<strong>2πr</strong>) and breadth equals height (<strong>h</strong>) → <strong>2πrh</strong>.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 3: TSA 2D NET CANVAS -->
+      <section class="notes-section" id="sec-tsa-anim">
+        <h2>3. Total Surface Area (TSA = 2πr(r + h))</h2>
+        <div class="anim-theater">
+          <div class="anim-header">
+            <div class="anim-title">Visual Proof: Total Surface Area (2D Net)</div>
+            <div class="anim-controls">
+              <button type="button" class="anim-btn anim-btn--play" id="netToggleBtn">Unfold to 2D Net</button>
+            </div>
+          </div>
+          <canvas id="tsaCanvas" class="anim-canvas"></canvas>
+          <div class="anim-caption" id="netCaption">Click "Unfold to 2D Net" to see both circular lids (πr² + πr²) and the curved wall (2πrh) open flat together.</div>
+        </div>
+
+        <div class="cyl-cards-2col">
+          <div class="cyl-neon-card">
+            <h4>Closed Cylinder (Both Lids)</h4>
+            <div class="cyl-eq">TSA = 2πrh + 2πr² = 2πr(r + h)</div>
+            <p style="margin:0;font-size:0.86rem;color:var(--text-secondary);">Sealed tin cans, closed oil drums, completely painted solid cylinders.</p>
+          </div>
+          <div class="cyl-neon-card">
+            <h4>Open-Top Cylinder (1 Base Only)</h4>
+            <div class="cyl-eq">Area = 2πrh + πr² = πr(2h + r)</div>
+            <p style="margin:0;font-size:0.86rem;color:var(--text-secondary);">Pen holders, open buckets, cylindrical water wells, and flower pots.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 4: COIN-STACK VOLUME CANVAS -->
+      <section class="notes-section" id="sec-vol-anim">
+        <h2>4. Volume of a Cylinder (V = πr²h)</h2>
+        <div class="anim-theater">
+          <div class="anim-header">
+            <div class="anim-title">Visual Proof: Volume = Base Area × Height</div>
+            <div class="anim-controls">
+              <button type="button" class="anim-btn anim-btn--play" id="coinPlayBtn">▶ Stack Discs</button>
+              <button type="button" class="anim-btn" id="coinAddBtn">+ Add 1 Disc</button>
+              <button type="button" class="anim-btn" id="coinClearBtn">↺ Clear</button>
+            </div>
+          </div>
+          <canvas id="volCanvas" class="anim-canvas"></canvas>
+        </div>
+      </section>
+
+      <!-- SECTION 5: ROAD ROLLER CANVAS -->
+      <section class="notes-section" id="sec-roller-anim">
+        <h2>5. Road Roller Concept (1 Revolution = 2πrh)</h2>
+        <div class="anim-theater">
+          <div class="anim-header">
+            <div class="anim-title">Road Roller: 1 Revolution = Curved Surface Area</div>
+            <div class="anim-controls">
+              <button type="button" class="anim-btn anim-btn--play" id="rollerPlayBtn">▶ Roll 1 Revolution</button>
+              <button type="button" class="anim-btn" id="rollerResetBtn">↺ Reset</button>
+            </div>
+          </div>
+          <canvas id="rollerCanvas" class="anim-canvas"></canvas>
+        </div>
+      </section>
+
+      <!-- SECTION 6: HOLLOW CYLINDER -->
+      <section class="notes-section" id="sec-hollow">
+        <h2>6. Hollow Cylinder (Pipes &amp; Tubes)</h2>
+        <div class="svg-frame"><img src="../../../images/svg-cyl-hollow.svg" alt="Hollow Cylinder Outer R Inner r Formulas" /></div>
+      </section>
+
+      <!-- SECTION 7: CHS EXAM TRAPS -->
+      <section class="notes-section" id="sec-traps">
+        <h2>7. Famous BHU CHS Exam Traps</h2>
+        <div class="svg-frame"><img src="../../../images/svg-cyl-scaling.svg" alt="Doubling Height vs Doubling Radius" /></div>
+        <ul class="notes-bullets">
+          <li><strong>Double Height → 2× Volume</strong>, but <strong>Double Radius → 4× Volume</strong> (because <em>r</em> is squared!).</li>
+          <li><strong>Cylinder vs Cone Ratio:</strong> Same radius &amp; height → Volume Ratio is always <strong>3 : 1</strong>.</li>
+          <li><strong>Rolling a Paper Sheet:</strong> Rolling along the longer side produces a larger radius and a <strong>larger volume</strong>.</li>
+        </ul>
+      </section>
+
+      <!-- SECTION 8: AMAZING FACTS -->
+      <section class="notes-section" id="sec-facts">
+        <h2>8. Amazing Facts &amp; Real-World Engineering</h2>
+        <div class="svg-frame"><img src="../../../images/svg-cyl-reallife.svg" alt="Road Roller, Gas Cylinder, and Archimedes Tomb" /></div>
+        <div class="did-you-know-box">
+          <strong>Why LPG Tanks &amp; Aeroplane Cabins Are Cylinders:</strong> Sharp 90° corners trap stress and crack under high pressure. Cylinders have <strong>0 vertices</strong>, spreading pressure evenly everywhere!
+        </div>
+        <div class="did-you-know-box" style="margin-top:0.7rem;">
+          <strong>Archimedes' Tombstone Theorem:</strong> A Sphere fitted tightly inside a Cylinder has exactly <strong>2/3 the Volume AND 2/3 the Total Surface Area</strong> of the cylinder!
+        </div>
+      </section>
+
+      <!-- SECTION 9: SOLVED CHS NUMERICALS -->
+      <section class="notes-section" id="sec-solved">
+        <h2>9. 6 Classic BHU CHS Solved Numericals</h2>
+        <div class="cyl-cards-2col">
+          <div class="cyl-neon-card">
+            <h4>Q1. Find CSA, TSA &amp; Volume (r = 7 cm, h = 10 cm)</h4>
+            <p style="margin:0;font-size:0.85rem;color:var(--text-secondary);"><strong>CSA</strong> = 440 cm² | <strong>TSA</strong> = 748 cm² | <strong>Vol</strong> = 1540 cm³ (1.54 L)</p>
+          </div>
+          <div class="cyl-neon-card">
+            <h4>Q2. Road Roller (d = 84 cm, L = 1 m, 750 Rolls)</h4>
+            <p style="margin:0;font-size:0.85rem;color:var(--text-secondary);">r = 0.42 m → 1 Roll = 2.64 m² → 750 Rolls = <strong>1980 m²</strong></p>
+          </div>
+          <div class="cyl-neon-card">
+            <h4>Q3. Milk Tank Capacity (r = 1.5 m, L = 7 m)</h4>
+            <p style="margin:0;font-size:0.85rem;color:var(--text-secondary);">V = 49.5 m³ = <strong>49,500 Litres</strong></p>
+          </div>
+          <div class="cyl-neon-card">
+            <h4>Q4. Volume Ratio (Radii 2:3, Heights 5:3)</h4>
+            <p style="margin:0;font-size:0.85rem;color:var(--text-secondary);">(2/3)² × (5/3) = <strong>20 : 27</strong></p>
+          </div>
+          <div class="cyl-neon-card">
+            <h4>Q5. Sheet 44 cm × 18 cm Rolled Along 44 cm</h4>
+            <p style="margin:0;font-size:0.85rem;color:var(--text-secondary);">2πr = 44 → r = 7 cm → V = <strong>2772 cm³</strong></p>
+          </div>
+          <div class="cyl-neon-card">
+            <h4>Q6. Hollow Pipe (R = 5 cm, r = 4 cm, h = 14 cm)</h4>
+            <p style="margin:0;font-size:0.85rem;color:var(--text-secondary);">V = (22/7)×(25−16)×14 = <strong>396 cm³</strong></p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 10: PRACTICE CALCULATOR -->
+      <section class="notes-section" id="sec-lab">
+        <h2>10. Cylinder &amp; Road Roller Practice Calculator</h2>
+        <div class="cyl-calc-grid">
+          <div><label style="font-size:0.8rem;color:var(--text-secondary);">Radius r (cm)</label><input type="number" id="cylR" class="cyl-input" value="7" step="any" min="0.1" /></div>
+          <div><label style="font-size:0.8rem;color:var(--text-secondary);">Height h (cm)</label><input type="number" id="cylH" class="cyl-input" value="10" step="any" min="0.1" /></div>
+          <div><label style="font-size:0.8rem;color:var(--text-secondary);">Roller Revolutions</label><input type="number" id="cylN" class="cyl-input" value="100" step="1" min="1" /></div>
+        </div>
+        <div class="cyl-out-grid" id="cylCalcOut"></div>
+      </section>
+
+      <!-- SECTION 11: 14 FLASHCARDS -->
+      <section class="notes-section" id="sec-flashcards">
+        <h2>11. Rapid Revision Flashcards (14 Cards)</h2>
+        <div class="flashcards-grid" id="cylFlashcards"></div>
+      </section>
+    </main>
+  </div>
+
+  <script src="../../../js/theme.js"></script>
+  <script src="../../../js/scroll-behavior.js"></script>
+  <!-- Modular JavaScript Animation Engines in animation/ folder -->
+  <script src="../../../animation/cylinder-csa.js"></script>
+  <script src="../../../animation/cylinder-tsa.js"></script>
+  <script src="../../../animation/cylinder-volume.js"></script>
+  <script src="../../../animation/cylinder-roller.js"></script>
+  <script>
+    (function () {
+      if (window.QuizApp && window.QuizApp.theme) window.QuizApp.theme.initTheme();
+      if (window.QuizApp && window.QuizApp.scroll) window.QuizApp.scroll.initScrollBehavior();
+
+      const rIn = document.getElementById("cylR");
+      const hIn = document.getElementById("cylH");
+      const nIn = document.getElementById("cylN");
+      const out = document.getElementById("cylCalcOut");
+      const updateCalc = () => {
+        const r = parseFloat(rIn.value) || 0;
+        const h = parseFloat(hIn.value) || 0;
+        const n = parseFloat(nIn.value) || 1;
+        const pi = 22 / 7;
+        const circ = 2 * pi * r;
+        const base = pi * r * r;
+        const csa = circ * h;
+        const tsa = csa + 2 * base;
+        const vol = base * h;
+        out.innerHTML = `
+          <div class="cyl-out-pill"><span>Circumference (2πr)</span><strong>${circ.toFixed(2)} cm</strong></div>
+          <div class="cyl-out-pill"><span>CSA / Lateral (2πrh)</span><strong>${csa.toFixed(2)} cm²</strong></div>
+          <div class="cyl-out-pill"><span>TSA Closed 2πr(r+h)</span><strong>${tsa.toFixed(2)} cm²</strong></div>
+          <div class="cyl-out-pill"><span>Open-Top Area (CSA+πr²)</span><strong>${(csa + base).toFixed(2)} cm²</strong></div>
+          <div class="cyl-out-pill"><span>Volume (πr²h)</span><strong>${vol.toFixed(2)} cm³ (${(vol/1000).toFixed(3)} L)</strong></div>
+          <div class="cyl-out-pill"><span>Road Roller (${n} rolls)</span><strong>${((csa * n)/10000).toFixed(2)} m²</strong></div>`;
+      };
+      [rIn, hIn, nIn].forEach((el) => el.addEventListener("input", updateCalc));
+      updateCalc();
+
+      const CARDS = [
+        ["How many faces, edges & vertices does a Cylinder have?", "3 Faces (2 flat + 1 curved), 2 Curved Edges, 0 Vertices!"],
+        ["What shape do you get when you cut & unroll a Cylinder's curved wall?", "A Rectangle of Length 2πr and Breadth h!"],
+        ["Formula for Lateral / Curved Surface Area (CSA)?", "CSA = 2πrh"],
+        ["Formula for Total Surface Area (TSA) of a closed cylinder?", "TSA = 2πrh + 2πr² = 2πr(r + h)"],
+        ["Surface Area of an Open-Top Cylindrical Bucket?", "CSA + 1 Base = 2πrh + πr²"],
+        ["Formula for Volume of a Cylinder?", "V = Base Area × Height = πr²h"],
+        ["If Radius is doubled (height same), Volume becomes?", "4 times (because (2r)² = 4r²)!"],
+        ["If Height is doubled (radius same), Volume becomes?", "2 times!"],
+        ["Area levelled by a Road Roller in 1 revolution?", "Equal to its CSA (2πrh)"],
+        ["Volume of a Hollow Cylinder (Outer R, Inner r)?", "V = π(R² − r²)h"],
+        ["How many Litres are in 1 cubic metre (1 m³)?", "1000 Litres (and 1000 cm³ = 1 Litre)"],
+        ["Volume Ratio of Cylinder to Cone (same r & h)?", "3 : 1 (3 cones fill 1 cylinder)"],
+        ["Archimedes' Sphere-in-Cylinder Ratio?", "Sphere Volume & Area = 2/3 of the Cylinder!"],
+        ["Why do LPG cylinders have no sharp corners?", "Curved walls distribute gas pressure evenly with zero weak corners!"]
+      ];
+      const fcGrid = document.getElementById("cylFlashcards");
+      if (fcGrid) {
+        fcGrid.innerHTML = CARDS.map(([q, a], i) => `
+          <div class="flashcard-v2" tabindex="0" role="button">
+            <div class="flashcard-v2-inner">
+              <div class="flashcard-v2-front">
+                <span class="fc-badge">Card ${i + 1} / ${CARDS.length}</span>
+                <p>${q}</p>
+                <span class="fc-hint">Tap to reveal</span>
+              </div>
+              <div class="flashcard-v2-back">
+                <span class="fc-badge">Answer</span>
+                <p>${a}</p>
+              </div>
+            </div>
+          </div>`).join("");
+        fcGrid.querySelectorAll(".flashcard-v2").forEach((c) => {
+          c.addEventListener("click", () => c.classList.toggle("is-flipped"));
+          c.addEventListener("keydown", (e) => {
+            if (e.key === "Enter" || e.key === " ") { e.preventDefault(); c.classList.toggle("is-flipped"); }
+          });
+        });
+      }
+    })();
+  </script>
+</body>
+</html>
