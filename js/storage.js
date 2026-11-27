@@ -87,8 +87,31 @@
     });
   }
 
+
+  const PDF_SESSION_KEY = "chs_pdf_export_session_v1";
+
+  function savePdfSession(payload) {
+    try {
+      localStorage.setItem(PDF_SESSION_KEY, JSON.stringify(payload));
+      return true;
+    } catch (_) {
+      return false;
+    }
+  }
+
+  function getPdfSession() {
+    try {
+      const raw = localStorage.getItem(PDF_SESSION_KEY);
+      return raw ? JSON.parse(raw) : null;
+    } catch (_) {
+      return null;
+    }
+  }
+
   window.QuizApp = window.QuizApp || {};
   window.QuizApp.storage = {
+    savePdfSession,
+    getPdfSession,
     getBookmarks,
     toggleBookmark,
     getMistakes,

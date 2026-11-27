@@ -1,6 +1,6 @@
 /* ==========================================================================
    Shared Theme, Accent Color, Font Size Slider (11px–26px) & Global Settings
-   Synced seamlessly via localStorage across EVERY page of CHS Explorer!
+   Synced seamlessly via localStorage across EVERY page of SMART PROCESS!
    ========================================================================== */
 
 (function () {
